@@ -106,10 +106,10 @@ def main():
         audio_name = os.path.splitext(os.path.basename(args.audio_file))[0]
         file_name = f"{audio_name}_{args.tagger_type}_{args.decision_method}.json"
         output_file = os.path.join(tagger.output_dir, file_name)
-        print(f"Guardando resultado en {output_file}.")
         with open(output_file, 'w') as f:
             f.write(json_result)
-        
+        print(f"Resultado guardado en {output_file}.")
+        print(f"\nResultado:\n {json_result}")
     else:
         print("\nResultado:")
         print(f"Archivo: {result['file']}")
