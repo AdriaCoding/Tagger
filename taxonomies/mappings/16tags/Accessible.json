@@ -1,0 +1,13 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4723","name":"accessibile","visible":"1","description":"","created_date":"2015-04-18 16:49:23","created_user_id":"3844","created_area_id":"62","marker_color":"0"},
+{"id":"5242","name":"accesibilidade","visible":"1","description":"","created_date":"2016-07-13 20:10:10","created_user_id":"4226","created_area_id":"309","marker_color":"0"},
+{"id":"5345","name":"Acceso minusvalidos","visible":"1","description":"","created_date":"2016-07-15 16:45:53","created_user_id":"4239","created_area_id":"309","marker_color":"0"},
+{"id":"6124","name":"accesso disabili","visible":"1","description":"","created_date":"2017-03-20 21:37:00","created_user_id":"4635","created_area_id":"322","marker_color":"0"},
+{"id":"7001","name":"accesibilidad parada de autobuses múltiple 10 autobuses paran aquí","visible":"0","description":"","created_date":"2020-10-31 11:07:52","created_user_id":"4993","created_area_id":"693","marker_color":"0"}
+]
+}
+]

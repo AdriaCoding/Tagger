@@ -1,0 +1,16 @@
+Accessibility
+Ambient_sounds
+Bar
+Bridges
+Caution
+Churches
+Culture
+Danger
+Mobility
+Music
+Park
+Restaurant
+Smells
+Square
+Streets_for_everyone
+Water

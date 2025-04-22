@@ -1,0 +1,26 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4845","name":"Music","visible":"1","description":"","created_date":"2015-10-20 22:29:00","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"5170","name":"Umgebungsgeräusche","visible":"1","description":"","created_date":"2016-05-28 11:27:41","created_user_id":"4071","created_area_id":"288","marker_color":"0"},
+{"id":"5579","name":"street musician","visible":"1","description":"","created_date":"2016-10-24 15:44:27","created_user_id":"3841","created_area_id":"308","marker_color":"0"},
+{"id":"5983","name":"Museo della music","visible":"1","description":"","created_date":"2017-03-11 12:48:33","created_user_id":"4525","created_area_id":"322","marker_color":"0"},
+{"id":"6126","name":"suoni","visible":"1","description":"","created_date":"2017-03-20 21:37:06","created_user_id":"4596","created_area_id":"322","marker_color":"0"},
+{"id":"6371","name":"musicisti","visible":"1","description":"","created_date":"2017-04-02 10:55:09","created_user_id":"4556","created_area_id":"322","marker_color":"0"},
+{"id":"6704","name":"Música tienda","visible":"1","description":"","created_date":"2017-10-25 15:14:57","created_user_id":"4785","created_area_id":"596","marker_color":"0"},
+{"id":"6880","name":"Teatre el Musical","visible":"1","description":"","created_date":"2020-09-19 10:19:59","created_user_id":"4956","created_area_id":"693","marker_color":"0"},
+{"id":"6914","name":"Música callejera\nMúsicos\nGuitarra","visible":"1","description":"","created_date":"2020-10-11 11:40:29","created_user_id":"4998","created_area_id":"715","marker_color":"0"},
+{"id":"6921","name":"Música en el jardín\nMúsica\nJardín\nPiano","visible":"1","description":"","created_date":"2020-10-14 11:19:03","created_user_id":"4998","created_area_id":"693","marker_color":"0"},
+{"id":"6932","name":"música callejera","visible":"0","description":"","created_date":"2020-10-15 14:59:21","created_user_id":"4998","created_area_id":"715","marker_color":"0"},
+{"id":"6933","name":"músicos","visible":"1","description":"","created_date":"2020-10-15 14:59:21","created_user_id":"4998","created_area_id":"715","marker_color":"0"},
+{"id":"7357","name":"Paulista música cultura","visible":"1","description":"","created_date":"2022-08-07 14:37:50","created_user_id":"5244","created_area_id":"276","marker_color":"0"},
+{"id":"7365","name":"Músicas avpaulista somdapaulista","visible":"1","description":"","created_date":"2022-08-07 14:51:08","created_user_id":"5244","created_area_id":"276","marker_color":"0"},
+{"id":"7388","name":"Black Music","visible":"1","description":"","created_date":"2022-08-07 15:30:01","created_user_id":"5179","created_area_id":"276","marker_color":"0"},
+{"id":"7396","name":"Musicanapaulista country","visible":"1","description":"","created_date":"2022-08-07 15:44:45","created_user_id":"5244","created_area_id":"276","marker_color":"0"},
+{"id":"7615","name":"caminhos musicais","visible":"1","description":"","created_date":"2022-08-12 15:31:30","created_user_id":"4864","created_area_id":"276","marker_color":"0"},
+{"id":"7700","name":"instrumentos musicais","visible":"1","description":"","created_date":"2022-08-17 23:13:09","created_user_id":"5255","created_area_id":"276","marker_color":"0"}
+]
+}
+]

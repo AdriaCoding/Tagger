@@ -1,0 +1,15 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"2889","name":"Autobus","visible":"1","description":"","created_date":"2012-08-17 17:06:59","created_user_id":null,"created_area_id":null,"marker_color":"0"},
+{"id":"4693","name":"tram","visible":"1","description":"","created_date":"2015-01-18 18:38:29","created_user_id":"3844","created_area_id":"62","marker_color":"0"},
+{"id":"4801","name":"transport","visible":"1","description":"","created_date":"2015-09-24 09:19:34","created_user_id":"3935","created_area_id":"279","marker_color":"0"},
+{"id":"4975","name":"carril bici","visible":"1","description":"","created_date":"2016-04-06 15:38:15","created_user_id":"4027","created_area_id":"344","marker_color":"0"},
+{"id":"5041","name":"S-Bahn","visible":"1","description":"","created_date":"2016-04-27 14:59:53","created_user_id":"4034","created_area_id":"288","marker_color":"0"},
+{"id":"5120","name":"railway stations","visible":"1","description":"","created_date":"2016-05-24 08:48:09","created_user_id":"3920","created_area_id":"279","marker_color":"0"},
+{"id":"5391","name":"Vaporetto","visible":"1","description":"","created_date":"2016-09-22 08:05:42","created_user_id":"3841","created_area_id":"343","marker_color":"0"}
+]
+}
+]

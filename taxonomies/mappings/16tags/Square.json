@@ -1,0 +1,18 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4972","name":"la plaza del Espigol es una plaza que tiene jardines rodeandola","visible":"0","description":"","created_date":"2016-04-06 15:33:54","created_user_id":"4027","created_area_id":"344","marker_color":"0"},
+{"id":"4978","name":"en este lado de la plaza el morro de los coches que da sobre la acera","visible":"0","description":"","created_date":"2016-04-06 15:52:40","created_user_id":"4027","created_area_id":"344","marker_color":"0"},
+{"id":"5039","name":"Spielplatz","visible":"1","description":"","created_date":"2016-04-27 14:38:55","created_user_id":"4034","created_area_id":"288","marker_color":"0"},
+{"id":"5201","name":"Pariser Platz","visible":"0","description":"","created_date":"2016-06-04 14:06:20","created_user_id":"4034","created_area_id":"288","marker_color":"0"},
+{"id":"5223","name":"i m on Market Square","visible":"0","description":"","created_date":"2016-07-12 11:20:25","created_user_id":"4222","created_area_id":"308","marker_color":"0"},
+{"id":"5371","name":"Ein Spielplatz ist in der nähe\nDie Sonne scheint\nAm ende ist ein tunnel","visible":"0","description":"","created_date":"2016-07-24 16:58:11","created_user_id":"4324","created_area_id":"288","marker_color":"0"},
+{"id":"5499","name":"Plac zabw","visible":"1","description":"","created_date":"2016-10-19 13:53:40","created_user_id":"4436","created_area_id":"308","marker_color":"0"},
+{"id":"5642","name":"plac Dominikański","visible":"1","description":"","created_date":"2016-11-02 09:01:53","created_user_id":"4434","created_area_id":"308","marker_color":"0"},
+{"id":"5840","name":"piazza","visible":"1","description":"","created_date":"2017-02-22 19:13:06","created_user_id":"4569","created_area_id":"481","marker_color":"0"},
+{"id":"7008","name":"plaza de toros","visible":"1","description":"","created_date":"2020-11-02 16:56:00","created_user_id":"4993","created_area_id":"693","marker_color":"0"}
+]
+}
+]

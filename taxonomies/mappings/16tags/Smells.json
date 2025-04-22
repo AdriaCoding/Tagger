@@ -1,0 +1,13 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4703","name":"percorso loges","visible":"1","description":"","created_date":"2015-02-23 19:37:10","created_user_id":"3851","created_area_id":"62","marker_color":"0"},
+{"id":"5113","name":"Flohmarkt","visible":"1","description":"","created_date":"2016-05-23 10:30:29","created_user_id":"4071","created_area_id":"288","marker_color":"0"},
+{"id":"5115","name":"Geruch","visible":"1","description":"","created_date":"2016-05-23 10:41:18","created_user_id":"4071","created_area_id":"288","marker_color":"0"},
+{"id":"5750","name":"profumi","visible":"1","description":"","created_date":"2017-02-15 17:24:27","created_user_id":"4567","created_area_id":"322","marker_color":"0"},
+{"id":"6247","name":"natura","visible":"1","description":"","created_date":"2017-03-27 20:59:51","created_user_id":"4596","created_area_id":"322","marker_color":"0"}
+]
+}
+]

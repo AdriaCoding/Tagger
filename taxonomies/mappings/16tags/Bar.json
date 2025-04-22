@@ -1,0 +1,17 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"1710","name":"bar","visible":"1","description":"Tag migrated from saopaulo","created_date":"2012-08-07 23:23:08","created_user_id":null,"created_area_id":null,"marker_color":"0"},
+{"id":"4812","name":"good cafe","visible":"1","description":"","created_date":"2015-10-07 04:33:54","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"4969","name":"#precaucion #terraza #bar #cafeteria","visible":"0","description":"","created_date":"2016-04-06 15:19:13","created_user_id":"4029","created_area_id":"344","marker_color":"0"},
+{"id":"4970","name":"floreros terraza bar cafetería precaución","visible":"0","description":"","created_date":"2016-04-06 15:23:56","created_user_id":"4029","created_area_id":"344","marker_color":"0"},
+{"id":"4984","name":"cafeteria","visible":"1","description":"","created_date":"2016-04-06 16:50:52","created_user_id":"4029","created_area_id":"344","marker_color":"0"},
+{"id":"5698","name":"Bacari","visible":"1","description":"","created_date":"2017-02-08 11:22:15","created_user_id":"4534","created_area_id":"322","marker_color":"0"},
+{"id":"6176","name":"Coffee breakfast bar","visible":"1","description":"","created_date":"2017-03-27 06:42:59","created_user_id":"4641","created_area_id":"322","marker_color":"0"},
+{"id":"6967","name":"cocina de bar","visible":"0","description":"","created_date":"2020-10-23 10:05:43","created_user_id":"4987","created_area_id":"693","marker_color":"0"},
+{"id":"7155","name":"Cafezinho","visible":"1","description":"","created_date":"2022-08-04 11:52:20","created_user_id":"5219","created_area_id":"276","marker_color":"0"}
+]
+}
+]

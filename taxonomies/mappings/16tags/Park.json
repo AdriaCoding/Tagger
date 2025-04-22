@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4790","name":"tree","visible":"1","description":"","created_date":"2015-08-31 05:38:25","created_user_id":"3903","created_area_id":"279","marker_color":"0"},
+{"id":"4863","name":"park","visible":"1","description":"","created_date":"2015-11-16 00:29:44","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"4896","name":"garden","visible":"1","description":"","created_date":"2016-02-25 07:38:20","created_user_id":"3920","created_area_id":"279","marker_color":"0"}
+]
+}
+]

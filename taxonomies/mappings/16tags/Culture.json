@@ -1,0 +1,35 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4822","name":"culture","visible":"1","description":"","created_date":"2015-10-09 00:51:12","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"5123","name":"cultural centers","visible":"1","description":"","created_date":"2016-05-24 08:59:14","created_user_id":"3940","created_area_id":"279","marker_color":"0"},
+{"id":"5989","name":"sculture in rilievo","visible":"1","description":"","created_date":"2017-03-11 17:53:36","created_user_id":"4614","created_area_id":"322","marker_color":"0"},
+{"id":"5990","name":"sculture in rilievochiesa santissimo redentore","visible":"1","description":"","created_date":"2017-03-11 17:55:52","created_user_id":"4614","created_area_id":"322","marker_color":"0"},
+{"id":"5993","name":"sculture in rilievochiesa santissimo redentoregondola col tetto","visible":"1","description":"","created_date":"2017-03-11 18:01:52","created_user_id":"4614","created_area_id":"322","marker_color":"0"},
+{"id":"5994","name":"sculture in rilievogondola col tetto","visible":"1","description":"","created_date":"2017-03-11 18:08:55","created_user_id":"4614","created_area_id":"322","marker_color":"0"},
+{"id":"6002","name":"scultura tattile","visible":"1","description":"","created_date":"2017-03-11 18:43:43","created_user_id":"4614","created_area_id":"322","marker_color":"0"},
+{"id":"6079","name":"Scultura","visible":"1","description":"","created_date":"2017-03-20 20:49:46","created_user_id":"4594","created_area_id":"322","marker_color":"0"},
+{"id":"7239","name":"centro cultural sp","visible":"0","description":"","created_date":"2022-08-06 17:11:31","created_user_id":"5084","created_area_id":"276","marker_color":"0"},
+{"id":"7243","name":"Centro cultural São Paulo","visible":"1","description":"","created_date":"2022-08-06 18:05:39","created_user_id":"5166","created_area_id":"276","marker_color":"0"},
+{"id":"7244","name":"Centro cultural","visible":"0","description":"","created_date":"2022-08-06 18:08:12","created_user_id":"5133","created_area_id":"276","marker_color":"0"},
+{"id":"7250","name":"Acesso centro cultural metrô","visible":"1","description":"","created_date":"2022-08-06 18:42:30","created_user_id":"5165","created_area_id":"276","marker_color":"0"},
+{"id":"7301","name":"Centro Cultural Vergueiro","visible":"1","description":"","created_date":"2022-08-06 19:36:18","created_user_id":"5179","created_area_id":"276","marker_color":"0"},
+{"id":"7347","name":"Bolsas Japanhouse cultura","visible":"1","description":"","created_date":"2022-08-07 14:20:21","created_user_id":"5244","created_area_id":"276","marker_color":"0"},
+{"id":"7351","name":"Centro Cultural Itaú","visible":"1","description":"","created_date":"2022-08-07 14:25:22","created_user_id":"5131","created_area_id":"276","marker_color":"0"},
+{"id":"7357","name":"Paulista música cultura","visible":"1","description":"","created_date":"2022-08-07 14:37:50","created_user_id":"5244","created_area_id":"276","marker_color":"0"},
+{"id":"7363","name":"Itaú cultural","visible":"1","description":"","created_date":"2022-08-07 14:49:48","created_user_id":"5235","created_area_id":"276","marker_color":"0"},
+{"id":"7384","name":"Sertanejo som cultura","visible":"1","description":"","created_date":"2022-08-07 15:23:45","created_user_id":"5244","created_area_id":"276","marker_color":"0"},
+{"id":"7707","name":"Casa  de cultura Rancho do Tropeiro Ernesto Vilela","visible":"1","description":"","created_date":"2022-08-18 12:53:34","created_user_id":"5288","created_area_id":"817","marker_color":"0"},
+{"id":"7713","name":"Rota cultural","visible":"1","description":"","created_date":"2022-08-18 17:10:47","created_user_id":"5156","created_area_id":"276","marker_color":"0"},
+{"id":"7718","name":"Jardim das Esculturas","visible":"1","description":"","created_date":"2022-08-18 19:00:52","created_user_id":"5179","created_area_id":"276","marker_color":"0"},
+{"id":"7777","name":"produção cultural","visible":"1","description":"","created_date":"2022-08-31 20:05:27","created_user_id":"5216","created_area_id":"811","marker_color":"0"},
+{"id":"7797","name":"centroculturalvergueiro","visible":"1","description":"","created_date":"2022-09-12 22:45:37","created_user_id":"5255","created_area_id":"276","marker_color":"0"},
+{"id":"7803","name":"Popchoir\nCulturainglesa\nSantos","visible":"0","description":"","created_date":"2022-09-15 22:50:37","created_user_id":"5253","created_area_id":"800","marker_color":"0"},
+{"id":"7805","name":"culturainglesa","visible":"1","description":"","created_date":"2022-09-15 22:52:56","created_user_id":"5253","created_area_id":"800","marker_color":"0"},
+{"id":"7868","name":"Cultura accesible","visible":"1","description":"","created_date":"2023-01-26 17:59:18","created_user_id":"5362","created_area_id":"640","marker_color":"0"},
+{"id":"8019","name":"cultura accessible","visible":"1","description":"","created_date":"2025-04-14 09:38:24","created_user_id":"4625","created_area_id":"640","marker_color":"0"}
+]
+}
+]

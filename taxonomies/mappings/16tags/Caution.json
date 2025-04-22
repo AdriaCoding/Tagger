@@ -1,0 +1,16 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4958","name":"Precaución","visible":"1","description":"","created_date":"2016-04-06 09:10:50","created_user_id":"4033","created_area_id":"344","marker_color":"0"},
+{"id":"4969","name":"#precaucion #terraza #bar #cafeteria","visible":"0","description":"","created_date":"2016-04-06 15:19:13","created_user_id":"4029","created_area_id":"344","marker_color":"0"},
+{"id":"4970","name":"floreros terraza bar cafetería precaución","visible":"0","description":"","created_date":"2016-04-06 15:23:56","created_user_id":"4029","created_area_id":"344","marker_color":"0"},
+{"id":"4996","name":"obstáculo aéreo","visible":"1","description":"","created_date":"2016-04-07 15:48:41","created_user_id":"4027","created_area_id":"344","marker_color":"0"},
+{"id":"5011","name":"obstáculo","visible":"1","description":"","created_date":"2016-04-07 16:30:12","created_user_id":"4033","created_area_id":"344","marker_color":"0"},
+{"id":"5285","name":"Precaución mami","visible":"1","description":"","created_date":"2016-07-14 15:55:11","created_user_id":"4232","created_area_id":"309","marker_color":"0"},
+{"id":"5307","name":"Precaución porque te puedes pegar un castañazo","visible":"1","description":"","created_date":"2016-07-15 14:49:31","created_user_id":"4232","created_area_id":"309","marker_color":"0"},
+{"id":"7572","name":"Obstáculos aéreos","visible":"1","description":"","created_date":"2022-08-11 14:36:35","created_user_id":"4864","created_area_id":"276","marker_color":"0"}
+]
+}
+]

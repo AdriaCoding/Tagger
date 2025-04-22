@@ -1,0 +1,19 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4669","name":"ristorante","visible":"1","description":"","created_date":"2014-12-08 18:21:31","created_user_id":"3843","created_area_id":"62","marker_color":"0"},
+{"id":"4811","name":"Indian restaurant","visible":"1","description":"","created_date":"2015-10-06 02:16:47","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"4821","name":"Italian restaurant","visible":"1","description":"","created_date":"2015-10-08 23:59:33","created_user_id":"3940","created_area_id":"279","marker_color":"0"},
+{"id":"4828","name":"food","visible":"1","description":"","created_date":"2015-10-12 23:39:58","created_user_id":"3947","created_area_id":"279","marker_color":"0"},
+{"id":"4835","name":"Indian Pakistani restaurant","visible":"1","description":"","created_date":"2015-10-13 02:57:09","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"4842","name":"fantastic pub food","visible":"1","description":"","created_date":"2015-10-18 03:09:28","created_user_id":"3943","created_area_id":"279","marker_color":"0"},
+{"id":"5572","name":"Restauracja jedzenie","visible":"1","description":"","created_date":"2016-10-21 13:46:06","created_user_id":"4421","created_area_id":"308","marker_color":"0"},
+{"id":"5613","name":"restauracja","visible":"1","description":"","created_date":"2016-10-25 16:37:28","created_user_id":"4418","created_area_id":"308","marker_color":"0"},
+{"id":"6535","name":"fast food","visible":"1","description":"","created_date":"2017-04-27 15:54:05","created_user_id":"4603","created_area_id":"322","marker_color":"0"},
+{"id":"6911","name":"Plaza grande restaurantes paralelo al mar","visible":"1","description":"","created_date":"2020-10-11 08:14:55","created_user_id":"4998","created_area_id":"715","marker_color":"0"},
+{"id":"7678","name":"Brasil restaurante","visible":"1","description":"","created_date":"2022-08-14 15:31:43","created_user_id":"5216","created_area_id":"813","marker_color":"0"}
+]
+}
+]

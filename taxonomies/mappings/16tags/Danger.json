@@ -1,0 +1,10 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blindwiki"},
+{"type":"table","name":"tag","database":"blindwiki","data":
+[
+{"id":"4626","name":"pericoloso","visible":"1","description":"","created_date":"2014-11-16 08:24:37","created_user_id":"3757","created_area_id":"344","marker_color":"0"},
+{"id":"5274","name":"rampa con peligro","visible":"1","description":"","created_date":"2016-07-14 15:33:59","created_user_id":"4232","created_area_id":"309","marker_color":"0"}
+]
+}
+]
