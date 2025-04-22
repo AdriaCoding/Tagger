@@ -8,4 +8,10 @@ export OMP_NUM_THREADS=1
 source /srv/www/blind.wiki/public_html/.venv/bin/activate
 
 # lanza el Tagger con parámetros por defecto
-python -m Tagger.main --audio_file "$1" --device cpu --language en --decision_method adaptive $2 $3 $4 $5 $6 $7 $8 $9
+python -m Tagger.main \
+  --audio_file "$1" \
+  --device cpu \
+  --language en \
+  --decision_method adaptive \
+  --json_output \
+  $2 $3 $4 $5 $6 $7 $8 $9
