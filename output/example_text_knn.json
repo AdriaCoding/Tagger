@@ -1,0 +1,26 @@
+{
+  "file": "example.wav",
+  "transcription": " Hi, the Spanish restaurant at Clip Point Road is accessible and no stairs.",
+  "tags": [
+    {
+      "tag": "restaurant",
+      "similarity": 0.5699506998062134
+    },
+    {
+      "tag": "bar",
+      "similarity": 0.3072583079338074
+    },
+    {
+      "tag": "accessibility",
+      "similarity": 0.2946544289588928
+    },
+    {
+      "tag": "streets_for_everyone",
+      "similarity": 0.2746140956878662
+    },
+    {
+      "tag": "park",
+      "similarity": 0.2543345093727112
+    }
+  ]
+}

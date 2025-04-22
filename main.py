@@ -18,8 +18,6 @@ def main():
                       help="Tipo de tagger a utilizar: text (SentenceTransformer), audio (CLAP), hybrid (combinación)")
     parser.add_argument("--taxonomy_file", type=str, default="16tags.txt",
                       help="Ruta al archivo de taxonomía de etiquetas")
-    parser.add_argument("--output_file", type=str, default=None,
-                      help="Archivo para guardar resultados (CSV o JSON)")
     parser.add_argument("--text_model", type=str, default="paraphrase-multilingual-mpnet-base-v2",
                       help="Modelo de embeddings de texto")
     parser.add_argument("--audio_model", type=str, default="facebook/hubert-base-ls960",
@@ -104,8 +102,13 @@ def main():
     
     # Mostrar resultado en consola
     if args.json_output:
-        print("\nResultado:")
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+        json_result = json.dumps(result, ensure_ascii=False, indent=2)
+        audio_name = os.path.splitext(os.path.basename(args.audio_file))[0]
+        file_name = f"{audio_name}_{args.tagger_type}_{args.decision_method}.json"
+        output_file = os.path.join(tagger.output_dir, file_name)
+        print(f"Guardando resultado en {output_file}.")
+        with open(output_file, 'w') as f:
+            f.write(json_result)
         
     else:
         print("\nResultado:")

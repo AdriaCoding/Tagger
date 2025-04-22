@@ -18,7 +18,6 @@ DEFAULT_RADIUS = 0.5
 DECISION_METHOD_ADAPTIVE = "adaptive"
 DEFAULT_MIN_THRESHOLD = 0.5
 TAGGER_DIR = os.path.dirname(os.path.abspath(__file__))
-EMBEDDINGS_DIR = os.path.join(TAGGER_DIR, 'embeddings')
 
 class BaseTagger(ABC):
     """
@@ -41,8 +40,10 @@ class BaseTagger(ABC):
                 - Para 'hdbscan': {'min_cluster_size': tamaño mínimo de cluster (default: 5),
                                   'min_samples': muestras mínimas (default: 1)}
         """
+        self.tagger_dir = TAGGER_DIR
+        self.output_dir = os.path.join(TAGGER_DIR, 'output')
         self.taxonomy_file = os.path.join(TAGGER_DIR, 'taxonomies', taxonomy_file)
-        self.embeddings_dir = EMBEDDINGS_DIR
+        self.embeddings_dir = os.path.join(TAGGER_DIR, 'embeddings')
         self.decision_method = decision_method
         
         # Configurar parámetros por defecto si no se especifican
