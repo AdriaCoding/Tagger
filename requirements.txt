@@ -3,7 +3,6 @@ numpy
 pandas
 tqdm
 scikit-learn
-git+https://github.com/scikit-learn-contrib/hdbscan.git@master
 librosa
 
 # PyTorch y relacionados (CPU only)

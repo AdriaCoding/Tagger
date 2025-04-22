@@ -4,7 +4,7 @@ import torch
 from abc import ABC, abstractmethod
 from sklearn.neighbors import NearestNeighbors
 from tqdm.auto import tqdm
-import hdbscan
+# import hdbscan
 
 
 # Definir constantes para métodos de selección de etiquetas
@@ -12,9 +12,11 @@ DECISION_METHOD_KNN = "knn"
 DEFAULT_K = 5
 DECISION_METHOD_RADIUS = "radius"
 DEFAULT_RADIUS = 0.5
-DECISION_METHOD_HDBSCAN = "hdbscan"
-DEFAULT_MIN_CLUSTER_SIZE = 5
-DEFAULT_MIN_SAMPLES = 1
+# DECISION_METHOD_HDBSCAN = "hdbscan"
+# DEFAULT_MIN_CLUSTER_SIZE = 5
+# DEFAULT_MIN_SAMPLES = 1
+DECISION_METHOD_ADAPTIVE = "adaptive"
+DEFAULT_MIN_THRESHOLD = 0.5
 TAGGER_DIR = os.path.dirname(os.path.abspath(__file__))
 EMBEDDINGS_DIR = os.path.join(TAGGER_DIR, 'embeddings')
 
@@ -47,7 +49,8 @@ class BaseTagger(ABC):
         self.decision_params = {
             DECISION_METHOD_KNN: {'k': DEFAULT_K},
             DECISION_METHOD_RADIUS: {'threshold': DEFAULT_RADIUS},
-            DECISION_METHOD_HDBSCAN: {'min_cluster_size': DEFAULT_MIN_CLUSTER_SIZE, 'min_samples': DEFAULT_MIN_SAMPLES}
+            # DECISION_METHOD_HDBSCAN: {'min_cluster_size': DEFAULT_MIN_CLUSTER_SIZE, 'min_samples': DEFAULT_MIN_SAMPLES},
+            DECISION_METHOD_ADAPTIVE: {'min_threshold': DEFAULT_MIN_THRESHOLD}
         }
         
         # Actualizar con los parámetros proporcionados
@@ -56,7 +59,7 @@ class BaseTagger(ABC):
                 self.decision_params[self.decision_method].update(decision_params)
             
         # Validar el método de selección de etiquetas
-        if decision_method not in [DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_HDBSCAN]:
+        if decision_method not in [DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_ADAPTIVE]:  # DECISION_METHOD_HDBSCAN removed
             print(f"ADVERTENCIA: Método de selección '{decision_method}' no reconocido. Usando KNN por defecto.")
             self.decision_method = DECISION_METHOD_KNN
                
@@ -97,9 +100,10 @@ class BaseTagger(ABC):
             self.rnn = NearestNeighbors(radius=1-threshold, metric='cosine')
             self.rnn.fit(self.tag_embeddings)
         
-        elif self.decision_method == DECISION_METHOD_HDBSCAN:
-            # No es necesario inicializar HDBSCAN aquí, se creará en cada consulta
-            pass
+        elif self.decision_method == DECISION_METHOD_ADAPTIVE:
+            # Para el método adaptativo, necesitaremos usar KNN para seleccionar todas las etiquetas
+            self.knn_all = NearestNeighbors(n_neighbors=len(self.tags), metric='cosine')
+            self.knn_all.fit(self.tag_embeddings)
     
     def load_tags(self, taxonomy_file):
         """
@@ -261,67 +265,39 @@ class BaseTagger(ABC):
         
         return nearest_tags, similarities
     
-    def find_similar_tags_hdbscan(self, sample_embedding, min_cluster_size=None, min_samples=None):
+    def find_similar_tags_adaptive(self, sample_embedding, min_threshold=None):
         """
-        Encuentra las etiquetas más similares usando HDBSCAN clustering.
+        Encuentra las etiquetas más similares con similaridad > threshold.
+        Si no hay ninguna etiqueta por encima del threshold, devuelve la más similar.
         
         Args:
             sample_embedding: Embedding de la muestra
-            min_cluster_size (int): Tamaño mínimo del cluster
-            min_samples (int): Número mínimo de muestras
+            min_threshold (float): Threshold mínimo de similaridad (por defecto 0.5)
             
         Returns:
             tuple: (lista de etiquetas similares, lista de similitudes)
         """
-        # Crear un conjunto de datos que incluya tanto el embedding de la muestra como los embeddings de las etiquetas
-        combined_embeddings = np.vstack([sample_embedding.reshape(1, -1), self.tag_embeddings])
+        if min_threshold is None:
+            min_threshold = self.decision_params[DECISION_METHOD_ADAPTIVE]['min_threshold']
         
-        # Ejecutar HDBSCAN
-        clusterer = hdbscan.HDBSCAN(
-            min_cluster_size=min_cluster_size,
-            min_samples=min_samples,
-            metric='euclidean'
-        )
+        # Obtener todas las etiquetas y sus similitudes
+        distances, indices = self.knn_all.kneighbors(sample_embedding.reshape(1, -1), n_neighbors=len(self.tags))
         
-        cluster_labels = clusterer.fit_predict(combined_embeddings)
+        # Calcular similitudes (1 - distancia)
+        similarities = [float(1 - distance) for distance in distances[0]]
+        tags = [self.tags[idx] for idx in indices[0]]
         
-        # Obtener el cluster de la muestra
-        sample_cluster = cluster_labels[0]
+        # Filtrar aquellas por encima del threshold
+        filtered_pairs = [(tag, sim) for tag, sim in zip(tags, similarities) if sim >= min_threshold]
         
-        # Si la muestra es ruido (cluster -1), usar KNN como fallback
-        if sample_cluster == -1:
-            print("ADVERTENCIA: La muestra no pertenece a ningún cluster (es ruido).")
+        # Si no hay ninguna por encima del threshold, tomar la más similar
+        if not filtered_pairs:
+            # Encontrar la etiqueta con mayor similitud
+            max_idx = similarities.index(max(similarities))
+            return [tags[max_idx]], [similarities[max_idx]]
         
-        # Encontrar todos los embeddings de etiquetas que pertenecen al mismo cluster
-        cluster_indices = np.where(cluster_labels[1:] == sample_cluster)[0]
-        
-        if len(cluster_indices) == 0:
-            print("ADVERTENCIA: No hay etiquetas en el mismo cluster que la muestra.")
-        
-        # Calcular distancias y similitudes desde el embedding de la muestra a los embeddings de las etiquetas del cluster
-        distances = []
-        for idx in cluster_indices:
-            distance = np.linalg.norm(sample_embedding - self.tag_embeddings[idx])
-            distances.append(distance)
-        
-        # Normalizar distancias a [0, 1]
-        if len(distances) > 0:
-            max_distance = max(distances)
-            if max_distance > 0:
-                normalized_distances = [d / max_distance for d in distances]
-            else:
-                normalized_distances = [0.0] * len(distances)
-        else:
-            normalized_distances = []
-        
-        # Calcular similitudes
-        similarities = [1.0 - d for d in normalized_distances]
-        
-        # Obtener etiquetas y ordenar por similitud
-        nearest_tags = [self.tags[idx] for idx in cluster_indices]
-        
-        # Ordenar etiquetas por similitud
-        sorted_pairs = sorted(zip(nearest_tags, similarities), key=lambda x: x[1], reverse=True)
+        # Ordenar por similitud (mayor a menor)
+        sorted_pairs = sorted(filtered_pairs, key=lambda x: x[1], reverse=True)
         nearest_tags = [tag for tag, _ in sorted_pairs]
         similarities = [sim for _, sim in sorted_pairs]
         
@@ -341,10 +317,13 @@ class BaseTagger(ABC):
         if self.decision_method == DECISION_METHOD_RADIUS:
             threshold = self.decision_params[DECISION_METHOD_RADIUS]['threshold']
             return self.find_similar_tags_radius(sample_embedding, threshold)
-        elif self.decision_method == DECISION_METHOD_HDBSCAN:
-            min_cluster_size = self.decision_params[DECISION_METHOD_HDBSCAN]['min_cluster_size']
-            min_samples = self.decision_params[DECISION_METHOD_HDBSCAN]['min_samples']
-            return self.find_similar_tags_hdbscan(sample_embedding, min_cluster_size, min_samples)
+        # elif self.decision_method == DECISION_METHOD_HDBSCAN:
+        #     min_cluster_size = self.decision_params[DECISION_METHOD_HDBSCAN]['min_cluster_size']
+        #     min_samples = self.decision_params[DECISION_METHOD_HDBSCAN]['min_samples']
+        #     return self.find_similar_tags_hdbscan(sample_embedding, min_cluster_size, min_samples)
+        elif self.decision_method == DECISION_METHOD_ADAPTIVE:
+            min_threshold = self.decision_params[DECISION_METHOD_ADAPTIVE]['min_threshold']
+            return self.find_similar_tags_adaptive(sample_embedding, min_threshold)
         else:  # Fallback to KNN
             k = self.decision_params[DECISION_METHOD_KNN]['k']
             return self.find_similar_tags_knn(sample_embedding, k)

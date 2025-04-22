@@ -4,7 +4,7 @@ import json
 from .base_tagger import (
     DECISION_METHOD_KNN,
     DECISION_METHOD_RADIUS,
-    DECISION_METHOD_HDBSCAN
+    DECISION_METHOD_ADAPTIVE
 )
 from .factory import create_tagger
 
@@ -37,7 +37,7 @@ def main():
     parser.add_argument("--json_output", action="store_true",
                       help="Mostrar resultado en formato JSON en la consola")
     parser.add_argument('--decision_method', type=str, default=DECISION_METHOD_KNN,
-                      choices=[DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_HDBSCAN],
+                      choices=[DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_ADAPTIVE],
                       help='Método de decisión para seleccionar etiquetas')
     parser.add_argument('--decision_params', type=json.loads, default='{}',
                       help='Parámetros para el método de decisión en formato JSON')
@@ -45,10 +45,8 @@ def main():
                       help="Número de etiquetas a devolver (para KNN)")
     parser.add_argument("--threshold", type=float, default=None,
                       help="Threshhold similaridad para el método Radius Nearest Neighbors")
-    parser.add_argument("--min_cluster_size", type=int, default=None,
-                      help="Tamaño mínimo de cluster para HDBSCAN")
-    parser.add_argument("--min_samples", type=int, default=None,
-                      help="Número mínimo de muestras para HDBSCAN")
+    parser.add_argument("--min_threshold", type=float, default=None,
+                      help="Threshold mínimo para método adaptativo (devuelve tags > threshold o el mejor)")
     parser.add_argument("--device", type=str, default="cpu", choices=["cpu", "cuda"],
                       help="Dispositivo a utilizar para los cálculos (cpu o cuda)")
     
@@ -61,8 +59,7 @@ def main():
     decision_params = {
         'k': args.top_k,
         'threshold': args.threshold, 
-        'min_cluster_size': args.min_cluster_size,
-        'min_samples': args.min_samples
+        'min_threshold': args.min_threshold
     }
     # Asignar solo los parámetros que no son None
     decision_params = {k:v for k,v in decision_params.items() if v is not None}
