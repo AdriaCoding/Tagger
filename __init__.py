@@ -2,7 +2,8 @@ from .base_tagger import (
     BaseTagger,
     DECISION_METHOD_KNN,
     DECISION_METHOD_RADIUS,
-    DECISION_METHOD_HDBSCAN
+    # DECISION_METHOD_HDBSCAN,
+    DECISION_METHOD_ADAPTIVE
 )
 from .text_embedding_tagger import TextEmbeddingTagger
 from .factory import create_tagger
@@ -15,5 +16,6 @@ __all__ = [
     'WhisperS2TT',
     'DECISION_METHOD_KNN',
     'DECISION_METHOD_RADIUS',
-    'DECISION_METHOD_HDBSCAN'
+    # 'DECISION_METHOD_HDBSCAN',
+    'DECISION_METHOD_ADAPTIVE'
 ]
