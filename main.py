@@ -1,6 +1,7 @@
 import argparse
 import os
 import json
+import sys
 from .base_tagger import (
     DECISION_METHOD_KNN,
     DECISION_METHOD_RADIUS,
@@ -49,8 +50,15 @@ def main():
                       help="Threshold mínimo para método adaptativo (devuelve tags > threshold o el mejor)")
     parser.add_argument("--device", type=str, default="cpu", choices=["cpu", "cuda"],
                       help="Dispositivo a utilizar para los cálculos (cpu o cuda)")
+    parser.add_argument("--quiet", action="store_true",
+                      help="Suprimir mensajes de log (útil con --json_output)")
     
     args = parser.parse_args()
+
+    # Si se solicita JSON y modo silencioso, redirigir stderr a /dev/null para suprimir logs
+    if args.json_output and args.quiet:
+        original_stderr = sys.stderr
+        sys.stderr = open(os.devnull, 'w')
 
     # Configurar parámetros según el tipo de tagger
     tagger_params = {}
@@ -64,57 +72,87 @@ def main():
     # Asignar solo los parámetros que no son None
     decision_params = {k:v for k,v in decision_params.items() if v is not None}
 
-    if args.tagger_type == 'text':
-        tagger_params = {
-            'model_name': args.text_model,
-            'S2TT_model': args.whisper_model,
-            'decision_method': args.decision_method,
-            'decision_params': decision_params,
-            'device': args.device
-        }
-    elif args.tagger_type == 'audio':
-        tagger_params = {
-            'model_name': args.clap_model,
-            'decision_method': args.decision_method,
-            'decision_params': decision_params,
-            'device': args.device
-        }
-    elif args.tagger_type == 'hybrid':
-        tagger_params = {
-            'audio_model_name': args.audio_model,
-            'text_model_name': args.text_model,
-            'asr_model_name': args.whisper_model,
-            'audio_weight': args.audio_weight,
-            'text_weight': args.text_weight,
-            'decision_method': args.decision_method,
-            'decision_params': decision_params,
-            'device': args.device
-        }
+    try:
+        if args.tagger_type == 'text':
+            tagger_params = {
+                'model_name': args.text_model,
+                'S2TT_model': args.whisper_model,
+                'decision_method': args.decision_method,
+                'decision_params': decision_params,
+                'device': args.device
+            }
+        elif args.tagger_type == 'audio':
+            tagger_params = {
+                'model_name': args.clap_model,
+                'decision_method': args.decision_method,
+                'decision_params': decision_params,
+                'device': args.device
+            }
+        elif args.tagger_type == 'hybrid':
+            tagger_params = {
+                'audio_model_name': args.audio_model,
+                'text_model_name': args.text_model,
+                'asr_model_name': args.whisper_model,
+                'audio_weight': args.audio_weight,
+                'text_weight': args.text_weight,
+                'decision_method': args.decision_method,
+                'decision_params': decision_params,
+                'device': args.device
+            }
+        
+        # Crear tagger
+        if not args.quiet:
+            print(f"Creando tagger tipo {args.tagger_type} con taxonomía {args.taxonomy_file}", file=sys.stderr)
+        
+        tagger = create_tagger(args.tagger_type, args.taxonomy_file, **tagger_params)
+        
+        # Procesar archivo de audio individual
+        if not os.path.exists(args.audio_file):
+            raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
+                    
+        kwargs = {'language': args.language}
+        
+        if not args.quiet:
+            print(f"Transcribiendo audio: {args.audio_file}", file=sys.stderr)
+        
+        result = tagger.tag_sample(args.audio_file, **kwargs)
+        
+        # Mostrar resultado en consola
+        if args.json_output:
+            # Si se solicita JSON, imprimir solo el JSON sin ningún otro texto
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+        else:
+            print("\nResultado:")
+            print(f"Archivo: {result['file']}")
+            if 'transcription' in result:
+                print(f"Transcripción: {result['transcription']}")
+            print(f"Método de selección de etiquetas: {args.decision_method}")
+            print("Etiquetas recomendadas:")
+            for i, tag_info in enumerate(result['tags']):
+                print(f"  {i+1}. {tag_info['tag']} (similitud: {tag_info['similarity']:.4f})")
     
-    # Crear tagger
-    tagger = create_tagger(args.tagger_type, args.taxonomy_file, **tagger_params)
+    except Exception as e:
+        if args.json_output:
+            # Si hay un error y se solicitó JSON, devolver un JSON de error
+            error_result = {
+                "error": str(e),
+                "success": False
+            }
+            print(json.dumps(error_result, ensure_ascii=False, indent=2))
+        else:
+            print(f"Error: {str(e)}")
+        
+        # Restaurar stderr si fue redirigido
+        if args.json_output and args.quiet and 'original_stderr' in locals():
+            sys.stderr.close()
+            sys.stderr = original_stderr
+        
+        sys.exit(1)
     
-    # Procesar archivo de audio individual
-    if not os.path.exists(args.audio_file):
-        raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
-                
-    kwargs = {'language': args.language}
-    
-    result = tagger.tag_sample(args.audio_file, **kwargs)
-    
-    # Mostrar resultado en consola
-    if args.json_output:
-        print("\nResultado:")
-        print(json.dumps(result, ensure_ascii=False, indent=2))
-    else:
-        print("\nResultado:")
-        print(f"Archivo: {result['file']}")
-        if 'transcription' in result:
-            print(f"Transcripción: {result['transcription']}")
-        print(f"Método de selección de etiquetas: {args.decision_method}")
-        print("Etiquetas recomendadas:")
-        for i, tag_info in enumerate(result['tags']):
-            print(f"  {i+1}. {tag_info['tag']} (similitud: {tag_info['similarity']:.4f})")
+    # Restaurar stderr si fue redirigido
+    if args.json_output and args.quiet and 'original_stderr' in locals():
+        sys.stderr.close()
+        sys.stderr = original_stderr
 
 if __name__ == "__main__":
     main() 
