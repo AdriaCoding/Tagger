@@ -1,0 +1,14 @@
+# Base dependencies
+numpy
+pandas
+tqdm
+scikit-learn
+hdbscan
+librosa
+
+# PyTorch y relacionados (CPU only)
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.1+cpu
+torchaudio==2.2.1+cpu
+transformers[torch]==4.37.2
+sentence-transformers==2.5.1
