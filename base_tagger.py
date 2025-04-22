@@ -230,8 +230,6 @@ class BaseTagger(ABC):
         
         # Encontrar etiquetas más cercanas
         distances, indices = self.knn.kneighbors(sample_embedding.reshape(1, -1), n_neighbors=k)
-        print(distances)
-        print(indices)
         # Obtener etiquetas y calcular similitudes
         nearest_tags = [self.tags[idx] for idx in indices[0]]
         similarities = [float(1 - distance) for distance in distances[0]]
