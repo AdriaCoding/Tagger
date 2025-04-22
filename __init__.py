@@ -5,7 +5,7 @@ from .base_tagger import (
     DECISION_METHOD_HDBSCAN
 )
 from .text_embedding_tagger import TextEmbeddingTagger
-from .main import create_tagger
+from .factory import create_tagger
 from .S2TT import WhisperS2TT
 
 __all__ = [

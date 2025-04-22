@@ -6,26 +6,9 @@ from .base_tagger import (
     DECISION_METHOD_RADIUS,
     DECISION_METHOD_HDBSCAN
 )
-from .text_embedding_tagger import TextEmbeddingTagger
+from .factory import create_tagger
 
-def create_tagger(tagger_type, taxonomy_file, **kwargs):
-    """
-    Fábrica para crear el tagger adecuado según el tipo especificado.
-    
-    Args:
-        tagger_type (str): Tipo de tagger ('text', 'audio', 'hybrid')
-        taxonomy_file (str): Ruta al archivo de taxonomía
-        **kwargs: Argumentos adicionales específicos para cada tipo de tagger
-        
-    Returns:
-        BaseTagger: Instancia del tagger apropiado
-    """
-    if tagger_type.lower() == 'text':
-        return TextEmbeddingTagger(taxonomy_file, **kwargs)
-    else:
-        raise ValueError(f"Tipo de tagger no reconocido: {tagger_type}. Opciones válidas: 'text'")
-    
-if __name__ == "__main__":
+def main():
     # Configurar argumentos
     parser = argparse.ArgumentParser(description="Etiquetar un archivo de audio con diferentes modelos")
     
@@ -33,7 +16,7 @@ if __name__ == "__main__":
                       help="Ruta al archivo de audio a etiquetar")
     parser.add_argument("--tagger_type", type=str, choices=['text', 'audio', 'hybrid'], default='text',
                       help="Tipo de tagger a utilizar: text (SentenceTransformer), audio (CLAP), hybrid (combinación)")
-    parser.add_argument("--taxonomy_file", type=str, default="taxonomies/16tags.txt",
+    parser.add_argument("--taxonomy_file", type=str, default="16tags.txt",
                       help="Ruta al archivo de taxonomía de etiquetas")
     parser.add_argument("--output_file", type=str, default=None,
                       help="Archivo para guardar resultados (CSV o JSON)")
@@ -66,6 +49,8 @@ if __name__ == "__main__":
                       help="Tamaño mínimo de cluster para HDBSCAN")
     parser.add_argument("--min_samples", type=int, default=None,
                       help="Número mínimo de muestras para HDBSCAN")
+    parser.add_argument("--device", type=str, default="cpu", choices=["cpu", "cuda"],
+                      help="Dispositivo a utilizar para los cálculos (cpu o cuda)")
     
     args = parser.parse_args()
 
@@ -87,13 +72,15 @@ if __name__ == "__main__":
             'model_name': args.text_model,
             'S2TT_model': args.whisper_model,
             'decision_method': args.decision_method,
-            'decision_params': decision_params
+            'decision_params': decision_params,
+            'device': args.device
         }
     elif args.tagger_type == 'audio':
         tagger_params = {
             'model_name': args.clap_model,
             'decision_method': args.decision_method,
-            'decision_params': decision_params
+            'decision_params': decision_params,
+            'device': args.device
         }
     elif args.tagger_type == 'hybrid':
         tagger_params = {
@@ -103,7 +90,8 @@ if __name__ == "__main__":
             'audio_weight': args.audio_weight,
             'text_weight': args.text_weight,
             'decision_method': args.decision_method,
-            'decision_params': decision_params
+            'decision_params': decision_params,
+            'device': args.device
         }
     
     # Crear tagger
@@ -129,4 +117,7 @@ if __name__ == "__main__":
         print(f"Método de selección de etiquetas: {args.decision_method}")
         print("Etiquetas recomendadas:")
         for i, tag_info in enumerate(result['tags']):
-            print(f"  {i+1}. {tag_info['tag']} (similitud: {tag_info['similarity']:.4f})") 
+            print(f"  {i+1}. {tag_info['tag']} (similitud: {tag_info['similarity']:.4f})")
+
+if __name__ == "__main__":
+    main() 

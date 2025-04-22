@@ -30,7 +30,7 @@ class BaseTagger(ABC):
         Inicialización común para todos los etiquetadores
         
         Args:
-            taxonomy_file (str): Ruta al archivo de taxonomía
+            taxonomy_file (str): Nombre del archivo de taxonomía
             device (str): Dispositivo a utilizar (cuda o cpu)
             decision_method (str): Método para seleccionar etiquetas ('knn', 'radius', 'hdbscan')
             decision_params (dict): Parámetros adicionales para el método de selección:
@@ -39,7 +39,7 @@ class BaseTagger(ABC):
                 - Para 'hdbscan': {'min_cluster_size': tamaño mínimo de cluster (default: 5),
                                   'min_samples': muestras mínimas (default: 1)}
         """
-        self.taxonomy_file = taxonomy_file
+        self.taxonomy_file = os.path.join(TAGGER_DIR, 'taxonomies', taxonomy_file)
         self.embeddings_dir = EMBEDDINGS_DIR
         self.decision_method = decision_method
         
@@ -72,7 +72,7 @@ class BaseTagger(ABC):
         os.makedirs(self.embeddings_dir, exist_ok=True)
         
         # Cargar etiquetas
-        self.tags = self.load_tags(taxonomy_file)
+        self.tags = self.load_tags(self.taxonomy_file)
         print(f"Se cargaron {len(self.tags)} etiquetas desde {taxonomy_file}")
         
         # Cargar o calcular embeddings de etiquetas
