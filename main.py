@@ -93,16 +93,6 @@ def main():
     tagger = create_tagger(args.tagger_type, args.taxonomy_file, **tagger_params)
     
     # Procesar archivo de audio individual
-    print(f"Verificando archivo: {args.audio_file}")
-    print(f"El archivo existe: {os.path.exists(args.audio_file)}")
-    print(f"Directorio actual: {os.getcwd()}")
-    print(f"Listado de archivos en uploads:")
-    try:
-        upload_dir = os.path.dirname(args.audio_file)
-        print(f"Contenido de {upload_dir}: {os.listdir(upload_dir)}")
-    except Exception as e:
-        print(f"Error al listar directorio: {e}")
-
     if not os.path.exists(args.audio_file):
         raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
                 
