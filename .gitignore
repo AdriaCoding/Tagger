@@ -2,3 +2,4 @@
 __pycache__
 Tagger/__pycache__
 output/*.json
+cache/*
