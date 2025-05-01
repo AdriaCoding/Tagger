@@ -4,10 +4,6 @@
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgomp.so.1
 export OMP_NUM_THREADS=1
 
-# Configurar directorio de caché de transformers a uno con permisos adecuados
-export TRANSFORMERS_CACHE=/srv/www/blind.wiki/public_html/Tagger/cache
-export HF_HOME=/srv/www/blind.wiki/public_html/Tagger/cache
-
 # activa tu virtualenv
 source /srv/www/blind.wiki/public_html/.venv/bin/activate
 
