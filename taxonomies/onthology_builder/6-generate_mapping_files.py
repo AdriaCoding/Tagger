@@ -61,52 +61,55 @@ def load_reviewed_supertags(excel_path):
     return cluster_to_supertag
 
 
-def apply_mapping_to_tags(tag_data_path, cluster_to_supertag):
-    """Apply the reviewed SuperTag mappings to the tag data"""
-    print(f"Applying mappings to tag data from {tag_data_path}")
+def apply_mapping_directly(df, cluster_to_supertag):
+    """Apply the mapping from the Excel file directly to the dataframe in memory
     
-    # Check if file exists
-    if not os.path.exists(tag_data_path):
-        raise FileNotFoundError(f"Tag data file not found: {tag_data_path}")
+    Args:
+        df: DataFrame containing the tag data with cluster information
+        cluster_to_supertag: Mapping of cluster IDs to SuperTag names
+        
+    Returns:
+        DataFrame with SuperTag information applied
+    """
+    print("Applying reviewed SuperTag mapping directly to dataframe...")
     
-    # Read tag data CSV
-    df = pd.read_csv(tag_data_path)
+    # Create a copy of the dataframe to avoid modifying the original
+    result_df = df.copy()
     
-    # Verify required columns exist
-    required_cols = ['tag', 'count', 'cluster']
-    missing_cols = [col for col in required_cols if col not in df.columns]
-    if missing_cols:
-        raise ValueError(f"Missing required columns in tag data file: {missing_cols}")
+    # Ensure we have a cluster column
+    if 'cluster' not in result_df.columns:
+        raise ValueError("DataFrame must contain a 'cluster' column")
     
-    # Create mapping from tag to SuperTag
-    tag_to_supertag = {}
-    tags_not_mapped = []
+    # Map cluster IDs to SuperTags
+    result_df['supertag'] = result_df['cluster'].map(cluster_to_supertag)
     
-    # Add reviewed supertag column
-    df['supertag_reviewed'] = df['cluster'].map(cluster_to_supertag)
-    
-    # Fill missing values with original supertag
+    # If no mapping was found, keep the original SuperTag if it exists
     if 'supertag' in df.columns:
-        df['supertag_reviewed'] = df['supertag_reviewed'].fillna(df['supertag'])
+        # First save the original supertags
+        result_df['original_supertag'] = df['supertag']
+        # Then fill missing values in the new supertag column
+        result_df['supertag'] = result_df['supertag'].fillna(result_df['original_supertag'])
     
-    # Create tag to SuperTag mapping
-    for _, row in df.iterrows():
-        tag = row['tag']
-        if pd.isna(tag) or not str(tag).strip():
-            continue
-            
-        supertag = row['supertag_reviewed']
-        if pd.isna(supertag) or not str(supertag).strip():
-            tags_not_mapped.append(tag)
-            continue
-            
-        tag_to_supertag[str(tag).strip()] = str(supertag).strip()
+    # For any remaining unmapped clusters, use a default naming scheme
+    unmapped_clusters = result_df['supertag'].isna()
+    if unmapped_clusters.any():
+        unmapped_count = unmapped_clusters.sum()
+        print(f"Warning: {unmapped_count} tags in {len(result_df[unmapped_clusters]['cluster'].unique())} clusters have no SuperTag mapping")
+        
+        # Apply a default naming scheme for unmapped clusters
+        for cluster_id in result_df.loc[unmapped_clusters, 'cluster'].unique():
+            mask = (result_df['cluster'] == cluster_id) & unmapped_clusters
+            result_df.loc[mask, 'supertag'] = f"Cluster_{cluster_id}"
     
-    print(f"Created mapping for {len(tag_to_supertag)} tags")
-    if tags_not_mapped:
-        print(f"Warning: {len(tags_not_mapped)} tags couldn't be mapped")
+    # Create tag to SuperTag mapping for output files
+    tag_to_supertag = {}
+    for _, row in result_df.iterrows():
+        if pd.notna(row['tag']) and pd.notna(row['supertag']):
+            tag_to_supertag[str(row['tag']).strip()] = str(row['supertag']).strip()
     
-    return tag_to_supertag, df
+    print(f"Applied SuperTag mapping to {len(result_df)} tags ({len(tag_to_supertag)} unique tag-SuperTag pairs)")
+    
+    return result_df, tag_to_supertag
 
 
 def generate_output_files(tag_to_supertag, df, output_folder):
@@ -355,10 +358,14 @@ def create_visualizations(df, output_folder, timestamp):
     
     # Add text labels directly on the sampled points
     for idx, row in sample_df.iterrows():
+        # Skip long tag names (exceeding 25 characters)
+        if len(str(row['tag'])) > 25:
+            continue
+        
         plt.text(
             row['x'], row['y'],
             row['tag'],
-            fontsize=10,
+            fontsize=12,
             ha='center',
             va='center',
             alpha=0.9,
@@ -454,11 +461,11 @@ def main():
     
     # Set input and output paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    excel_path = os.path.join(script_dir, "cluster_supertags.xlsx")
-    tag_data_path = os.path.join(script_dir, "supertags_tag_data.csv")
+    excel_path = os.path.join(script_dir, "5-cluster_supertags_review_file.xlsx")
+    tag_data_path = os.path.join(script_dir, "data", "supertags_tag_data.csv")
     output_folder = os.path.join(script_dir, "..", "mappings")
     figures_folder = os.path.join(script_dir, "figures")
-    cluster_data_path = os.path.join(script_dir, "figures_20250511_204225/cluster_data_20250511_204225.csv")
+    cluster_data_path = os.path.join(script_dir, "figures/cluster_data.csv")
     
     # Command line arguments can override default paths
     if len(sys.argv) > 1:
@@ -472,27 +479,45 @@ def main():
     
     try:
         # Load reviewed SuperTag mappings
-        cluster_to_supertag = load_reviewed_suertags(excel_path)
+        cluster_to_supertag = load_reviewed_supertags(excel_path)
         
-        # Apply mappings to tag data
-        tag_to_supertag, df = apply_mapping_to_tags(tag_data_path, cluster_to_supertag)
+        # Load the data
+        print(f"Loading tag data from {tag_data_path}")
+        if not os.path.exists(tag_data_path):
+            # Try to load from cluster data directly if tag data doesn't exist
+            if os.path.exists(cluster_data_path):
+                print(f"Tag data not found, loading from cluster data instead: {cluster_data_path}")
+                df = pd.read_csv(cluster_data_path)
+                if 'text' in df.columns and 'tag' not in df.columns:
+                    df = df.rename(columns={'text': 'tag'})
+            else:
+                raise FileNotFoundError(f"Neither tag data ({tag_data_path}) nor cluster data ({cluster_data_path}) file found")
+        else:
+            df = pd.read_csv(tag_data_path)
+        
+        # Apply mapping directly to dataframe
+        df_mapped, tag_to_supertag = apply_mapping_directly(df, cluster_to_supertag)
         
         # Generate output files
-        json_path, csv_path, enhanced_csv_path = generate_output_files(tag_to_supertag, df, output_folder)
+        json_path, csv_path, enhanced_csv_path = generate_output_files(tag_to_supertag, df_mapped, output_folder)
         
-        # Create figures
-        # First check if we have the necessary data for visualization
-        if 'x' not in df.columns or 'y' not in df.columns:
-            # Try to load the original cluster data which should have coordinates
+        # Create figures - using the mapped dataframe directly
+        if 'x' in df_mapped.columns and 'y' in df_mapped.columns:
+            # We already have coordinates in the dataframe
+            fig_paths = create_visualizations(df_mapped, figures_folder, timestamp)
+            if fig_paths:
+                print(f"Generated {len(fig_paths)} visualization figures")
+        else:
+            # We need to get coordinates from the original cluster data
             orig_df = load_original_cluster_data(cluster_data_path)
             if orig_df is not None and 'x' in orig_df.columns and 'y' in orig_df.columns:
-                # Use original data for coordinates but add SuperTag information
-                vis_df = orig_df.copy()
-                if 'text' in vis_df.columns and 'tag' not in vis_df.columns:
-                    vis_df = vis_df.rename(columns={'text': 'tag'})
+                # Merge the coordinates into our mapped dataframe
+                if 'text' in orig_df.columns and 'tag' not in orig_df.columns:
+                    orig_df = orig_df.rename(columns={'text': 'tag'})
                 
-                # Add supertag column to visualization dataframe
-                vis_df['supertag'] = vis_df['cluster'].map(cluster_to_supertag)
+                # Use the coordinates from orig_df but keep the SuperTag mappings from df_mapped
+                vis_df = orig_df.copy()
+                vis_df['supertag'] = vis_df['cluster'].map({row['cluster']: row['supertag'] for _, row in df_mapped.iterrows()})
                 
                 # Create the visualizations
                 fig_paths = create_visualizations(vis_df, figures_folder, timestamp)
@@ -500,11 +525,6 @@ def main():
                     print(f"Generated {len(fig_paths)} visualization figures")
             else:
                 print("Warning: Could not create visualizations because coordinate data is missing")
-        else:
-            # Use the processed dataframe with SuperTags for visualization
-            fig_paths = create_visualizations(df, figures_folder, timestamp)
-            if fig_paths:
-                print(f"Generated {len(fig_paths)} visualization figures")
         
         print("\nSummary:")
         print(f"- Applied {len(cluster_to_supertag)} reviewed SuperTag mappings")
@@ -517,6 +537,8 @@ def main():
         
     except Exception as e:
         print(f"Error: {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
 
 

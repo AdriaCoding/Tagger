@@ -320,6 +320,7 @@ def main():
     embeddings_path = os.path.join(current_dir, "../../embeddings/all_tags_translated_text_paraphrase-multilingual-mpnet-base-v2_embeddings.npz")
     csv_path = os.path.join(current_dir, "../mappings/all_tags_counts_translated.csv")
     output_dir = os.path.join(current_dir, "figures")
+    data_dir = os.path.join(current_dir, "data")
     
     # Parameters
     min_cluster_size = 10
@@ -339,8 +340,9 @@ def main():
     # Create visualizations
     vis_paths = create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, min_cluster_size)
     
+
     # Save cluster data with tag counts
-    data_paths = save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_count_map, output_dir)
+    data_paths = save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_count_map, data_dir)
     
     # Print summary to console
     print(f"\nClustering completed successfully!")

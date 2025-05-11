@@ -284,12 +284,11 @@ def derive_supertag(cluster_df, model=None, cluster_id=None):
     return supertag
 
 # %% [REGION 4] Generate mapping file
-def generate_mapping(df, output_path):
+def generate_mapping(df, output_dir):
     """Generate a mapping file from each tag to its SuperTag"""
     print("Generating tag mapping...")
     
     # Initialize log file in the same directory as the output path
-    output_dir = os.path.dirname(output_path)
     initialize_log_file(output_dir)
     
     # Initialize sentence transformer model
@@ -341,7 +340,7 @@ def generate_mapping(df, output_path):
     cluster_df = pd.DataFrame(cluster_data)
     
     # Set path for the Excel file in the onthology_builder folder
-    excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cluster_supertags_review_file.xlsx")
+    excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "5-cluster_supertags_review_file.xlsx")
     
     # Check if the file already exists
     if os.path.exists(excel_path):
@@ -384,11 +383,10 @@ def main():
     else:
         # Default path
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        csv_path = os.path.join(current_dir, "figures/cluster_data.csv")
+        csv_path = os.path.join(current_dir, "data", "cluster_data.csv")
     
     # Set output path
-    output_dir = current_dir
-    output_path = os.path.join(output_dir, "supertag_mapping.json")
+    output_dir = os.path.join(current_dir, "data")
     
     # Download NLTK resources
     download_nltk_resources()
@@ -400,7 +398,7 @@ def main():
     df = preprocess_cluster_data(df)
     
     # Generate mapping
-    mapping, cluster_supertags = generate_mapping(df, output_path)
+    mapping, cluster_supertags = generate_mapping(df, output_dir)
     
     # Rename columns and reorganize dataframe
     df = df.rename(columns={'tag_id': 'id', 'text': 'tag'})

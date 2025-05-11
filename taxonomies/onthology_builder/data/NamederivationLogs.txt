@@ -1,0 +1,3301 @@
+
+============================================================
+CLUSTER 0 DERIVATION DETAILS
+============================================================
+Number of tags: 39
+Total tag count: 163
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    boats, maritime villages, boat, Boat, Harbor
+Derived SuperTag:          Boats
+
+TAGS IN CLUSTER 0:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    41 | maritime villages
+  2 |    26 | Large channel
+  3 |    22 | puerto
+  4 |    16 | boats
+  5 |    15 | mare
+  6 |     5 | gondola
+  7 |     4 | Embarks
+  8 |     2 | Beaches
+  9 |     2 | Islands
+ 10 |     1 | Port
+ 11 |     1 | Ferry
+ 12 |     1 | Boat 5
+ 13 |     1 | Cruise
+ 14 |     1 | Boat 4.1
+ 15 |     1 | Marina
+ 16 |     1 | Harbor
+ 17 |     1 | aboard the Albert
+ 18 |     1 | Docks
+ 19 |     1 | Water boats strong noises
+ 20 |     1 | boat
+ 21 |     1 | The ships
+ 22 |     1 | cruise ship
+ 23 |     1 | ferry lines
+ 24 |     1 | Ferry
+ 25 |     1 | pier
+ 26 |     1 | docking
+ 27 |     1 | Boat
+ 28 |     1 | channel
+ 29 |     1 | mooring
+ 30 |     1 | Gondola with roof
+ 31 |     1 | The ships
+ 32 |     1 | Canal port
+ 33 |     1 | gondolas with particular relief
+ 34 |     1 | Cruise ships
+ 35 |     1 | sailboat
+ 36 |     1 | ship
+ 37 |     1 | Gondole and boats construction site
+ 38 |     1 | Islet
+ 39 |     1 | Boat 51
+----------------------------------------
+
+============================================================
+CLUSTER 1 DERIVATION DETAILS
+============================================================
+Number of tags: 30
+Total tag count: 245
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Water, water, water, water fountain, drinking water
+Derived SuperTag:          Water
+
+TAGS IN CLUSTER 1:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |   141 | water
+  2 |    32 | drinking fountain
+  3 |    22 | water fountain
+  4 |     9 | Pool
+  5 |     5 | Water danger
+  6 |     3 | Pont
+  7 |     3 | laguna
+  8 |     2 | Water pump
+  9 |     2 | Rynek fountain
+ 10 |     2 | pool
+ 11 |     2 | Pond
+ 12 |     2 | Water
+ 13 |     2 | Water tower
+ 14 |     2 | drinking water
+ 15 |     1 | rivers
+ 16 |     1 | no drinking water
+ 17 |     1 | Malcanton river
+ 18 |     1 | ferwharf
+ 19 |     1 | water
+ 20 |     1 | Pool pool physola
+ 21 |     1 | fountain
+ 22 |     1 | Drain
+ 23 |     1 | riverbed
+ 24 |     1 | Public Baths
+ 25 |     1 | Waterford Ireland River
+ 26 |     1 | Fountain
+ 27 |     1 | Sound River
+ 28 |     1 | Water danger 10 meters
+ 29 |     1 | Puddles are because the water fits
+ 30 |     1 | Castle Pond
+----------------------------------------
+
+============================================================
+CLUSTER 2 DERIVATION DETAILS
+============================================================
+Number of tags: 22
+Total tag count: 68
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Tranquillity, Calm, quiet, quiet, calm
+Derived SuperTag:          Tranquillity
+
+TAGS IN CLUSTER 2:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    15 | Relax
+  2 |    11 | silence
+  3 |     6 | calm
+  4 |     6 | pace
+  5 |     5 | silence
+  6 |     5 | calm
+  7 |     2 | Tranquillity
+  8 |     2 | silence
+  9 |     2 | Rest
+ 10 |     2 | rest
+ 11 |     1 | sit
+ 12 |     1 | Calm
+ 13 |     1 | relax
+ 14 |     1 | leisure
+ 15 |     1 | quiet
+ 16 |     1 | quiet
+ 17 |     1 | sleeping
+ 18 |     1 | relaxing atmosphere
+ 19 |     1 | leisure
+ 20 |     1 | whispers
+ 21 |     1 | Quiet
+ 22 |     1 | silence
+----------------------------------------
+
+============================================================
+CLUSTER 3 DERIVATION DETAILS
+============================================================
+Number of tags: 26
+Total tag count: 173
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    test, test, test, testing, testing
+Derived SuperTag:          Test
+
+TAGS IN CLUSTER 3:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    47 | testing
+  2 |    34 | trial
+  3 |    29 | test
+  4 |    19 | apiTest
+  5 |     9 | Testing
+  6 |     8 | test
+  7 |     6 | Testingr
+  8 |     2 | testing
+  9 |     2 | Test tube
+ 10 |     1 | Registration test
+ 11 |     1 | Testing2
+ 12 |     1 | testing3
+ 13 |     1 | Test 1
+ 14 |     1 | Testing
+ 15 |     1 | tester
+ 16 |     1 | Try
+ 17 |     1 | prova2
+ 18 |     1 | Hello here is Helmut. I do my first test
+ 19 |     1 | Test01
+ 20 |     1 | This is a test Günny you are with us
+ 21 |     1 | Since I can't do much with this app, I just try it out. Here is my test.
+Helmut
+ 22 |     1 | test
+ 23 |     1 | Test nee version
+ 24 |     1 | measure
+ 25 |     1 | Tests
+ 26 |     1 | Prova abdroid
+----------------------------------------
+
+============================================================
+CLUSTER 4 DERIVATION DETAILS
+============================================================
+Number of tags: 34
+Total tag count: 580
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Ambient noise, noise, noise, noise, Noise
+Derived SuperTag:          Ambient
+
+TAGS IN CLUSTER 4:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |   481 | Ambient noise
+  2 |    37 | bells
+  3 |    14 | sounds
+  4 |    10 | Noise
+  5 |     4 | Sound landscape
+  6 |     3 | sonora
+  7 |     2 | sound landscape
+  8 |     2 | Sounds environments
+  9 |     2 | noise
+ 10 |     1 | headset
+ 11 |     1 | whistle
+ 12 |     1 | Sounds
+ 13 |     1 | Noise
+ 14 |     1 | Whistling
+ 15 |     1 | audio description
+ 16 |     1 | Sound plants
+ 17 |     1 | bell sound
+ 18 |     1 | Sound mason demolish
+ 19 |     1 | noise
+ 20 |     1 | audio guides
+ 21 |     1 | noise
+ 22 |     1 | Wide street 
+Noise 
+Wind
+ 23 |     1 | campana
+ 24 |     1 | amplitude
+ 25 |     1 | Sound lock
+ 26 |     1 | Noise
+ 27 |     1 | Ambient sounds
+ 28 |     1 | reverberation
+ 29 |     1 | sound
+ 30 |     1 | Sound ambient
+ 31 |     1 | Noise
+ 32 |     1 | acoustic signal
+ 33 |     1 | sound
+ 34 |     1 | tapey
+----------------------------------------
+
+============================================================
+CLUSTER 5 DERIVATION DETAILS
+============================================================
+Number of tags: 53
+Total tag count: 164
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Music, musicians, musicians, MIDI, Songs
+Derived SuperTag:          Music
+
+TAGS IN CLUSTER 5:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    64 | Music
+  2 |    18 | Theater
+  3 |    14 | bas -reliefs
+  4 |     6 | Voices
+  5 |     4 | concert
+  6 |     3 | Performance
+  7 |     2 | Piano
+  8 |     2 | singing and enchanting
+  9 |     2 | Drum
+ 10 |     2 | street music
+ 11 |     2 | violin
+ 12 |     2 | Guitar
+ 13 |     2 | microphone
+ 14 |     2 | voice
+ 15 |     1 | Singer
+ 16 |     1 | Opera
+ 17 |     1 | Saxophone
+ 18 |     1 | reggae
+ 19 |     1 | street musician
+ 20 |     1 | Michael Jackson
+ 21 |     1 | MIDI
+ 22 |     1 | National Forum of Music
+ 23 |     1 | performances
+ 24 |     1 | Harmonica
+ 25 |     1 | Pianoforte
+ 26 |     1 | conservatory
+ 27 |     1 | song
+ 28 |     1 | karaoke
+ 29 |     1 | concert of the middle schools of Urbino
+ 30 |     1 | tambourine
+ 31 |     1 | Songs
+ 32 |     1 | Concerto
+ 33 |     1 | Rock in roll
+ 34 |     1 | Musicanapaulista country
+ 35 |     1 | musical instruments
+ 36 |     1 | with Cello
+ 37 |     1 | banda
+ 38 |     1 | orchestra
+ 39 |     1 | accordion
+ 40 |     1 | Sing
+ 41 |     1 | Songs Avpaulista Somdapaulist
+ 42 |     1 | voices
+ 43 |     1 | musicians
+ 44 |     1 | Musical Paths
+ 45 |     1 | concerts
+ 46 |     1 | Auditorium
+ 47 |     1 | musicians
+ 48 |     1 | Ibirapuera singer
+ 49 |     1 | DJ at Paulista
+ 50 |     1 | Black Music
+ 51 |     1 | Singer
+ 52 |     1 | Auditorium
+ 53 |     1 | Store music
+----------------------------------------
+
+============================================================
+CLUSTER 6 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 64
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    tree, Tree, trees, forest, Earth and a tree
+Derived SuperTag:          Tree
+
+TAGS IN CLUSTER 6:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    41 | tree
+  2 |     5 | wood
+  3 |     4 | palm trees
+  4 |     2 | trees
+  5 |     2 | Rosewood
+  6 |     2 | forest
+  7 |     1 | Tree
+  8 |     1 | Oak
+  9 |     1 | Earth and a tree
+ 10 |     1 | Ancient palm
+ 11 |     1 | leaves
+ 12 |     1 | branch
+ 13 |     1 | Atlantic Forest
+ 14 |     1 | monumental trees
+----------------------------------------
+
+============================================================
+CLUSTER 7 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 75
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    bar, bars, Witek bar, Foundry bar, Tavern
+Derived SuperTag:          Bar
+
+TAGS IN CLUSTER 7:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    57 | bar
+  2 |     3 | Foundry bar
+  3 |     2 | Galway
+  4 |     2 | Oven
+  5 |     2 | Bier
+  6 |     1 | Beer
+  7 |     1 | bar kitchen
+  8 |     1 | wines
+  9 |     1 | Irish pub
+ 10 |     1 | wine bars
+ 11 |     1 | bars
+ 12 |     1 | vino
+ 13 |     1 | Tavern
+ 14 |     1 | Witek bar
+----------------------------------------
+
+============================================================
+CLUSTER 8 DERIVATION DETAILS
+============================================================
+Number of tags: 86
+Total tag count: 287
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Restaurant food, ristorante, restaurant, Aperitif, Cafeteria
+Derived SuperTag:          Restaurant
+
+TAGS IN CLUSTER 8:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    66 | ristorante
+  2 |    51 | cafeteria
+  3 |    27 | food
+  4 |    14 | Coffee table
+  5 |    11 | good cafe
+  6 |     6 | Traditional pastry
+  7 |     6 | pizza
+  8 |     4 | Appetizing
+  9 |     4 | Gastronomy
+ 10 |     4 | pastel
+ 11 |     3 | pastry shop
+ 12 |     3 | Ice-cream
+ 13 |     3 | Ice-cream
+ 14 |     2 | Pies
+ 15 |     2 | Cheese bread
+ 16 |     2 | bakery
+ 17 |     2 | pizzeria
+ 18 |     2 | flavors
+ 19 |     2 | platches
+ 20 |     2 | Toast
+ 21 |     2 | tables
+ 22 |     2 | #Precalecion #terraza #Bar #Cafeteria
+ 23 |     2 | Food area
+ 24 |     2 | Taste festival
+ 25 |     2 | plates
+ 26 |     1 | lunch
+ 27 |     1 | fried
+ 28 |     1 | ice cream shop
+ 29 |     1 | bakery
+ 30 |     1 | Pizza; Bosko; delights; Typical; Italian
+ 31 |     1 | Italian restaurant
+ 32 |     1 | table
+ 33 |     1 | Read them into croissant no shit I can hours if you
+ 34 |     1 | good coffee
+ 35 |     1 | Garapa and Snacks
+ 36 |     1 | Arab food
+ 37 |     1 | Coffee breakfast bar
+ 38 |     1 | Refreshment
+ 39 |     1 | cook
+ 40 |     1 | External tables
+ 41 |     1 | fried smell
+ 42 |     1 | Currywurst
+ 43 |     1 | Candy
+ 44 |     1 | Indian restaurant
+ 45 |     1 | fast food
+ 46 |     1 | Cafeteria
+ 47 |     1 | Bakery
+ 48 |     1 | aperitifs
+ 49 |     1 | cheese
+ 50 |     1 | Organic foods
+ 51 |     1 | Spicy
+ 52 |     1 | Restaurant food
+ 53 |     1 | fried seafood
+ 54 |     1 | Aperitif
+ 55 |     1 | Fries
+ 56 |     1 | poultry watrobka
+ 57 |     1 | fantastic pub food
+ 58 |     1 | pastry shops
+ 59 |     1 | cups
+ 60 |     1 | candies
+ 61 |     1 | Brazil Restaurant
+ 62 |     1 | feast
+ 63 |     1 | Relax sin coffee
+ 64 |     1 | chocolate
+ 65 |     1 | to have lunch
+ 66 |     1 | mesas
+ 67 |     1 | ice cream parlor
+ 68 |     1 | sweets
+ 69 |     1 | lunch
+ 70 |     1 | restaurant
+ 71 |     1 | picnic
+ 72 |     1 | Iracema bakery
+ 73 |     1 | Grill
+ 74 |     1 | Churros with dulce de leche
+ 75 |     1 | mcdonalds
+ 76 |     1 | Ice cream
+ 77 |     1 | two columns restaurant
+ 78 |     1 | Menu poster
+ 79 |     1 | Room room room eggs has delayed time oh no
+ 80 |     1 | liver
+ 81 |     1 | chicken
+ 82 |     1 | wood bread
+ 83 |     1 | food
+ 84 |     1 | Delicers lying
+ 85 |     1 | Indian Pakistani restaurant
+ 86 |     1 | Bakery on Bema
+----------------------------------------
+
+============================================================
+CLUSTER 9 DERIVATION DETAILS
+============================================================
+Number of tags: 17
+Total tag count: 33
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    fruits, citrus, fruiting them, strawberry, Kerns juices
+Derived SuperTag:          Fruits
+
+TAGS IN CLUSTER 9:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | Kerns juices
+  2 |     4 | sugarcane
+  3 |     3 | strawberry
+  4 |     3 | Berry
+  5 |     3 | fruiting them
+  6 |     2 | vegetables
+  7 |     2 | Coca
+  8 |     2 | Fruit boxes
+  9 |     1 | Coco natural
+ 10 |     1 | banana
+ 11 |     1 | citrus
+ 12 |     1 | fruits
+ 13 |     1 | Banana split
+ 14 |     1 | guarulhos
+ 15 |     1 | Orange
+ 16 |     1 | Fiori
+ 17 |     1 | Cucumber
+----------------------------------------
+
+============================================================
+CLUSTER 10 DERIVATION DETAILS
+============================================================
+Number of tags: 29
+Total tag count: 87
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    garden, Garden, horta, Botanical garden, xardins
+Derived SuperTag:          Garden
+
+TAGS IN CLUSTER 10:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    47 | garden
+  2 |     6 | plant
+  3 |     4 | sensorygarden
+  4 |     3 | Botanical garden
+  5 |     2 | Plant
+  6 |     2 | grass
+  7 |     1 | Japanese garden
+  8 |     1 | Flowerbed
+  9 |     1 | pollen
+ 10 |     1 | Message Meadows of Lluçanès
+ 11 |     1 | horta
+ 12 |     1 | ivy
+ 13 |     1 | Giardini Viale Benchine
+ 14 |     1 | Botanical first part
+ 15 |     1 | Garden
+ 16 |     1 | Garden Botáncio
+ 17 |     1 | lawn
+ 18 |     1 | garden_botanicap
+ 19 |     1 | Botanical
+ 20 |     1 | flora
+ 21 |     1 | plants
+ 22 |     1 | In the garden Mounting it is
+ 23 |     1 | Garden pub
+ 24 |     1 | Botanical Garden Third Part
+ 25 |     1 | tall grass
+ 26 |     1 | xardins
+ 27 |     1 | cut grass
+ 28 |     1 | hedges
+ 29 |     1 | Grown
+----------------------------------------
+
+============================================================
+CLUSTER 11 DERIVATION DETAILS
+============================================================
+Number of tags: 24
+Total tag count: 61
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    birds, Birds, Birds, seagull, parrot
+Derived SuperTag:          Birds
+
+TAGS IN CLUSTER 11:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    26 | Birds
+  2 |     6 | seagull
+  3 |     4 | worm
+  4 |     2 | Doves
+  5 |     2 | animals
+  6 |     2 | Ladybird
+  7 |     2 | duck
+  8 |     1 | Birds
+  9 |     1 | corner of the birds
+ 10 |     1 | Parks
+Bird
+Wildlife
+ 11 |     1 | gatti
+ 12 |     1 | corner with cats and nature
+ 13 |     1 | cat
+ 14 |     1 | parrot
+ 15 |     1 | Sheep
+ 16 |     1 | birds
+ 17 |     1 | leone
+ 18 |     1 | moths
+ 19 |     1 | Zoo
+ 20 |     1 | Song of the birds
+ 21 |     1 | Owl
+ 22 |     1 | fauna
+ 23 |     1 | Huge cat
+ 24 |     1 | Bird 
+Sound landscape
+Parks
+----------------------------------------
+
+============================================================
+CLUSTER 12 DERIVATION DETAILS
+============================================================
+Number of tags: 11
+Total tag count: 18
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    pesce, fish, fish, fish, fish market
+Derived SuperTag:          Pesce
+
+TAGS IN CLUSTER 12:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | Fish market
+  2 |     3 | osteria
+  3 |     2 | pesce
+  4 |     1 | fish
+  5 |     1 | Sea turtles
+  6 |     1 | fish market
+  7 |     1 | fish
+  8 |     1 | fish
+  9 |     1 | Fishmonger
+ 10 |     1 | turtles
+ 11 |     1 | whale
+----------------------------------------
+
+============================================================
+CLUSTER 13 DERIVATION DETAILS
+============================================================
+Number of tags: 18
+Total tag count: 43
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Rain, rain, Pluja; Tempesta; Pati Interior;, Downpour, weather
+Derived SuperTag:          Rain
+
+TAGS IN CLUSTER 13:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    10 | vento
+  2 |    10 | rain
+  3 |     5 | Summer
+  4 |     3 | primavera
+  5 |     2 | Rain
+  6 |     1 | Pluja; Tempesta; Pati Interior;
+  7 |     1 | spring evening
+  8 |     1 | sky
+  9 |     1 | umbrellas
+ 10 |     1 | umbrella
+ 11 |     1 | Piove 
+Rain 
+Humidity
+ 12 |     1 | clouds
+ 13 |     1 | Downpour
+ 14 |     1 | Winds association
+ 15 |     1 | cloud
+ 16 |     1 | summer storm
+ 17 |     1 | weather
+ 18 |     1 | Storm; interior pati
+----------------------------------------
+
+============================================================
+CLUSTER 14 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 21
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    night, nit, Night environments, nightinvenice, moonlight
+Derived SuperTag:          Night
+
+TAGS IN CLUSTER 14:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     6 | night
+  2 |     3 | sombra
+  3 |     2 | dark
+  4 |     2 | nightinvenice
+  5 |     1 | Night environments
+  6 |     1 | moonlight
+  7 |     1 | shadow
+  8 |     1 | Blue moon
+  9 |     1 | nit
+ 10 |     1 | Night animals
+ 11 |     1 | penumbra
+ 12 |     1 | nightlife
+----------------------------------------
+
+============================================================
+CLUSTER 15 DERIVATION DETAILS
+============================================================
+Number of tags: 33
+Total tag count: 61
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Vision, blind.wiki, Blindwiki, Blind.wiki project, blind
+Derived SuperTag:          Vision
+
+TAGS IN CLUSTER 15:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    13 | Vision Australia
+  2 |     8 | Blindwiki
+  3 |     4 | view
+  4 |     3 | blindwikibr
+  5 |     2 | Polish Association of the Blind
+  6 |     2 | Vision
+  7 |     2 | earrings
+  8 |     2 | Rota Blindwiw
+  9 |     1 | blind
+ 10 |     1 | Kill blind
+ 11 |     1 | visually impaired
+ 12 |     1 | Blindwiki Project History
+ 13 |     1 | blind assistance
+ 14 |     1 | ophthalmological
+ 15 |     1 | Blind.wiki project
+ 16 |     1 | blind.wiki
+ 17 |     1 | glasses
+ 18 |     1 | blindwiky
+ 19 |     1 | visual impairment
+ 20 |     1 | low vision
+ 21 |     1 | Blind cameraman
+ 22 |     1 | people with visual impairment
+ 23 |     1 | Views
+ 24 |     1 | blind guided tour
+ 25 |     1 | Blind Wiki Documentary
+ 26 |     1 | glass
+ 27 |     1 | dentist
+ 28 |     1 | dizziness
+ 29 |     1 | ophthalmologist
+ 30 |     1 | Visually impaired
+ 31 |     1 | What is not visible
+ 32 |     1 | Blindness with chemical
+ 33 |     1 | Production Blindwiki Brazil
+----------------------------------------
+
+============================================================
+CLUSTER 16 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 25
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    exhibition, exhibition, Exhibition, Exhibitions, showcases
+Derived SuperTag:          Exhibition
+
+TAGS IN CLUSTER 16:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     6 | Demonstration
+  2 |     5 | Exhibitions
+  3 |     3 | exhibition
+  4 |     2 | show
+  5 |     2 | Exhibition
+  6 |     1 | Exhibition!
+  7 |     1 | Shows
+  8 |     1 | space for shows
+  9 |     1 | Mobile exhibitors
+ 10 |     1 | Presentation
+ 11 |     1 | exhibition
+ 12 |     1 | showcases
+----------------------------------------
+
+============================================================
+CLUSTER 17 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 173
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    culture, Sertanejo Som Cultura, culturainglesa, cultural production, cultura accessible
+Derived SuperTag:          Culture
+
+TAGS IN CLUSTER 17:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |   143 | culture
+  2 |    16 | SP Cultural Center
+  3 |     2 | culturainglesa
+  4 |     2 | Cultural center
+  5 |     1 | cultural centers
+  6 |     1 | Access Centro Cultural Metrô
+  7 |     1 | Sertanejo Som Cultura
+  8 |     1 | Accessible culture
+  9 |     1 | Itaú Cultural
+ 10 |     1 | Itaú Cultural Center
+ 11 |     1 | cultural production
+ 12 |     1 | Cultural route
+ 13 |     1 | cultura accessible
+ 14 |     1 | VERGUEIRO CULTURAL CENTER
+----------------------------------------
+
+============================================================
+CLUSTER 18 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 41
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Steps, Steps, steps, steps, steps
+Derived SuperTag:          Steps
+
+TAGS IN CLUSTER 18:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    22 | Steps
+  2 |     5 | Steps
+  3 |     2 | steps
+  4 |     2 | Attention steps
+  5 |     1 | steps
+  6 |     1 | Staircase
+  7 |     1 | No stairs
+  8 |     1 | hidden stairs
+  9 |     1 | steps
+ 10 |     1 | elevator
+ 11 |     1 | steps
+ 12 |     1 | Stairs to Nikad
+ 13 |     1 | step
+ 14 |     1 | access to the upper floor
+----------------------------------------
+
+============================================================
+CLUSTER 19 DERIVATION DETAILS
+============================================================
+Number of tags: 20
+Total tag count: 75
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    MUSEUM, Museum, Museum, Museum, Museos
+Derived SuperTag:          Museum
+
+TAGS IN CLUSTER 19:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    16 | Monument
+  2 |    11 | Museos
+  3 |    11 | Memorial
+  4 |     7 | Memorial da América
+  5 |     7 | Museum of Tomorrow
+  6 |     4 | Museum island
+  7 |     3 | Folklore Museum
+  8 |     3 | Museum
+  9 |     2 | Guggenheim
+ 10 |     1 | Rice Museum
+ 11 |     1 | Music Museum
+ 12 |     1 | Museum
+ 13 |     1 | MASP Museum
+ 14 |     1 | MUSEUM
+ 15 |     1 | Immigration Museum
+ 16 |     1 | Inclusion Museum
+ 17 |     1 | Museum dome
+ 18 |     1 | Museum
+ 19 |     1 | Museo Muving
+ 20 |     1 | Sacred Art Museum
+----------------------------------------
+
+============================================================
+CLUSTER 20 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 18
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    dance, to dance, exercise, Dancer, exercisey
+Derived SuperTag:          Dance
+
+TAGS IN CLUSTER 20:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | dance
+  2 |     2 | jump
+  3 |     2 | practice
+  4 |     1 | to dance
+  5 |     1 | Street dancing
+  6 |     1 | Skate
+  7 |     1 | exercise
+  8 |     1 | Fitness
+  9 |     1 | skating
+ 10 |     1 | Physical education
+ 11 |     1 | exercisey
+ 12 |     1 | Dancer
+----------------------------------------
+
+============================================================
+CLUSTER 21 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 40
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Bike lane, Bike, Bicycle, Cross with bike lane, pedal route
+Derived SuperTag:          Bike
+
+TAGS IN CLUSTER 21:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    19 | Bike lane
+  2 |     8 | Bicycle
+  3 |     3 | ride
+  4 |     2 | rides
+  5 |     1 | Motorcycles waiting
+  6 |     1 | Cross with bike lane
+  7 |     1 | bickcletes
+  8 |     1 | Yes, there's a bicycle
+  9 |     1 | pedal route
+ 10 |     1 | BIKE TOUR SP
+ 11 |     1 | Motorcycles rise
+ 12 |     1 | Bike
+----------------------------------------
+
+============================================================
+CLUSTER 22 DERIVATION DETAILS
+============================================================
+Number of tags: 39
+Total tag count: 133
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    railway stations, train station, Railroad station, railway, tram
+Derived SuperTag:          Railway
+
+TAGS IN CLUSTER 22:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    34 | railway stations
+  2 |    24 | tram
+  3 |    15 | S-Bahn
+  4 |     8 | u-Bahn
+  5 |     5 | Station # Yokoham #
+  6 |     4 | North Station
+  7 |     4 | Bus stop
+  8 |     3 | Bus stop
+  9 |     3 | bus
+ 10 |     2 | railway
+ 11 |     2 | Main station
+ 12 |     2 | Taxi stop
+ 13 |     1 | Zug
+ 14 |     1 | airport
+ 15 |     1 | rail complex
+ 16 |     1 | train station
+ 17 |     1 | Metro departure
+ 18 |     1 | Bus stops
+ 19 |     1 | Carlos # bus
+ 20 |     1 | Tower Gateway DLR Station
+ 21 |     1 | Metro Red Line
+ 22 |     1 | Means of transportation
+ 23 |     1 | subway
+ 24 |     1 | RATB station 104
+ 25 |     1 | PKP Main Station
+ 26 |     1 | Ticket office
+ 27 |     1 | station full people but all the directions in order
+ 28 |     1 | Monument underground station
+ 29 |     1 | Marshal Metro route
+ 30 |     1 | Multiple bus stop accessibility 10 buses stop here
+ 31 |     1 | trolley
+ 32 |     1 | autobuses
+ 33 |     1 | North Station
+ 34 |     1 | Belém Station
+ 35 |     1 | Railroad station
+ 36 |     1 | bus stop.
+ 37 |     1 | Sumaré subway
+ 38 |     1 | Liverpool Street Station
+ 39 |     1 | Complex Collective Transport Saccoman
+----------------------------------------
+
+============================================================
+CLUSTER 23 DERIVATION DETAILS
+============================================================
+Number of tags: 32
+Total tag count: 53
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    game, Game, playing fields, games, games
+Derived SuperTag:          Game
+
+TAGS IN CLUSTER 23:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | Football
+  2 |     4 | playing fields
+  3 |     4 | games
+  4 |     4 | scoring
+  5 |     2 | games
+  6 |     2 | tennis court
+  7 |     2 | Arsenal
+  8 |     2 | court
+  9 |     2 | arena
+ 10 |     2 | Casino
+ 11 |     2 | Field
+ 12 |     2 | Ping-pong
+ 13 |     1 | Athletics clues
+ 14 |     1 | game
+ 15 |     1 | Game
+ 16 |     1 | sports courts
+ 17 |     1 | basketball court
+ 18 |     1 | Stadio
+ 19 |     1 | Game zone
+ 20 |     1 | Spill
+ 21 |     1 | Les Arenas
+ 22 |     1 | Archers
+ 23 |     1 | swing
+ 24 |     1 | stadium
+ 25 |     1 | Bola
+ 26 |     1 | Pitcher
+ 27 |     1 | play ground
+ 28 |     1 | Playing on the grass
+ 29 |     1 | Soccer field
+ 30 |     1 | Football camp
+ 31 |     1 | play
+ 32 |     1 | arcades
+----------------------------------------
+
+============================================================
+CLUSTER 24 DERIVATION DETAILS
+============================================================
+Number of tags: 18
+Total tag count: 76
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Loges route, Paths, Path, Path, path
+Derived SuperTag:          Loges
+
+TAGS IN CLUSTER 24:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    51 | Loges route
+  2 |     4 | hiking
+  3 |     3 | Camino
+  4 |     2 | Path
+  5 |     2 | Route of the waterfalls
+  6 |     2 | trail
+  7 |     1 | Upper floor 2
+  8 |     1 | Expedition
+  9 |     1 | path
+ 10 |     1 | Path
+ 11 |     1 | Route Start
+ 12 |     1 | Directions
+ 13 |     1 | ruta
+ 14 |     1 | podotactic paths
+ 15 |     1 | Paths
+ 16 |     1 | Mile
+ 17 |     1 | get lost
+ 18 |     1 | path
+----------------------------------------
+
+============================================================
+CLUSTER 25 DERIVATION DETAILS
+============================================================
+Number of tags: 20
+Total tag count: 34
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    traveling, Travel, tourists, trips, trips
+Derived SuperTag:          Traveling
+
+TAGS IN CLUSTER 25:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     7 | tourists
+  2 |     6 | Travel
+  3 |     3 | People Mover
+  4 |     2 | Center of the travelers
+  5 |     1 | Pedestrian step not indicated
+  6 |     1 | Sightseeing
+  7 |     1 | promenade
+  8 |     1 | trips
+  9 |     1 | I am interested in volunteering on the ride at MAM
+ 10 |     1 | traveling
+ 11 |     1 | Walk
+ 12 |     1 | I would like to participate as a volunteer on the Man tour.
+ 13 |     1 | Recommended to visit
+ 14 |     1 | Walkers
+ 15 |     1 | 4 legs around the world
+ 16 |     1 | Tourism
+ 17 |     1 | guided tour
+ 18 |     1 | trips
+ 19 |     1 | Tour Points Tips
+ 20 |     1 | attractions
+----------------------------------------
+
+============================================================
+CLUSTER 26 DERIVATION DETAILS
+============================================================
+Number of tags: 17
+Total tag count: 92
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    park, Park, Parque, Park Provision, playground
+Derived SuperTag:          Park
+
+TAGS IN CLUSTER 26:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    30 | park
+  2 |    21 | Benches
+  3 |    14 | playground
+  4 |     9 | Parque
+  5 |     3 | Fortuny
+  6 |     3 | Playground
+  7 |     2 | Swallow Park
+  8 |     1 | A playground is nearby
+The sun is shining
+In the end is a tunnel
+  9 |     1 | City park
+ 10 |     1 | Park Provision
+ 11 |     1 | Ibirapuera Park
+ 12 |     1 | Trianon Park
+ 13 |     1 | bench
+ 14 |     1 | Parc ibfantil
+ 15 |     1 | Ribalta Park
+ 16 |     1 | Park
+ 17 |     1 | Citadella Park
+----------------------------------------
+
+============================================================
+CLUSTER 27 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 41
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    carnevale, Fairs, Fairs, fair, Fun
+Derived SuperTag:          Carnevale
+
+TAGS IN CLUSTER 27:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    19 | carnevale
+  2 |     4 | free fair
+  3 |     3 | fun
+  4 |     3 | pavilion
+  5 |     3 | Fairs
+  6 |     1 | Pavilioncentral
+  7 |     1 | funlife
+  8 |     1 | Autumn festival
+  9 |     1 | Fairs
+ 10 |     1 | Fun learning
+ 11 |     1 | Hashtag Vila Clementino Hashtag Cheap Fair
+ 12 |     1 | Creativity Pavilion
+ 13 |     1 | Fun
+ 14 |     1 | fair
+----------------------------------------
+
+============================================================
+CLUSTER 28 DERIVATION DETAILS
+============================================================
+Number of tags: 32
+Total tag count: 50
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Berlin, Brandenburgertor, What Berlin, Berlinische Galerie, german
+Derived SuperTag:          Berlin
+
+TAGS IN CLUSTER 28:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     4 | Berlinische Galerie
+  2 |     4 | Oranienburgerstrasse
+  3 |     4 | What Berlin
+  4 |     3 | Anhangabau Valley
+  5 |     3 | Bank PKOBP Rynek
+  6 |     3 | Stelenfeld
+  7 |     2 | Nordic countries
+  8 |     2 | Brandenburg Gate
+  9 |     2 | mountain
+ 10 |     1 | Berlin Wall
+ 11 |     1 | Dornbusch
+ 12 |     1 | Brandenburgertor
+ 13 |     1 | Hello Tadeusz
+ 14 |     1 | Deutsch
+ 15 |     1 | Iza Dawidowicz lives
+ 16 |     1 | St. Wojciech
+ 17 |     1 | Hohenschönhausen
+ 18 |     1 | Pongeż Rynek Wrocław
+ 19 |     1 | You berlin
+ 20 |     1 | Zakład Wodociągów Nowa-Ruda
+ 21 |     1 | Poland
+ 22 |     1 | Erfurt
+ 23 |     1 | Leipzig
+ 24 |     1 | Langer
+ 25 |     1 | german
+ 26 |     1 | Xawery Dunikowski
+ 27 |     1 | Shopping in Berlin
+ 28 |     1 | Reichstag
+ 29 |     1 | Berlin
+ 30 |     1 | Wassenberg
+ 31 |     1 | Wziegorie Poland
+ 32 |     1 | Oławska Gate
+----------------------------------------
+
+============================================================
+CLUSTER 29 DERIVATION DETAILS
+============================================================
+Number of tags: 15
+Total tag count: 21
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Crossings, crossing, Crossing, pedestrian crossings, Crossroads
+Derived SuperTag:          Crossings
+
+TAGS IN CLUSTER 29:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     4 | Crossroads
+  2 |     3 | Crossing
+  3 |     2 | signs
+  4 |     1 | trans
+  5 |     1 | Crossing cars bikes pedestrians traffic lights
+  6 |     1 | pedestrian crossings
+  7 |     1 | crossing
+  8 |     1 | blue line
+  9 |     1 | Junction
+ 10 |     1 | Crossings
+ 11 |     1 | Sign
+ 12 |     1 | Pedestrian crossing
+ 13 |     1 | Red Line SP
+ 14 |     1 | Cross
+ 15 |     1 | False pedestrian
+----------------------------------------
+
+============================================================
+CLUSTER 30 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 49
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    open space, nature, Green space, Ecological, Environmental description
+Derived SuperTag:          Open
+
+TAGS IN CLUSTER 30:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    20 | open space
+  2 |    14 | nature
+  3 |     4 | Eco
+  4 |     2 | Natural
+  5 |     2 | Environmental description
+  6 |     1 | Planet
+  7 |     1 | Green clearing
+  8 |     1 | Green zone
+  9 |     1 | Green space
+ 10 |     1 | verde
+ 11 |     1 | Terra
+ 12 |     1 | Ecological
+----------------------------------------
+
+============================================================
+CLUSTER 31 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 14
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    roads, Roads, road, new road, and cars lanes
+Derived SuperTag:          Roads
+
+TAGS IN CLUSTER 31:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     3 | avenue
+  2 |     1 | danger of the road
+  3 |     1 | highway
+  4 |     1 | Petticoat lane
+  5 |     1 | new road
+  6 |     1 | Roads
+  7 |     1 | The road conditions are not good
+  8 |     1 | roads
+  9 |     1 | Road conditions improve
+ 10 |     1 | and cars lanes
+ 11 |     1 | roundabout
+ 12 |     1 | road
+----------------------------------------
+
+============================================================
+CLUSTER 32 DERIVATION DETAILS
+============================================================
+Number of tags: 24
+Total tag count: 99
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    sidewalks, sidewalk, sidewalk, streets, Sidewalk
+Derived SuperTag:          Sidewalks
+
+TAGS IN CLUSTER 32:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    31 | sidewalk
+  2 |    16 | streets for everyone
+  3 |    13 | street
+  4 |    13 | streets
+  5 |     2 | Catwalk
+  6 |     2 | Sidewalk
+  7 |     2 | CAMARAGIBE STREET
+  8 |     2 | Narrow street
+  9 |     2 | Passage through the streets
+ 10 |     2 | Pedestrian street
+ 11 |     1 | above the sidewalk
+ 12 |     1 | curbs
+ 13 |     1 | streets for everyone
+ 14 |     1 | Narrow pavement
+ 15 |     1 | sidewalks
+ 16 |     1 | Random catwalks
+ 17 |     1 | Side street
+ 18 |     1 | Wide street
+ 19 |     1 | Name of streets
+ 20 |     1 | sidewalk
+ 21 |     1 | Wide sidewalks
+ 22 |     1 | Chestnut avenue
+ 23 |     1 | Free street
+ 24 |     1 | Street
+----------------------------------------
+
+============================================================
+CLUSTER 33 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 26
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    architecture, Architecture, Architecture, Building, Building
+Derived SuperTag:          Architecture
+
+TAGS IN CLUSTER 33:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    11 | architecture
+  2 |     2 | model building
+  3 |     2 | Architecture
+  4 |     1 | Construction of the World
+  5 |     1 | citadel
+  6 |     1 | Fourth towers
+  7 |     1 | Building
+  8 |     1 | Architecture
+  9 |     1 | FIESP building
+ 10 |     1 | Stronghold
+ 11 |     1 | National condominium
+ 12 |     1 | Raised beam
+ 13 |     1 | Building
+ 14 |     1 | towers of the box
+----------------------------------------
+
+============================================================
+CLUSTER 34 DERIVATION DETAILS
+============================================================
+Number of tags: 16
+Total tag count: 43
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Japan House, casas, obj.casa, My home, Sala
+Derived SuperTag:          Japan
+
+TAGS IN CLUSTER 34:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    19 | Japan House
+  2 |     6 | obj.casa
+  3 |     5 | Trojan house
+  4 |     1 | living room
+  5 |     1 | home
+  6 |     1 | Smoking room
+  7 |     1 | Homes Club
+  8 |     1 | Student House
+  9 |     1 | home
+ 10 |     1 | Sala
+ 11 |     1 | Blue house
+ 12 |     1 | casas
+ 13 |     1 | House Color 35 years
+ 14 |     1 | GOD OF GOD NOSS HOUSE OUR HOME
+ 15 |     1 | Amadi house
+ 16 |     1 | My home
+----------------------------------------
+
+============================================================
+CLUSTER 35 DERIVATION DETAILS
+============================================================
+Number of tags: 27
+Total tag count: 27
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    terraces, Landscape, external terraces, terrace, backyard
+Derived SuperTag:          Terraces
+
+TAGS IN CLUSTER 35:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     1 | yard
+  2 |     1 | TerraceamDrade
+  3 |     1 | external terraces
+  4 |     1 | balcony
+  5 |     1 | Porchs
+  6 |     1 | paradise
+  7 |     1 | idyllic
+  8 |     1 | Area
+  9 |     1 | Sonorous Ambient
+ 10 |     1 | Landscape
+ 11 |     1 | terrace
+ 12 |     1 | Sanctuary
+ 13 |     1 | abandoned territory
+ 14 |     1 | porch
+ 15 |     1 | balustrade
+ 16 |     1 | outdoors
+ 17 |     1 | stuccos
+ 18 |     1 | Skyline
+ 19 |     1 | Outskirts
+ 20 |     1 | Green house
+ 21 |     1 | picturesque
+ 22 |     1 | terraces
+ 23 |     1 | Sovereign landscape
+ 24 |     1 | landscapes
+ 25 |     1 | Countryside
+ 26 |     1 | backyard
+ 27 |     1 | balcony
+----------------------------------------
+
+============================================================
+CLUSTER 36 DERIVATION DETAILS
+============================================================
+Number of tags: 23
+Total tag count: 67
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    ciudad, City, ghetto, Urban details, urbanism
+Derived SuperTag:          Ciudad
+
+TAGS IN CLUSTER 36:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    23 | ghetto
+  2 |    15 | City game
+  3 |     4 | Capital
+  4 |     4 | town hall
+  5 |     2 | urban elements
+  6 |     2 | Urban details
+  7 |     1 | downtown
+  8 |     1 | City
+  9 |     1 | A more affordable city
+ 10 |     1 | urbanism
+ 11 |     1 | More London
+ 12 |     1 | Municipal
+ 13 |     1 | Santo André City Hall
+ 14 |     1 | mayor
+ 15 |     1 | City hall
+ 16 |     1 | Gentrification
+ 17 |     1 | ciudad
+ 18 |     1 | City Hall builders
+ 19 |     1 | Metropolitan Civil Guard
+ 20 |     1 | City hall
+ 21 |     1 | Urban Reports
+ 22 |     1 | Civic centers
+ 23 |     1 | urban occupation
+----------------------------------------
+
+============================================================
+CLUSTER 37 DERIVATION DETAILS
+============================================================
+Number of tags: 13
+Total tag count: 27
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    pueblos, village, Location, Pottery neighborhood, Neighborhood exploration
+Derived SuperTag:          Pueblos
+
+TAGS IN CLUSTER 37:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     9 | pueblos
+  2 |     3 | Neighborhood exploration
+  3 |     3 | courtyard
+  4 |     2 | Place description
+  5 |     2 | Location
+  6 |     1 | Old town
+  7 |     1 | village
+  8 |     1 | where
+  9 |     1 | Ancient houses
+ 10 |     1 | i m on Market Square
+ 11 |     1 | Urban Oasis
+ 12 |     1 | Pottery neighborhood
+ 13 |     1 | History of the Veluter neighborhood
+----------------------------------------
+
+============================================================
+CLUSTER 38 DERIVATION DETAILS
+============================================================
+Number of tags: 19
+Total tag count: 48
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    library, books, Bookshelf, Book, literature
+Derived SuperTag:          Library
+
+TAGS IN CLUSTER 38:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    21 | library
+  2 |     5 | books
+  3 |     3 | Bookshelf
+  4 |     3 | Book
+  5 |     2 | poetry
+  6 |     1 | author's song
+  7 |     1 | reading
+  8 |     1 | High water bookcase
+  9 |     1 | poetry
+ 10 |     1 | Bookstore
+ 11 |     1 | Poem on the wall
+ 12 |     1 | novel
+ 13 |     1 | poetry
+ 14 |     1 | bookshop
+ 15 |     1 | poets
+ 16 |     1 | literature
+ 17 |     1 | pisani
+ 18 |     1 | Writer
+ 19 |     1 | bookstore
+----------------------------------------
+
+============================================================
+CLUSTER 39 DERIVATION DETAILS
+============================================================
+Number of tags: 20
+Total tag count: 27
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Friends, friendships, Friendships, socializing family, family
+Derived SuperTag:          Friends
+
+TAGS IN CLUSTER 39:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | MAM
+  2 |     3 | Friends
+  3 |     2 | family
+  4 |     1 | families
+  5 |     1 | socializing family
+  6 |     1 | cohabitation
+  7 |     1 | collective company
+  8 |     1 | moms
+  9 |     1 | Group
+ 10 |     1 | MASP
+ 11 |     1 | association
+ 12 |     1 | group
+ 13 |     1 | associations
+ 14 |     1 | Friends for Valer
+ 15 |     1 | Elderly group
+ 16 |     1 | Friendships
+ 17 |     1 | Our dear mother
+ 18 |     1 | FriendshipAntigas
+ 19 |     1 | support group
+ 20 |     1 | friendships
+----------------------------------------
+
+============================================================
+CLUSTER 40 DERIVATION DETAILS
+============================================================
+Number of tags: 35
+Total tag count: 105
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Humboldt University, accademia, university, institutes, School
+Derived SuperTag:          Humboldt
+
+TAGS IN CLUSTER 40:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    44 | Humboldt University
+  2 |    13 | School
+  3 |     7 | School
+  4 |     3 | schools
+  5 |     3 | bw/EDU
+  6 |     2 | Institute great
+  7 |     2 | students
+  8 |     2 | Education
+  9 |     2 | classroom
+ 10 |     2 | accademia
+ 11 |     1 | Lecture
+ 12 |     1 | institutes
+ 13 |     1 | campus
+ 14 |     1 | Conference
+ 15 |     1 | online class
+ 16 |     1 | university
+ 17 |     1 | RODRIGUES ALVES COLLEGE
+ 18 |     1 | pedagogy
+ 19 |     1 | classroom
+ 20 |     1 | Israelite University
+ 21 |     1 | SchoolDriguesalves Architecture
+ 22 |     1 | classic high school
+ 23 |     1 | Faculty of Communication
+ 24 |     1 | Student services
+ 25 |     1 | university campus
+ 26 |     1 | Institute
+ 27 |     1 | lectures
+ 28 |     1 | School
+ 29 |     1 | Escolapios College
+ 30 |     1 | Now school prose training great
+ 31 |     1 | assistant
+ 32 |     1 | college
+ 33 |     1 | Teacher
+ 34 |     1 | MAM Educational Coordinator
+ 35 |     1 | Engineering School
+----------------------------------------
+
+============================================================
+CLUSTER 41 DERIVATION DETAILS
+============================================================
+Number of tags: 13
+Total tag count: 47
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Girls, girl, female, kids, children
+Derived SuperTag:          Girls
+
+TAGS IN CLUSTER 41:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    28 | Girls
+  2 |     5 | girl
+  3 |     3 | children running
+  4 |     2 | Informative panel
+  5 |     1 | Teenagers
+  6 |     1 | children
+  7 |     1 | blonde
+  8 |     1 | young people
+  9 |     1 | infants
+ 10 |     1 | screaming child
+ 11 |     1 | kids
+ 12 |     1 | female
+ 13 |     1 | chica grey
+----------------------------------------
+
+============================================================
+CLUSTER 42 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 22
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Interview, interview, interview, Interviews, Conversations
+Derived SuperTag:          Interview
+
+TAGS IN CLUSTER 42:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | Interviews
+  2 |     4 | interview
+  3 |     2 | interview
+  4 |     1 | Interview
+  5 |     1 | Face -to -face
+  6 |     1 | Conversations
+  7 |     1 | Guys talking
+  8 |     1 | We are like that, dial the same one, one or two or two-two
+  9 |     1 | TalkBack
+ 10 |     1 | journalism
+ 11 |     1 | Dialogue
+ 12 |     1 | Meeting point
+ 13 |     1 | Speak people
+ 14 |     1 | tale
+----------------------------------------
+
+============================================================
+CLUSTER 43 DERIVATION DETAILS
+============================================================
+Number of tags: 13
+Total tag count: 16
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Toilette, laundromat, Toilet, laundry, laundry
+Derived SuperTag:          Toilette
+
+TAGS IN CLUSTER 43:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     4 | Toilette
+  2 |     1 | hairdressers
+  3 |     1 | pee
+  4 |     1 | insidejob
+  5 |     1 | Soap
+  6 |     1 | bath
+  7 |     1 | do not bathe
+  8 |     1 | Toilet
+  9 |     1 | laundromat
+ 10 |     1 | laundry
+ 11 |     1 | Hair dryer
+ 12 |     1 | laundry
+ 13 |     1 | Dry and wet warehouse
+----------------------------------------
+
+============================================================
+CLUSTER 44 DERIVATION DETAILS
+============================================================
+Number of tags: 18
+Total tag count: 29
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    market, market, Market, Market, Flea market
+Derived SuperTag:          Market
+
+TAGS IN CLUSTER 44:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     9 | market
+  2 |     3 | basket
+  3 |     2 | market
+  4 |     1 | Market hall
+  5 |     1 | basket
+  6 |     1 | Market
+  7 |     1 | Spitalfields market
+  8 |     1 | Market
+  9 |     1 | Shopping center 3
+ 10 |     1 | Rialto Market
+ 11 |     1 | baskets
+ 12 |     1 | Flea market
+ 13 |     1 | Basket
+ 14 |     1 | cart
+ 15 |     1 | Vitamin market Wrocław
+ 16 |     1 | cart
+ 17 |     1 | Leadenhall market
+ 18 |     1 | street vendors
+----------------------------------------
+
+============================================================
+CLUSTER 45 DERIVATION DETAILS
+============================================================
+Number of tags: 18
+Total tag count: 67
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    shop, Kiosk, shopping, shopping, shopping
+Derived SuperTag:          Shop
+
+TAGS IN CLUSTER 45:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    36 | shop
+  2 |     7 | pharmacy
+  3 |     5 | shopping
+  4 |     2 | walking trade
+  5 |     2 | supermarket
+  6 |     2 | Kiosk
+  7 |     2 | supermarkets
+  8 |     1 | Kiosk Kyoto
+  9 |     1 | shopping
+ 10 |     1 | Kiosks
+ 11 |     1 | Mall
+ 12 |     1 | Supermarket J. Jota
+ 13 |     1 | Pharmacy
+ 14 |     1 | shopping
+ 15 |     1 | supermarket
+ 16 |     1 | Christmas purchases
+ 17 |     1 | Drugstore market
+ 18 |     1 | Supermarkets
+----------------------------------------
+
+============================================================
+CLUSTER 46 DERIVATION DETAILS
+============================================================
+Number of tags: 18
+Total tag count: 44
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    porta, porte, portico, door, door
+Derived SuperTag:          Porta
+
+TAGS IN CLUSTER 46:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     8 | porta
+  2 |     6 | door
+  3 |     5 | entrance
+  4 |     4 | Lock
+  5 |     4 | portico
+  6 |     3 | entrance
+  7 |     3 | portal
+  8 |     1 | locks
+  9 |     1 | gateway
+ 10 |     1 | Arsenal door
+ 11 |     1 | Iron gate
+ 12 |     1 | keys
+ 13 |     1 | gate
+ 14 |     1 | doorbell
+ 15 |     1 | Exit
+down
+ 16 |     1 | porte
+ 17 |     1 | Inaccessible entrance
+ 18 |     1 | door
+----------------------------------------
+
+============================================================
+CLUSTER 47 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 16
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Photographs, photograph, Photo, Photographer, selfies
+Derived SuperTag:          Photographs
+
+TAGS IN CLUSTER 47:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     3 | photograph
+  2 |     2 | selfies
+  3 |     2 | Photographs
+  4 |     1 | Illustrations
+  5 |     1 | Instagram
+  6 |     1 | Teco Photography
+  7 |     1 | Photocopies
+  8 |     1 | Photo
+  9 |     1 | @ Pico
+ 10 |     1 | Instagram @blimbwikibr
+ 11 |     1 | animación
+ 12 |     1 | Photographer
+----------------------------------------
+
+============================================================
+CLUSTER 48 DERIVATION DETAILS
+============================================================
+Number of tags: 25
+Total tag count: 85
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    art, Works of art, contemporary art, paintings, Paintings
+Derived SuperTag:          Art
+
+TAGS IN CLUSTER 48:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    29 | art
+  2 |    17 | Works of art
+  3 |     7 | Street art
+  4 |     4 | Colors
+  5 |     4 | contemporary art
+  6 |     2 | Decorations
+  7 |     2 | Crafts at Paulista
+  8 |     2 | street artist
+  9 |     2 | paint
+ 10 |     1 | Art Concierge
+ 11 |     1 | paintings
+ 12 |     1 | painting
+ 13 |     1 | Artist
+ 14 |     1 | Paintings
+ 15 |     1 | Murals
+ 16 |     1 | artecontemporanea
+ 17 |     1 | frescoes
+ 18 |     1 | Artistic talents
+ 19 |     1 | Art salon
+ 20 |     1 | Art concierge
+ 21 |     1 | Super varied gallery
+ 22 |     1 | colors
+ 23 |     1 | colour
+ 24 |     1 | contemporary pinture
+ 25 |     1 | Graffiti
+----------------------------------------
+
+============================================================
+CLUSTER 49 DERIVATION DETAILS
+============================================================
+Number of tags: 14
+Total tag count: 19
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    wall, wall, Wall, paredes, Walls
+Derived SuperTag:          Wall
+
+TAGS IN CLUSTER 49:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     6 | wall
+  2 |     1 | Walls
+  3 |     1 | Stone walls
+  4 |     1 | Istria stone wall
+  5 |     1 | Walls
+  6 |     1 | brick wall
+  7 |     1 | wall
+  8 |     1 | The Arab wall
+  9 |     1 | The Christian wall
+ 10 |     1 | Wall
+ 11 |     1 | paredes
+ 12 |     1 | Tactile replicas
+ 13 |     1 | Letters and wallpaper areas
+ 14 |     1 | facade
+----------------------------------------
+
+============================================================
+CLUSTER 50 DERIVATION DETAILS
+============================================================
+Number of tags: 16
+Total tag count: 112
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Tactile, Tactile, Tactile, tactile, Tactile floors
+Derived SuperTag:          Tactile
+
+TAGS IN CLUSTER 50:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    58 | Tactile
+  2 |    25 | Tactile floors
+  3 |     9 | Tactile maps
+  4 |     5 | Missing tactile paving
+  5 |     2 | Tastmodell
+  6 |     2 | tactile floor on the right side
+  7 |     2 | tactile
+  8 |     1 | Tactile
+  9 |     1 | Tactile route
+ 10 |     1 | Inaccessible tactile paths
+ 11 |     1 | Tactile
+ 12 |     1 | Tacheles
+ 13 |     1 | Tatile floor does not have
+ 14 |     1 | Tatile floor information for lay people
+ 15 |     1 | tactile panel
+ 16 |     1 | tactile model
+----------------------------------------
+
+============================================================
+CLUSTER 51 DERIVATION DETAILS
+============================================================
+Number of tags: 18
+Total tag count: 295
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    accessible, accessible, accessibility, difficult accessibility, Access
+Derived SuperTag:          Accessible
+
+TAGS IN CLUSTER 51:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |   171 | accessible
+  2 |    82 | accessibility
+  3 |    24 | Non accesible
+  4 |     3 | lack of accessibility
+  5 |     2 | Disabled access
+  6 |     1 | passable
+  7 |     1 | Accessible jhsp
+  8 |     1 | Accessible route
+  9 |     1 | Lack of accessibility
+ 10 |     1 | Access
+ 11 |     1 | Wiki: Collaborative Network
+ 12 |     1 | jw.org
+ 13 |     1 | accessible
+ 14 |     1 | Disabilities access
+ 15 |     1 | disabled
+ 16 |     1 | accessible work
+ 17 |     1 | difficult accessibility
+ 18 |     1 | Accessibility marchinha
+----------------------------------------
+
+============================================================
+CLUSTER 52 DERIVATION DETAILS
+============================================================
+Number of tags: 43
+Total tag count: 110
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Platforms, unique platform, Service, Services, Application
+Derived SuperTag:          Platforms
+
+TAGS IN CLUSTER 52:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    22 | unique platform
+  2 |    16 | MACS
+  3 |    16 | Services
+  4 |     5 | Service
+  5 |     3 | New server
+  6 |     3 | Post -fiction office
+  7 |     3 | Wifi
+  8 |     2 | gretapower
+  9 |     2 | Utilities
+ 10 |     2 | Application
+ 11 |     2 | app
+ 12 |     2 | Cabina telefo
+ 13 |     2 | News kiosk
+ 14 |     1 | Square Well, I'm going to tell you good but there are people who will be better to write but right now it is disturbing me recognizing well is bothering the change but of course it is doing it now in real time this is connected to the server and in the T
+ 15 |     1 | Post Agency
+ 16 |     1 | Blackberry tea
+ 17 |     1 | iPad
+ 18 |     1 | Local support
+ 19 |     1 | Preferred scheme
+ 20 |     1 | Telephone
+ 21 |     1 | Mail on the market
+ 22 |     1 | Klang installation
+ 23 |     1 | Platforms
+ 24 |     1 | public phone
+ 25 |     1 | timetable
+ 26 |     1 | Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+ 27 |     1 | request
+ 28 |     1 | INSS post
+ 29 |     1 | Torrent
+ 30 |     1 | Blackberry
+ 31 |     1 | Android 2 point 3 point you are
+ 32 |     1 | press release
+ 33 |     1 | blog
+ 34 |     1 | What to post
+ 35 |     1 | Telephone
+ 36 |     1 | Androids
+ 37 |     1 | Free Wi Fi
+ 38 |     1 | Cell Phone Models
+ 39 |     1 | Mailboxes
+ 40 |     1 | sptrans post
+ 41 |     1 | postcard
+ 42 |     1 | message
+ 43 |     1 | post
+----------------------------------------
+
+============================================================
+CLUSTER 53 DERIVATION DETAILS
+============================================================
+Number of tags: 42
+Total tag count: 142
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    wells, Basalt, piedra, Stones, Stones
+Derived SuperTag:          Wells
+
+TAGS IN CLUSTER 53:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    49 | wells
+  2 |    22 | pebbles
+  3 |    18 | Project
+  4 |     6 | Stones
+  5 |     3 | Tunnels
+  6 |     2 | adapted brush
+  7 |     2 | Toys
+  8 |     2 | Hole in the pavement
+  9 |     2 | manholes
+ 10 |     2 | holes
+ 11 |     2 | Basalt
+ 12 |     2 | artificial surface
+ 13 |     1 | curve
+ 14 |     1 | material
+ 15 |     1 | discs
+ 16 |     1 | Hole
+ 17 |     1 | Mud
+ 18 |     1 | trenches
+ 19 |     1 | Hole
+ 20 |     1 | pieces
+ 21 |     1 | objects
+ 22 |     1 | Aldgate underground
+ 23 |     1 | stones
+ 24 |     1 | Surfaces
+ 25 |     1 | pieces
+ 26 |     1 | piedra
+ 27 |     1 | creations
+ 28 |     1 | Tower Gateway underground
+ 29 |     1 | curve
+ 30 |     1 | gap
+ 31 |     1 | tubes
+ 32 |     1 | squat
+ 33 |     1 | stone and wood
+ 34 |     1 | Stomped
+ 35 |     1 | toy
+ 36 |     1 | Slice
+ 37 |     1 | Stones
+ 38 |     1 | Spiral
+ 39 |     1 | Maze
+ 40 |     1 | bronze
+ 41 |     1 | Item
+ 42 |     1 | cement
+----------------------------------------
+
+============================================================
+CLUSTER 54 DERIVATION DETAILS
+============================================================
+Number of tags: 11
+Total tag count: 14
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Multidirectional, Multiplication, Polydportive, math, parallel
+Derived SuperTag:          Multidirectional
+
+TAGS IN CLUSTER 54:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     3 | Multidirectional
+  2 |     2 | localization
+  3 |     1 | Displacement
+  4 |     1 | parallel
+  5 |     1 | Many meters
+  6 |     1 | Polydportive
+  7 |     1 | beyond the limit
+  8 |     1 | Multiplication
+  9 |     1 | agglomeration
+ 10 |     1 | math
+ 11 |     1 | numerology
+----------------------------------------
+
+============================================================
+CLUSTER 55 DERIVATION DETAILS
+============================================================
+Number of tags: 22
+Total tag count: 83
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    machine, machine, Machine, machinery, motor
+Derived SuperTag:          Machine
+
+TAGS IN CLUSTER 55:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    39 | machine
+  2 |    14 | jobs
+  3 |     7 | motor
+  4 |     2 | Machine
+  5 |     2 | Job
+  6 |     2 | Job
+  7 |     2 | machinery
+  8 |     1 | High speed
+  9 |     1 | Turbos metal
+ 10 |     1 | Bos
+ 11 |     1 | work
+ 12 |     1 | Finished works
+ 13 |     1 | HR
+ 14 |     1 | Work
+ 15 |     1 | Worksite
+ 16 |     1 | Supermade
+ 17 |     1 | Works
+ 18 |     1 | gadget
+ 19 |     1 | machine
+ 20 |     1 | ferro
+ 21 |     1 | works
+ 22 |     1 | Foundry
+----------------------------------------
+
+============================================================
+CLUSTER 56 DERIVATION DETAILS
+============================================================
+Number of tags: 22
+Total tag count: 360
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    dangerous, possible danger, 很危險, Caution, hazard
+Derived SuperTag:          Dangerous
+
+TAGS IN CLUSTER 56:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |   265 | dangerous
+  2 |    74 | Caution
+  3 |     2 | dissuasive pillar
+  4 |     1 | Difficulties
+  5 |     1 | safety
+  6 |     1 | exposures
+  7 |     1 | impediment
+  8 |     1 | Mami Caution
+  9 |     1 | Advice
+ 10 |     1 | prevention
+ 11 |     1 | possible danger
+ 12 |     1 | safety
+ 13 |     1 | Danger the first section
+ 14 |     1 | reflexes
+ 15 |     1 | inconveniences
+ 16 |     1 | cautelat
+ 17 |     1 | Precautionary
+ 18 |     1 | Security
+ 19 |     1 | hazard
+ 20 |     1 | 很危險
+ 21 |     1 | Danger with spikes
+ 22 |     1 | Itinerant exposure
+----------------------------------------
+
+============================================================
+CLUSTER 57 DERIVATION DETAILS
+============================================================
+Number of tags: 22
+Total tag count: 34
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    hospital, hospitals, Health, Cerdanya Cross -Border Hospital, treatment
+Derived SuperTag:          Hospital
+
+TAGS IN CLUSTER 57:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     7 | hospital
+  2 |     5 | Health
+  3 |     2 | Down Syndrome
+  4 |     2 | Restoration
+  5 |     1 | Cerdanya Cross -Border Hospital
+  6 |     1 | wires
+  7 |     1 | repair
+  8 |     1 | History Ancient Hospital
+  9 |     1 | vaccination
+ 10 |     1 | outpatient clinics
+ 11 |     1 | health action
+ 12 |     1 | hospitals
+ 13 |     1 | Anti -stress
+ 14 |     1 | first aid
+ 15 |     1 | Healthy
+ 16 |     1 | First Aid kit
+ 17 |     1 | rehabilitation
+ 18 |     1 | treatment
+ 19 |     1 | foundation
+ 20 |     1 | Pulsantis clinic
+ 21 |     1 | Foundation
+ 22 |     1 | cross -border hospital
+----------------------------------------
+
+============================================================
+CLUSTER 58 DERIVATION DETAILS
+============================================================
+Number of tags: 24
+Total tag count: 61
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    incivility, Political sciences, political project, inclusion, social exclusion
+Derived SuperTag:          Incivility
+
+TAGS IN CLUSTER 58:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    17 | incivility
+  2 |    14 | Political sciences
+  3 |     5 | relief
+  4 |     4 | inclusion
+  5 |     2 | Partisan
+  6 |     1 | Republicans
+  7 |     1 | social exclusion
+  8 |     1 | candidates
+  9 |     1 | autonomy
+ 10 |     1 | Welfare
+ 11 |     1 | multi -ethnicity
+ 12 |     1 | political project
+ 13 |     1 | concessions
+ 14 |     1 | International day against violence against women
+ 15 |     1 | EC3 minorities
+ 16 |     1 | voluntary
+ 17 |     1 | citizen action
+ 18 |     1 | Aid
+ 19 |     1 | rights
+ 20 |     1 | Peace run
+ 21 |     1 | elections
+ 22 |     1 | diversity
+ 23 |     1 | patronage
+ 24 |     1 | Settled with social policies
+----------------------------------------
+
+============================================================
+CLUSTER 59 DERIVATION DETAILS
+============================================================
+Number of tags: 15
+Total tag count: 52
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    BarCarizzi, Renato alioti, Fondaco Tedeschi, Carabinieri, Mulino Stucchi
+Derived SuperTag:          Barcarizzi
+
+TAGS IN CLUSTER 59:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    33 | BarCarizzi
+  2 |     3 | Antoni Abad
+  3 |     2 | Franco
+  4 |     2 | prosecco
+  5 |     2 | Fondaco Tedeschi
+  6 |     1 | Renato alioti
+  7 |     1 | Antoni
+  8 |     1 | Mulino Stucchi
+  9 |     1 | taller con antoni abad
+ 10 |     1 | Carabinieri
+ 11 |     1 | Ca 'Rezzonico
+ 12 |     1 | Garibaldi
+ 13 |     1 | Francesc Candi
+ 14 |     1 | Where is Antonii?
+ 15 |     1 | Via Bustelli 9
+----------------------------------------
+
+============================================================
+CLUSTER 60 DERIVATION DETAILS
+============================================================
+Number of tags: 34
+Total tag count: 118
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Iglesia, basilica, Church of Rigolisa, church, church
+Derived SuperTag:          Iglesia
+
+TAGS IN CLUSTER 60:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    68 | Iglesia
+  2 |     6 | Judecca
+  3 |     3 | cathedral
+  4 |     3 | Nazareth
+  5 |     2 | pilgrims
+  6 |     2 | Church
+  7 |     2 | Bishop of the Rosary
+  8 |     2 | church
+  9 |     2 | Monastery of Pedralbes
+ 10 |     2 | CAROLINA MARIA DE JESUS
+ 11 |     2 | church
+ 12 |     2 | Church of Rigolisa
+ 13 |     1 | Immaculate Parish Church Conception
+ 14 |     1 | 7 anjos
+ 15 |     1 | Church of the Dawn
+ 16 |     1 | Bell
+Carmen parish
+ 17 |     1 | Church of Miracles
+ 18 |     1 | St.
+ 19 |     1 | altar
+ 20 |     1 | Crucifix
+ 21 |     1 | Basilica Frari
+ 22 |     1 | Church of the Frari
+ 23 |     1 | Church
+ 24 |     1 | San Geremia
+ 25 |     1 | Capillat chapel
+ 26 |     1 | Holy Church that is Redentoregondola with the roof
+ 27 |     1 | Altar of the dead
+ 28 |     1 | Santa Lucia church
+ 29 |     1 | basilica
+ 30 |     1 | Bonfim Church
+ 31 |     1 | Friar Mug
+ 32 |     1 | convent
+ 33 |     1 | Catholic Church
+ 34 |     1 | São Luiz Gonzaga Church
+----------------------------------------
+
+============================================================
+CLUSTER 61 DERIVATION DETAILS
+============================================================
+Number of tags: 32
+Total tag count: 47
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Piazza San Marco, San Giacomo, San Rocco, Venezia, Venice
+Derived SuperTag:          Piazza
+
+TAGS IN CLUSTER 61:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     6 | San Rocco
+  2 |     5 | Venezia
+  3 |     2 | San Polo
+  4 |     2 | venetians
+  5 |     2 | San Rocco School
+  6 |     2 | San Marco
+  7 |     2 | Piazzale Roma
+  8 |     2 | Italian forum
+  9 |     1 | Municipality Venice
+ 10 |     1 | sanrocco
+ 11 |     1 | Death in Venice
+ 12 |     1 | Santo Stefano
+ 13 |     1 | San Barnaba
+ 14 |     1 | Piazza San Marco
+ 15 |     1 | San Basilio
+ 16 |     1 | Venice
+ 17 |     1 | Venetian legend
+ 18 |     1 | Campiello San Rocco Pozzo Fontana
+ 19 |     1 | trieste
+ 20 |     1 | Italian
+ 21 |     1 | Venetians
+ 22 |     1 | San Tomà
+ 23 |     1 | italy
+ 24 |     1 | San Giacomo
+ 25 |     1 | san agostin
+ 26 |     1 | San Marco school
+ 27 |     1 | veneto
+ 28 |     1 | San Benetto
+ 29 |     1 | Italian post office
+ 30 |     1 | Sant Antoni
+ 31 |     1 | Palazzo
+ 32 |     1 | Great School of San Rocco
+----------------------------------------
+
+============================================================
+CLUSTER 62 DERIVATION DETAILS
+============================================================
+Number of tags: 20
+Total tag count: 35
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    hhbb, BB, binary, hb, bcn
+Derived SuperTag:          Hhbb
+
+TAGS IN CLUSTER 62:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     9 | binary
+  2 |     3 | Bengal
+  3 |     3 | Mequi 1000
+  4 |     2 | hhome
+  5 |     2 | NCBI
+  6 |     2 | BB9
+  7 |     1 | bcn
+  8 |     1 | Jh
+  9 |     1 | Hbhb
+ 10 |     1 | Harb
+ 11 |     1 | hhbb
+ 12 |     1 | Mequi1000
+ 13 |     1 | Hhbbnn
+ 14 |     1 | HHHV
+ 15 |     1 | Bimari
+ 16 |     1 | BB
+ 17 |     1 | Ubb
+ 18 |     1 | hb
+ 19 |     1 | slaves
+ 20 |     1 | Bsbh
+----------------------------------------
+
+============================================================
+CLUSTER 63 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 15
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Joke, burloni, WTF, Jokes, jokes
+Derived SuperTag:          Joke
+
+TAGS IN CLUSTER 63:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     4 | WTF
+  2 |     1 | burloni
+  3 |     1 | devotion
+  4 |     1 | religion
+  5 |     1 | Mock
+  6 |     1 | Gags
+  7 |     1 | follia
+  8 |     1 | Jokes
+  9 |     1 | Rab
+ 10 |     1 | Bibliteca ses
+ 11 |     1 | jokes
+ 12 |     1 | Joke
+----------------------------------------
+
+============================================================
+CLUSTER 64 DERIVATION DETAILS
+============================================================
+Number of tags: 27
+Total tag count: 43
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    São Paulo, São Paulo, Brazil, Sao Paulo da Garoa, Bahia
+Derived SuperTag:          Brazil
+
+TAGS IN CLUSTER 64:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | Bahia
+  2 |     4 | Brazil
+  3 |     4 | São Paulo Cultural Center
+  4 |     4 | Salvador
+  5 |     3 | São Paulo
+  6 |     2 | MOREIRA SALLES INSTITUTE
+  7 |     1 | sao paulo good land
+  8 |     1 | Rio will hold
+  9 |     1 | Amazonia
+ 10 |     1 | Rio Nuovo
+ 11 |     1 | selva
+ 12 |     1 | Rioba
+ 13 |     1 | Bahian Press Association. Savior. Bahia.
+ 14 |     1 | Zeca Pagodinho Rio de Janeiro
+ 15 |     1 | Samba
+ 16 |     1 | Spanish immigration in Brazil
+ 17 |     1 | Rio terà
+ 18 |     1 | Federal University of Bahia
+ 19 |     1 | hashtag sao paulo
+ 20 |     1 | Project in Brazil
+ 21 |     1 | CentroParalímpicobrasileiro
+ 22 |     1 | São Paulo Institute
+ 23 |     1 | Banco do Brasil
+ 24 |     1 | Sao Paulo da Garoa
+ 25 |     1 | São Paulo
+ 26 |     1 | BRAZIL NOESE OF THE WIND
+ 27 |     1 | Theater São Pedro
+----------------------------------------
+
+============================================================
+CLUSTER 65 DERIVATION DETAILS
+============================================================
+Number of tags: 28
+Total tag count: 59
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    sole, FIESP, tir, Anzettelt, Auladeforó
+Derived SuperTag:          Sole
+
+TAGS IN CLUSTER 65:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    24 | sole
+  2 |     5 | FIESP
+  3 |     2 | Ratchet
+  4 |     2 | navi
+  5 |     2 | sp
+  6 |     2 | Wig
+  7 |     1 | Totem
+  8 |     1 | tir
+  9 |     1 | Tomek
+ 10 |     1 | very manly
+ 11 |     1 | fastidii
+ 12 |     1 | Wurm
+ 13 |     1 | Gaiteiro
+ 14 |     1 | Antony
+ 15 |     1 | Pellaio ratchet
+ 16 |     1 | Anzettelt
+ 17 |     1 | Uici
+ 18 |     1 | Skessing
+ 19 |     1 | largo
+ 20 |     1 | Lodz
+ 21 |     1 | Puro
+ 22 |     1 | tremavapor
+ 23 |     1 | Auladeforó
+ 24 |     1 | duomo
+ 25 |     1 | Holz
+ 26 |     1 | lato
+ 27 |     1 | Alpha
+ 28 |     1 | bran
+----------------------------------------
+
+============================================================
+CLUSTER 66 DERIVATION DETAILS
+============================================================
+Number of tags: 22
+Total tag count: 36
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Parapet, Ramp, tangle, ongtemsentimento, Rag
+Derived SuperTag:          Parapet
+
+TAGS IN CLUSTER 66:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     5 | Rag
+  2 |     4 | Ramp
+  3 |     4 | UPC
+  4 |     3 | tightening
+  5 |     2 | Pile
+  6 |     2 | Rustling
+  7 |     1 | dead
+  8 |     1 | Gchv
+  9 |     1 | UdL
+ 10 |     1 | tangle
+ 11 |     1 | ongtemsentimento
+ 12 |     1 | tight
+ 13 |     1 | leather
+ 14 |     1 | Fittings
+ 15 |     1 | rope
+ 16 |     1 | Belts
+ 17 |     1 | MAKE 1000
+ 18 |     1 | Parapet
+ 19 |     1 | Qrcode
+ 20 |     1 | Vw
+ 21 |     1 | Scarf
+ 22 |     1 | flop
+----------------------------------------
+
+============================================================
+CLUSTER 67 DERIVATION DETAILS
+============================================================
+Number of tags: 69
+Total tag count: 175
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    temporary, historian, history, Historic, Uni
+Derived SuperTag:          Temporary
+
+TAGS IN CLUSTER 67:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    46 | temporary
+  2 |    36 | history
+  3 |     7 | legends
+  4 |     6 | Stop
+  5 |     4 | stop
+  6 |     3 | abandonment
+  7 |     3 | empty
+  8 |     2 | resilience
+  9 |     2 | tradition
+ 10 |     2 | disaster
+ 11 |     2 | deficientevisual
+ 12 |     2 | Error
+ 13 |     2 | Lack of
+ 14 |     2 | #truth #coverup #Q #elites
+ 15 |     2 | defect
+ 16 |     1 | miss
+ 17 |     1 | empty calls
+ 18 |     1 | Missing little !!!
+ 19 |     1 | Ospedalw
+And civilian
+ 20 |     1 | ambiguity
+ 21 |     1 | truth
+ 22 |     1 | Pandemia
+ 23 |     1 | Israel
+ 24 |     1 | IA
+ 25 |     1 | traditional
+ 26 |     1 | I disturb
+ 27 |     1 | complain
+ 28 |     1 | accidental
+ 29 |     1 | abandoned
+ 30 |     1 | aftermath
+ 31 |     1 | Second World War
+ 32 |     1 | Legend
+ 33 |     1 | IIT
+ 34 |     1 | Rumor
+ 35 |     1 | secret
+ 36 |     1 | lies
+ 37 |     1 | break
+ 38 |     1 | heritage
+ 39 |     1 | Complaint
+ 40 |     1 | Historic
+ 41 |     1 | U
+ 42 |     1 | nothing special
+ 43 |     1 | Ims
+ 44 |     1 | small
+ 45 |     1 | cowardice
+ 46 |     1 | Uni
+ 47 |     1 | it does not have
+ 48 |     1 | Conspiracy theory
+ 49 |     1 | military
+ 50 |     1 | disaster2
+ 51 |     1 | Loss
+ 52 |     1 | Hebrew
+ 53 |     1 | I'm missing
+ 54 |     1 | I don't know
+ 55 |     1 | riddle
+ 56 |     1 | no transition
+ 57 |     1 | Vain
+ 58 |     1 | #FaterAdeaccessibility
+ 59 |     1 | fearless
+ 60 |     1 | tropeiros
+ 61 |     1 | Wisdom
+ 62 |     1 | guerra
+ 63 |     1 | Empty space
+ 64 |     1 | stops
+ 65 |     1 | Jews
+ 66 |     1 | historian
+ 67 |     1 | Holocaust Thinking Mal
+ 68 |     1 | complaints
+ 69 |     1 | Ames
+----------------------------------------
+
+============================================================
+CLUSTER 68 DERIVATION DETAILS
+============================================================
+Number of tags: 11
+Total tag count: 34
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Paschal, Sobieszewo, SOCAVONES, condert, wisteria
+Derived SuperTag:          Paschal
+
+TAGS IN CLUSTER 68:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    22 | Paschal
+  2 |     2 | Short hortlarge
+  3 |     2 | incivic
+  4 |     1 | Ilton
+  5 |     1 | Trianon
+  6 |     1 | Dromedary
+  7 |     1 | Capitulet
+  8 |     1 | SOCAVONES
+  9 |     1 | wisteria
+ 10 |     1 | Sobieszewo
+ 11 |     1 | condert
+----------------------------------------
+
+============================================================
+CLUSTER 69 DERIVATION DETAILS
+============================================================
+Number of tags: 12
+Total tag count: 33
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    three, third, four, four, Following
+Derived SuperTag:          Three
+
+TAGS IN CLUSTER 69:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    13 | three
+  2 |     7 | Following
+  3 |     2 | Seven
+  4 |     2 | second part
+  5 |     2 | attention
+  6 |     1 | point of decision
+  7 |     1 | four
+  8 |     1 | four
+  9 |     1 | third
+ 10 |     1 | other
+ 11 |     1 | Six
+ 12 |     1 | attention
+----------------------------------------
+
+============================================================
+CLUSTER 70 DERIVATION DETAILS
+============================================================
+Number of tags: 36
+Total tag count: 64
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Mislata, Impreza, Picanya, A, Ia
+Derived SuperTag:          Mislata
+
+TAGS IN CLUSTER 70:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    13 | A
+  2 |     5 | curiosity
+  3 |     4 | Curiosity
+  4 |     3 | Right
+  5 |     3 | Rare things
+  6 |     2 | ONCE
+  7 |     2 | Picanya
+  8 |     2 | To
+  9 |     2 | wait
+ 10 |     2 | Testimony
+ 11 |     1 | Look
+ 12 |     1 | Sim
+ 13 |     1 | We see the possibility
+ 14 |     1 | To see
+ 15 |     1 | Mislata
+ 16 |     1 | imagine!
+ 17 |     1 | or not
+ 18 |     1 | now
+ 19 |     1 | new
+ 20 |     1 | Actuality
+ 21 |     1 | Ia
+ 22 |     1 | incredible
+ 23 |     1 | Think of
+ 24 |     1 | do
+ 25 |     1 | Come
+ 26 |     1 | has
+ 27 |     1 | some
+ 28 |     1 | contemporary
+ 29 |     1 | Although
+ 30 |     1 | it is worth it
+ 31 |     1 | all
+ 32 |     1 | Another look
+ 33 |     1 | Muchomory
+ 34 |     1 | All right?
+ 35 |     1 | finally
+ 36 |     1 | Impreza
+----------------------------------------
+
+============================================================
+CLUSTER 71 DERIVATION DETAILS
+============================================================
+Number of tags: 17
+Total tag count: 26
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Hello, Halo, salve, welcome, welcome
+Derived SuperTag:          Hello
+
+TAGS IN CLUSTER 71:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     8 | Hello
+  2 |     2 | Gratefulness
+  3 |     2 | Welcome
+  4 |     1 | ciao
+  5 |     1 | Regards
+  6 |     1 | Congratulations
+  7 |     1 | salve
+  8 |     1 | welcome
+  9 |     1 | Compliments
+ 10 |     1 | Good morning
+ 11 |     1 | Good morning
+ 12 |     1 | friendly staff
+ 13 |     1 | Hello to all
+ 14 |     1 | merci
+ 15 |     1 | Halo
+ 16 |     1 | Moin I'm new here
+ 17 |     1 | welcome
+----------------------------------------
+
+============================================================
+CLUSTER 72 DERIVATION DETAILS
+============================================================
+Number of tags: 52
+Total tag count: 105
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    San Vicente de la Roqueta, Rua Brigadeiro Galvão, Camino de Santiago, Compostela, Campo Santa Margherita
+Derived SuperTag:          San
+
+TAGS IN CLUSTER 72:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    18 | Laramara
+  2 |     7 | Camino de Santiago
+  3 |     5 | Avenida Paulista
+  4 |     5 | Santa Catarina Hospital
+  5 |     5 | Santiago de Compostela
+  6 |     4 | Campo Santa Margherita
+  7 |     3 | Santa Marta
+  8 |     3 | San Martín Pinario
+  9 |     3 | Alameda
+ 10 |     2 | Compostela
+ 11 |     2 | Santa Lucia
+ 12 |     2 | The Serra
+ 13 |     2 | Sorocaba route
+ 14 |     2 | Carolina Maria
+ 15 |     2 | Venezuela
+ 16 |     2 | Memorial America Latina
+ 17 |     2 | Oswaldo Cruz College
+ 18 |     2 | Museum of Contemporary Art of Sorocaba
+ 19 |     1 | santa rosália
+ 20 |     1 | Rua Brigadeiro Galvão
+ 21 |     1 | Santos
+ 22 |     1 | Mexico
+ 23 |     1 | RASTE OF THE CORREGO DOS MARTINS APP TRAIL ARARAQURA/SP
+ 24 |     1 | Hospitalsanata Catarina avpaulista
+ 25 |     1 | Culture House Rancho do Tropeiro Ernesto Vilela
+ 26 |     1 | #Benedito Calixto Square
+ 27 |     1 | Dominican Square
+ 28 |     1 | Cuenca Campus
+ 29 |     1 | Panel HospitalSantacatarina Avpaulista
+ 30 |     1 | #karaoke #bar #Metrocarrao
+ 31 |     1 | Hostipal Santa Catarina
+ 32 |     1 | Cuba
+ 33 |     1 | Avenida Paulista 200
+ 34 |     1 | Santa Catarina
+ 35 |     1 | Sorocabana
+ 36 |     1 | First mapping Campo Santa Margherita
+ 37 |     1 | House to Laramara
+ 38 |     1 | CentroculturalVergueiro
+ 39 |     1 | This is located in the country in Extertal
+ 40 |     1 | Pasteur Liceo Museum
+ 41 |     1 | santacecilia
+ 42 |     1 | Casa Rosada
+ 43 |     1 | Atardecer one of Peru
+ 44 |     1 | Laraparque
+ 45 |     1 | Santacatarina Hospital
+ 46 |     1 | Eugenio de Melo District
+ 47 |     1 | barrio
+ 48 |     1 | Natural Place of Contreras
+ 49 |     1 | San Vicente de la Roqueta
+ 50 |     1 | Library Mário de Andrade
+ 51 |     1 | Blasco Ibañez Museum
+ 52 |     1 | Corrego da Caixa Dagua Basalto Municipal Natural Park
+----------------------------------------
+
+============================================================
+CLUSTER 73 DERIVATION DETAILS
+============================================================
+Number of tags: 36
+Total tag count: 156
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    paseo, pablo, rueda, Obrador, Angelito de Perrita
+Derived SuperTag:          Paseo
+
+TAGS IN CLUSTER 73:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    77 | paseo
+  2 |    18 | Sotoporty
+  3 |    14 | Paulista
+  4 |     6 | Carlos
+  5 |     3 | pablo
+  6 |     3 | L'Horta
+  7 |     3 | Angelito de Perrita
+  8 |     2 | Diversity in Paulista
+  9 |     2 | Poor Juan
+ 10 |     2 | Hi Antoni we are here working a lot I Guess That Clear
+ 11 |     1 | Carlos #
+ 12 |     1 | Canto
+ 13 |     1 | Gabrielzinho Manos Crew
+ 14 |     1 | rueda
+ 15 |     1 | Lula
+ 16 |     1 | Dear Del Moro
+ 17 |     1 | Paulista is ours
+ 18 |     1 | Marshal Deodoro
+ 19 |     1 | Cane
+ 20 |     1 | Like Paulista
+ 21 |     1 | Várzea do Carmo UBS
+ 22 |     1 | Ca 'dario
+ 23 |     1 | Valerian Dominican
+ 24 |     1 | Amilcar de Castro
+ 25 |     1 | Obrador
+ 26 |     1 | Antonio Machado
+ 27 |     1 | Teco Barbero
+ 28 |     1 | Juan Calzadilla
+ 29 |     1 | Prado
+ 30 |     1 | Eugenio de Melo
+ 31 |     1 | Manoel Antonio Puig
+ 32 |     1 | #Chop #CalDodecana #vilaclementino #sons
+ 33 |     1 | Villa Heriot
+ 34 |     1 | Carlos # Concentration
+ 35 |     1 | Sesc Paulista
+ 36 |     1 | Sebastião Salgado @
+----------------------------------------
+
+============================================================
+CLUSTER 74 DERIVATION DETAILS
+============================================================
+Number of tags: 11
+Total tag count: 20
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    archi, Cadevi, Rota, riva, Ortolas
+Derived SuperTag:          Archi
+
+TAGS IN CLUSTER 74:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |     7 | archi
+  2 |     2 | Eodoviaria
+  3 |     2 | riva
+  4 |     2 | Rota
+  5 |     1 | Polishlody on Bema no
+  6 |     1 | Andrade
+  7 |     1 | Cadevi
+  8 |     1 | arc teriomph
+  9 |     1 | Ortolas
+ 10 |     1 | rota06
+ 11 |     1 | Drowsyanapaulist
+----------------------------------------
+
+============================================================
+CLUSTER 75 DERIVATION DETAILS
+============================================================
+Number of tags: 11
+Total tag count: 85
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    Yolei, Yoli, Yorelei, Akimatsuri, Alilaguna
+Derived SuperTag:          Yolei
+
+TAGS IN CLUSTER 75:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |    41 | Yolei
+  2 |    31 | Yoli
+  3 |     3 | Asac
+  4 |     2 | Yorelei
+  5 |     2 | Anhangabaú
+  6 |     1 | Akimatsuri
+  7 |     1 | Vihakoro
+  8 |     1 | mato
+  9 |     1 | Alilaguna
+ 10 |     1 | Chatka on Jatki
+ 11 |     1 | Kalambur
+----------------------------------------
+
+============================================================
+CLUSTER 76 DERIVATION DETAILS
+============================================================
+Number of tags: 37
+Total tag count: 213
+
+DERIVATION METHOD RESULTS:
+----------------------------------------
+Semantic centroid tags:    sorocaba, Afragola, sacafisola, darsuoduro, Cicchetti
+Derived SuperTag:          Sorocaba
+
+TAGS IN CLUSTER 76:
+----------------------------------------
+#   | Count | Tag
+----------------------------------------
+  1 |   115 | sorocaba
+  2 |    37 | Coagabitat SCIGUDIPARTIALIMITALIZATORALS from the Startac ATIPICEDIZIONI
+  3 |     9 | Targa
+  4 |     7 | as fosscari
+  5 |     7 | Trattoria Pontini
+  6 |     6 | Aosta
+  7 |     2 | salablu
+  8 |     1 | Ladasmocascegas
+  9 |     1 | Dancaderuapaulista
+ 10 |     1 | Cafoscari
+ 11 |     1 | darsuoduro
+ 12 |     1 | Tobojapao
+ 13 |     1 | According to the Malgosia
+ 14 |     1 | SenaPaul
+ 15 |     1 | SJCAMPOS
+ 16 |     1 | TARUAGUE
+ 17 |     1 | SALAZONES
+ 18 |     1 | cicadal
+ 19 |     1 | sorocabablindwiki
+ 20 |     1 | Mimoo
+ 21 |     1 | Serenissima
+ 22 |     1 | Rota_Centro_sjcampos/SP
+ 23 |     1 | Atarazanas
+ 24 |     1 | Galatians 2001
+ 25 |     1 | Rua F
+ 26 |     1 | Cicchetti
+ 27 |     1 | Porgaoddferro
+ 28 |     1 | Afragola
+ 29 |     1 | Aguas
+ 30 |     1 | Araraquara/SP
+ 31 |     1 | Arpa
+ 32 |     1 | Vicentinhaha
+ 33 |     1 | Panarra
+ 34 |     1 | sacafisola
+ 35 |     1 | REGINA SILVEIRA
+ 36 |     1 | fonraana
+ 37 |     1 | Osmiza
+----------------------------------------
+
+Cluster 77 (small cluster):
+Used most frequent tag as SuperTag: 'Piazza'
+
+Cluster 78 (small cluster):
+Used most frequent tag as SuperTag: 'Bridges'
+
+Cluster 79 (small cluster):
+Used most frequent tag as SuperTag: 'Crowded Environment'
+
+Cluster 80 (small cluster):
+Used most frequent tag as SuperTag: 'Odor'
+
+Cluster 81 (small cluster):
+Used most frequent tag as SuperTag: 'Neighborhood Exploration'
+
+Cluster 82 (small cluster):
+Used most frequent tag as SuperTag: 'Bus'
+
+Cluster 83 (small cluster):
+Used most frequent tag as SuperTag: '. Reference'
+
+Cluster 84 (small cluster):
+Used most frequent tag as SuperTag: 'Calle Dead'
+
+Cluster 85 (small cluster):
+Used most frequent tag as SuperTag: 'Venice At Night'
+
+Cluster 86 (small cluster):
+Used most frequent tag as SuperTag: 'Scale'
+
+Cluster 87 (small cluster):
+Used most frequent tag as SuperTag: 'Cabanyal'
+
+Cluster 88 (small cluster):
+Used most frequent tag as SuperTag: '33Bienal'
+
+Cluster 89 (small cluster):
+Used most frequent tag as SuperTag: 'Turismo'
+
+Cluster 90 (small cluster):
+Used most frequent tag as SuperTag: 'Yoley'
+
+Cluster 91 (small cluster):
+Used most frequent tag as SuperTag: 'Sound Traffic Lights'
+
+Cluster 92 (small cluster):
+Used most frequent tag as SuperTag: 'Meeting'
+
+Cluster 93 (small cluster):
+Used most frequent tag as SuperTag: 'Calli'
+
+Cluster 94 (small cluster):
+Used most frequent tag as SuperTag: 'Foundations'
+
+Cluster 95 (small cluster):
+Used most frequent tag as SuperTag: 'Planner'
+
+Cluster 96 (small cluster):
+Used most frequent tag as SuperTag: 'Deport'
+
+Cluster 97 (small cluster):
+Used most frequent tag as SuperTag: 'Testapipi'
+
+Cluster 98 (small cluster):
+Used most frequent tag as SuperTag: 'Transport'
+
+Cluster 99 (small cluster):
+Used most frequent tag as SuperTag: 'Obstacle'
+
+Cluster 100 (small cluster):
+Used most frequent tag as SuperTag: 'Words And More'
+
+Cluster 101 (small cluster):
+Used most frequent tag as SuperTag: 'Sensations'
+
+Cluster 102 (small cluster):
+Used most frequent tag as SuperTag: 'Vaporetto'
+
+Cluster 103 (small cluster):
+Used most frequent tag as SuperTag: 'Calle Chiusa'
+
+Cluster 104 (small cluster):
+Used most frequent tag as SuperTag: 'Saidus'
+
+Cluster 105 (small cluster):
+Used most frequent tag as SuperTag: 'Sculptures'
+
+Cluster 106 (small cluster):
+Used most frequent tag as SuperTag: 'Furniture'
+
+Cluster 107 (small cluster):
+Used most frequent tag as SuperTag: 'Of The'
+
+Cluster 108 (small cluster):
+Used most frequent tag as SuperTag: 'Workshop'
+
+Cluster 109 (small cluster):
+Used most frequent tag as SuperTag: 'Hotels'
+
+Cluster 110 (small cluster):
+Used most frequent tag as SuperTag: 'Interior'
+
+Cluster 111 (small cluster):
+Used most frequent tag as SuperTag: 'Bacari'
+
+Cluster 112 (small cluster):
+Used most frequent tag as SuperTag: 'Luci'
+
+Cluster 113 (small cluster):
+Used most frequent tag as SuperTag: 'Disabilities Parking'
+
+Cluster 114 (small cluster):
+Used most frequent tag as SuperTag: 'Scalea'
+
+Cluster 115 (small cluster):
+Used most frequent tag as SuperTag: 'Perfumes'
+
+Cluster 116 (small cluster):
+Used most frequent tag as SuperTag: 'Braille'
+
+Cluster 117 (small cluster):
+Used most frequent tag as SuperTag: 'Barcelona'
+
+Cluster 118 (small cluster):
+Used most frequent tag as SuperTag: 'People'
+
+Cluster 119 (small cluster):
+Used most frequent tag as SuperTag: 'Sculpture'
+
+Cluster 120 (small cluster):
+Used most frequent tag as SuperTag: 'Colonna'
+
+Cluster 121 (small cluster):
+Used most frequent tag as SuperTag: 'Description'
+
+Cluster 122 (small cluster):
+Used most frequent tag as SuperTag: 'Way Of Lovers'
+
+Cluster 123 (small cluster):
+Used most frequent tag as SuperTag: 'Wednesday'
+
+Cluster 124 (small cluster):
+Used most frequent tag as SuperTag: 'Aerial Obstacle'
+
+Cluster 125 (small cluster):
+Used most frequent tag as SuperTag: 'Urban Art'
+
+Cluster 126 (small cluster):
+Used most frequent tag as SuperTag: 'Traffic Light'
+
+Cluster 127 (small cluster):
+Used most frequent tag as SuperTag: 'Plans'
+
+Cluster 128 (small cluster):
+Used most frequent tag as SuperTag: 'Beach'
+
+Cluster 129 (small cluster):
+Used most frequent tag as SuperTag: 'Atm'
+
+Cluster 130 (small cluster):
+Used most frequent tag as SuperTag: 'Orientation'
+
+Cluster 131 (small cluster):
+Used most frequent tag as SuperTag: 'French Chalet'
+
+Cluster 132 (small cluster):
+Used most frequent tag as SuperTag: 'Modernist House'
+
+Cluster 133 (small cluster):
+Used most frequent tag as SuperTag: 'Redeemer'
+
+Cluster 134 (small cluster):
+Used most frequent tag as SuperTag: 'Headquarters'
+
+Cluster 135 (small cluster):
+Used most frequent tag as SuperTag: 'Joint'
+
+Cluster 136 (small cluster):
+Used most frequent tag as SuperTag: 'Catalan Pavilion'
+
+Cluster 137 (small cluster):
+Used most frequent tag as SuperTag: 'Traffic'
