@@ -472,7 +472,7 @@ def main():
     
     try:
         # Load reviewed SuperTag mappings
-        cluster_to_supertag = load_reviewed_supertags(excel_path)
+        cluster_to_supertag = load_reviewed_suertags(excel_path)
         
         # Apply mappings to tag data
         tag_to_supertag, df = apply_mapping_to_tags(tag_data_path, cluster_to_supertag)

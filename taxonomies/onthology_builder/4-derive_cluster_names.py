@@ -341,7 +341,7 @@ def generate_mapping(df, output_path):
     cluster_df = pd.DataFrame(cluster_data)
     
     # Set path for the Excel file in the onthology_builder folder
-    excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cluster_supertags.xlsx")
+    excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cluster_supertags_review_file.xlsx")
     
     # Check if the file already exists
     if os.path.exists(excel_path):
@@ -384,7 +384,7 @@ def main():
     else:
         # Default path
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        csv_path = os.path.join(current_dir, "figures_20250511_204225/cluster_data_20250511_204225.csv")
+        csv_path = os.path.join(current_dir, "figures/cluster_data.csv")
     
     # Set output path
     output_dir = current_dir

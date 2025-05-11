@@ -1,0 +1,663 @@
+Total tags: 2602
+Number of clusters: 71
+Noise points: 751
+
+Tags per cluster:
+  Noise: 751 tags
+  Cluster 0: 26 tags
+  Cluster 1: 31 tags
+  Cluster 2: 38 tags
+  Cluster 3: 51 tags
+  Cluster 4: 32 tags
+  Cluster 5: 15 tags
+  Cluster 6: 12 tags
+  Cluster 7: 19 tags
+  Cluster 8: 32 tags
+  Cluster 9: 11 tags
+  Cluster 10: 38 tags
+  Cluster 11: 11 tags
+  Cluster 12: 34 tags
+  Cluster 13: 23 tags
+  Cluster 14: 12 tags
+  Cluster 15: 23 tags
+  Cluster 16: 20 tags
+  Cluster 17: 20 tags
+  Cluster 18: 21 tags
+  Cluster 19: 45 tags
+  Cluster 20: 24 tags
+  Cluster 21: 17 tags
+  Cluster 22: 43 tags
+  Cluster 23: 14 tags
+  Cluster 24: 18 tags
+  Cluster 25: 33 tags
+  Cluster 26: 37 tags
+  Cluster 27: 32 tags
+  Cluster 28: 40 tags
+  Cluster 29: 17 tags
+  Cluster 30: 19 tags
+  Cluster 31: 17 tags
+  Cluster 32: 25 tags
+  Cluster 33: 23 tags
+  Cluster 34: 22 tags
+  Cluster 35: 14 tags
+  Cluster 36: 34 tags
+  Cluster 37: 15 tags
+  Cluster 38: 11 tags
+  Cluster 39: 29 tags
+  Cluster 40: 14 tags
+  Cluster 41: 11 tags
+  Cluster 42: 36 tags
+  Cluster 43: 10 tags
+  Cluster 44: 25 tags
+  Cluster 45: 36 tags
+  Cluster 46: 11 tags
+  Cluster 47: 15 tags
+  Cluster 48: 19 tags
+  Cluster 49: 24 tags
+  Cluster 50: 12 tags
+  Cluster 51: 24 tags
+  Cluster 52: 17 tags
+  Cluster 53: 33 tags
+  Cluster 54: 18 tags
+  Cluster 55: 36 tags
+  Cluster 56: 17 tags
+  Cluster 57: 13 tags
+  Cluster 58: 21 tags
+  Cluster 59: 10 tags
+  Cluster 60: 54 tags
+  Cluster 61: 57 tags
+  Cluster 62: 21 tags
+  Cluster 63: 22 tags
+  Cluster 64: 21 tags
+  Cluster 65: 19 tags
+  Cluster 66: 107 tags
+  Cluster 67: 90 tags
+  Cluster 68: 20 tags
+  Cluster 69: 13 tags
+  Cluster 70: 27 tags
+
+Sum of tag counts per cluster:
+  Noise: 1999 total usages
+  Cluster 0: 173 total usages
+  Cluster 1: 247 total usages
+  Cluster 2: 162 total usages
+  Cluster 3: 141 total usages
+  Cluster 4: 578 total usages
+  Cluster 5: 65 total usages
+  Cluster 6: 156 total usages
+  Cluster 7: 35 total usages
+  Cluster 8: 90 total usages
+  Cluster 9: 70 total usages
+  Cluster 10: 89 total usages
+  Cluster 11: 24 total usages
+  Cluster 12: 62 total usages
+  Cluster 13: 69 total usages
+  Cluster 14: 28 total usages
+  Cluster 15: 109 total usages
+  Cluster 16: 59 total usages
+  Cluster 17: 60 total usages
+  Cluster 18: 118 total usages
+  Cluster 19: 119 total usages
+  Cluster 20: 77 total usages
+  Cluster 21: 42 total usages
+  Cluster 22: 103 total usages
+  Cluster 23: 116 total usages
+  Cluster 24: 94 total usages
+  Cluster 25: 54 total usages
+  Cluster 26: 62 total usages
+  Cluster 27: 102 total usages
+  Cluster 28: 190 total usages
+  Cluster 29: 29 total usages
+  Cluster 30: 78 total usages
+  Cluster 31: 49 total usages
+  Cluster 32: 163 total usages
+  Cluster 33: 97 total usages
+  Cluster 34: 29 total usages
+  Cluster 35: 17 total usages
+  Cluster 36: 91 total usages
+  Cluster 37: 43 total usages
+  Cluster 38: 14 total usages
+  Cluster 39: 47 total usages
+  Cluster 40: 67 total usages
+  Cluster 41: 63 total usages
+  Cluster 42: 95 total usages
+  Cluster 43: 29 total usages
+  Cluster 44: 49 total usages
+  Cluster 45: 119 total usages
+  Cluster 46: 75 total usages
+  Cluster 47: 41 total usages
+  Cluster 48: 60 total usages
+  Cluster 49: 38 total usages
+  Cluster 50: 17 total usages
+  Cluster 51: 362 total usages
+  Cluster 52: 32 total usages
+  Cluster 53: 117 total usages
+  Cluster 54: 55 total usages
+  Cluster 55: 51 total usages
+  Cluster 56: 31 total usages
+  Cluster 57: 50 total usages
+  Cluster 58: 22 total usages
+  Cluster 59: 17 total usages
+  Cluster 60: 147 total usages
+  Cluster 61: 102 total usages
+  Cluster 62: 41 total usages
+  Cluster 63: 338 total usages
+  Cluster 64: 42 total usages
+  Cluster 65: 68 total usages
+  Cluster 66: 317 total usages
+  Cluster 67: 385 total usages
+  Cluster 68: 29 total usages
+  Cluster 69: 32 total usages
+  Cluster 70: 47 total usages
+
+
+Sample tags for each cluster:
+
+Noise (-1) sample tags:
+  - Hot packages (count: 1)
+  - propeller (count: 1)
+  - rosa (count: 2)
+  - Bracariaci (count: 1)
+  - Together we are stronger (count: 1)
+
+Cluster 0 sample tags:
+  - Testing (count: 1)
+  - Hello here is Helmut. I do my first test (count: 1)
+  - Testingr (count: 6)
+  - Prova abdroid (count: 1)
+  - Try (count: 1)
+
+Cluster 1 sample tags:
+  - Water (count: 2)
+  - rivers (count: 1)
+  - Puddles are because the water fits (count: 1)
+  - Pool (count: 9)
+  - drinking fountain (count: 32)
+
+Cluster 2 sample tags:
+  - Large channel (count: 26)
+  - Ferry (count: 1)
+  - Ferry (count: 1)
+  - Harbor (count: 1)
+  - cruise ship (count: 1)
+
+Cluster 3 sample tags:
+  - Drum (count: 2)
+  - Songs Avpaulista Somdapaulist (count: 1)
+  - Musicanapaulista country (count: 1)
+  - Harmonica (count: 1)
+  - banda (count: 1)
+
+Cluster 4 sample tags:
+  - Noise (count: 1)
+  - Wide street 
+Noise 
+Wind (count: 1)
+  - bells (count: 37)
+  - amplitude (count: 1)
+  - audio description (count: 1)
+
+Cluster 5 sample tags:
+  - tree (count: 41)
+  - Rosewood (count: 2)
+  - wood (count: 5)
+  - Oak (count: 1)
+  - Tree (count: 1)
+
+Cluster 6 sample tags:
+  - culture (count: 143)
+  - cultural centers (count: 1)
+  - VERGUEIRO CULTURAL CENTER (count: 1)
+  - Itaú Cultural Center (count: 1)
+  - Access Centro Cultural Metrô (count: 1)
+
+Cluster 7 sample tags:
+  - Orange (count: 1)
+  - citrus (count: 1)
+  - guarulhos (count: 1)
+  - strawberry (count: 3)
+  - coco (count: 1)
+
+Cluster 8 sample tags:
+  - Botanical Garden Third Part (count: 1)
+  - ivy (count: 1)
+  - plant (count: 6)
+  - horta (count: 1)
+  - Botanical garden (count: 3)
+
+Cluster 9 sample tags:
+  - wines (count: 1)
+  - Irish pub (count: 1)
+  - Witek bar (count: 1)
+  - Bier (count: 2)
+  - bars (count: 1)
+
+Cluster 10 sample tags:
+  - osteria (count: 3)
+  - Ladybird (count: 2)
+  - Sheep (count: 1)
+  - pesce (count: 2)
+  - seagull (count: 6)
+
+Cluster 11 sample tags:
+  - Exhibition! (count: 1)
+  - Shows (count: 1)
+  - space for shows (count: 1)
+  - showcases (count: 1)
+  - Exhibitions (count: 5)
+
+Cluster 12 sample tags:
+  - blindwikibr (count: 3)
+  - view (count: 4)
+  - blind assistance (count: 1)
+  - What is not visible (count: 1)
+  - Vision Australia (count: 13)
+
+Cluster 13 sample tags:
+  - whispers (count: 1)
+  - silence (count: 5)
+  - Quiet (count: 1)
+  - relaxing atmosphere (count: 1)
+  - silence (count: 11)
+
+Cluster 14 sample tags:
+  - mesas (count: 1)
+  - table (count: 1)
+  - Blackberry tea (count: 1)
+  - Relax sin coffee (count: 1)
+  - plates (count: 2)
+
+Cluster 15 sample tags:
+  - fantastic pub food (count: 1)
+  - pastry shop (count: 3)
+  - Italian restaurant (count: 1)
+  - Bakery on Bema (count: 1)
+  - two columns restaurant (count: 1)
+
+Cluster 16 sample tags:
+  - aperitifs (count: 1)
+  - food (count: 27)
+  - fried seafood (count: 1)
+  - Appetizing (count: 4)
+  - Aperitif (count: 1)
+
+Cluster 17 sample tags:
+  - Rice Museum (count: 1)
+  - Museum dome (count: 1)
+  - MUSEUM (count: 1)
+  - MASP Museum (count: 1)
+  - Museum (count: 1)
+
+Cluster 18 sample tags:
+  - Tactile (count: 58)
+  - Missing tactile paving (count: 5)
+  - Tatile floor does not have (count: 1)
+  - tactile sculpture (count: 1)
+  - Tactile (count: 1)
+
+Cluster 19 sample tags:
+  - Art Concierge (count: 1)
+  - painting (count: 1)
+  - art (count: 29)
+  - Super varied gallery (count: 1)
+  - Illustrations (count: 1)
+
+Cluster 20 sample tags:
+  - Sound traffic light (count: 1)
+  - moonlight (count: 1)
+  - night (count: 6)
+  - shadow (count: 1)
+  - lamps (count: 1)
+
+Cluster 21 sample tags:
+  - cloud (count: 1)
+  - clouds (count: 1)
+  - weather (count: 1)
+  - primavera (count: 3)
+  - vento (count: 10)
+
+Cluster 22 sample tags:
+  - Drugstore market (count: 1)
+  - Shopping Garoa (count: 1)
+  - Market hall (count: 1)
+  - Vitamin market Wrocław (count: 1)
+  - Spitalfields market (count: 1)
+
+Cluster 23 sample tags:
+  - pavilion (count: 1)
+  - crowded environment (count: 76)
+  - carnevale (count: 19)
+  - Hashtag Vila Clementino Hashtag Cheap Fair (count: 1)
+  - Creativity Pavilion (count: 1)
+
+Cluster 24 sample tags:
+  - A playground is nearby
+The sun is shining
+In the end is a tunnel (count: 1)
+  - City park (count: 1)
+  - Trianon Park (count: 1)
+  - Fortuny (count: 3)
+  - Park (count: 1)
+
+Cluster 25 sample tags:
+  - Archers (count: 1)
+  - basketball court (count: 1)
+  - Casino (count: 2)
+  - stadium (count: 1)
+  - game (count: 1)
+
+Cluster 26 sample tags:
+  - Nordic countries (count: 2)
+  - Xawery Dunikowski (count: 1)
+  - Berlinische Galerie (count: 4)
+  - St. Wojciech (count: 1)
+  - Brandenburgertor (count: 1)
+
+Cluster 27 sample tags:
+  - classroom (count: 2)
+  - RODRIGUES ALVES COLLEGE (count: 1)
+  - Education (count: 2)
+  - School (count: 1)
+  - Israelite University (count: 1)
+
+Cluster 28 sample tags:
+  - Belém Station (count: 1)
+  - airport (count: 1)
+  - PKP Main Station (count: 1)
+  - RATB station 104 (count: 1)
+  - Bus stop (count: 3)
+
+Cluster 29 sample tags:
+  - I would like to participate as a volunteer on the Man tour. (count: 1)
+  - tourists (count: 7)
+  - Sightseeing (count: 1)
+  - Tourism (count: 1)
+  - traveling (count: 1)
+
+Cluster 30 sample tags:
+  - Expedition (count: 1)
+  - Route of the waterfalls (count: 2)
+  - Path (count: 2)
+  - hiking (count: 4)
+  - Path (count: 1)
+
+Cluster 31 sample tags:
+  - Cross with bike lane (count: 1)
+  - Motorcycles rise (count: 1)
+  - Yes, there's a bicycle (count: 1)
+  - Bicycle (count: 8)
+  - bickcletes (count: 1)
+
+Cluster 32 sample tags:
+  - Calatrava bridge (count: 2)
+  - Pedestrian crossing (count: 1)
+  - blue line (count: 1)
+  - Red Line SP (count: 1)
+  - Crossing (count: 3)
+
+Cluster 33 sample tags:
+  - Name of streets (count: 1)
+  - Wide sidewalks (count: 1)
+  - streets (count: 13)
+  - sidewalk (count: 31)
+  - sidewalks (count: 1)
+
+Cluster 34 sample tags:
+  - Road conditions improve (count: 1)
+  - roundabout (count: 1)
+  - car skulls (count: 1)
+  - car (count: 1)
+  - 車子多 (count: 1)
+
+Cluster 35 sample tags:
+  - do not bathe (count: 1)
+  - Public Baths (count: 1)
+  - Fire extinguisher (count: 1)
+  - Clinic in Pabianicka (count: 1)
+  - pee (count: 1)
+
+Cluster 36 sample tags:
+  - club (count: 3)
+  - infants (count: 1)
+  - friendships (count: 1)
+  - donne (count: 1)
+  - children running (count: 3)
+
+Cluster 37 sample tags:
+  - Steps (count: 22)
+  - steps (count: 1)
+  - hidden stairs (count: 1)
+  - move (count: 2)
+  - Attention steps (count: 2)
+
+Cluster 38 sample tags:
+  - Movement (count: 2)
+  - skating (count: 1)
+  - jump (count: 2)
+  - walking exercise (count: 1)
+  - Physical education (count: 1)
+
+Cluster 39 sample tags:
+  - São Paulo (count: 1)
+  - Samba (count: 1)
+  - Amazonia (count: 1)
+  - Bahia (count: 5)
+  - selva (count: 1)
+
+Cluster 40 sample tags:
+  - Tunnels (count: 3)
+  - trenches (count: 1)
+  - Hole in the pavement (count: 2)
+  - Aldgate underground (count: 1)
+  - Mud (count: 1)
+
+Cluster 41 sample tags:
+  - curve (count: 1)
+  - agglomeration (count: 1)
+  - slide (count: 1)
+  - Many meters (count: 1)
+  - Spiral (count: 1)
+
+Cluster 42 sample tags:
+  - Houses of the Cabanyal (count: 1)
+  - citadel (count: 1)
+  - My home (count: 1)
+  - National condominium (count: 1)
+  - Hostel (count: 2)
+
+Cluster 43 sample tags:
+  - oasis (count: 2)
+  - paradise (count: 1)
+  - Sustainability (count: 2)
+  - Green clearing (count: 1)
+  - Terra (count: 1)
+
+Cluster 44 sample tags:
+  - town hall (count: 4)
+  - City hall (count: 1)
+  - Capital (count: 4)
+  - Metropolitan Civil Guard (count: 1)
+  - courtyard (count: 3)
+
+Cluster 45 sample tags:
+  - backyard (count: 1)
+  - Pottery neighborhood (count: 1)
+  - stuccos (count: 1)
+  - village (count: 1)
+  - terraces (count: 1)
+
+Cluster 46 sample tags:
+  - machine (count: 39)
+  - Machine (count: 2)
+  - machinery (count: 2)
+  - Air obstacles (count: 1)
+  - motor (count: 7)
+
+Cluster 47 sample tags:
+  - The Arab wall (count: 1)
+  - Walls (count: 1)
+  - Istria stone wall (count: 1)
+  - wall (count: 1)
+  - Walls (count: 1)
+
+Cluster 48 sample tags:
+  - porta (count: 8)
+  - door (count: 6)
+  - Iron gate (count: 1)
+  - Deport (count: 21)
+  - Exit
+down (count: 1)
+
+Cluster 49 sample tags:
+  - Cross -border Hospital Road (count: 1)
+  - asylum (count: 1)
+  - rehabilitation (count: 1)
+  - vaccination (count: 1)
+  - health action (count: 1)
+
+Cluster 50 sample tags:
+  - cigarette (count: 1)
+  - tobacconist (count: 1)
+  - Sesc 24 de Maio (count: 1)
+  - frillets (count: 1)
+  - Secondsfeiras19h30 (count: 1)
+
+Cluster 51 sample tags:
+  - Precautionary (count: 1)
+  - safety (count: 1)
+  - Difficulties (count: 1)
+  - dissuasive pillar (count: 2)
+  - Danger the first section (count: 1)
+
+Cluster 52 sample tags:
+  - Bengal (count: 3)
+  - Hhbbnn (count: 1)
+  - BB (count: 1)
+  - HHHV (count: 1)
+  - bcn (count: 1)
+
+Cluster 53 sample tags:
+  - convent (count: 1)
+  - Church of Rigolisa (count: 2)
+  - Church (count: 2)
+  - Bishop of the Rosary (count: 2)
+  - Church (count: 1)
+
+Cluster 54 sample tags:
+  - Saint Jorge (count: 1)
+  - Renato alioti (count: 1)
+  - Franco (count: 2)
+  - Romeu Temdeviver (count: 1)
+  - Francesc Candi (count: 1)
+
+Cluster 55 sample tags:
+  - San Rocco School (count: 2)
+  - San Tomà (count: 1)
+  - Piazzale Roma (count: 2)
+  - San Marco (count: 2)
+  - italy (count: 1)
+
+Cluster 56 sample tags:
+  - reading (count: 1)
+  - Book (count: 3)
+  - Guys talking (count: 1)
+  - Writer (count: 1)
+  - books (count: 5)
+
+Cluster 57 sample tags:
+  - Work (count: 1)
+  - Works (count: 1)
+  - Finished works (count: 1)
+  - Worksite (count: 1)
+  - headquarters (count: 6)
+
+Cluster 58 sample tags:
+  - lies (count: 1)
+  - Russian (count: 1)
+  - dialect (count: 1)
+  - IA (count: 1)
+  - riddle (count: 1)
+
+Cluster 59 sample tags:
+  - Vw (count: 1)
+  - Gchv (count: 1)
+  - WAV (count: 1)
+  - Vlt (count: 1)
+  - A na1 (count: 1)
+
+Cluster 60 sample tags:
+  - EC3 minorities (count: 1)
+  - complain (count: 1)
+  - voluntary (count: 1)
+  - Ruin (count: 1)
+  - political project (count: 1)
+
+Cluster 61 sample tags:
+  - Pile (count: 2)
+  - tightening (count: 3)
+  - Belts (count: 1)
+  - Trap cal (count: 1)
+  - navi (count: 2)
+
+Cluster 62 sample tags:
+  - Antony (count: 1)
+  - colonna (count: 9)
+  - veins (count: 1)
+  - Conad (count: 1)
+  - Ilton (count: 1)
+
+Cluster 63 sample tags:
+  - Post -fiction office (count: 3)
+  - difficult accessibility (count: 1)
+  - unique platform (count: 22)
+  - Non accesible (count: 24)
+  - Wiki: Collaborative Network (count: 1)
+
+Cluster 64 sample tags:
+  - A new version (count: 1)
+  - INSS post (count: 1)
+  - sptrans post (count: 1)
+  - What to post (count: 1)
+  - helpful staff (count: 1)
+
+Cluster 65 sample tags:
+  - Testimony (count: 2)
+  - Lives (count: 1)
+  - what (count: 1)
+  - tradition (count: 2)
+  - Think of (count: 1)
+
+Cluster 66 sample tags:
+  - Red Farm of Valencia (count: 1)
+  - Antonio Machado (count: 1)
+  - Poor Juan (count: 2)
+  - Bahia Modern Art Museum (count: 1)
+  - San Martín Pinario (count: 3)
+
+Cluster 67 sample tags:
+  - Rota (count: 2)
+  - cicadal (count: 1)
+  - Panarra (count: 1)
+  - Yoli (count: 31)
+  - Rua F (count: 1)
+
+Cluster 68 sample tags:
+  - friendly staff (count: 1)
+  - celebration (count: 1)
+  - Compliments (count: 1)
+  - Regards (count: 1)
+  - but good (count: 1)
+
+Cluster 69 sample tags:
+  - Six (count: 1)
+  - Seven (count: 2)
+  - First (count: 1)
+  - Expectations (count: 1)
+  - Uns (count: 1)
+
+Cluster 70 sample tags:
+  - finally (count: 1)
+  - Come (count: 1)
+  - ONCE (count: 2)
+  - Although (count: 1)
+  - Look (count: 1)

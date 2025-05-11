@@ -119,7 +119,7 @@ def perform_clustering(embeddings_2d, min_cluster_size=2, min_samples=None):
     return cluster_labels, n_clusters, n_noise
 
 # %% [REGION 5] Visualization
-def create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, timestamp, min_cluster_size):
+def create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, min_cluster_size):
     """Create and save visualizations of clusters"""
     print("Creating visualizations...")
     
@@ -153,7 +153,7 @@ def create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, time
     plt.legend(title='Cluster', bbox_to_anchor=(1.05, 1), loc='upper left')
     
     # Save the figure
-    scatter_path = os.path.join(output_dir, f"clusters_scatter_{timestamp}.png")
+    scatter_path = os.path.join(output_dir, "clusters_scatter.png")
     plt.tight_layout()
     plt.savefig(scatter_path, dpi=300)
     plt.close()
@@ -199,7 +199,7 @@ def create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, time
     plt.ylabel('UMAP Dimension 2', fontsize=14)
     
     # Save the figure
-    labels_path = os.path.join(output_dir, f"clusters_labeled_{timestamp}.png")
+    labels_path = os.path.join(output_dir, "clusters_labeled.png")
     plt.tight_layout()
     plt.savefig(labels_path, dpi=300)
     plt.close()
@@ -232,7 +232,7 @@ def create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, time
     plt.ylabel('UMAP Dimension 2', fontsize=14)
     
     # Save the figure
-    heatmap_path = os.path.join(output_dir, f"density_heatmap_{timestamp}.png")
+    heatmap_path = os.path.join(output_dir, "density_heatmap.png")
     plt.tight_layout()
     plt.savefig(heatmap_path, dpi=300)
     plt.close()
@@ -241,7 +241,7 @@ def create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, time
     return [scatter_path, labels_path, heatmap_path]
 
 # %% [REGION 6] Save cluster data
-def save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_counts, output_dir, timestamp):
+def save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_counts, output_dir):
     """Save cluster data to CSV file"""
     print("Saving cluster data to CSV...")
     
@@ -268,13 +268,12 @@ def save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_counts,
     print(cluster_tag_counts)
     
     # Save to CSV
-    csv_path = os.path.join(output_dir, f"cluster_data_{timestamp}.csv")
+    csv_path = os.path.join(output_dir, "cluster_data.csv")
     df.to_csv(csv_path, index=False, encoding='utf-8')
     
     # Generate summary with cluster details
-    summary_path = os.path.join(output_dir, f"cluster_summary_{timestamp}.txt")
+    summary_path = os.path.join(output_dir, "cluster_summary.txt")
     with open(summary_path, 'w', encoding='utf-8') as f:
-        f.write(f"Cluster Summary (generated on {timestamp})\n\n")
         f.write(f"Total tags: {len(df)}\n")
         f.write(f"Number of clusters: {len(cluster_counts) - (1 if -1 in cluster_counts.index else 0)}\n")
         f.write(f"Noise points: {cluster_counts.get(-1, 0)}\n\n")
@@ -315,14 +314,12 @@ def save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_counts,
 
 # %% [REGION 7] Main execution
 def main():
-    # Generate timestamp for output files
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    
+   
     # Define paths
     current_dir = os.path.dirname(os.path.abspath(__file__))
     embeddings_path = os.path.join(current_dir, "../../embeddings/all_tags_translated_text_paraphrase-multilingual-mpnet-base-v2_embeddings.npz")
     csv_path = os.path.join(current_dir, "../mappings/all_tags_counts_translated.csv")
-    output_dir = os.path.join(current_dir, f"figures_{timestamp}")
+    output_dir = os.path.join(current_dir, "figures")
     
     # Parameters
     min_cluster_size = 10
@@ -340,10 +337,10 @@ def main():
     cluster_labels, n_clusters, n_noise = perform_clustering(embeddings_2d, min_cluster_size=min_cluster_size)
     
     # Create visualizations
-    vis_paths = create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, timestamp, min_cluster_size)
+    vis_paths = create_visualizations(embeddings_2d, cluster_labels, texts, output_dir, min_cluster_size)
     
     # Save cluster data with tag counts
-    data_paths = save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_count_map, output_dir, timestamp)
+    data_paths = save_cluster_data(embeddings_2d, cluster_labels, texts, tag_ids, tag_count_map, output_dir)
     
     # Print summary to console
     print(f"\nClustering completed successfully!")
