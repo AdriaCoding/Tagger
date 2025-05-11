@@ -23,6 +23,8 @@ import re
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import warnings
+import scipy.sparse as sp
+from datetime import datetime
 
 # Suppress common warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -31,6 +33,9 @@ warnings.filterwarnings("ignore", message=".*The parameter.*")
 
 # Add parent directory to path to access utilities
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+# Global log file for detailed derivation logs
+log_file = None
 
 # %% [REGION 1] Load and prepare data
 def load_cluster_data(csv_path):
@@ -145,67 +150,31 @@ def get_stopwords():
 
 # %% [REGION 3] SuperTag derivation methods
 
-def get_top_tfidf_terms(texts, n=5):
-    """Extract top TF-IDF terms from a collection of texts"""
-    # Preprocess texts
-    processed_texts = [preprocess_text(text) for text in texts]
+def get_semantic_centroid(texts, model=None, top_similar=3, weights=None):
+    """Find the texts closest to the semantic centroid of the cluster
     
-    # Get stopwords
-    stop_words = get_stopwords()
-    
-    # Create TF-IDF vectorizer
-    vectorizer = TfidfVectorizer(
-        min_df=1, 
-        max_df=0.7,
-        stop_words=stop_words,  # Now passing a list instead of a set
-        ngram_range=(1, 2)  # Include both unigrams and bigrams
-    )
-    
-    # Handle empty texts
-    if not any(processed_texts):
-        return []
-    
-    try:
-        # Generate TF-IDF matrix
-        tfidf_matrix = vectorizer.fit_transform(processed_texts)
-        
-        # Sum TF-IDF scores across documents to find most important terms
-        feature_names = vectorizer.get_feature_names_out()
-        tfidf_sum = np.array(tfidf_matrix.sum(axis=0)).flatten()
-        
-        # Get top terms
-        top_indices = tfidf_sum.argsort()[-n:][::-1]
-        top_terms = [feature_names[i] for i in top_indices if tfidf_sum[i] > 0]
-        
-        return top_terms
-    except ValueError as e:
-        print(f"Warning: TF-IDF extraction failed: {e}")
-        return []
-
-def get_most_frequent_words(texts, n=5):
-    """Get most frequent words across all texts"""
-    # Preprocess texts
-    processed_texts = [preprocess_text(text) for text in texts]
-    
-    # Get stopwords
-    stop_words = set(get_stopwords())  # Convert back to set for faster lookups
-    
-    # Count words
-    word_counter = Counter()
-    for text in processed_texts:
-        words = [word for word in text.split() if word not in stop_words and len(word) > 2]
-        word_counter.update(words)
-    
-    # Return top n words
-    return [word for word, count in word_counter.most_common(n)]
-
-def get_semantic_centroid(texts, model=None, top_similar=3):
-    """Find the texts closest to the semantic centroid of the cluster"""
+    Args:
+        texts: List of texts to analyze
+        model: SentenceTransformer model to use
+        top_similar: Number of similar texts to return
+        weights: Optional list of weights (counts) for each text
+    """
     if not model:
         model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
     
-    # Filter empty texts
-    valid_texts = [text for text in texts if isinstance(text, str) and text.strip()]
+    # Filter empty texts (and corresponding weights if provided)
+    valid_indices = [i for i, text in enumerate(texts) if isinstance(text, str) and text.strip()]
+    valid_texts = [texts[i] for i in valid_indices]
+    
+    if weights is not None:
+        valid_weights = [weights[i] for i in valid_indices]
+        # Normalize weights
+        total_weight = sum(valid_weights)
+        if total_weight > 0:
+            valid_weights = [w/total_weight for w in valid_weights]
+    else:
+        valid_weights = None
+    
     if not valid_texts:
         return []
     
@@ -213,8 +182,13 @@ def get_semantic_centroid(texts, model=None, top_similar=3):
         # Compute embeddings
         embeddings = model.encode(valid_texts)
         
-        # Compute centroid
-        centroid = np.mean(embeddings, axis=0)
+        # Compute weighted centroid if weights are provided
+        if valid_weights:
+            # Weighted average of embeddings
+            centroid = np.average(embeddings, axis=0, weights=valid_weights)
+        else:
+            # Simple average if no weights
+            centroid = np.mean(embeddings, axis=0)
         
         # Compute similarity to centroid
         similarities = cosine_similarity([centroid], embeddings)[0]
@@ -227,6 +201,21 @@ def get_semantic_centroid(texts, model=None, top_similar=3):
         print(f"Warning: Semantic centroid calculation failed: {e}")
         return []
 
+def initialize_log_file(output_dir):
+    """Initialize the log file for derivation logs"""
+    global log_file
+    log_path = os.path.join(output_dir, "NamederivationLogs.txt")
+    log_file = open(log_path, 'w', encoding='utf-8')
+    print(f"Detailed derivation logs will be written to: {log_path}")
+    return log_path
+
+def log_to_file(message):
+    """Write a message to the log file"""
+    global log_file
+    if log_file:
+        log_file.write(message + "\n")
+        log_file.flush()  # Ensure logs are written immediately
+
 def derive_supertag(cluster_df, model=None, cluster_id=None):
     """Derive a SuperTag name for a cluster"""
     texts = cluster_df['text'].tolist()
@@ -235,23 +224,26 @@ def derive_supertag(cluster_df, model=None, cluster_id=None):
     # For small clusters, just use the most frequent tag
     if len(texts) < 3:
         max_idx = np.argmax(counts)
-        return texts[max_idx].title()
+        supertag = texts[max_idx].title()
+        print(f"Small cluster {cluster_id}: Using most frequent tag as SuperTag '{supertag}'")
+        log_to_file(f"\nCluster {cluster_id} (small cluster):")
+        log_to_file(f"Used most frequent tag as SuperTag: '{supertag}'")
+        return supertag
     
-    # Get top TF-IDF terms
-    top_tfidf = get_top_tfidf_terms(texts, n=3)
-    
-    # Get most frequent words
-    top_freq = get_most_frequent_words(texts, n=3)
-    
+    # Log cluster information
+    log_to_file(f"\n{'=' * 60}")
+    log_to_file(f"CLUSTER {cluster_id} DERIVATION DETAILS")
+    log_to_file(f"{'=' * 60}")
+    log_to_file(f"Number of tags: {len(texts)}")
+    log_to_file(f"Total tag count: {sum(counts)}")
+       
     # Get tags closest to semantic centroid
     if not model:
         model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
-    central_tags = get_semantic_centroid(texts, model, top_similar=2)
+    central_tags = get_semantic_centroid(texts, model, top_similar=5, weights=counts)
     
     # Combine evidence
     candidate_terms = []
-    candidate_terms.extend(top_tfidf)
-    candidate_terms.extend(top_freq)
     if central_tags:
         # Extract first word of each central tag
         for tag in central_tags:
@@ -261,23 +253,32 @@ def derive_supertag(cluster_df, model=None, cluster_id=None):
     
     # Handle case where we have no good candidates
     if not candidate_terms:
-        return f"Cluster_{cluster_id}"
+        supertag = f"Cluster_{cluster_id}"
+        print(f"No good candidates for cluster {cluster_id}: Using '{supertag}'")
+        log_to_file("No good candidate terms found. Using cluster ID as SuperTag.")
+        return supertag
     
     # Count occurrences to find most representative term
-    term_counter = Counter(candidate_terms)
-    best_term = term_counter.most_common(1)[0][0]
+    best_term = candidate_terms[0]
     
     # Capitalize and clean
     supertag = best_term.title().strip()
+        
+    # Log derivation details to file
+    log_to_file(f"\nDERIVATION METHOD RESULTS:")
+    log_to_file(f"{'-' * 40}")
+    log_to_file(f"Semantic centroid tags:    {', '.join(central_tags)}")
+    log_to_file(f"Derived SuperTag:          {supertag}")
+    log_to_file(f"\nTAGS IN CLUSTER {cluster_id}:")
+    log_to_file(f"{'-' * 40}")
+    log_to_file(f"{'#':3s} | {'Count':5s} | Tag")
+    log_to_file(f"{'-' * 40}")
+    for i, (text, count) in enumerate(zip(texts, counts)):
+        log_to_file(f"{i+1:3d} | {count:5d} | {text}")
+    log_to_file(f"{'-' * 40}")
     
-    # Handle short or common terms
-    if len(supertag) < 4 or supertag.lower() in get_stopwords():
-        if len(term_counter) > 1:
-            second_best = term_counter.most_common(2)[1][0]
-            supertag = second_best.title().strip()
-        # If still not good, use most frequent tag
-        if len(supertag) < 4 or supertag.lower() in get_stopwords():
-            supertag = texts[np.argmax(counts)].split()[0].title()
+    # Only print brief info to terminal
+    print(f"Derived SuperTag '{supertag}' for cluster {cluster_id} ({len(texts)} tags)")
     
     # Add cluster ID for uniqueness
     return supertag
@@ -286,6 +287,10 @@ def derive_supertag(cluster_df, model=None, cluster_id=None):
 def generate_mapping(df, output_path):
     """Generate a mapping file from each tag to its SuperTag"""
     print("Generating tag mapping...")
+    
+    # Initialize log file in the same directory as the output path
+    output_dir = os.path.dirname(output_path)
+    initialize_log_file(output_dir)
     
     # Initialize sentence transformer model
     model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
@@ -321,13 +326,53 @@ def generate_mapping(df, output_path):
                 continue  # Skip empty tags
                 
             mapping[tag] = supertag
-    
-    # Save mapping to JSON file
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(mapping, f, ensure_ascii=False, indent=2)
-    
+        
     print(f"Generated mapping with {len(mapping)} tags -> {len(set(mapping.values()))} SuperTags")
-    print(f"Mapping saved to {output_path}")
+    
+    # Create aggregated DataFrame at cluster level
+    cluster_data = []
+    for cluster_id, supertag in cluster_supertags.items():
+        cluster_data.append({
+            'cluster': cluster_id,
+            'supertag': supertag,
+            'supertag_reviewed': supertag  # Initialize as copy of supertag
+        })
+    
+    cluster_df = pd.DataFrame(cluster_data)
+    
+    # Set path for the Excel file in the onthology_builder folder
+    excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cluster_supertags.xlsx")
+    
+    # Check if the file already exists
+    if os.path.exists(excel_path):
+        print(f"Existing cluster Excel file found at {excel_path}")
+        try:
+            # Load existing Excel file
+            existing_df = pd.read_excel(excel_path)
+            
+            # Create a mapping of cluster_id to supertag_reviewed from existing file
+            existing_reviews = {}
+            for _, row in existing_df.iterrows():
+                if 'cluster' in existing_df.columns and 'supertag_reviewed' in existing_df.columns:
+                    existing_reviews[row['cluster']] = row['supertag_reviewed']
+            
+            # Update current DataFrame with existing reviewed supertags
+            for i, row in cluster_df.iterrows():
+                if row['cluster'] in existing_reviews:
+                    cluster_df.at[i, 'supertag_reviewed'] = existing_reviews[row['cluster']]
+            
+            print(f"Preserved {len(existing_reviews)} existing reviewed SuperTags")
+        except Exception as e:
+            print(f"Warning: Could not read existing Excel file: {e}")
+            print("Creating new Excel file with default values")
+    
+    # Save the data
+    cluster_df.to_excel(excel_path, index=False)
+    print(f"Aggregated cluster data saved to {excel_path}")
+    
+    # Close log file
+    if log_file:
+        log_file.close()
     
     return mapping, cluster_supertags
 
@@ -342,7 +387,7 @@ def main():
         csv_path = os.path.join(current_dir, "figures_20250511_204225/cluster_data_20250511_204225.csv")
     
     # Set output path
-    output_dir = os.path.join(current_dir, "../mappings")
+    output_dir = current_dir
     output_path = os.path.join(output_dir, "supertag_mapping.json")
     
     # Download NLTK resources
@@ -367,7 +412,7 @@ def main():
     df = df[['id', 'tag', 'count', 'cluster', 'supertag', 'x', 'y']]
     
     # Save the enhanced dataframe to a CSV file
-    csv_output_path = os.path.join(output_dir, "enhanced_tag_data.csv")
+    csv_output_path = os.path.join(output_dir, "supertags_tag_data.csv")
     os.makedirs(output_dir, exist_ok=True)  # Ensure directory exists
     df.to_csv(csv_output_path, index=False)
     print(f"Enhanced tag data saved to {csv_output_path}")
