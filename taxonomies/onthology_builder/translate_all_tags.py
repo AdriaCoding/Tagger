@@ -81,8 +81,9 @@ def add_english_translations(df, batch_size=100, delay=1):
 
 # %% [REGION 4] Main execution
 def main():
-    # Define path to CSV file
-    csv_path = "./all_tags_counts.csv"
+    # Define paths to CSV files in mappings directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(current_dir, "../mappings/all_tags_counts.csv")
     
     # Load data
     tags_df = load_tags_data(csv_path)
@@ -98,8 +99,8 @@ def main():
     print("\nFirst 5 rows with translations:")
     print(tags_df[['id', 'name', 'name_eng', 'count']].head())
     
-    # Save to CSV
-    output_path = "./all_tags_counts_translated.csv"
+    # Save to CSV in mappings directory
+    output_path = os.path.join(current_dir, "../mappings/all_tags_counts_translated.csv")
     tags_df.to_csv(output_path, index=False, encoding='utf-8')
     print(f"\nSaved translated data to {output_path}")
 
