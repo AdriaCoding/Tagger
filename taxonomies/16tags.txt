@@ -1,4 +1,4 @@
-Accessibility
+Accessible
 Ambient_sounds
 Bar
 Bridges

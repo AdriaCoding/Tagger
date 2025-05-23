@@ -1,0 +1,16 @@
+Accessible:accessibile,accesibilidade,Acceso minusvalidos,accesso disabili,accesibilidad parada de autobuses múltiple 10 autobuses paran aquí
+Ambient_sounds:Ambientr sonoro,Sonidos ambiente,sonidos ambientes,exploración barrio ambiente sonoro,Ju ambiente sonoro exploración del barrio,Ambiente sonoro. Animales. Patrimonio Material,Ambient sonoro
+Bar:bar,good cafe,cafeteria,Bacari,Coffee breakfast bar,cocina de bar,Cafezinho
+Bridges:ponti,ponte di Calatrava,ponti multidirezionali,ambiente y puente en el antiguo cauce del río Turia,puente antiguo,Cauce del río viejo puente de Viveros,puente,Pont
+Caution:#precaucion #terraza #bar #cafeteria,floreros terraza bar cafetería precaución,Precaución,obstáculo aéreo,obstáculo,Precaución mami,Precaución porque te puedes pegar un castañazo,Obstáculos aéreos
+Churches:campane,temporaneo,Iglesia,church,Santuario
+Culture:culture,cultural centers,sculture in rilievo,sculture in rilievochiesa santissimo redentore,sculture in rilievochiesa santissimo redentoregondola col tetto,sculture in rilievogondola col tetto,scultura tattile,Scultura,centro cultural sp,Centro cultural São Paulo,Centro cultural,Acesso centro cultural metrô,Centro Cultural Vergueiro,Bolsas Japanhouse cultura,Centro Cultural Itaú,Itaú cultural,Sertanejo som cultura,Casa  de cultura Rancho do Tropeiro Ernesto Vilela,Rota cultural,Jardim das Esculturas,produção cultural,centroculturalvergueiro,Popchoir\nCulturainglesa\nSantos,culturainglesa,Cultura accesible,cultura accessible
+Danger:pericoloso,rampa con peligro
+Mobility:Autobus,tram,transport,carril bici,S-Bahn,railway stations,Vaporetto
+Music:Umgebungsgeräusche,Paulista música cultura,Music,street musician,Museo della music,suoni,musicisti,Música tienda,Teatre el Musical,Música callejera\nMúsicos\nGuitarra,Música en el jardín\nMúsica\nJardín\nPiano,música callejera,músicos,Músicas avpaulista somdapaulista,Black Music,Musicanapaulista country,caminhos musicais,instrumentos musicais
+Park:tree,park,garden
+Restaurant:ristorante,Indian restaurant,Italian restaurant,food,Indian Pakistani restaurant,fantastic pub food,Restauracja jedzenie,restauracja,fast food,Plaza grande restaurantes paralelo al mar,Brasil restaurante
+Smells:percorso loges,Flohmarkt,Geruch,profumi,natura
+Square:la plaza del Espigol es una plaza que tiene jardines rodeandola,en este lado de la plaza el morro de los coches que da sobre la acera,Spielplatz,Pariser Platz,i m on Market Square,Ein Spielplatz ist in der nähe\nDie Sonne scheint\nAm ende ist ein tunnel,Plac zabw,plac Dominikański,piazza,plaza de toros
+Streets_for_everyone:Norton Street,Street crossing,Narrow street,carrers per a tothom,Great Tower Street,Frenchurch street,Liverpool Street Station,paseo,exploración barrio,Street,Camino,Camí,Camí dels enamorats
+Water:agua potable,water,acqualta,Libreria acqua alta,Pericolo acqua,pericolo acqua 10 metri,Barche acqua rumori forti,Aigua,Acquazzone,Aguas,Caraguatatuba,Soroll d’aigua
