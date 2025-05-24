@@ -17,5 +17,6 @@ python -m Tagger.main \
   --device cpu \
   --language en \
   --decision_method adaptive \
+  --taxonomy_file ancestors_supertags.txt
   --json_output \
   $2 $3 $4 $5 $6 $7 $8 $9
