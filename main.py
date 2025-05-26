@@ -86,7 +86,6 @@ def main():
     args = parser.parse_args()
 
     # Configurar parámetros según el tipo de tagger
-    tagger_params = {}
     decision_params = {}
     if args.decision_method == "knn":
         decision_params["knn"] = {"k": args.top_k}
@@ -95,7 +94,6 @@ def main():
     elif args.decision_method == "adaptive":
         decision_params["adaptive"] = {
             "min_threshold": args.min_threshold,
-            "max_tags": args.max_tags
         }
         
     # Set up tagger parameters based on type
