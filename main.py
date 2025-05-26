@@ -88,15 +88,18 @@ def main():
     # Configurar parámetros según el tipo de tagger
     tagger_params = {}
     decision_params = {}
-    
-    decision_params = {
-        'k': args.top_k,
-        'threshold': args.threshold, 
-        'min_threshold': args.min_threshold
-    }
-    # Asignar solo los parámetros que no son None
-    decision_params = {k:v for k,v in decision_params.items() if v is not None}
-
+    if args.decision_method == "knn":
+        decision_params["knn"] = {"k": args.top_k}
+    elif args.decision_method == "radius":
+        decision_params["radius"] = {"threshold": args.threshold}
+    elif args.decision_method == "adaptive":
+        decision_params["adaptive"] = {
+            "min_threshold": args.min_threshold,
+            "max_tags": args.max_tags
+        }
+        
+    # Set up tagger parameters based on type
+    tagger_params = {}
     if args.tagger_type == 'text':
         tagger_params = {
             'model_name': args.text_model,
