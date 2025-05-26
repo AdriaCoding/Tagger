@@ -96,14 +96,15 @@ def main():
     if not os.path.exists(args.audio_file):
         raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
                 
-    kwargs = {'language': args.language,
-              'translations': {
-                  'en': 'English',
-                  'es': 'Español',
-                  'ca': 'Català'
-              }}
-    
-    result = tagger.tag_sample(args.audio_file, **kwargs)
+    kwargs = {'language': args.language}
+
+    translation_languages = {
+        'en': 'English',
+        'es': 'Español',
+        'ca': 'Català'
+    }
+
+    result = tagger.tag_sample(args.audio_file, translation_languages, **kwargs)
     
     # Mostrar resultado en consola
     if args.json_output:

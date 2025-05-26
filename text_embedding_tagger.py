@@ -4,6 +4,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 from .S2TT import WhisperS2TT
 from .base_tagger import BaseTagger, DECISION_METHOD_KNN
+from .T2TT import T2TT
 
 class TextEmbeddingTagger(BaseTagger):
     """
@@ -27,7 +28,7 @@ class TextEmbeddingTagger(BaseTagger):
         """
         self.model_name = model_name
         self.S2TT_model = S2TT_model
-        
+
         # Inicializar modelo de embeddings
         print(f"Cargando modelo de embeddings: {model_name}...")
         self.embedding_model = SentenceTransformer(model_name)
@@ -40,6 +41,9 @@ class TextEmbeddingTagger(BaseTagger):
             device_to_use = device
         
         self.asr = WhisperS2TT(model_name=S2TT_model, device=device_to_use)
+        
+        # Initialize translation pipeline
+        self.translator = T2TT(device=device)
         
         # Inicializar clase base
         super().__init__(taxonomy_file, device, decision_method, decision_params)
@@ -101,31 +105,50 @@ class TextEmbeddingTagger(BaseTagger):
         # Calcular embedding para la transcripción
         return self.embedding_model.encode(transcription), transcription
     
-    def tag_sample(self, sample_path, **kwargs):
+    def tag_sample(self, sample_path, translation_languages=None, **kwargs):
         """
         Etiqueta una muestra.
         
         Args:
             sample_path (str): Ruta a la muestra
+            translation_languages (dict): Dictionary of target languages {code: name}
             **kwargs: Argumentos adicionales específicos del modelo
             
         Returns:
             dict: Diccionario con resultados
         """
-        # Obtener embedding para la muestra
-        sample_embedding, transcription = self.get_audio_embedding(sample_path, **kwargs)
+        # Get transcription
+        transcription = self.transcribe_audio(sample_path, **kwargs)
+        print(f"Transcripción: {transcription}")
+
+        # Process translations if requested
+        detected_lang = None
+        translations = None
+        if translation_languages:
+            detected_lang, translations = self.translator.process_text(
+                transcription, translation_languages
+            )
+
+        # Get embedding for the sample
+        sample_embedding, _ = self.get_audio_embedding(sample_path, transcription)
         
-        # Encontrar etiquetas similares según el método configurado
+        # Find similar tags
         nearest_tags, similarities = self.find_similar_tags(sample_embedding)
         
-        # Crear resultado
+        # Create result
         result = {
             'file': os.path.basename(sample_path),
             'transcription': transcription,
             'tags': []
         }
+
+        # Add language and translations if available
+        if detected_lang:
+            result['detected_language'] = detected_lang
+        if translations:
+            result['translations'] = translations
         
-        # Añadir tags con similitudes
+        # Add tags with similarities
         for i in range(len(nearest_tags)):
             result['tags'].append({
                 'tag': nearest_tags[i],

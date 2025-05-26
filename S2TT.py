@@ -131,7 +131,7 @@ class WhisperS2TT:
         
         # Si el resultado incluye timestamps, extraer solo el texto
         if isinstance(result, dict) and 'text' in result:
-            return result
+             return result
         elif isinstance(result, str):
             return {"text": result}
         else:
