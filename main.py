@@ -13,18 +13,11 @@ from .factory import create_tagger
 
 # Configure logging
 def setup_logging():
-    """Set up logging configuration"""
-    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
-    os.makedirs(log_dir, exist_ok=True)
-    
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    log_file = os.path.join(log_dir, f'tagger_{timestamp}.log')
-    
+    """Set up basic logging to stdout."""
     logging.basicConfig(
         level=logging.INFO,
         format='%(levelname)s - [%(elapsed_time).3fs] - %(name)s - %(message)s',
         handlers=[
-            logging.FileHandler(log_file),
             logging.StreamHandler()
         ]
     )
@@ -33,7 +26,11 @@ def setup_logging():
     old_factory = logging.getLogRecordFactory()
     def record_factory(*args, **kwargs):
         record = old_factory(*args, **kwargs)
-        record.elapsed_time = time.time() - start_time
+        # Calculate elapsed time if start_time is available
+        if 'start_time' in globals():
+            record.elapsed_time = time.time() - start_time
+        else:
+            record.elapsed_time = 0
         return record
     logging.setLogRecordFactory(record_factory)
 
@@ -70,8 +67,8 @@ def main():
                       help="Peso para embeddings de texto en modo híbrido")
     parser.add_argument("--language", type=str, default=None,
                       help="Idioma para transcripción (ej: es, en)")
-    parser.add_argument("--json_output", action="store_true",
-                      help="Mostrar resultado en formato JSON en la consola")
+    parser.add_argument("--output_json_path", type=str, default=None,
+                        help="Ruta completa al archivo JSON de salida. Si se proporciona, guarda los resultados aquí.")
     parser.add_argument('--decision_method', type=str, default=DECISION_METHOD_KNN,
                       choices=[DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_ADAPTIVE],
                       help='Método de decisión para seleccionar etiquetas')
@@ -147,18 +144,21 @@ def main():
     result = tagger.tag_sample(args.audio_file, translation_languages, **kwargs)
     
     # Mostrar resultado en consola
-    if args.json_output:
+    if args.output_json_path:
         # Format translations for better readability
         if 'translations' in result:
             result['translations'] = json.loads(json.dumps(result['translations'], indent=2, ensure_ascii=False))
             
         json_result = json.dumps(result, ensure_ascii=False, indent=2)
-        audio_name = os.path.splitext(os.path.basename(args.audio_file))[0]
-        file_name = f"{audio_name}_{args.tagger_type}_{args.decision_method}.json"
-        output_file = os.path.join(tagger.output_dir, file_name)
-        with open(output_file, 'w', encoding='utf-8') as f:
+        
+        # Ensure the output directory exists
+        output_dir = os.path.dirname(args.output_json_path)
+        if output_dir: # Check if output_dir is not an empty string (i.e., not just a filename)
+            os.makedirs(output_dir, exist_ok=True)
+            
+        with open(args.output_json_path, 'w', encoding='utf-8') as f:
             f.write(json_result)
-        logger.info(f"Results saved to {output_file}")
+        logger.info(f"Results saved to {args.output_json_path}")
     else:
         logger.info("\nResults:")
         logger.info(f"File: {result['file']}")
