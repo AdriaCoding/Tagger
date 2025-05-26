@@ -136,12 +136,23 @@ class T2TT:
             
             try:
                 with suppress_stdout_stderr() if self.suppress_warnings else contextmanager(lambda: (yield))():
-                    result = self.translator(text, 
-                                          src_lang=source_nllb,
-                                          tgt_lang=target_nllb,
-                                          max_length=512)
-                    translations[target_lang] = result[0]['translation_text']
+                    # Split text into sentences if it's too long
+                    sentences = text.split('.')
+                    translated_sentences = []
+                    
+                    for sentence in sentences:
+                        if not sentence.strip():
+                            continue
+                            
+                        result = self.translator(sentence.strip() + ".", 
+                                              src_lang=source_nllb,
+                                              tgt_lang=target_nllb,
+                                              max_length=512)
+                        translated_sentences.append(result[0]['translation_text'])
+                    
+                    translations[target_lang] = ' '.join(translated_sentences)
             except Exception as e:
+                print(f"Translation error for {target_lang}: {str(e)}")
                 translations[target_lang] = f"Translation error: {str(e)}"
         
         return translations
