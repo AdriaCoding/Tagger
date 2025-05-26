@@ -80,7 +80,7 @@ class TextEmbeddingTagger(BaseTagger):
         """
         return self.embedding_model.encode(tag)
     
-    def get_audio_embedding(self, audio_path, transcription=None, language=None):
+    def get_audio_embedding(self, audio_path, transcription=None, language=None, translations=None):
         """
         Obtiene el embedding para una muestra de audio.
         

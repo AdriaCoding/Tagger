@@ -96,7 +96,12 @@ def main():
     if not os.path.exists(args.audio_file):
         raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
                 
-    kwargs = {'language': args.language}
+    kwargs = {'language': args.language,
+              'translations': {
+                  'en': 'English',
+                  'es': 'Español',
+                  'ca': 'Català'
+              }}
     
     result = tagger.tag_sample(args.audio_file, **kwargs)
     
@@ -115,6 +120,8 @@ def main():
         print(f"Archivo: {result['file']}")
         if 'transcription' in result:
             print(f"Transcripción: {result['transcription']}")
+        if 'translations' in result:
+            print(f"Traducciones: {result['translations']}")
         print(f"Método de selección de etiquetas: {args.decision_method}")
         print("Etiquetas recomendadas:")
         for i, tag_info in enumerate(result['tags']):
