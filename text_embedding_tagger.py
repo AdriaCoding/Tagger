@@ -32,6 +32,7 @@ class TextEmbeddingTagger(BaseTagger):
         self.logger = logging.getLogger(__name__)
         self.model_name = model_name
         self.S2TT_model = S2TT_model
+        self.device = device if device else ("cuda" if torch.cuda.is_available() else "cpu")
 
         # Inicializar modelo de embeddings
         start_time = time.time()
@@ -40,27 +41,38 @@ class TextEmbeddingTagger(BaseTagger):
         elapsed = time.time() - start_time
         self.logger.info(f"Embeddings model loaded in {elapsed:.2f}s")
         
-        # Inicializar ASR para transcripción usando WhisperS2TT
-        start_time = time.time()
-        self.logger.info(f"Loading ASR model: {S2TT_model}")
-        if device is None:
-            device_to_use = "cuda" if torch.cuda.is_available() else "cpu"
-        else:
-            device_to_use = device
-        
-        self.asr = WhisperS2TT(model_name=S2TT_model, device=device_to_use)
-        elapsed = time.time() - start_time
-        self.logger.info(f"ASR model loaded in {elapsed:.2f}s")
-        
-        # Initialize translation pipeline
-        start_time = time.time()
-        self.logger.info("Initializing translation pipeline")
-        self.translator = T2TT(device=device)
-        elapsed = time.time() - start_time
-        self.logger.info(f"Translation pipeline initialized in {elapsed:.2f}s")
+        # No inicializamos ASR ni translator aquí
+        self.asr = None
+        self.translator = None
         
         # Inicializar clase base
-        super().__init__(taxonomy_file, device, decision_method, decision_params)
+        super().__init__(taxonomy_file, self.device, decision_method, decision_params)
+    
+    def _load_asr(self):
+        """Carga el modelo ASR bajo demanda"""
+        if self.asr is None:
+            start_time = time.time()
+            self.logger.info(f"Loading ASR model: {self.S2TT_model}")
+            self.asr = WhisperS2TT(model_name=self.S2TT_model, device=self.device)
+            elapsed = time.time() - start_time
+            self.logger.info(f"ASR model loaded in {elapsed:.2f}s")
+    
+    def _unload_asr(self):
+        """Libera la memoria del modelo ASR"""
+        if self.asr is not None:
+            del self.asr
+            self.asr = None
+            torch.cuda.empty_cache()
+            self.logger.info("ASR model unloaded and memory cleared")
+    
+    def _load_translator(self):
+        """Carga el modelo de traducción bajo demanda"""
+        if self.translator is None:
+            start_time = time.time()
+            self.logger.info("Initializing translation pipeline")
+            self.translator = T2TT(device=self.device)
+            elapsed = time.time() - start_time
+            self.logger.info(f"Translation pipeline initialized in {elapsed:.2f}s")
     
     def get_model_identifier(self):
         """
@@ -82,15 +94,16 @@ class TextEmbeddingTagger(BaseTagger):
         Returns:
             str: Texto transcrito
         """
-        start_time = time.time()
-        self.logger.info(f"Starting audio transcription: {audio_file}")
-        
-        # Usar la interfaz de WhisperS2TT para transcribir
-        result = self.asr.transcribe(audio_file, language=language)
-        
-        elapsed = time.time() - start_time
-        self.logger.info(f"Audio transcription completed in {elapsed:.2f}s")
-        return result["text"]
+        try:
+            self._load_asr()
+            start_time = time.time()
+            self.logger.info(f"Starting audio transcription: {audio_file}")
+            result = self.asr.transcribe(audio_file, language=language)
+            elapsed = time.time() - start_time
+            self.logger.info(f"Audio transcription completed in {elapsed:.2f}s")
+            return result["text"]
+        finally:
+            self._unload_asr()  # Liberamos memoria después de transcribir
     
     def get_tag_embedding(self, tag):
         """
@@ -154,14 +167,15 @@ class TextEmbeddingTagger(BaseTagger):
         start_time = time.time()
         self.logger.info(f"Starting sample tagging: {sample_path}")
         
-        # Get transcription
+        # Get transcription (esto cargará y liberará el modelo ASR)
         transcription = self.transcribe_audio(sample_path, **kwargs)
         self.logger.info(f"Transcription: {transcription}")
 
-        # Process translations if requested
+        # Process translations if requested (esto cargará el modelo de traducción)
         detected_lang = None
         translations = None
         if translation_languages:
+            self._load_translator()
             self.logger.info(f"Processing translations for languages: {list(translation_languages.keys())}")
             detected_lang, translations = self.translator.process_text(
                 transcription, translation_languages
