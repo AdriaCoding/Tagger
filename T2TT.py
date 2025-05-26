@@ -38,7 +38,7 @@ class T2TT:
     }
 
     def __init__(self, 
-                 translation_model="facebook/nllb-200-distilled-1.3B",
+                 translation_model="facebook/nllb-200-distilled-600M",
                  lid_model="papluca/xlm-roberta-base-language-detection",
                  device=None,
                  suppress_warnings=True):
@@ -67,7 +67,7 @@ class T2TT:
             self.lid_model = AutoModelForSequenceClassification.from_pretrained(lid_model).to(self.device)
             
         # Initialize Translation Pipeline with smaller model
-        translation_model = "facebook/nllb-200-distilled-1.3B"  # Use smaller model
+        translation_model = "facebook/nllb-200-distilled-600M"  # Use smaller model
         self.logger.info(f"Loading translation model: {translation_model}")
         with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
             self.translator = pipeline("translation", 
