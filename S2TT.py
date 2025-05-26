@@ -7,6 +7,8 @@ import textwrap
 import sys
 import io
 import logging
+import time
+import json
 from contextlib import contextmanager
 from transformers import logging as transformers_logging
 
@@ -26,19 +28,14 @@ def suppress_stdout_stderr():
     """
     Contexto que suprime temporalmente salidas a stdout y stderr.
     """
-    # Guardar los file descriptors originales
     old_stdout = sys.stdout
     old_stderr = sys.stderr
-    
-    # Redirigir stdout y stderr a /dev/null
     sys.stdout = io.StringIO()
     sys.stderr = io.StringIO()
-    
     try:
-        yield  # Ejecutar el bloque dentro del contexto
+        yield
     finally:
-        # Restaurar los file descriptors originales
-        sys.stdout = old_stdout
+        sys.stdout = old_stderr
         sys.stderr = old_stderr
 
 class WhisperS2TT:
@@ -49,28 +46,14 @@ class WhisperS2TT:
     def __init__(self, model_name="openai/whisper-large-v3", device=None, suppress_warnings=True):
         """
         Inicializa el modelo Whisper para transcripción de audio.
-        
-        Args:
-            model_name (str): Nombre del modelo Whisper a utilizar.
-                             Opciones: "openai/whisper-tiny", "openai/whisper-base", 
-                                      "openai/whisper-small", "openai/whisper-medium",
-                                      "openai/whisper-large-v2", "openai/whisper-large-v3"
-            device (str, optional): Dispositivo a utilizar ('cuda' o 'cpu'). 
-                                   Si es None, se autodetecta.
-            suppress_warnings (bool, optional): Si es True, suprime todos los warnings.
-                                              Por defecto es True.
         """
+        self.logger = logging.getLogger(__name__)
+        
         # Suprimir warnings si se solicita
         self.suppress_warnings = suppress_warnings
         if suppress_warnings:
-            # Suprimir warnings estándar de Python
             warnings.filterwarnings("ignore")
-            
-            # Suprimir warnings específicos de transformers
             transformers_logging.set_verbosity_error()
-            
-            # En algunos casos, los warnings vienen directamente por stdout/stderr
-            # y no pasan por el sistema de logging
             old_environ = os.environ.copy()
             os.environ["TRANSFORMERS_VERBOSITY"] = "error"
             os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -81,9 +64,12 @@ class WhisperS2TT:
         else:
             self.device = device
         
-        print(f"Device set to use {self.device}")
+        self.logger.info(f"Device set to use {self.device}")
         
         # Inicializar pipeline de ASR, suprimiendo salidas si es necesario
+        start_time = time.time()
+        self.logger.info(f"Loading ASR model: {model_name}")
+        
         if suppress_warnings:
             with suppress_stdout_stderr():
                 self.asr_model = pipeline(
@@ -98,82 +84,102 @@ class WhisperS2TT:
                 device=self.device
             )
         
+        elapsed = time.time() - start_time
+        self.logger.info(f"ASR model loaded in {elapsed:.2f}s")
         self.model_name = model_name
         
     def transcribe(self, audio_file, language=None, **kwargs):
         """
         Transcribe un archivo de audio a texto.
-        
-        Args:
-            audio_file (str): Ruta al archivo de audio a transcribir
-            language (str, optional): Idioma para la transcripción ('es', 'en', etc.).
-                                     Si es None, Whisper intentará detectar el idioma.
-            **kwargs: Argumentos adicionales para pasar al pipeline
-        
-        Returns:
-            str: Texto transcrito del audio
         """
+        start_time = time.time()
+        self.logger.info(f"Starting transcription of {audio_file}")
+        
         generate_kwargs = kwargs.pop('generate_kwargs', {})
         
         # Si se especifica un idioma, usarlo
         if language:
             generate_kwargs['language'] = language
+            self.logger.info(f"Using specified language: {language}")
             
         # Asegurarse de que return_timestamps esté habilitado para archivos largos
         generate_kwargs['return_timestamps'] = True
         
-        # Transcribir audio, suprimiendo salidas si es necesario
-        if self.suppress_warnings:
-            with suppress_stdout_stderr():
+        try:
+            # Transcribir audio, suprimiendo salidas si es necesario
+            if self.suppress_warnings:
+                with suppress_stdout_stderr():
+                    result = self.asr_model(audio_file, generate_kwargs=generate_kwargs, **kwargs)
+            else:
                 result = self.asr_model(audio_file, generate_kwargs=generate_kwargs, **kwargs)
-        else:
-            result = self.asr_model(audio_file, generate_kwargs=generate_kwargs, **kwargs)
-        
-        # Si el resultado incluye timestamps, extraer solo el texto
-        if isinstance(result, dict) and 'text' in result:
-             return result
-        elif isinstance(result, str):
-            return {"text": result}
-        else:
-            return {"text": str(result)}
+            
+            # Si el resultado incluye timestamps, extraer solo el texto
+            if isinstance(result, dict) and 'text' in result:
+                final_result = result
+            elif isinstance(result, str):
+                final_result = {"text": result}
+            else:
+                final_result = {"text": str(result)}
+            
+            elapsed = time.time() - start_time
+            self.logger.info(f"Transcription completed in {elapsed:.2f}s")
+            self.logger.debug(f"Transcription result:\n{json.dumps(final_result, indent=2, ensure_ascii=False)}")
+            
+            return final_result
+            
+        except Exception as e:
+            elapsed = time.time() - start_time
+            self.logger.error(f"Transcription failed after {elapsed:.2f}s: {str(e)}")
+            raise
     
     def get_info(self):
         """
         Obtiene información sobre el modelo ASR actual.
-        
-        Returns:
-            dict: Información del modelo (nombre y dispositivo)
         """
-        return {
+        info = {
             "model_name": self.model_name,
             "device": self.device
         }
+        self.logger.debug(f"Model info: {json.dumps(info, indent=2)}")
+        return info
 
 # Función simple para transcribir un archivo de audio sin crear una instancia de clase
 def transcribe_audio(audio_file, model_name="openai/whisper-large-v3", language=None, device=None, suppress_warnings=True):
     """
     Transcribe un archivo de audio usando Whisper sin crear una instancia de clase.
-    
-    Args:
-        audio_file (str): Ruta al archivo de audio
-        model_name (str): Nombre del modelo Whisper a utilizar
-        language (str, optional): Idioma para la transcripción. Si es None, se detecta automáticamente.
-        device (str, optional): Dispositivo a utilizar ('cuda' o 'cpu'). Si es None, se autodetecta.
-        suppress_warnings (bool, optional): Si es True, suprime todos los warnings. Por defecto es True.
-    
-    Returns:
-        str: Texto transcrito del audio
     """
-    # Crear instancia temporal de WhisperASR
-    asr = WhisperS2TT(model_name=model_name, device=device, suppress_warnings=suppress_warnings)
+    logger = logging.getLogger(__name__)
+    start_time = time.time()
     
-    # Transcribir audio
-    result = asr.transcribe(audio_file, language=language)
-    print(result)
-    return result["text"]
+    try:
+        # Crear instancia temporal de WhisperASR
+        logger.info(f"Creating temporary ASR instance with model {model_name}")
+        asr = WhisperS2TT(model_name=model_name, device=device, suppress_warnings=suppress_warnings)
+        
+        # Transcribir audio
+        result = asr.transcribe(audio_file, language=language)
+        
+        elapsed = time.time() - start_time
+        logger.info(f"Standalone transcription completed in {elapsed:.2f}s")
+        logger.debug(f"Transcription result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
+        
+        return result["text"]
+        
+    except Exception as e:
+        elapsed = time.time() - start_time
+        logger.error(f"Standalone transcription failed after {elapsed:.2f}s: {str(e)}")
+        raise
 
 # Uso de ejemplo
 if __name__ == "__main__":
+    # Configurar logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - [%(elapsed_time).3fs] - %(message)s'
+    )
+    logger = logging.getLogger(__name__)
+    start_time = time.time()
+    
     # Configurar el parser de argumentos con RawTextHelpFormatter para preservar saltos de línea
     parser = argparse.ArgumentParser(
         description="Transcribe audio usando el modelo Whisper",
@@ -202,6 +208,7 @@ if __name__ == "__main__":
     
     # Parsear argumentos
     args = parser.parse_args()
+    logger.info(f"Arguments parsed: {vars(args)}")
     
     # Convertir ruta relativa a absoluta si es necesario
     audio_path = args.audio_file_path
@@ -211,21 +218,31 @@ if __name__ == "__main__":
     
     # Verificar si el archivo existe
     if os.path.exists(audio_path):
-        print(f"Transcribiendo archivo: {audio_path}")
-        print(f"Usando modelo: {args.model_name}")
+        logger.info(f"Processing file: {audio_path}")
+        logger.info(f"Using model: {args.model_name}")
         
         if args.language:
-            print(f"Idioma especificado: {args.language}")
+            logger.info(f"Language specified: {args.language}")
         else:
-            print("Modo: Detección automática de idioma")
+            logger.info("Mode: Automatic language detection")
         
-        # Transcribir audio
-        transcription = transcribe_audio(audio_path, model_name=args.model_name, 
-                                        language=args.language, device=args.device,
-                                        suppress_warnings=args.silent)
-        
-        # Mostrar resultados
-        print(f"\nTranscripción: {transcription}")
+        try:
+            # Transcribir audio
+            transcription = transcribe_audio(audio_path, model_name=args.model_name, 
+                                          language=args.language, device=args.device,
+                                          suppress_warnings=args.silent)
+            
+            # Mostrar resultados
+            logger.info(f"\nTranscription: {transcription}")
+            
+        except Exception as e:
+            logger.error(f"Transcription failed: {str(e)}")
+            sys.exit(1)
+            
     else:
-        print(f"Error: El archivo {audio_path} no existe.")
-        print("Verifica la ruta o proporciona una ruta absoluta con --audio_file_path.")
+        logger.error(f"Error: File {audio_path} does not exist.")
+        logger.info("Verify the path or provide an absolute path with --audio_file_path.")
+        sys.exit(1)
+        
+    total_time = time.time() - start_time
+    logger.info(f"Total execution time: {total_time:.2f} seconds")

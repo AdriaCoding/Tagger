@@ -2,9 +2,11 @@ import torch
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 import warnings
 import logging
+import time
 from contextlib import contextmanager
 import sys
 import io
+import json
 
 # Suppress unnecessary warnings
 logging.getLogger("transformers").setLevel(logging.ERROR)
@@ -49,22 +51,23 @@ class T2TT:
             device (str): Device to use ('cuda' or 'cpu')
             suppress_warnings (bool): Whether to suppress pipeline warnings
         """
+        self.logger = logging.getLogger(__name__)
         self.suppress_warnings = suppress_warnings
         if device is None:
             self.device = "cuda" if torch.cuda.is_available() else "cpu"
         else:
             self.device = device
             
-        print(f"Initializing T2TT on device: {self.device}")
+        self.logger.info(f"Initializing T2TT on device: {self.device}")
         
         # Initialize Language Identification
-        print(f"Loading LID model: {lid_model}")
+        self.logger.info(f"Loading LID model: {lid_model}")
         with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
             self.lid_tokenizer = AutoTokenizer.from_pretrained(lid_model)
             self.lid_model = AutoModelForSequenceClassification.from_pretrained(lid_model).to(self.device)
             
         # Initialize Translation Pipeline
-        print(f"Loading translation model: {translation_model}")
+        self.logger.info(f"Loading translation model: {translation_model}")
         with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
             self.translator = pipeline("translation", 
                                     model=translation_model,
@@ -80,6 +83,9 @@ class T2TT:
         Returns:
             str: Detected language code (e.g., 'en', 'es', 'ca')
         """
+        start_time = time.time()
+        self.logger.info("Starting language detection")
+        
         with suppress_stdout_stderr() if self.suppress_warnings else contextmanager(lambda: (yield))():
             inputs = self.lid_tokenizer(text, return_tensors="pt", padding=True, truncation=True)
             inputs = {k: v.to(self.device) for k, v in inputs.items()}
@@ -99,7 +105,11 @@ class T2TT:
                 # Add more mappings as needed
             }
             
-            return lang_map.get(detected_lang.lower(), detected_lang.lower())
+            detected = lang_map.get(detected_lang.lower(), detected_lang.lower())
+            
+        elapsed = time.time() - start_time
+        self.logger.info(f"Language detection completed in {elapsed:.2f}s. Detected: {detected}")
+        return detected
     
     def translate_text(self, text, source_lang, target_languages):
         """
@@ -113,24 +123,32 @@ class T2TT:
         Returns:
             dict: Dictionary of translations {lang_code: translated_text}
         """
+        start_time = time.time()
+        self.logger.info(f"Starting translation from {source_lang} to {list(target_languages.keys())}")
+        
         if not text.strip():
+            self.logger.warning("Empty text provided for translation")
             return {lang: "" for lang in target_languages}
             
         translations = {}
         source_nllb = self.NLLB_LANGUAGE_CODES.get(source_lang)
         
         if not source_nllb:
-            print(f"Warning: Source language '{source_lang}' not supported for translation")
+            self.logger.error(f"Source language '{source_lang}' not supported for translation")
             return {lang: f"Translation failed: source language '{source_lang}' not supported" 
                    for lang in target_languages}
         
         for target_lang in target_languages:
+            lang_start_time = time.time()
+            
             if target_lang == source_lang:
                 translations[target_lang] = text
+                self.logger.info(f"Skipped translation for {target_lang} (same as source)")
                 continue
                 
             target_nllb = self.NLLB_LANGUAGE_CODES.get(target_lang)
             if not target_nllb:
+                self.logger.error(f"Target language '{target_lang}' not supported")
                 translations[target_lang] = f"Translation failed: target language '{target_lang}' not supported"
                 continue
             
@@ -151,9 +169,16 @@ class T2TT:
                         translated_sentences.append(result[0]['translation_text'])
                     
                     translations[target_lang] = ' '.join(translated_sentences)
+                    lang_elapsed = time.time() - lang_start_time
+                    self.logger.info(f"Translation to {target_lang} completed in {lang_elapsed:.2f}s")
+                    
             except Exception as e:
-                print(f"Translation error for {target_lang}: {str(e)}")
+                self.logger.error(f"Translation error for {target_lang}: {str(e)}")
                 translations[target_lang] = f"Translation error: {str(e)}"
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"All translations completed in {elapsed:.2f}s")
+        self.logger.debug(f"Translations:\n{json.dumps(translations, indent=2, ensure_ascii=False)}")
         
         return translations
     
@@ -168,6 +193,13 @@ class T2TT:
         Returns:
             tuple: (detected_language, translations_dict)
         """
+        start_time = time.time()
+        self.logger.info("Starting text processing")
+        
         detected_lang = self.detect_language(text)
-        translations = self.translate_text(text, detected_lang, target_languages.keys())
+        translations = self.translate_text(text, detected_lang, target_languages)
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"Text processing completed in {elapsed:.2f}s")
+        
         return detected_lang, translations

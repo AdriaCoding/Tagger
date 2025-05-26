@@ -1,6 +1,9 @@
 import numpy as np
 import os
 import torch
+import logging
+import time
+import json
 from abc import ABC, abstractmethod
 from sklearn.neighbors import NearestNeighbors
 from tqdm.auto import tqdm
@@ -40,6 +43,10 @@ class BaseTagger(ABC):
                 - Para 'hdbscan': {'min_cluster_size': tamaño mínimo de cluster (default: 5),
                                   'min_samples': muestras mínimas (default: 1)}
         """
+        self.logger = logging.getLogger(__name__)
+        start_time = time.time()
+        self.logger.info("Initializing base tagger")
+        
         self.tagger_dir = TAGGER_DIR
         self.output_dir = os.path.join(TAGGER_DIR, 'output')
         self.taxonomy_file = os.path.join(TAGGER_DIR, 'taxonomies', taxonomy_file)
@@ -61,7 +68,7 @@ class BaseTagger(ABC):
             
         # Validar el método de selección de etiquetas
         if decision_method not in [DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_ADAPTIVE]:  # DECISION_METHOD_HDBSCAN removed
-            print(f"ADVERTENCIA: Método de selección '{decision_method}' no reconocido. Usando KNN por defecto.")
+            self.logger.warning(f"Selection method '{decision_method}' not recognized. Using KNN as default.")
             self.decision_method = DECISION_METHOD_KNN
                
         # Configurar dispositivo
@@ -70,14 +77,14 @@ class BaseTagger(ABC):
         else:
             self.device = device
             
-        print(f"Usando dispositivo: {self.device}")
+        self.logger.info(f"Using device: {self.device}")
         
         # Crear directorio de embeddings si no existe
         os.makedirs(self.embeddings_dir, exist_ok=True)
         
         # Cargar etiquetas
         self.tags = self.load_tags(self.taxonomy_file)
-        print(f"Se cargaron {len(self.tags)} etiquetas desde {taxonomy_file}")
+        self.logger.info(f"Loaded {len(self.tags)} tags from {taxonomy_file}")
         
         # Cargar o calcular embeddings de etiquetas
         self.tag_embeddings = self.load_or_compute_embeddings()
@@ -85,26 +92,38 @@ class BaseTagger(ABC):
         # Inicializar el método de selección de etiquetas apropiado
         self._init_decision_method()
         
-        print(f"Método de selección de etiquetas: {self.decision_method}")
+        elapsed = time.time() - start_time
+        self.logger.info(f"Base tagger initialization completed in {elapsed:.2f}s")
+        self.logger.info(f"Tag selection method: {self.decision_method}")
     
     def _init_decision_method(self):
         """
         Inicializa el método de selección de etiquetas según la configuración.
         """
+        start_time = time.time()
+        self.logger.info("Initializing tag selection method")
+        
         if self.decision_method == DECISION_METHOD_KNN:
             k = self.decision_params[DECISION_METHOD_KNN]['k']
             self.knn = NearestNeighbors(n_neighbors=min(k, len(self.tags)), metric='cosine')
             self.knn.fit(self.tag_embeddings)
+            self.logger.info(f"KNN initialized with k={k}")
         
         elif self.decision_method == DECISION_METHOD_RADIUS:
             threshold = self.decision_params[DECISION_METHOD_RADIUS]['threshold']
             self.rnn = NearestNeighbors(radius=1-threshold, metric='cosine')
             self.rnn.fit(self.tag_embeddings)
+            self.logger.info(f"Radius search initialized with threshold={threshold}")
         
         elif self.decision_method == DECISION_METHOD_ADAPTIVE:
             # Para el método adaptativo, necesitaremos usar KNN para seleccionar todas las etiquetas
             self.knn_all = NearestNeighbors(n_neighbors=len(self.tags), metric='cosine')
             self.knn_all.fit(self.tag_embeddings)
+            min_threshold = self.decision_params[DECISION_METHOD_ADAPTIVE]['min_threshold']
+            self.logger.info(f"Adaptive method initialized with min_threshold={min_threshold}")
+            
+        elapsed = time.time() - start_time
+        self.logger.info(f"Tag selection method initialized in {elapsed:.2f}s")
     
     def load_tags(self, taxonomy_file):
         """
@@ -116,9 +135,14 @@ class BaseTagger(ABC):
         Returns:
             list: Lista de etiquetas procesadas
         """
+        start_time = time.time()
+        self.logger.info(f"Loading tags from: {taxonomy_file}")
+        
         with open(taxonomy_file, 'r', encoding='utf-8') as f:
             tags = [line.strip().lower() for line in f.readlines()]
         
+        elapsed = time.time() - start_time
+        self.logger.info(f"Tags loaded in {elapsed:.2f}s")
         return tags
     
     @abstractmethod
@@ -157,12 +181,16 @@ class BaseTagger(ABC):
         Returns:
             numpy.ndarray: Matriz de embeddings
         """
+        start_time = time.time()
+        self.logger.info("Computing embeddings for all tags")
+        
         embeddings = []
-        print("Calculando embeddings para etiquetas...")
-        for tag in tqdm(self.tags):
+        for tag in tqdm(self.tags, desc="Computing tag embeddings"):
             embedding = self.get_tag_embedding(tag)
             embeddings.append(embedding)
         
+        elapsed = time.time() - start_time
+        self.logger.info(f"Tag embeddings computed in {elapsed:.2f}s")
         return np.array(embeddings)
     
     def get_embeddings_file_path(self):
@@ -194,21 +222,26 @@ class BaseTagger(ABC):
         Returns:
             numpy.ndarray: Matriz de embeddings de etiquetas
         """
+        start_time = time.time()
         embeddings_file = self.get_embeddings_file_path()
         
         # Verificar si el archivo de embeddings existe
         if os.path.exists(embeddings_file):
-            print(f"Cargando embeddings existentes desde {embeddings_file}")
+            self.logger.info(f"Loading existing embeddings from {embeddings_file}")
             data = np.load(embeddings_file)
+            elapsed = time.time() - start_time
+            self.logger.info(f"Embeddings loaded in {elapsed:.2f}s")
             return data['embeddings']
         else:
-            print(f"Calculando embeddings para {len(self.tags)} etiquetas...")
+            self.logger.info(f"Computing embeddings for {len(self.tags)} tags")
             embeddings = self.compute_tag_embeddings()
             
             # Guardar embeddings
             np.savez(embeddings_file, embeddings=embeddings, tags=np.array(self.tags))
-            print(f"Embeddings guardados en {embeddings_file}")
+            self.logger.info(f"Embeddings saved to {embeddings_file}")
             
+            elapsed = time.time() - start_time
+            self.logger.info(f"Embeddings computed and saved in {elapsed:.2f}s")
             return embeddings
     
     def find_similar_tags_knn(self, sample_embedding, k=None):
@@ -222,8 +255,11 @@ class BaseTagger(ABC):
         Returns:
             tuple: (lista de etiquetas similares, lista de similitudes)
         """
+        start_time = time.time()
         if k is None:
             k = self.decision_params[DECISION_METHOD_KNN]['k']
+        
+        self.logger.info(f"Finding {k} nearest neighbors")
         
         # Asegurar que k no sea mayor que el número de etiquetas disponibles
         k = min(k, len(self.tags))
@@ -233,6 +269,10 @@ class BaseTagger(ABC):
         # Obtener etiquetas y calcular similitudes
         nearest_tags = [self.tags[idx] for idx in indices[0]]
         similarities = [float(1 - distance) for distance in distances[0]]
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"KNN search completed in {elapsed:.2f}s")
+        self.logger.debug(f"Found tags: {json.dumps(list(zip(nearest_tags, similarities)), indent=2)}")
         
         return nearest_tags, similarities
     
@@ -247,8 +287,11 @@ class BaseTagger(ABC):
         Returns:
             tuple: (lista de etiquetas similares, lista de similitudes)
         """
+        start_time = time.time()
         if threshold is None:
             threshold = self.decision_params[DECISION_METHOD_RADIUS]['threshold']
+        
+        self.logger.info(f"Finding neighbors within threshold {threshold}")
         
         # Encontrar etiquetas dentro del radio
         distances, indices = self.rnn.radius_neighbors(sample_embedding.reshape(1, -1), radius=1-threshold)
@@ -261,6 +304,10 @@ class BaseTagger(ABC):
         sorted_pairs = sorted(zip(nearest_tags, similarities), key=lambda x: x[1], reverse=True)
         nearest_tags = [tag for tag, _ in sorted_pairs]
         similarities = [sim for _, sim in sorted_pairs]
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"Radius search completed in {elapsed:.2f}s")
+        self.logger.debug(f"Found tags: {json.dumps(list(zip(nearest_tags, similarities)), indent=2)}")
         
         return nearest_tags, similarities
     
@@ -276,8 +323,11 @@ class BaseTagger(ABC):
         Returns:
             tuple: (lista de etiquetas similares, lista de similitudes)
         """
+        start_time = time.time()
         if min_threshold is None:
             min_threshold = self.decision_params[DECISION_METHOD_ADAPTIVE]['min_threshold']
+        
+        self.logger.info(f"Finding tags with adaptive threshold {min_threshold}")
         
         # Obtener todas las etiquetas y sus similitudes
         distances, indices = self.knn_all.kneighbors(sample_embedding.reshape(1, -1), n_neighbors=len(self.tags))
@@ -293,12 +343,17 @@ class BaseTagger(ABC):
         if not filtered_pairs:
             # Encontrar la etiqueta con mayor similitud
             max_idx = similarities.index(max(similarities))
+            self.logger.info("No tags above threshold, using most similar tag")
             return [tags[max_idx]], [similarities[max_idx]]
         
         # Ordenar por similitud (mayor a menor)
         sorted_pairs = sorted(filtered_pairs, key=lambda x: x[1], reverse=True)
         nearest_tags = [tag for tag, _ in sorted_pairs]
         similarities = [sim for _, sim in sorted_pairs]
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"Adaptive search completed in {elapsed:.2f}s")
+        self.logger.debug(f"Found tags: {json.dumps(list(zip(nearest_tags, similarities)), indent=2)}")
         
         return nearest_tags, similarities
     
@@ -313,19 +368,26 @@ class BaseTagger(ABC):
         Returns:
             tuple: (lista de etiquetas similares, lista de similitudes)
         """
+        start_time = time.time()
+        self.logger.info(f"Finding similar tags using method: {self.decision_method}")
+        
         if self.decision_method == DECISION_METHOD_RADIUS:
             threshold = self.decision_params[DECISION_METHOD_RADIUS]['threshold']
-            return self.find_similar_tags_radius(sample_embedding, threshold)
+            result = self.find_similar_tags_radius(sample_embedding, threshold)
         # elif self.decision_method == DECISION_METHOD_HDBSCAN:
         #     min_cluster_size = self.decision_params[DECISION_METHOD_HDBSCAN]['min_cluster_size']
         #     min_samples = self.decision_params[DECISION_METHOD_HDBSCAN]['min_samples']
         #     return self.find_similar_tags_hdbscan(sample_embedding, min_cluster_size, min_samples)
         elif self.decision_method == DECISION_METHOD_ADAPTIVE:
             min_threshold = self.decision_params[DECISION_METHOD_ADAPTIVE]['min_threshold']
-            return self.find_similar_tags_adaptive(sample_embedding, min_threshold)
+            result = self.find_similar_tags_adaptive(sample_embedding, min_threshold)
         else:  # Fallback to KNN
             k = self.decision_params[DECISION_METHOD_KNN]['k']
-            return self.find_similar_tags_knn(sample_embedding, k)
+            result = self.find_similar_tags_knn(sample_embedding, k)
+            
+        elapsed = time.time() - start_time
+        self.logger.info(f"Tag search completed in {elapsed:.2f}s")
+        return result
     
     def tag_sample(self, sample_path, **kwargs):
         """
@@ -338,6 +400,9 @@ class BaseTagger(ABC):
         Returns:
             dict: Diccionario con resultados
         """
+        start_time = time.time()
+        self.logger.info(f"Starting sample tagging: {sample_path}")
+        
         # Obtener embedding para la muestra
         sample_embedding, transcription = self.get_audio_embedding(sample_path, **kwargs)
         
@@ -357,5 +422,9 @@ class BaseTagger(ABC):
                 'tag': nearest_tags[i],
                 'similarity': similarities[i]
             })
+            
+        elapsed = time.time() - start_time
+        self.logger.info(f"Sample tagging completed in {elapsed:.2f}s")
+        self.logger.debug(f"Tagging result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
         
         return result

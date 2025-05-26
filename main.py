@@ -1,6 +1,9 @@
 import argparse
 import os
 import json
+import logging
+import time
+from datetime import datetime
 from .base_tagger import (
     DECISION_METHOD_KNN,
     DECISION_METHOD_RADIUS,
@@ -8,7 +11,42 @@ from .base_tagger import (
 )
 from .factory import create_tagger
 
+# Configure logging
+def setup_logging():
+    """Set up logging configuration"""
+    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
+    os.makedirs(log_dir, exist_ok=True)
+    
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    log_file = os.path.join(log_dir, f'tagger_{timestamp}.log')
+    
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(levelname)s - [%(elapsed_time).3fs] - %(name)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file),
+            logging.StreamHandler()
+        ]
+    )
+    
+    # Add elapsed time to log record
+    old_factory = logging.getLogRecordFactory()
+    def record_factory(*args, **kwargs):
+        record = old_factory(*args, **kwargs)
+        record.elapsed_time = time.time() - start_time
+        return record
+    logging.setLogRecordFactory(record_factory)
+
 def main():
+    # Start timing
+    global start_time
+    start_time = time.time()
+    
+    # Set up logging
+    setup_logging()
+    logger = logging.getLogger(__name__)
+    logger.info("Starting Tagger application")
+
     # Configurar argumentos
     parser = argparse.ArgumentParser(description="Etiquetar un archivo de audio con diferentes modelos")
     
@@ -94,6 +132,7 @@ def main():
     
     # Procesar archivo de audio individual
     if not os.path.exists(args.audio_file):
+        logger.error(f"Audio file not found: {args.audio_file}")
         raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
                 
     kwargs = {'language': args.language}
@@ -104,29 +143,37 @@ def main():
         'ca': 'Català'
     }
 
+    logger.info(f"Processing audio file: {args.audio_file}")
     result = tagger.tag_sample(args.audio_file, translation_languages, **kwargs)
     
     # Mostrar resultado en consola
     if args.json_output:
+        # Format translations for better readability
+        if 'translations' in result:
+            result['translations'] = json.loads(json.dumps(result['translations'], indent=2, ensure_ascii=False))
+            
         json_result = json.dumps(result, ensure_ascii=False, indent=2)
         audio_name = os.path.splitext(os.path.basename(args.audio_file))[0]
         file_name = f"{audio_name}_{args.tagger_type}_{args.decision_method}.json"
         output_file = os.path.join(tagger.output_dir, file_name)
-        with open(output_file, 'w') as f:
+        with open(output_file, 'w', encoding='utf-8') as f:
             f.write(json_result)
-        print(f"Resultado guardado en {output_file}.")
-        print(f"\nResultado:\n {json_result}")
+        logger.info(f"Results saved to {output_file}")
     else:
-        print("\nResultado:")
-        print(f"Archivo: {result['file']}")
+        logger.info("\nResults:")
+        logger.info(f"File: {result['file']}")
         if 'transcription' in result:
-            print(f"Transcripción: {result['transcription']}")
+            logger.info(f"Transcription: {result['transcription']}")
         if 'translations' in result:
-            print(f"Traducciones: {result['translations']}")
-        print(f"Método de selección de etiquetas: {args.decision_method}")
-        print("Etiquetas recomendadas:")
+            translations_json = json.dumps(result['translations'], indent=2, ensure_ascii=False)
+            logger.info(f"Translations:\n{translations_json}")
+        logger.info(f"Tag selection method: {args.decision_method}")
+        logger.info("Recommended tags:")
         for i, tag_info in enumerate(result['tags']):
-            print(f"  {i+1}. {tag_info['tag']} (similitud: {tag_info['similarity']:.4f})")
+            logger.info(f"  {i+1}. {tag_info['tag']} (similarity: {tag_info['similarity']:.4f})")
+
+    total_time = time.time() - start_time
+    logger.info(f"Total execution time: {total_time:.2f} seconds")
 
 if __name__ == "__main__":
     main() 

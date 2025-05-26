@@ -2,6 +2,9 @@ import os
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import torch
+import logging
+import time
+import json
 from .S2TT import WhisperS2TT
 from .base_tagger import BaseTagger, DECISION_METHOD_KNN
 from .T2TT import T2TT
@@ -26,24 +29,35 @@ class TextEmbeddingTagger(BaseTagger):
             decision_method (str): Método para seleccionar etiquetas
             decision_params (dict): Parámetros adicionales para el método de selección
         """
+        self.logger = logging.getLogger(__name__)
         self.model_name = model_name
         self.S2TT_model = S2TT_model
 
         # Inicializar modelo de embeddings
-        print(f"Cargando modelo de embeddings: {model_name}...")
+        start_time = time.time()
+        self.logger.info(f"Loading embeddings model: {model_name}")
         self.embedding_model = SentenceTransformer(model_name)
+        elapsed = time.time() - start_time
+        self.logger.info(f"Embeddings model loaded in {elapsed:.2f}s")
         
         # Inicializar ASR para transcripción usando WhisperS2TT
-        print(f"Cargando modelo ASR: {S2TT_model}...")
+        start_time = time.time()
+        self.logger.info(f"Loading ASR model: {S2TT_model}")
         if device is None:
             device_to_use = "cuda" if torch.cuda.is_available() else "cpu"
         else:
             device_to_use = device
         
         self.asr = WhisperS2TT(model_name=S2TT_model, device=device_to_use)
+        elapsed = time.time() - start_time
+        self.logger.info(f"ASR model loaded in {elapsed:.2f}s")
         
         # Initialize translation pipeline
+        start_time = time.time()
+        self.logger.info("Initializing translation pipeline")
         self.translator = T2TT(device=device)
+        elapsed = time.time() - start_time
+        self.logger.info(f"Translation pipeline initialized in {elapsed:.2f}s")
         
         # Inicializar clase base
         super().__init__(taxonomy_file, device, decision_method, decision_params)
@@ -68,8 +82,14 @@ class TextEmbeddingTagger(BaseTagger):
         Returns:
             str: Texto transcrito
         """
+        start_time = time.time()
+        self.logger.info(f"Starting audio transcription: {audio_file}")
+        
         # Usar la interfaz de WhisperS2TT para transcribir
         result = self.asr.transcribe(audio_file, language=language)
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"Audio transcription completed in {elapsed:.2f}s")
         return result["text"]
     
     def get_tag_embedding(self, tag):
@@ -82,7 +102,14 @@ class TextEmbeddingTagger(BaseTagger):
         Returns:
             numpy.ndarray: Vector de embedding
         """
-        return self.embedding_model.encode(tag)
+        start_time = time.time()
+        self.logger.debug(f"Computing embedding for tag: {tag}")
+        
+        embedding = self.embedding_model.encode(tag)
+        
+        elapsed = time.time() - start_time
+        self.logger.debug(f"Tag embedding computed in {elapsed:.2f}s")
+        return embedding
     
     def get_audio_embedding(self, audio_path, transcription=None, language=None, translations=None):
         """
@@ -97,13 +124,20 @@ class TextEmbeddingTagger(BaseTagger):
             numpy.ndarray: Vector de embedding
             string: Transcripción
         """
+        start_time = time.time()
+        self.logger.info(f"Computing audio embedding for: {audio_path}")
+        
         # Si no hay transcripción, transcribir audio
         if transcription is None:
-            print(f"Transcribiendo audio: {audio_path}")
+            self.logger.info("No transcription provided, transcribing audio")
             transcription = self.transcribe_audio(audio_path, language)
         
         # Calcular embedding para la transcripción
-        return self.embedding_model.encode(transcription), transcription
+        embedding = self.embedding_model.encode(transcription)
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"Audio embedding computed in {elapsed:.2f}s")
+        return embedding, transcription
     
     def tag_sample(self, sample_path, translation_languages=None, **kwargs):
         """
@@ -117,22 +151,29 @@ class TextEmbeddingTagger(BaseTagger):
         Returns:
             dict: Diccionario con resultados
         """
+        start_time = time.time()
+        self.logger.info(f"Starting sample tagging: {sample_path}")
+        
         # Get transcription
         transcription = self.transcribe_audio(sample_path, **kwargs)
-        print(f"Transcripción: {transcription}")
+        self.logger.info(f"Transcription: {transcription}")
 
         # Process translations if requested
         detected_lang = None
         translations = None
         if translation_languages:
+            self.logger.info(f"Processing translations for languages: {list(translation_languages.keys())}")
             detected_lang, translations = self.translator.process_text(
                 transcription, translation_languages
             )
+            self.logger.info(f"Detected language: {detected_lang}")
+            self.logger.debug(f"Translations:\n{json.dumps(translations, indent=2, ensure_ascii=False)}")
 
         # Get embedding for the sample
         sample_embedding, _ = self.get_audio_embedding(sample_path, transcription)
         
         # Find similar tags
+        self.logger.info("Finding similar tags")
         nearest_tags, similarities = self.find_similar_tags(sample_embedding)
         
         # Create result
@@ -154,5 +195,9 @@ class TextEmbeddingTagger(BaseTagger):
                 'tag': nearest_tags[i],
                 'similarity': similarities[i]
             })
+        
+        elapsed = time.time() - start_time
+        self.logger.info(f"Sample tagging completed in {elapsed:.2f}s")
+        self.logger.debug(f"Tagging result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
         
         return result 
