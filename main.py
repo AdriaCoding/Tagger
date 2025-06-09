@@ -170,7 +170,11 @@ def main():
         logger.info("\nResults:")
         logger.info(f"File: {result['file']}")
         if 'transcription' in result:
-            logger.info(f"Transcription: {result['transcription']}")
+            logger.info(f"Transcription (original): {result['transcription']}")
+        if 'transcription_eng' in result:
+            logger.info(f"Transcription (English): {result['transcription_eng']}")
+        if 'lang' in result:
+            logger.info(f"Detected Language: {result['lang']}")
         if 'translations' in result:
             translations_json = json.dumps(result['translations'], indent=2, ensure_ascii=False)
             logger.info(f"Translations:\n{translations_json}")

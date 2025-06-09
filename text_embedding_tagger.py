@@ -167,24 +167,36 @@ class TextEmbeddingTagger(BaseTagger):
         start_time = time.time()
         self.logger.info(f"Starting sample tagging: {sample_path}")
         
-        # Get transcription (esto cargará y liberará el modelo ASR)
-        transcription = self.transcribe_audio(sample_path, **kwargs)
-        self.logger.info(f"Transcription: {transcription}")
+        # Get original language transcription (language=None for auto-detection)
+        self.logger.info(f"Transcribing audio to original language (auto-detect): {sample_path}")
+        original_transcription = self.transcribe_audio(sample_path, language=None)
+        self.logger.info(f"Original Transcription: {original_transcription}")
 
-        # Process translations if requested (esto cargará el modelo de traducción)
-        detected_lang = None
+        # Load translator and detect language (always run LID)
+        self._load_translator() # Ensure translator is loaded
+        detected_lang_code = self.translator.detect_language(original_transcription)
+        self.logger.info(f"Detected language: {detected_lang_code}")
+
+        # Get English transcription
+        self.logger.info(f"Transcribing audio to English: {sample_path}")
+        english_transcription = self.transcribe_audio(sample_path, language='en')
+        self.logger.info(f"English Transcription: {english_transcription}")
+
+        # Process additional translations if requested (and not disabled via main.py)
         translations = None
-        if translation_languages:
-            self._load_translator()
-            self.logger.info(f"Processing translations for languages: {list(translation_languages.keys())}")
-            detected_lang, translations = self.translator.process_text(
-                transcription, translation_languages
+        if translation_languages: # This checks if main.py provided target languages
+            self.logger.info(f"Processing additional translations for languages: {list(translation_languages.keys())}")
+            # Use original_transcription and detected_lang_code as source for further translations
+            translations = self.translator.translate_text(
+                original_transcription, detected_lang_code, translation_languages
             )
-            self.logger.info(f"Detected language: {detected_lang}")
-            self.logger.debug(f"Translations:\n{json.dumps(translations, indent=2, ensure_ascii=False)}")
-
-        # Get embedding for the sample
-        sample_embedding, _ = self.get_audio_embedding(sample_path, transcription)
+            self.logger.debug(f"Additional Translations:\n{json.dumps(translations, indent=2, ensure_ascii=False)}")
+        else:
+            self.logger.info("Additional translations disabled or no target languages provided.")
+            
+        # Get embedding for the sample using the English transcription
+        self.logger.info("Computing embedding using English transcription.")
+        sample_embedding, _ = self.get_audio_embedding(audio_path=sample_path, transcription=english_transcription)
         
         # Find similar tags
         self.logger.info("Finding similar tags")
@@ -193,13 +205,13 @@ class TextEmbeddingTagger(BaseTagger):
         # Create result
         result = {
             'file': os.path.basename(sample_path),
-            'transcription': transcription,
+            'transcription': original_transcription, # Original language
+            'transcription_eng': english_transcription, # English transcription
+            'lang': detected_lang_code, # Detected language code
             'tags': []
         }
 
-        # Add language and translations if available
-        if detected_lang:
-            result['detected_language'] = detected_lang
+        # Add translations if available
         if translations:
             result['translations'] = translations
         
