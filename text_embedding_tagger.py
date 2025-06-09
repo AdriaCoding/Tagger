@@ -65,12 +65,12 @@ class TextEmbeddingTagger(BaseTagger):
             torch.cuda.empty_cache()
             self.logger.info("ASR model unloaded and memory cleared")
     
-    def _load_translator(self):
+    def _load_translator(self, enable_translation=True):
         """Carga el modelo de traducción bajo demanda"""
         if self.translator is None:
             start_time = time.time()
             self.logger.info("Initializing translation pipeline")
-            self.translator = T2TT(device=self.device)
+            self.translator = T2TT(device=self.device, enable_translation=enable_translation)
             elapsed = time.time() - start_time
             self.logger.info(f"Translation pipeline initialized in {elapsed:.2f}s")
     
@@ -175,7 +175,9 @@ class TextEmbeddingTagger(BaseTagger):
             self.logger.info(f"Original Transcription: {original_transcription}")
 
             # Load translator and detect language (always run LID)
-            self._load_translator() # Ensure translator is loaded
+            # Only enable full translation pipeline if translation_languages are provided AND not explicitly disabled
+            enable_t2tt_translation = True if translation_languages else False
+            self._load_translator(enable_translation=enable_t2tt_translation) # Ensure translator is loaded
             detected_lang_code = self.translator.detect_language(original_transcription)
             self.logger.info(f"Detected language: {detected_lang_code}")
 
@@ -187,7 +189,8 @@ class TextEmbeddingTagger(BaseTagger):
 
             # Process additional translations if requested (and not disabled via main.py)
             translations = None
-            if translation_languages: # This checks if main.py provided target languages
+            # Only attempt translation if translation_languages were provided AND T2TT translation is enabled
+            if enable_t2tt_translation: 
                 self.logger.info(f"Processing additional translations for languages: {list(translation_languages.keys())}")
                 # Use original_transcription and detected_lang_code as source for further translations
                 translations = self.translator.translate_text(

@@ -41,7 +41,8 @@ class T2TT:
                  translation_model="facebook/nllb-200-distilled-600m",
                  lid_model="papluca/xlm-roberta-base-language-detection",
                  device=None,
-                 suppress_warnings=True):
+                 suppress_warnings=True,
+                 enable_translation=True):
         """
         Initialize the translation pipeline.
         
@@ -50,6 +51,7 @@ class T2TT:
             lid_model (str): HuggingFace model identifier for language detection
             device (str): Device to use ('cuda' or 'cpu')
             suppress_warnings (bool): Whether to suppress pipeline warnings
+            enable_translation (bool): Whether to enable the translation model (True by default).
         """
         self.logger = logging.getLogger(__name__)
         self.suppress_warnings = suppress_warnings
@@ -66,13 +68,17 @@ class T2TT:
             self.lid_tokenizer = AutoTokenizer.from_pretrained(lid_model)
             self.lid_model = AutoModelForSequenceClassification.from_pretrained(lid_model).to(self.device)
             
-        # Initialize Translation Pipeline with smaller mode350Ml
-        translation_model = "facebook/nllb-200-distilled-600m"  # Use smaller model
-        self.logger.info(f"Loading translation model: {translation_model}")
-        with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
-            self.translator = pipeline("translation", 
-                                    model=translation_model,
-                                    device=self.device)
+        # Initialize Translation Pipeline only if enabled
+        self.translator = None
+        if enable_translation:
+            translation_model = "facebook/nllb-200-distilled-600m"  # Use smaller model
+            self.logger.info(f"Loading translation model: {translation_model}")
+            with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
+                self.translator = pipeline("translation", 
+                                        model=translation_model,
+                                        device=self.device)
+        else:
+            self.logger.info("Translation model loading skipped as enable_translation is False.")
     
     def detect_language(self, text):
         """
