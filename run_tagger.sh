@@ -22,4 +22,5 @@ python -m Tagger.main \
   --language en \
   --decision_method adaptive \
   --taxonomy_file supertags.txt \
+  --disable_translations \
   $3 $4 $5 $6 $7 $8 $9

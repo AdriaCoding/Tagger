@@ -82,6 +82,8 @@ def main():
                       help="Threshold mínimo para método adaptativo (devuelve tags > threshold o el mejor)")
     parser.add_argument("--device", type=str, default="cpu", choices=["cpu", "cuda"],
                       help="Dispositivo a utilizar para los cálculos (cpu o cuda)")
+    parser.add_argument("--disable_translations", action="store_true",
+                      help="Deshabilita el procesamiento de traducciones.")
     
     args = parser.parse_args()
 
@@ -140,6 +142,10 @@ def main():
         'es': 'Español',
         'ca': 'Català'
     }
+
+    # Si las traducciones están deshabilitadas, establecer translation_languages en None
+    if args.disable_translations:
+        translation_languages = None
 
     logger.info(f"Processing audio file: {args.audio_file}")
     result = tagger.tag_sample(args.audio_file, translation_languages, **kwargs)
