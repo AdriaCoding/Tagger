@@ -170,7 +170,8 @@ class TextEmbeddingTagger(BaseTagger):
         try:
             # Get original language transcription (language=None for auto-detection)
             self.logger.info(f"Transcribing audio to original language (auto-detect): {sample_path}")
-            original_transcription = self.asr.transcribe(sample_path, language=None)
+            original_transcription_result = self.asr.transcribe(sample_path, language=None)
+            original_transcription = original_transcription_result['text']
             self.logger.info(f"Original Transcription: {original_transcription}")
 
             # Load translator and detect language (always run LID)
@@ -180,7 +181,8 @@ class TextEmbeddingTagger(BaseTagger):
 
             # Get English transcription
             self.logger.info(f"Transcribing audio to English: {sample_path}")
-            english_transcription = self.asr.transcribe(sample_path, language='en')
+            english_transcription_result = self.asr.transcribe(sample_path, language='en')
+            english_transcription = english_transcription_result['text']
             self.logger.info(f"English Transcription: {english_transcription}")
 
             # Process additional translations if requested (and not disabled via main.py)
