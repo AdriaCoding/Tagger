@@ -164,13 +164,16 @@ class TextEmbeddingTagger(BaseTagger):
         start_time = time.time()
         self.logger.info(f"Starting sample tagging: {sample_path}")
 
+        # Get language from kwargs, defaulting to None (for auto-detection)
+        language = kwargs.get('language')
+
         # Load ASR model once for both transcriptions
         self._load_asr()
         
         try:
-            # Get original language transcription (language=None for auto-detection)
-            self.logger.info(f"Transcribing audio to original language (auto-detect): {sample_path}")
-            original_transcription_result = self.asr.transcribe(sample_path, language=None)
+            # Get original language transcription
+            self.logger.info(f"Transcribing audio to original language (language: {language or 'auto-detect'}): {sample_path}")
+            original_transcription_result = self.asr.transcribe(sample_path, language=language)
             original_transcription = original_transcription_result['text']
             self.logger.info(f"Original Transcription: {original_transcription}")
 
