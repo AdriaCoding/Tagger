@@ -21,6 +21,7 @@ python -m Tagger.main \
   --device cpu \
   --language en \
   --decision_method adaptive \
+  --min_threshold 0.4 \
   --taxonomy_file supertags.txt \
   --disable_translations \
   $3 $4 $5 $6 $7 $8 $9
