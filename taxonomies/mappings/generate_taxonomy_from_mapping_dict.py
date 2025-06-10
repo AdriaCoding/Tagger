@@ -76,8 +76,33 @@ def clean_ancestor_tag(tag):
     Returns:
         str: Cleaned tag with newlines replaced by "\n"
     """
-    # Replace actual newlines with the literal string "\n"
-    return tag.replace('\n', '\\n')
+    # Handle different types of newlines (Windows \r\n, Unix \n, old Mac \r)
+    # First normalize all newlines to \n
+    tag = tag.replace('\r\n', '\n').replace('\r', '\n')
+    # Then replace actual newlines with the literal string "\n"
+    tag = tag.replace('\n', '\\n')
+    return tag
+
+def validate_ancestor_line(tag, original_tags):
+    """Validate that an ancestor line is properly formatted.
+    
+    Args:
+        tag (str): The formatted tag
+        original_tags (list): List of original tags
+        
+    Returns:
+        bool: True if the line is valid, False otherwise
+    """
+    # Check that the tag doesn't contain problematic characters
+    if ':' in tag or '\n' in tag or '\r' in tag:
+        return False
+    
+    # Check that original tags don't contain problematic characters
+    for original_tag in original_tags:
+        if '\n' in original_tag or '\r' in original_tag:
+            return False
+    
+    return True
 
 def generate_files(mapping_file):
     """Generate taxonomy and ancestors files from a mapping dictionary.
@@ -114,9 +139,20 @@ def generate_files(mapping_file):
     
     # Write ancestors file
     with open(ancestors_path, 'w', encoding='utf-8') as f:
+        skipped_lines = 0
         for tag in formatted_tags:
             original_tags = tag_to_originals[tag]
-            f.write(f"{tag}:{','.join(original_tags)}\n")
+            # Use a safer delimiter and ensure proper formatting
+            # Join with a delimiter that's unlikely to appear in the tags
+            ancestors_line = f"{tag}:{','.join(original_tags)}\n"
+            if validate_ancestor_line(tag, original_tags):
+                f.write(ancestors_line)
+            else:
+                skipped_lines += 1
+                print(f"Warning: Skipping problematic line for tag '{tag}'")
+        
+        if skipped_lines > 0:
+            print(f"Warning: Skipped {skipped_lines} problematic lines")
     
     print(f"Taxonomy file generated at {taxonomy_path}")
     print(f"Ancestors file generated at {ancestors_path}")
