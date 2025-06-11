@@ -175,7 +175,7 @@ if __name__ == "__main__":
     # Configurar logging
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - [%(elapsed_time).3fs] - %(message)s'
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
     logger = logging.getLogger(__name__)
     start_time = time.time()
@@ -188,7 +188,7 @@ if __name__ == "__main__":
     
     # Argumentos disponibles
     parser.add_argument("--audio_file_path", type=str, help="Ruta relativa al archivo de audio", 
-                       default="audios_test\\barcelona_alexdobano_m68284_a85028_audio_converted.wav")
+                       default="../audios_test/barcelona_alexdobano_m68284_a85028_audio_converted.wav")
     parser.add_argument("--language", type=str, help="Idioma de transcripción (ej: en, es, fr). Dejar vacío para auto-detección", 
                        default=None)
     
@@ -213,8 +213,7 @@ if __name__ == "__main__":
     # Convertir ruta relativa a absoluta si es necesario
     audio_path = args.audio_file_path
     if not os.path.isabs(audio_path):
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        audio_path = os.path.join(base_dir, audio_path)
+        audio_path = os.path.abspath(os.path.join(os.getcwd(), audio_path))
     
     # Verificar si el archivo existe
     if os.path.exists(audio_path):
