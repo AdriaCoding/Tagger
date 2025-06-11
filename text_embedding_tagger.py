@@ -177,9 +177,11 @@ class TextEmbeddingTagger(BaseTagger):
             original_transcription = original_transcription_result['text']
             self.logger.info(f"Original Transcription: {original_transcription}")
 
-            # No se usa LID ni S2TT para ingles ni traducciones adicionales
-            self.logger.info("Skipping English transcription, language detection, and additional translations as per configuration.")
-            
+            # Load and run LID
+            self._load_translator(enable_translation=False) # Ensure translator is not loaded
+            detected_lang_code = self.translator.detect_language(original_transcription)
+            self.logger.info(f"Detected language: {detected_lang_code}")              
+
             # Get embedding for the sample using the original transcription
             self.logger.info("Computing embedding using original transcription.")
             sample_embedding, _ = self.get_audio_embedding(audio_path=sample_path, transcription=original_transcription)
@@ -193,7 +195,7 @@ class TextEmbeddingTagger(BaseTagger):
                 'file': os.path.basename(sample_path),
                 'transcription': original_transcription, # Original language
                 'transcription_eng': "", # English transcription
-                'lang': "", # Detected language code
+                'lang': detected_lang_code, # Detected language code
                 'tags': []
             }
             
