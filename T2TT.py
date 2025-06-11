@@ -108,8 +108,7 @@ class T2TT:
             predictions = self.lid_model.predict(cleaned_text, k=1)
             # The label is in format '__label__<lang_code>'
             detected_lang_code = predictions[0][0].replace('__label__', '')
-            
-            # We need to map back from NLLB code to 2-letter code
+            self.logger.info("Fasttext language code detected (before mapping): ", detected_lang_code)
             nllb_to_short = {v: k for k, v in self.NLLB_LANGUAGE_CODES.items()}
             
             detected = nllb_to_short.get(detected_lang_code, detected_lang_code)
