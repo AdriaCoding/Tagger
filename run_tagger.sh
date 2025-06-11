@@ -23,5 +23,5 @@ python -m Tagger.main \
   --min_threshold 0.4 \
   --taxonomy_file supertags.txt \
   --disable_translations \
-  --top_k 10 \
+  --top_k 25 \
   $3 $4 $5 $6 $7 $8 $9
