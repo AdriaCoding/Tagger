@@ -62,9 +62,9 @@ class BaseTagger(ABC):
         }
         
         # Actualizar con los parámetros proporcionados
-        if decision_params:
-            if self.decision_method in self.decision_params and isinstance(decision_params, dict):
-                self.decision_params[self.decision_method].update(decision_params)
+        if decision_params and self.decision_method in decision_params:
+            if isinstance(decision_params[self.decision_method], dict):
+                self.decision_params[self.decision_method].update(decision_params[self.decision_method])
             
         # Validar el método de selección de etiquetas
         if decision_method not in [DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_ADAPTIVE]:  # DECISION_METHOD_HDBSCAN removed
