@@ -7,6 +7,8 @@ from contextlib import contextmanager
 import sys
 import io
 import json
+import fasttext
+from huggingface_hub import hf_hub_download
 
 # Suppress unnecessary warnings
 logging.getLogger("transformers").setLevel(logging.ERROR)
@@ -63,10 +65,17 @@ class T2TT:
         self.logger.info(f"Initializing T2TT on device: {self.device}")
         
         # Initialize Language Identification
+        self.lid_model_name = lid_model
         self.logger.info(f"Loading LID model: {lid_model}")
-        with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
-            self.lid_tokenizer = AutoTokenizer.from_pretrained(lid_model)
-            self.lid_model = AutoModelForSequenceClassification.from_pretrained(lid_model).to(self.device)
+        if self.lid_model_name == "facebook/fasttext-language-identification":
+            model_path = hf_hub_download(repo_id=self.lid_model_name, filename="model.bin")
+            # fasttext models run on CPU
+            self.lid_model = fasttext.load_model(model_path)
+            self.lid_tokenizer = None
+        else:
+            with suppress_stdout_stderr() if suppress_warnings else contextmanager(lambda: (yield))():
+                self.lid_tokenizer = AutoTokenizer.from_pretrained(lid_model)
+                self.lid_model = AutoModelForSequenceClassification.from_pretrained(lid_model).to(self.device)
             
         # Initialize Translation Pipeline only if enabled
         self.translator = None
@@ -93,26 +102,38 @@ class T2TT:
         start_time = time.time()
         self.logger.info("Starting language detection")
         
-        with suppress_stdout_stderr() if self.suppress_warnings else contextmanager(lambda: (yield))():
-            inputs = self.lid_tokenizer(text, return_tensors="pt", padding=True, truncation=True)
-            inputs = {k: v.to(self.device) for k, v in inputs.items()}
+        if self.lid_model_name == "facebook/fasttext-language-identification":
+            # fastText expects a single line of text, clean up input
+            cleaned_text = text.replace('\\n', ' ')
+            predictions = self.lid_model.predict(cleaned_text, k=1)
+            # The label is in format '__label__<lang_code>'
+            detected_lang_code = predictions[0][0].replace('__label__', '')
             
-            with torch.no_grad():
-                outputs = self.lid_model(**inputs)
-                predictions = outputs.logits.softmax(dim=-1)
+            # We need to map back from NLLB code to 2-letter code
+            nllb_to_short = {v: k for k, v in self.NLLB_LANGUAGE_CODES.items()}
+            
+            detected = nllb_to_short.get(detected_lang_code, detected_lang_code)
+        else:
+            with suppress_stdout_stderr() if self.suppress_warnings else contextmanager(lambda: (yield))():
+                inputs = self.lid_tokenizer(text, return_tensors="pt", padding=True, truncation=True)
+                inputs = {k: v.to(self.device) for k, v in inputs.items()}
                 
-            detected_lang_id = predictions.argmax().item()
-            detected_lang = self.lid_model.config.id2label[detected_lang_id]
-            
-            # Map full language names or codes to our standard short codes
-            lang_map = {
-                "en": "en", "english": "en",
-                "es": "es", "spanish": "es", "español": "es",
-                "ca": "ca", "catalan": "ca", "català": "ca",
-                # Add more mappings as needed
-            }
-            
-            detected = lang_map.get(detected_lang.lower(), detected_lang.lower())
+                with torch.no_grad():
+                    outputs = self.lid_model(**inputs)
+                    predictions = outputs.logits.softmax(dim=-1)
+                    
+                detected_lang_id = predictions.argmax().item()
+                detected_lang = self.lid_model.config.id2label[detected_lang_id]
+                
+                # Map full language names or codes to our standard short codes
+                lang_map = {
+                    "en": "en", "english": "en",
+                    "es": "es", "spanish": "es", "español": "es",
+                    "ca": "ca", "catalan": "ca", "català": "ca",
+                    # Add more mappings as needed
+                }
+                
+                detected = lang_map.get(detected_lang.lower(), detected_lang.lower())
             
         elapsed = time.time() - start_time
         self.logger.info(f"Language detection completed in {elapsed:.2f}s. Detected: {detected}")
