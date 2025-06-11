@@ -7,7 +7,10 @@ from datetime import datetime
 from .base_tagger import (
     DECISION_METHOD_KNN,
     DECISION_METHOD_RADIUS,
-    DECISION_METHOD_ADAPTIVE
+    DECISION_METHOD_ADAPTIVE,
+    DEFAULT_K,
+    DEFAULT_RADIUS,
+    DEFAULT_MIN_THRESHOLD
 )
 from .factory import create_tagger
 
@@ -90,12 +93,12 @@ def main():
     # Configurar parámetros según el tipo de tagger
     decision_params = {}
     if args.decision_method == "knn":
-        decision_params["knn"] = {"k": args.top_k}
+        decision_params["knn"] = {"k": args.top_k if args.top_k is not None else DEFAULT_K}
     elif args.decision_method == "radius":
-        decision_params["radius"] = {"threshold": args.threshold}
+        decision_params["radius"] = {"threshold": args.threshold if args.threshold is not None else DEFAULT_RADIUS}
     elif args.decision_method == "adaptive":
         decision_params["adaptive"] = {
-            "min_threshold": args.min_threshold,
+            "min_threshold": args.min_threshold if args.min_threshold is not None else DEFAULT_MIN_THRESHOLD,
         }
         
     # Set up tagger parameters based on type
