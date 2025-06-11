@@ -39,7 +39,7 @@ class T2TT:
 
     def __init__(self, 
                  translation_model="facebook/nllb-200-distilled-600m",
-                 lid_model="papluca/xlm-roberta-base-language-detection",
+                 lid_model="facebook/fasttext-language-identification",
                  device=None,
                  suppress_warnings=True,
                  enable_translation=True):
