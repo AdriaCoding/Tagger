@@ -19,8 +19,9 @@ python -m Tagger.main \
   --audio_file "$1" \
   --output_json_path "$2" \
   --device cpu \
-  --decision_method adaptive \
+  --decision_method knn \
   --min_threshold 0.4 \
   --taxonomy_file supertags.txt \
   --disable_translations \
+  --top_k 10 \
   $3 $4 $5 $6 $7 $8 $9

@@ -244,20 +244,18 @@ class BaseTagger(ABC):
             self.logger.info(f"Embeddings computed and saved in {elapsed:.2f}s")
             return embeddings
     
-    def find_similar_tags_knn(self, sample_embedding, k=None):
+    def find_similar_tags_knn(self, sample_embedding):
         """
         Encuentra las etiquetas más similares usando K-Nearest Neighbors.
         
         Args:
             sample_embedding: Embedding de la muestra
-            k (int): Número de etiquetas a devolver, anula el k por defecto
             
         Returns:
             tuple: (lista de etiquetas similares, lista de similitudes)
         """
         start_time = time.time()
-        if k is None:
-            k = self.decision_params[DECISION_METHOD_KNN]['k']
+        k = self.decision_params[DECISION_METHOD_KNN]['k']
         
         self.logger.info(f"Finding {k} nearest neighbors")
         
@@ -382,8 +380,7 @@ class BaseTagger(ABC):
             min_threshold = self.decision_params[DECISION_METHOD_ADAPTIVE]['min_threshold']
             result = self.find_similar_tags_adaptive(sample_embedding, min_threshold)
         else:  # Fallback to KNN
-            k = self.decision_params[DECISION_METHOD_KNN]['k']
-            result = self.find_similar_tags_knn(sample_embedding, k)
+            result = self.find_similar_tags_knn(sample_embedding)
             
         elapsed = time.time() - start_time
         self.logger.info(f"Tag search completed in {elapsed:.2f}s")
