@@ -39,7 +39,7 @@ class TextEmbeddingTagger(BaseTagger):
         self.logger.info(f"Loading embeddings model: {model_name}")
         self.embedding_model = SentenceTransformer(model_name)
         elapsed = time.time() - start_time
-        self.logger.info(f"Embeddings model loaded in {elapsed:.2f}s")
+        self.logger.info(f"Embeddings model loaded in {elapsed:.6f}s")
         
         # No inicializamos ASR ni translator aquí
         self.asr = None
@@ -55,7 +55,7 @@ class TextEmbeddingTagger(BaseTagger):
             self.logger.info(f"Loading ASR model: {self.S2TT_model}")
             self.asr = WhisperS2TT(model_name=self.S2TT_model, device=self.device)
             elapsed = time.time() - start_time
-            self.logger.info(f"ASR model loaded in {elapsed:.2f}s")
+            self.logger.info(f"ASR model loaded in {elapsed:.6f}s")
     
     def _unload_asr(self):
         """Libera la memoria del modelo ASR"""
@@ -72,7 +72,7 @@ class TextEmbeddingTagger(BaseTagger):
             self.logger.info("Initializing translation pipeline")
             self.translator = T2TT(device=self.device, enable_translation=enable_translation)
             elapsed = time.time() - start_time
-            self.logger.info(f"Translation pipeline initialized in {elapsed:.2f}s")
+            self.logger.info(f"Translation pipeline initialized in {elapsed:.6f}s")
     
     def get_model_identifier(self):
         """
@@ -99,7 +99,7 @@ class TextEmbeddingTagger(BaseTagger):
         self.logger.info(f"Starting audio transcription: {audio_file}")
         result = self.asr.transcribe(audio_file, language=language)
         elapsed = time.time() - start_time
-        self.logger.info(f"Audio transcription completed in {elapsed:.2f}s")
+        self.logger.info(f"Audio transcription completed in {elapsed:.6f}s")
         return result["text"]
     
     def get_tag_embedding(self, tag):
@@ -118,7 +118,7 @@ class TextEmbeddingTagger(BaseTagger):
         embedding = self.embedding_model.encode(tag)
         
         elapsed = time.time() - start_time
-        self.logger.debug(f"Tag embedding computed in {elapsed:.2f}s")
+        self.logger.debug(f"Tag embedding computed in {elapsed:.6f}s")
         return embedding
     
     def get_audio_embedding(self, audio_path, transcription=None, language=None, translations=None):
@@ -146,7 +146,7 @@ class TextEmbeddingTagger(BaseTagger):
         embedding = self.embedding_model.encode(transcription)
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Audio embedding computed in {elapsed:.2f}s")
+        self.logger.info(f"Audio embedding computed in {elapsed:.6f}s")
         return embedding, transcription
     
     def tag_sample(self, sample_path, translation_languages=None, **kwargs):
@@ -207,7 +207,7 @@ class TextEmbeddingTagger(BaseTagger):
                 })
             
             elapsed = time.time() - start_time
-            self.logger.info(f"Sample tagging completed in {elapsed:.2f}s")
+            self.logger.info(f"Sample tagging completed in {elapsed:.6f}s")
             self.logger.debug(f"Tagging result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
             
             return result

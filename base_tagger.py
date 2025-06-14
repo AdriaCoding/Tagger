@@ -93,7 +93,7 @@ class BaseTagger(ABC):
         self._init_decision_method()
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Base tagger initialization completed in {elapsed:.2f}s")
+        self.logger.info(f"Base tagger initialization completed in {elapsed:.6f}s")
         self.logger.info(f"Tag selection method: {self.decision_method}")
     
     def _init_decision_method(self):
@@ -123,7 +123,7 @@ class BaseTagger(ABC):
             self.logger.info(f"Adaptive method initialized with min_threshold={min_threshold}")
             
         elapsed = time.time() - start_time
-        self.logger.info(f"Tag selection method initialized in {elapsed:.2f}s")
+        self.logger.info(f"Tag selection method initialized in {elapsed:.6f}s")
     
     def load_tags(self, taxonomy_file):
         """
@@ -142,7 +142,7 @@ class BaseTagger(ABC):
             tags = [line.strip().lower() for line in f.readlines()]
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Tags loaded in {elapsed:.2f}s")
+        self.logger.info(f"Tags loaded in {elapsed:.6f}s")
         return tags
     
     @abstractmethod
@@ -190,7 +190,7 @@ class BaseTagger(ABC):
             embeddings.append(embedding)
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Tag embeddings computed in {elapsed:.2f}s")
+        self.logger.info(f"Tag embeddings computed in {elapsed:.6f}s")
         return np.array(embeddings)
     
     def get_embeddings_file_path(self):
@@ -230,7 +230,7 @@ class BaseTagger(ABC):
             self.logger.info(f"Loading existing embeddings from {embeddings_file}")
             data = np.load(embeddings_file)
             elapsed = time.time() - start_time
-            self.logger.info(f"Embeddings loaded in {elapsed:.2f}s")
+            self.logger.info(f"Embeddings loaded in {elapsed:.6f}s")
             return data['embeddings']
         else:
             self.logger.info(f"Computing embeddings for {len(self.tags)} tags")
@@ -241,7 +241,7 @@ class BaseTagger(ABC):
             self.logger.info(f"Embeddings saved to {embeddings_file}")
             
             elapsed = time.time() - start_time
-            self.logger.info(f"Embeddings computed and saved in {elapsed:.2f}s")
+            self.logger.info(f"Embeddings computed and saved in {elapsed:.6f}s")
             return embeddings
     
     def find_similar_tags_knn(self, sample_embedding):
@@ -269,7 +269,7 @@ class BaseTagger(ABC):
         similarities = [float(1 - distance) for distance in distances[0]]
         
         elapsed = time.time() - start_time
-        self.logger.info(f"KNN search completed in {elapsed:.2f}s")
+        self.logger.info(f"KNN search completed in {elapsed:.6f}s")
         self.logger.debug(f"Found tags: {json.dumps(list(zip(nearest_tags, similarities)), indent=2)}")
         
         return nearest_tags, similarities
@@ -304,7 +304,7 @@ class BaseTagger(ABC):
         similarities = [sim for _, sim in sorted_pairs]
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Radius search completed in {elapsed:.2f}s")
+        self.logger.info(f"Radius search completed in {elapsed:.6f}s")
         self.logger.debug(f"Found tags: {json.dumps(list(zip(nearest_tags, similarities)), indent=2)}")
         
         return nearest_tags, similarities
@@ -350,7 +350,7 @@ class BaseTagger(ABC):
         similarities = [sim for _, sim in sorted_pairs]
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Adaptive search completed in {elapsed:.2f}s")
+        self.logger.info(f"Adaptive search completed in {elapsed:.6f}s")
         self.logger.debug(f"Found tags: {json.dumps(list(zip(nearest_tags, similarities)), indent=2)}")
         
         return nearest_tags, similarities
@@ -383,7 +383,7 @@ class BaseTagger(ABC):
             result = self.find_similar_tags_knn(sample_embedding)
             
         elapsed = time.time() - start_time
-        self.logger.info(f"Tag search completed in {elapsed:.2f}s")
+        self.logger.info(f"Tag search completed in {elapsed:.6f}s")
         return result
     
     def tag_sample(self, sample_path, **kwargs):
@@ -421,7 +421,7 @@ class BaseTagger(ABC):
             })
             
         elapsed = time.time() - start_time
-        self.logger.info(f"Sample tagging completed in {elapsed:.2f}s")
+        self.logger.info(f"Sample tagging completed in {elapsed:.6f}s")
         self.logger.debug(f"Tagging result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
         
         return result

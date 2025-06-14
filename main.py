@@ -19,7 +19,7 @@ def setup_logging():
     """Set up basic logging to stdout."""
     logging.basicConfig(
         level=logging.INFO,
-        format='%(levelname)s - [%(elapsed_time).3fs] - %(name)s - %(message)s',
+        format='%(levelname)s - [%(elapsed_time).6fs] - %(name)s - %(message)s',
         handlers=[
             logging.StreamHandler()
         ]
@@ -187,7 +187,7 @@ def main():
             logger.info(f"  {i+1}. {tag_info['tag']} (similarity: {tag_info['similarity']:.4f})")
 
     total_time = time.time() - start_time
-    logger.info(f"Total execution time: {total_time:.2f} seconds")
+    logger.info(f"Total execution time: {total_time:.6f} seconds")
 
 if __name__ == "__main__":
     main() 

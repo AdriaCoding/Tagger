@@ -251,7 +251,7 @@ class T2TT:
                 detected = lang_map.get(detected_lang.lower(), detected_lang.lower())
             
         elapsed = time.time() - start_time
-        self.logger.info(f"Language detection completed in {elapsed:.2f}s. Detected: {detected}")
+        self.logger.info(f"Language detection completed in {elapsed:.6f}s. Detected: {detected}")
         return detected
     
     def translate_text(self, text, source_lang, target_languages):
@@ -313,14 +313,14 @@ class T2TT:
                     
                     translations[target_lang] = ' '.join(translated_sentences)
                     lang_elapsed = time.time() - lang_start_time
-                    self.logger.info(f"Translation to {target_lang} completed in {lang_elapsed:.2f}s")
+                    self.logger.info(f"Translation to {target_lang} completed in {lang_elapsed:.6f}s")
                     
             except Exception as e:
                 self.logger.error(f"Translation error for {target_lang}: {str(e)}")
                 translations[target_lang] = f"Translation error: {str(e)}"
         
         elapsed = time.time() - start_time
-        self.logger.info(f"All translations completed in {elapsed:.2f}s")
+        self.logger.info(f"All translations completed in {elapsed:.6f}s")
         self.logger.debug(f"Translations:\n{json.dumps(translations, indent=2, ensure_ascii=False)}")
         
         return translations
@@ -343,6 +343,6 @@ class T2TT:
         translations = self.translate_text(text, detected_lang, target_languages)
         
         elapsed = time.time() - start_time
-        self.logger.info(f"Text processing completed in {elapsed:.2f}s")
+        self.logger.info(f"Text processing completed in {elapsed:.6f}s")
         
         return detected_lang, translations

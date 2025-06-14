@@ -85,7 +85,7 @@ class WhisperS2TT:
             )
         
         elapsed = time.time() - start_time
-        self.logger.info(f"ASR model loaded in {elapsed:.2f}s")
+        self.logger.info(f"ASR model loaded in {elapsed:.6f}s")
         self.model_name = model_name
         
     def transcribe(self, audio_file, language=None, **kwargs):
@@ -122,14 +122,14 @@ class WhisperS2TT:
                 final_result = {"text": str(result)}
             
             elapsed = time.time() - start_time
-            self.logger.info(f"Transcription completed in {elapsed:.2f}s")
+            self.logger.info(f"Transcription completed in {elapsed:.6f}s")
             self.logger.debug(f"Transcription result:\n{json.dumps(final_result, indent=2, ensure_ascii=False)}")
             
             return final_result
             
         except Exception as e:
             elapsed = time.time() - start_time
-            self.logger.error(f"Transcription failed after {elapsed:.2f}s: {str(e)}")
+            self.logger.error(f"Transcription failed after {elapsed:.6f}s: {str(e)}")
             raise
     
     def get_info(self):
@@ -160,14 +160,14 @@ def transcribe_audio(audio_file, model_name="openai/whisper-large-v3", language=
         result = asr.transcribe(audio_file, language=language)
         
         elapsed = time.time() - start_time
-        logger.info(f"Standalone transcription completed in {elapsed:.2f}s")
+        logger.info(f"Standalone transcription completed in {elapsed:.6f}s")
         logger.debug(f"Transcription result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
         
         return result["text"]
         
     except Exception as e:
         elapsed = time.time() - start_time
-        logger.error(f"Standalone transcription failed after {elapsed:.2f}s: {str(e)}")
+        logger.error(f"Standalone transcription failed after {elapsed:.6f}s: {str(e)}")
         raise
 
 # Uso de ejemplo
@@ -244,4 +244,4 @@ if __name__ == "__main__":
         sys.exit(1)
         
     total_time = time.time() - start_time
-    logger.info(f"Total execution time: {total_time:.2f} seconds")
+    logger.info(f"Total execution time: {total_time:.6f} seconds")
