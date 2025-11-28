@@ -11,17 +11,30 @@ export HF_HOME=/srv/www/blind.wiki/public_html/Tagger/cache
 # activa tu virtualenv
 source /srv/www/blind.wiki/public_html/.venv/bin/activate
 
+# Argumentos:
+# $1: audio_file (required)
+# $2: output_json_path (required)
+# $3: tagging_strategy (optional, defaults to 'semantic')
+# Resto de argumentos ($4 en adelante) se pueden usar para otros parámetros de Tagger.main si es necesario
+
+# Set tagging strategy with default value of 'semantic'
+TAGGING_STRATEGY="${3:-semantic}"
+
+# Validate tagging_strategy value
+if [[ "$TAGGING_STRATEGY" != "semantic" && "$TAGGING_STRATEGY" != "syntactic" ]]; then
+    echo "Warning: Invalid tagging_strategy '$TAGGING_STRATEGY'. Using 'semantic' as default." >&2
+    TAGGING_STRATEGY="semantic"
+fi
+
 # lanza el Tagger con parámetros
-# $1: audio_file
-# $2: output_json_path
-# Resto de argumentos ($3 en adelante) se pueden usar para otros parámetros de Tagger.main si es necesario
 python -m Tagger.main \
   --audio_file "$1" \
   --output_json_path "$2" \
+  --tagging_strategy "$TAGGING_STRATEGY" \
   --device cpu \
   --decision_method knn \
   --min_threshold 0.4 \
   --taxonomy_file supertags.txt \
   --disable_translations \
   --top_k 25 \
-  $3 $4 $5 $6 $7 $8 $9
+  $4 $5 $6 $7 $8 $9
