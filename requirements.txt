@@ -6,6 +6,10 @@ scikit-learn
 librosa
 fasttext-wheel
 
+# Syntactic tagging strategy (YAKE)
+yake
+nltk
+
 # PyTorch y relacionados (CPU only)
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.2.1+cpu
