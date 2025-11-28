@@ -74,11 +74,11 @@ def main():
                         help="Ruta completa al archivo JSON de salida. Si se proporciona, guarda los resultados aquí.")
     parser.add_argument('--decision_method', type=str, default=DECISION_METHOD_KNN,
                       choices=[DECISION_METHOD_KNN, DECISION_METHOD_RADIUS, DECISION_METHOD_ADAPTIVE],
-                      help='Método de decisión para seleccionar etiquetas')
+                      help='Método de decisión para seleccionar etiquetas (for semantic strategy)')
     parser.add_argument('--decision_params', type=json.loads, default='{}',
                       help='Parámetros para el método de decisión en formato JSON')
-    parser.add_argument("--top_k", type=int, default=None,
-                      help="Número de etiquetas a devolver (para KNN)")
+    parser.add_argument("--top_k", type=int, default=5,
+                      help="Número de etiquetas a devolver")
     parser.add_argument("--threshold", type=float, default=None,
                       help="Threshhold similaridad para el método Radius Nearest Neighbors")
     parser.add_argument("--min_threshold", type=float, default=None,
@@ -87,6 +87,18 @@ def main():
                       help="Dispositivo a utilizar para los cálculos (cpu o cuda)")
     parser.add_argument("--disable_translations", action="store_true",
                       help="Deshabilita el procesamiento de traducciones.")
+    
+    # Tagging strategy arguments
+    parser.add_argument("--tagging_strategy", type=str, choices=['semantic', 'syntactic'], default='semantic',
+                      help="Strategy for text-to-tags: semantic (embeddings + KNN) or syntactic (YAKE keywords)")
+    
+    # Syntactic strategy specific arguments
+    parser.add_argument("--syntactic_language", type=str, default="en",
+                      help="Language code for syntactic (YAKE) strategy (e.g., 'en', 'es', 'de')")
+    parser.add_argument("--max_ngram_size", type=int, default=1,
+                      help="Maximum n-gram size for syntactic strategy")
+    parser.add_argument("--deduplication_threshold", type=float, default=0.9,
+                      help="Deduplication threshold for syntactic strategy")
     
     args = parser.parse_args()
 
@@ -109,7 +121,12 @@ def main():
             'S2TT_model': args.whisper_model,
             'decision_method': args.decision_method,
             'decision_params': decision_params,
-            'device': args.device
+            'device': args.device,
+            # Syntactic strategy parameters
+            'syntactic_language': args.syntactic_language,
+            'max_ngram_size': args.max_ngram_size,
+            'deduplication_threshold': args.deduplication_threshold,
+            'num_keywords': args.top_k,
         }
     elif args.tagger_type == 'audio':
         tagger_params = {
@@ -130,15 +147,19 @@ def main():
             'device': args.device
         }
     
-    # Crear tagger
-    tagger = create_tagger(args.tagger_type, args.taxonomy_file, **tagger_params)
+    # Log tagging strategy
+    logger.info(f"Using tagging strategy: {args.tagging_strategy}")
+    
+    # Crear tagger with tagging strategy
+    tagger = create_tagger(args.tagger_type, args.taxonomy_file, 
+                          tagging_strategy=args.tagging_strategy, **tagger_params)
     
     # Procesar archivo de audio individual
     if not os.path.exists(args.audio_file):
         logger.error(f"Audio file not found: {args.audio_file}")
         raise FileNotFoundError(f"El archivo de audio {args.audio_file} no existe")
                 
-    kwargs = {'language': args.language}
+    kwargs = {'language': args.language, 'top_k': args.top_k}
 
     translation_languages = {
         'en': 'English',
@@ -181,6 +202,8 @@ def main():
         if 'translations' in result:
             translations_json = json.dumps(result['translations'], indent=2, ensure_ascii=False)
             logger.info(f"Translations:\n{translations_json}")
+        if 'tagging_strategy' in result:
+            logger.info(f"Tagging strategy: {result['tagging_strategy']}")
         logger.info(f"Tag selection method: {args.decision_method}")
         logger.info("Recommended tags:")
         for i, tag_info in enumerate(result['tags']):
@@ -190,4 +213,4 @@ def main():
     logger.info(f"Total execution time: {total_time:.6f} seconds")
 
 if __name__ == "__main__":
-    main() 
+    main()
