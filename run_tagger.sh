@@ -16,21 +16,11 @@ source /srv/www/blind.wiki/public_html/.venv/bin/activate
 # $2: output_json_path (required)
 # $3: tagging_strategy (optional, defaults to 'semantic')
 # Resto de argumentos ($4 en adelante) se pueden usar para otros parámetros de Tagger.main si es necesario
-
-# Set tagging strategy with default value of 'semantic'
-TAGGING_STRATEGY="${3:-semantic}"
-
-# Validate tagging_strategy value
-if [[ "$TAGGING_STRATEGY" != "semantic" && "$TAGGING_STRATEGY" != "syntactic" ]]; then
-    echo "Warning: Invalid tagging_strategy '$TAGGING_STRATEGY'. Using 'semantic' as default." >&2
-    TAGGING_STRATEGY="semantic"
-fi
-
 # lanza el Tagger con parámetros
 python -m Tagger.main \
   --audio_file "$1" \
   --output_json_path "$2" \
-  --tagging_strategy "$TAGGING_STRATEGY" \
+  --tagging_strategy "$3" \
   --device cpu \
   --decision_method knn \
   --min_threshold 0.4 \
