@@ -1,9 +1,10 @@
 # Base dependencies
-numpy
+numpy<2
 pandas
 tqdm
 scikit-learn
 librosa
+fasttext-wheel
 
 # PyTorch y relacionados (CPU only)
 --find-links https://download.pytorch.org/whl/torch_stable.html
