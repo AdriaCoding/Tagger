@@ -121,9 +121,9 @@ class WhisperS2TT:
             # Transcribir audio, suprimiendo salidas si es necesario
             if self.suppress_warnings:
                 with suppress_stdout_stderr():
-                    result = self.asr_model(file_to_process, generate_kwargs=generate_kwargs, **kwargs)
+                    result = self.asr_model(file_to_process, return_timestamps=True, generate_kwargs=generate_kwargs, **kwargs)
             else:
-                result = self.asr_model(file_to_process, generate_kwargs=generate_kwargs, **kwargs)
+                result = self.asr_model(file_to_process, return_timestamps=True, generate_kwargs=generate_kwargs, **kwargs)
             
             # Si el resultado incluye timestamps, extraer solo el texto
             if isinstance(result, dict) and 'text' in result:
