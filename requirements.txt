@@ -13,6 +13,10 @@ nltk
 # PyTorch y relacionados (CPU only)
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.2.1+cpu
-torchaudio==2.2.1+cpu
-transformers[torch]==4.37.2
-sentence-transformers==2.5.1
+torchaudio==2.6.0
+transformers[torch]>=4.51.0
+sentence-transformers>=4.0.0
+tokenizers>=0.21.0
+
+# Whisper ASR - critical for proper language detection
+openai-whisper>=20240930
