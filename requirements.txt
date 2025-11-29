@@ -14,9 +14,9 @@ nltk
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.2.1+cpu
 torchaudio==2.6.0
-transformers[torch]>=4.51.0
-sentence-transformers>=4.0.0
-tokenizers>=0.21.0
+transformers[torch]==4.51.2
+sentence-transformers==4.0.2
+tokenizers==0.21.1
 
 # Whisper ASR - critical for proper language detection
-openai-whisper>=20240930
+openai-whisper==20240930
