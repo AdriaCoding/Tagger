@@ -11,8 +11,6 @@ import time
 import json
 from contextlib import contextmanager
 from transformers import logging as transformers_logging
-import subprocess
-import tempfile
 
 # Lista de modelos Whisper disponibles
 SUPPORTED_MODELS = [
@@ -107,23 +105,13 @@ class WhisperS2TT:
         # Asegurarse de que return_timestamps esté habilitado para archivos largos
         generate_kwargs['return_timestamps'] = True
         
-        # Convert audio to WAV format to handle container/extension mismatches
-        converted_file = None
-        file_to_process = audio_file
-        
         try:
-            # Try to convert to WAV using ffmpeg for reliable format handling
-            converted_file = self._convert_to_wav(audio_file)
-            if converted_file:
-                file_to_process = converted_file
-                self.logger.info(f"Using converted WAV file: {converted_file}")
-            
             # Transcribir audio, suprimiendo salidas si es necesario
             if self.suppress_warnings:
                 with suppress_stdout_stderr():
-                    result = self.asr_model(file_to_process, generate_kwargs=generate_kwargs, **kwargs)
+                    result = self.asr_model(audio_file, generate_kwargs=generate_kwargs, **kwargs)
             else:
-                result = self.asr_model(file_to_process, generate_kwargs=generate_kwargs, **kwargs)
+                result = self.asr_model(audio_file, generate_kwargs=generate_kwargs, **kwargs)
             
             # Si el resultado incluye timestamps, extraer solo el texto
             if isinstance(result, dict) and 'text' in result:
@@ -143,70 +131,6 @@ class WhisperS2TT:
             elapsed = time.time() - start_time
             self.logger.error(f"Transcription failed after {elapsed:.6f}s: {str(e)}")
             raise
-        finally:
-            # Clean up temporary converted file
-            if converted_file and os.path.exists(converted_file):
-                try:
-                    os.remove(converted_file)
-                    self.logger.debug(f"Cleaned up temporary file: {converted_file}")
-                except Exception as e:
-                    self.logger.warning(f"Failed to clean up temporary file {converted_file}: {e}")
-    
-    def _convert_to_wav(self, audio_file):
-        """
-        Convert audio file to WAV format using ffmpeg.
-        This handles container/extension mismatches (e.g., M4A files with .mp3 extension).
-        
-        Args:
-            audio_file (str): Path to the input audio file
-            
-        Returns:
-            str: Path to the converted WAV file, or None if conversion fails
-        """
-        try:
-            # Create a temporary file for the converted audio
-            fd, temp_wav = tempfile.mkstemp(suffix='.wav')
-            os.close(fd)
-            
-            # Use ffmpeg to convert to WAV (16kHz mono, which is what Whisper expects)
-            cmd = [
-                'ffmpeg',
-                '-i', audio_file,
-                '-ar', '16000',      # Sample rate 16kHz
-                '-ac', '1',          # Mono
-                '-y',                # Overwrite output
-                '-loglevel', 'error',
-                temp_wav
-            ]
-            
-            self.logger.info(f"Converting audio to WAV format: {audio_file}")
-            
-            result = subprocess.run(
-                cmd,
-                capture_output=True,
-                text=True,
-                timeout=60  # 60 second timeout
-            )
-            
-            if result.returncode != 0:
-                self.logger.warning(f"ffmpeg conversion failed: {result.stderr}")
-                # Clean up failed temp file
-                if os.path.exists(temp_wav):
-                    os.remove(temp_wav)
-                return None
-            
-            self.logger.info(f"Audio converted successfully to: {temp_wav}")
-            return temp_wav
-            
-        except FileNotFoundError:
-            self.logger.warning("ffmpeg not found, skipping audio conversion")
-            return None
-        except subprocess.TimeoutExpired:
-            self.logger.warning("ffmpeg conversion timed out")
-            return None
-        except Exception as e:
-            self.logger.warning(f"Audio conversion failed: {e}")
-            return None
     
     def get_info(self):
         """
