@@ -1,0 +1,158 @@
+[
+    {
+        "type": "header",
+        "version": "5.2.1deb1+deb12u1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "blindwiki"
+    },
+    {
+        "type": "table",
+        "name": "tag",
+        "database": "blindwiki",
+        "data": [
+            {
+                "id": "5727",
+                "name": "Estacion # yokoham#",
+                "visible": "1",
+                "description": "",
+                "created_date": "2017-02-13 00:52:40",
+                "created_user_id": "4564",
+                "created_area_id": "471",
+                "marker_color": "0"
+            },
+            {
+                "id": "5897",
+                "name": "Bottega.forcole.remi#",
+                "visible": "1",
+                "description": "",
+                "created_date": "2017-03-02 17:40:28",
+                "created_user_id": "4574",
+                "created_area_id": "322",
+                "marker_color": "0"
+            },
+            {
+                "id": "6648",
+                "name": "Tempesta;pati interior",
+                "visible": "1",
+                "description": "",
+                "created_date": "2017-06-28 13:08:52",
+                "created_user_id": "4739",
+                "created_area_id": "322",
+                "marker_color": "0"
+            },
+            {
+                "id": "7090",
+                "name": "#truth #coverup #Q #elites",
+                "visible": "0",
+                "description": "",
+                "created_date": "2021-01-15 18:34:04",
+                "created_user_id": "5042",
+                "created_area_id": "741",
+                "marker_color": "0"
+            },
+            {
+                "id": "7218",
+                "name": "#v",
+                "visible": "0",
+                "description": "",
+                "created_date": "2022-08-06 12:42:37",
+                "created_user_id": "5092",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7304",
+                "name": "Carlos # cheiro",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-08-06 19:39:11",
+                "created_user_id": "5227",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7309",
+                "name": "Carlos # onibus",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-08-06 22:22:39",
+                "created_user_id": "5156",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7317",
+                "name": "Carlos # concentração",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-08-07 12:34:56",
+                "created_user_id": "5227",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7343",
+                "name": "#",
+                "visible": "0",
+                "description": "",
+                "created_date": "2022-08-07 14:14:33",
+                "created_user_id": "5215",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7543",
+                "name": "#praça Benedito Calixto",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-08-11 13:27:18",
+                "created_user_id": "5128",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7768",
+                "name": "#feira #caldodecana #vilaclementino #sons",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-08-29 21:55:31",
+                "created_user_id": "5186",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7789",
+                "name": "#Feiradeacessibilidade",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-09-04 15:35:29",
+                "created_user_id": "5136",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7818",
+                "name": "#karaokê #bar #metrocarrao",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-09-17 23:58:29",
+                "created_user_id": "5255",
+                "created_area_id": "276",
+                "marker_color": "0"
+            },
+            {
+                "id": "7852",
+                "name": "Pizza; bosko; delícias; típica;italiana",
+                "visible": "1",
+                "description": "",
+                "created_date": "2022-11-28 02:00:16",
+                "created_user_id": "5193",
+                "created_area_id": "854",
+                "marker_color": "0"
+            }
+        ]
+    }
+]
