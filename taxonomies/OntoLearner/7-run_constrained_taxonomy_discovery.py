@@ -4,19 +4,19 @@
 """
 Constrained LLM Taxonomy Discovery for BlindWiki Tags
 
-This script uses the existing 16 supertags as fixed root categories and asks
-the LLM to classify each tag under the appropriate supertag(s).
+This script uses the existing 95 supertags from clustering analysis as fixed 
+root categories and asks the LLM to validate/refine the tag assignments.
 
 Strategy:
   - For each tag, ask the LLM: "Is supertag X a parent of tag Y?"
-  - Only evaluates: ~596 tags × 16 supertags = ~9,536 pairs
-  - Much faster than full LLM (script 5) or RAG (script 6)
+  - Only evaluates: ~596 tags * 95 supertags = ~56,620 pairs
+  - Much faster than full LLM discovery
 
 Expected runtime:
-  - CPU: ~30 minutes - 1 hour
-  - GPU: ~5-15 minutes
+  - CPU: ~2-3 hours
+  - GPU: ~30-60 minutes
 
-This is the RECOMMENDED starting point for practical taxonomy building.
+This validates your existing clustering-based taxonomy with LLM reasoning.
 """
 
 import json
@@ -36,113 +36,13 @@ OUTPUT_DIR = SCRIPT_DIR / "data/ontolearner_output"
 MAPPING_DIR = SCRIPT_DIR / "../mappings"
 
 INPUT_FILE = INPUT_DIR / "tags_simple.json"
-MANUAL_MAPPING_FILE = MAPPING_DIR / "16tags_mapping_dict.json"
-
-# The 16 supertags (from the manual mapping)
-SUPERTAGS = [
-    "Ambient noise",
-    "Sorocaba",
-    "Neighborhood",
-    "Paseo",
-    "Accessible",
-    "Restaurant",
-    "Water",
-    "Dangerous",
-    "Culture",
-    "Tram",
-    "Maritime",
-    "Music",
-    "Bridges",
-    "Piazza",
-    "Garden",
-    "Tactile",
-    "Dead",
-    "Venice",
-    "Lande",
-    "University",
-    "Art",
-    "Streets",
-    "Caution",
-    "Park",
-    "Iglesia",
-    "Wells",
-    "Museum",
-    "Shop",
-    "Mislata",
-    "Birds",
-    "Bar",
-    "Crowded Environment",
-    "Odor",
-    "Sport",
-    "Tranquillity",
-    "Work",
-    ". Reference",
-    "Tree",
-    "Audible traffic lights",
-    "Test",
-    "Hiking",
-    "History",
-    "Library",
-    "Easter",
-    "Rain",
-    "Hospital",
-    "Vision",
-    "Door",
-    "Friendship",
-    "Bike",
-    "Girls",
-    "Bells",
-    "Steps",
-    "He Lives Together",
-    "Nature",
-    "Movement",
-    "33Bienal",
-    "Binary",
-    "Sole",
-    "Obstacle",
-    "Car",
-    "Germany",
-    "Market",
-    "Temporary",
-    "Machine",
-    "Fruits",
-    "Voices",
-    "Fish",
-    "Scale",
-    "Meeting",
-    "Touch",
-    "Night",
-    "Turismo",
-    "Foundations",
-    "Sensations",
-    "Carnevale",
-    "Hello",
-    "Wall",
-    "Theater",
-    "Laramara",
-    "Calle Closed",
-    "Project",
-    "Words And More",
-    "Vaporetto",
-    "Sculptures",
-    "Luci",
-    "Perfumes",
-    "Memorial",
-    "Vento",
-    "People",
-    "Description",
-    "Sculpture",
-    "Blindwiki",
-    "Headquarters",
-    "Legends",
-    "Stop"
-]
+SUPERTAG_MAPPING_FILE = MAPPING_DIR / "supertag_mapping_dict.json"
 
 # LLM parameters
 MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"
-BATCH_SIZE = 8
+BATCH_SIZE = 512
 MAX_NEW_TOKENS = 5
-DEVICE = "cpu"  # Use 'cuda' if GPU available
+DEVICE = "cuda"  # Use 'cuda' if GPU available
 
 
 # %% [REGION 2] Load data
@@ -164,17 +64,29 @@ def load_tags(json_path):
     return tags
 
 
-def load_manual_mapping(json_path):
-    """Load the manual 16-tag mapping for comparison"""
+def load_supertag_mapping(json_path):
+    """Load the supertag mapping to extract supertags and existing assignments"""
     if not json_path.exists():
-        print(f"Info: Manual mapping not found: {json_path}")
-        return None
+        raise FileNotFoundError(f"Supertag mapping not found: {json_path}")
 
     with open(json_path, 'r', encoding='utf-8') as f:
         mapping = json.load(f)
 
-    print(f"Loaded manual mapping with {len(mapping)} entries")
-    return mapping
+    print(f"Loaded supertag mapping with {len(mapping)} entries")
+    
+    # Extract unique supertags (these will be our fixed roots)
+    unique_supertags = sorted(set(mapping.values()))
+    
+    # Normalize the mapping for comparison (lowercase, underscores)
+    normalized_mapping = {}
+    for original_tag, supertag in mapping.items():
+        tag_norm = original_tag.lower().strip().replace(' ', '_')
+        supertag_norm = supertag.lower().strip().replace(' ', '_')
+        normalized_mapping[tag_norm] = supertag_norm
+    
+    print(f"Found {len(unique_supertags)} unique supertags")
+    
+    return unique_supertags, normalized_mapping
 
 
 # %% [REGION 3] Build constrained dataset
@@ -190,8 +102,11 @@ def build_constrained_dataset(tags, supertags):
     """
     prompting = StandardizedPrompting(task='taxonomy-discovery')
 
+    # Normalize supertags for comparison
+    supertags_normalized = [st.lower().strip().replace(' ', '_') for st in supertags]
+    
     # Filter out supertags from the tag list to avoid self-relationships
-    tags_to_classify = [t for t in tags if t not in supertags]
+    tags_to_classify = [t for t in tags if t not in supertags_normalized]
 
     n_pairs = len(tags_to_classify) * len(supertags)
     print(f"\nBuilding constrained dataset:")
@@ -202,10 +117,12 @@ def build_constrained_dataset(tags, supertags):
     dataset = []
     for tag in tags_to_classify:
         for supertag in supertags:
+            # Use normalized supertag for consistency
+            supertag_normalized = supertag.lower().strip().replace(' ', '_')
             dataset.append({
-                "parent": supertag,
+                "parent": supertag_normalized,
                 "child": tag,
-                "prompt": prompting.format(parent=supertag, child=tag)
+                "prompt": prompting.format(parent=supertag_normalized, child=tag)
             })
 
     return dataset
@@ -219,12 +136,12 @@ def run_constrained_taxonomy_discovery(tags, supertags, model_id=MODEL_ID,
                                         device=DEVICE):
     """Execute constrained LLM taxonomy discovery against fixed supertags"""
     print("\n" + "=" * 60)
-    print("CONSTRAINED LLM TAXONOMY DISCOVERY")
+    print("CONSTRAINED LLM TAXONOMY DISCOVERY (95 SUPERTAGS)")
     print("=" * 60)
     print(f"Model: {model_id}")
     print(f"Device: {device}")
     print(f"Batch size: {batch_size}")
-    print(f"Supertags: {', '.join(supertags)}")
+    print(f"Number of supertags: {len(supertags)}")
     print(f"Number of tags: {len(tags)}")
 
     # Build the constrained dataset
@@ -236,7 +153,7 @@ def run_constrained_taxonomy_discovery(tags, supertags, model_id=MODEL_ID,
     pairs_per_sec_gpu = 15
     rate = pairs_per_sec_gpu if device == 'cuda' else pairs_per_sec_cpu
     est_minutes = n_pairs / rate / 60
-    print(f"Estimated runtime: {est_minutes:.0f} minutes")
+    print(f"Estimated runtime: {est_minutes:.0f} minutes ({est_minutes / 60:.1f} hours)")
 
     # Initialize LLM learner
     print("\nInitializing AutoLLMLearner...")
@@ -256,8 +173,6 @@ def run_constrained_taxonomy_discovery(tags, supertags, model_id=MODEL_ID,
     print(f"Model loaded in {load_time:.2f} seconds")
 
     # Run prediction using the internal predict method directly
-    # This uses the same mechanism as the full LLM approach but with
-    # our constrained dataset instead of all N×(N-1)/2 pairs
     print(f"\nEvaluating {n_pairs:,} (supertag, tag) pairs...")
     start_discovery = time.time()
 
@@ -273,22 +188,11 @@ def run_constrained_taxonomy_discovery(tags, supertags, model_id=MODEL_ID,
 
 # %% [REGION 5] Analyze and compare results
 
-def compare_with_manual_mapping(taxonomies, manual_mapping):
-    """Compare discovered constrained taxonomies with manual mapping"""
-    if manual_mapping is None:
-        print("\nSkipping manual mapping comparison (file not found)")
-        return None
-
+def compare_with_existing_mapping(taxonomies, existing_mapping):
+    """Compare discovered taxonomies with existing clustering-based mapping"""
     print("\n" + "=" * 60)
-    print("COMPARISON WITH MANUAL 16-TAG MAPPING")
+    print("COMPARISON WITH EXISTING SUPERTAG MAPPING")
     print("=" * 60)
-
-    # Normalize manual mapping: original_tag -> supertag (lowercase)
-    normalized_manual = {}
-    for original_tag, supertag in manual_mapping.items():
-        tag_norm = original_tag.lower().strip().replace(' ', '_')
-        supertag_norm = supertag.lower().strip().replace(' ', '_')
-        normalized_manual[tag_norm] = supertag_norm
 
     # Build discovered mapping: tag -> [supertags]
     discovered_mapping = {}
@@ -302,50 +206,65 @@ def compare_with_manual_mapping(taxonomies, manual_mapping):
     # Compare
     agreement_count = 0
     disagreement_examples = []
+    new_assignments = []
     tags_compared = 0
 
-    for tag, manual_parent in normalized_manual.items():
+    for tag, existing_parent in existing_mapping.items():
+        tags_compared += 1
         if tag in discovered_mapping:
-            tags_compared += 1
             discovered_parents = discovered_mapping[tag]
-            if manual_parent in discovered_parents:
+            if existing_parent in discovered_parents:
                 agreement_count += 1
             else:
                 disagreement_examples.append({
                     'tag': tag,
-                    'manual_parent': manual_parent,
+                    'existing_parent': existing_parent,
                     'discovered_parents': discovered_parents
                 })
+        else:
+            # Tag not assigned to any supertag by LLM
+            disagreement_examples.append({
+                'tag': tag,
+                'existing_parent': existing_parent,
+                'discovered_parents': []
+            })
+
+    # Tags with LLM assignments that weren't in original mapping
+    for tag, parents in discovered_mapping.items():
+        if tag not in existing_mapping:
+            new_assignments.append({
+                'tag': tag,
+                'discovered_parents': parents
+            })
 
     agreement_rate = agreement_count / tags_compared if tags_compared > 0 else 0
 
-    print(f"Tags in manual mapping: {len(normalized_manual)}")
-    print(f"Tags with discovered parents: {tags_compared}")
-    print(f"Agreements: {agreement_count}")
+    print(f"Tags in existing mapping: {len(existing_mapping)}")
+    print(f"Tags with LLM-discovered parents: {len(discovered_mapping)}")
+    print(f"Agreements with existing mapping: {agreement_count}")
     print(f"Agreement rate: {agreement_rate:.1%}")
 
     if disagreement_examples:
-        print(f"\nSample disagreements (showing first 15):")
-        for ex in disagreement_examples[:15]:
-            print(f"  {ex['tag']:30s}  manual: {ex['manual_parent']:20s}  "
-                  f"discovered: {', '.join(ex['discovered_parents'])}")
+        print(f"\nSample disagreements (showing first 20):")
+        for ex in disagreement_examples[:20]:
+            discovered_str = ', '.join(ex['discovered_parents']) if ex['discovered_parents'] else 'NONE'
+            print(f"  {ex['tag']:30s}  existing: {ex['existing_parent']:20s}  "
+                  f"LLM: {discovered_str}")
 
-    # Tags not assigned to any supertag
-    unassigned = [tag for tag in normalized_manual.keys()
-                  if tag not in discovered_mapping]
-    if unassigned:
-        print(f"\nTags from manual mapping with no discovered parent ({len(unassigned)}):")
-        for tag in unassigned[:20]:
-            print(f"  - {tag} (manual: {normalized_manual[tag]})")
+    if new_assignments:
+        print(f"\nNew tag assignments by LLM (not in original mapping, showing first 15):")
+        for ex in new_assignments[:15]:
+            print(f"  {ex['tag']:30s} → {', '.join(ex['discovered_parents'])}")
 
     comparison = {
-        'tags_in_manual_mapping': len(normalized_manual),
-        'tags_compared': tags_compared,
+        'tags_in_existing_mapping': len(existing_mapping),
+        'tags_with_llm_parents': len(discovered_mapping),
         'agreement_count': agreement_count,
         'agreement_rate': agreement_rate,
-        'unassigned_count': len(unassigned),
-        'disagreement_examples': disagreement_examples[:30],
-        'unassigned_tags': unassigned[:50]
+        'disagreement_count': len(disagreement_examples),
+        'new_assignments_count': len(new_assignments),
+        'disagreement_examples': disagreement_examples[:50],
+        'new_assignments': new_assignments[:50]
     }
 
     return comparison
@@ -356,6 +275,9 @@ def analyze_coverage(taxonomies, tags, supertags):
     print("\n" + "=" * 60)
     print("COVERAGE ANALYSIS")
     print("=" * 60)
+
+    # Normalize supertags
+    supertags_normalized = set([st.lower().strip().replace(' ', '_') for st in supertags])
 
     # Build mapping: tag -> [supertags]
     tag_to_supertags = {}
@@ -371,7 +293,7 @@ def analyze_coverage(taxonomies, tags, supertags):
     # Tags with multiple parents (ambiguous)
     multi_parent = {t: p for t, p in tag_to_supertags.items() if len(p) > 1}
     # Tags with no parent (unassigned)
-    all_tags_set = set(t for t in tags if t not in supertags)
+    all_tags_set = set(t for t in tags if t not in supertags_normalized)
     assigned_tags = set(tag_to_supertags.keys())
     unassigned = all_tags_set - assigned_tags
 
@@ -386,22 +308,23 @@ def analyze_coverage(taxonomies, tags, supertags):
     # Children per supertag
     supertag_counts = {}
     for supertag in supertags:
-        children = [rel['child'] for rel in taxonomies if rel['parent'] == supertag]
+        supertag_normalized = supertag.lower().strip().replace(' ', '_')
+        children = [rel['child'] for rel in taxonomies if rel['parent'] == supertag_normalized]
         supertag_counts[supertag] = len(children)
 
-    print(f"\nChildren per supertag:")
-    for supertag in sorted(supertag_counts, key=supertag_counts.get, reverse=True):
-        count = supertag_counts[supertag]
+    print(f"\nTop 20 supertags by children count:")
+    sorted_supertags = sorted(supertag_counts.items(), key=lambda x: x[1], reverse=True)
+    for i, (supertag, count) in enumerate(sorted_supertags[:20], 1):
         bar = "█" * (count // 2)
-        print(f"  {supertag:25s} {count:4d} {bar}")
+        print(f"  {i:2d}. {supertag:25s} {count:4d} {bar}")
 
     if multi_parent:
-        print(f"\nSample tags with multiple supertags:")
-        for tag, parents in list(multi_parent.items())[:15]:
+        print(f"\nSample tags with multiple supertags (showing first 20):")
+        for tag, parents in list(multi_parent.items())[:20]:
             print(f"  {tag:30s} → {', '.join(parents)}")
 
     if unassigned:
-        print(f"\nSample unassigned tags:")
+        print(f"\nSample unassigned tags (showing first 20):")
         for tag in sorted(unassigned)[:20]:
             print(f"  - {tag}")
 
@@ -411,8 +334,8 @@ def analyze_coverage(taxonomies, tags, supertags):
         'multi_parent_count': len(multi_parent),
         'unassigned_count': len(unassigned),
         'supertag_child_counts': supertag_counts,
-        'multi_parent_tags': {t: p for t, p in list(multi_parent.items())[:50]},
-        'unassigned_tags': sorted(list(unassigned))[:100]
+        'multi_parent_tags': {t: p for t, p in list(multi_parent.items())[:100]},
+        'unassigned_tags': sorted(list(unassigned))[:200]
     }
 
     return analysis
@@ -470,7 +393,7 @@ def print_sample_taxonomies(taxonomies, n=30):
 
 def main():
     print("=" * 60)
-    print("CONSTRAINED LLM TAXONOMY DISCOVERY (16 SUPERTAGS)")
+    print("CONSTRAINED LLM TAXONOMY DISCOVERY (95 SUPERTAGS)")
     print("=" * 60)
 
     # Create output directory
@@ -479,15 +402,17 @@ def main():
 
     # Load data
     tags = load_tags(INPUT_FILE)
-    manual_mapping = load_manual_mapping(MANUAL_MAPPING_FILE)
+    supertags, existing_mapping = load_supertag_mapping(SUPERTAG_MAPPING_FILE)
 
-    # Print supertags
-    print(f"\nFixed supertag roots ({len(SUPERTAGS)}):")
-    for st in SUPERTAGS:
+    # Print sample supertags
+    print(f"\nFixed supertag roots ({len(supertags)}):")
+    print("First 15 supertags:")
+    for st in supertags[:15]:
         print(f"  - {st}")
+    print(f"  ... and {len(supertags) - 15} more")
 
     # Run constrained taxonomy discovery
-    taxonomies = run_constrained_taxonomy_discovery(tags, SUPERTAGS)
+    taxonomies = run_constrained_taxonomy_discovery(tags, supertags)
 
     if not taxonomies:
         print("\n⚠ No taxonomic relationships discovered!")
@@ -497,20 +422,20 @@ def main():
     print_sample_taxonomies(taxonomies, n=30)
 
     # Analyze coverage
-    coverage = analyze_coverage(taxonomies, tags, SUPERTAGS)
+    coverage = analyze_coverage(taxonomies, tags, supertags)
 
-    # Compare with manual mapping
-    comparison = compare_with_manual_mapping(taxonomies, manual_mapping)
+    # Compare with existing mapping
+    comparison = compare_with_existing_mapping(taxonomies, existing_mapping)
 
     # Export results
     print("\n" + "=" * 60)
     print("EXPORTING RESULTS")
     print("=" * 60)
 
-    json_path = OUTPUT_DIR / "constrained_taxonomies.json"
-    csv_path = OUTPUT_DIR / "constrained_taxonomies.csv"
-    stats_path = OUTPUT_DIR / "constrained_taxonomy_stats.json"
-    mapping_path = OUTPUT_DIR / "constrained_flat_mapping.json"
+    json_path = OUTPUT_DIR / "constrained_llm_taxonomies.json"
+    csv_path = OUTPUT_DIR / "constrained_llm_taxonomies.csv"
+    stats_path = OUTPUT_DIR / "constrained_llm_taxonomy_stats.json"
+    mapping_path = OUTPUT_DIR / "constrained_llm_flat_mapping.json"
 
     export_taxonomies_json(taxonomies, json_path)
     export_taxonomies_csv(taxonomies, csv_path)
@@ -519,13 +444,14 @@ def main():
     # Build and export stats
     stats = {
         'total_relationships': len(taxonomies),
-        'supertags': SUPERTAGS,
+        'num_supertags': len(supertags),
         'model_id': MODEL_ID,
         'device': DEVICE,
+        'batch_size': BATCH_SIZE,
         'coverage': coverage,
     }
     if comparison:
-        stats['manual_comparison'] = comparison
+        stats['existing_mapping_comparison'] = comparison
 
     with open(stats_path, 'w', encoding='utf-8') as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
@@ -540,14 +466,15 @@ def main():
     print(f"  - Tags with multiple supertags: {coverage['multi_parent_count']}")
     print(f"  - Unassigned tags: {coverage['unassigned_count']}")
     if comparison:
-        print(f"  - Agreement with manual mapping: {comparison['agreement_rate']:.1%}")
+        print(f"  - Agreement with existing mapping: {comparison['agreement_rate']:.1%}")
     print(f"\nResults saved to: {OUTPUT_DIR}")
     print("\nFiles created:")
-    print(f"  - constrained_taxonomies.json (all relationships)")
-    print(f"  - constrained_taxonomies.csv (for spreadsheet viewing)")
-    print(f"  - constrained_flat_mapping.json (tag → supertag mapping)")
-    print(f"  - constrained_taxonomy_stats.json (statistics & comparison)")
+    print(f"  - constrained_llm_taxonomies.json (all relationships)")
+    print(f"  - constrained_llm_taxonomies.csv (for spreadsheet viewing)")
+    print(f"  - constrained_llm_flat_mapping.json (tag → supertag mapping)")
+    print(f"  - constrained_llm_taxonomy_stats.json (statistics & comparison)")
     print("\n✓ Constrained taxonomy discovery complete!")
+    print("\nThis validates your 95-supertag clustering with LLM reasoning.")
 
 
 if __name__ == "__main__":
