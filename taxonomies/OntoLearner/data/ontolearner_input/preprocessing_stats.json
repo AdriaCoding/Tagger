@@ -1,0 +1,54 @@
+{
+  "original_tag_count": 2605,
+  "filtered_tag_count": 671,
+  "removed_count": 1934,
+  "min_count_threshold": 2,
+  "count_distribution": {
+    "min": 2,
+    "max": 481,
+    "mean": 10.24441132637854,
+    "median": 3.0
+  },
+  "top_10_tags": [
+    {
+      "tag": "ambient_noise",
+      "count": 481
+    },
+    {
+      "tag": "dangerous",
+      "count": 265
+    },
+    {
+      "tag": "accessible",
+      "count": 171
+    },
+    {
+      "tag": "culture",
+      "count": 143
+    },
+    {
+      "tag": "water",
+      "count": 141
+    },
+    {
+      "tag": "piazza",
+      "count": 129
+    },
+    {
+      "tag": "bridges",
+      "count": 128
+    },
+    {
+      "tag": "sorocaba",
+      "count": 115
+    },
+    {
+      "tag": "accessibility",
+      "count": 82
+    },
+    {
+      "tag": "paseo",
+      "count": 77
+    }
+  ]
+}
