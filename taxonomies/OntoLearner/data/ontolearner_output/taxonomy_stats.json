@@ -1,0 +1,95 @@
+{
+  "total_relationships": 4250,
+  "unique_parents": 596,
+  "unique_children": 596,
+  "unique_tags_involved": 596,
+  "tags_as_both_parent_and_child": 596,
+  "tags_only_as_parent": 0,
+  "tags_only_as_child": 0,
+  "avg_children_per_parent": 7.130872483221476,
+  "avg_parents_per_child": 7.130872483221476,
+  "top_10_parents": [
+    {
+      "tag": "job",
+      "child_count": 26
+    },
+    {
+      "tag": "road",
+      "child_count": 24
+    },
+    {
+      "tag": "food",
+      "child_count": 18
+    },
+    {
+      "tag": "pedestrian_street",
+      "child_count": 18
+    },
+    {
+      "tag": "music",
+      "child_count": 18
+    },
+    {
+      "tag": "street",
+      "child_count": 17
+    },
+    {
+      "tag": "wood",
+      "child_count": 17
+    },
+    {
+      "tag": "school",
+      "child_count": 17
+    },
+    {
+      "tag": "noises",
+      "child_count": 15
+    },
+    {
+      "tag": "flavors",
+      "child_count": 15
+    }
+  ],
+  "top_10_children": [
+    {
+      "tag": "job",
+      "parent_count": 26
+    },
+    {
+      "tag": "road",
+      "parent_count": 24
+    },
+    {
+      "tag": "food",
+      "parent_count": 18
+    },
+    {
+      "tag": "music",
+      "parent_count": 18
+    },
+    {
+      "tag": "pedestrian_street",
+      "parent_count": 18
+    },
+    {
+      "tag": "school",
+      "parent_count": 17
+    },
+    {
+      "tag": "street",
+      "parent_count": 17
+    },
+    {
+      "tag": "wood",
+      "parent_count": 17
+    },
+    {
+      "tag": "art",
+      "parent_count": 15
+    },
+    {
+      "tag": "city_matarazzo",
+      "parent_count": 15
+    }
+  ]
+}

@@ -81,11 +81,10 @@ def run_taxonomy_discovery(tags, top_k=5, model_id=MODEL_ID):
     print("(This may take a few minutes depending on the number of tags)")
     start_discovery = time.time()
     
-    taxonomies = learner.fit_predict(
-        train_data=tags,
-        eval_data=tags,
-        task='taxonomy-discovery'
-    )
+    # Note: We use fit() and predict() separately with ontologizer=False
+    # because we're passing raw tag lists, not OntologyData objects
+    learner.fit(train_data=tags, task='taxonomy-discovery', ontologizer=False)
+    taxonomies = learner.predict(eval_data=tags, task='taxonomy-discovery', ontologizer=False)
     
     discovery_time = time.time() - start_discovery
     print(f"\n✓ Discovery complete in {discovery_time:.2f} seconds")

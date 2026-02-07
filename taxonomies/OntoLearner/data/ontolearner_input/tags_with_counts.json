@@ -3,134 +3,120 @@
     "tag_normalized": "ambient_noise",
     "tag_english": "Ambient noise",
     "tag_original": "Umgebungsgeräusche",
-    "count": 481,
+    "count": 394,
     "tag_id": 5170
   },
   {
     "tag_normalized": "dangerous",
     "tag_english": "dangerous",
     "tag_original": "pericoloso",
-    "count": 265,
+    "count": 213,
     "tag_id": 4626
-  },
-  {
-    "tag_normalized": "accessible",
-    "tag_english": "accessible",
-    "tag_original": "accessibile",
-    "count": 171,
-    "tag_id": 4723
-  },
-  {
-    "tag_normalized": "culture",
-    "tag_english": "culture",
-    "tag_original": "culture",
-    "count": 143,
-    "tag_id": 4822
   },
   {
     "tag_normalized": "water",
     "tag_english": "water",
     "tag_original": "water",
-    "count": 141,
+    "count": 133,
     "tag_id": 5541
   },
   {
-    "tag_normalized": "piazza",
-    "tag_english": "piazza",
-    "tag_original": "piazza",
-    "count": 129,
-    "tag_id": 5840
+    "tag_normalized": "culture",
+    "tag_english": "culture",
+    "tag_original": "culture",
+    "count": 127,
+    "tag_id": 4822
   },
   {
     "tag_normalized": "bridges",
     "tag_english": "bridges",
     "tag_original": "ponti",
-    "count": 128,
+    "count": 118,
     "tag_id": 5695
+  },
+  {
+    "tag_normalized": "piazza",
+    "tag_english": "piazza",
+    "tag_original": "piazza",
+    "count": 117,
+    "tag_id": 5840
+  },
+  {
+    "tag_normalized": "accessible",
+    "tag_english": "accessible",
+    "tag_original": "accessibile",
+    "count": 114,
+    "tag_id": 4723
   },
   {
     "tag_normalized": "sorocaba",
     "tag_english": "sorocaba",
     "tag_original": "sorocaba",
-    "count": 115,
+    "count": 88,
     "tag_id": 7148
   },
   {
     "tag_normalized": "accessibility",
     "tag_english": "accessibility",
     "tag_original": "accesibilidade",
-    "count": 82,
+    "count": 78,
     "tag_id": 5242
+  },
+  {
+    "tag_normalized": "caution",
+    "tag_english": "Caution",
+    "tag_original": "Precaución",
+    "count": 72,
+    "tag_id": 4958
   },
   {
     "tag_normalized": "paseo",
     "tag_english": "paseo",
     "tag_original": "paseo",
-    "count": 77,
+    "count": 69,
     "tag_id": 6785
   },
   {
     "tag_normalized": "crowded_environment",
     "tag_english": "crowded environment",
     "tag_original": "ambiente affollato",
-    "count": 76,
+    "count": 67,
     "tag_id": 5760
-  },
-  {
-    "tag_normalized": "caution",
-    "tag_english": "Caution",
-    "tag_original": "Precaución",
-    "count": 74,
-    "tag_id": 4958
   },
   {
     "tag_normalized": "odor",
     "tag_english": "Odor",
     "tag_original": "Geruch",
-    "count": 72,
+    "count": 66,
     "tag_id": 5115
   },
   {
     "tag_normalized": "iglesia",
     "tag_english": "Iglesia",
     "tag_original": "Iglesia",
-    "count": 68,
+    "count": 63,
     "tag_id": 4968
-  },
-  {
-    "tag_normalized": "neighborhood_exploration",
-    "tag_english": "neighborhood exploration",
-    "tag_original": "exploración barrio",
-    "count": 68,
-    "tag_id": 6882
   },
   {
     "tag_normalized": "ristorante",
     "tag_english": "ristorante",
     "tag_original": "ristorante",
-    "count": 66,
+    "count": 62,
     "tag_id": 4669
+  },
+  {
+    "tag_normalized": "neighborhood_exploration",
+    "tag_english": "neighborhood exploration",
+    "tag_original": "exploración barrio",
+    "count": 62,
+    "tag_id": 6882
   },
   {
     "tag_normalized": "music",
     "tag_english": "Music",
     "tag_original": "Music",
-    "count": 64,
+    "count": 57,
     "tag_id": 4845
-  },
-  {
-    "tag_normalized": "bus",
-    "tag_english": "Bus",
-    "tag_original": "Autobus",
-    "count": 60,
-    "tag_id": 2889
-  },
-  {
-    "tag_normalized": "tactile",
-    "tag_english": "Tactile",
-    "tag_original": "Tactile",
-    "count": 58,
-    "tag_id": 5056
   },
   {
     "tag_normalized": "._reference",
@@ -140,20 +126,6 @@
     "tag_id": 5019
   },
   {
-    "tag_normalized": "bar",
-    "tag_english": "bar",
-    "tag_original": "bar",
-    "count": 57,
-    "tag_id": 1710
-  },
-  {
-    "tag_normalized": "calle_dead",
-    "tag_english": "Calle dead",
-    "tag_original": "Calle morta",
-    "count": 57,
-    "tag_id": 5903
-  },
-  {
     "tag_normalized": "venice_at_night",
     "tag_english": "Venice at night",
     "tag_original": "Venezia di notte",
@@ -161,221 +133,144 @@
     "tag_id": 5908
   },
   {
-    "tag_normalized": "scale",
-    "tag_english": "scale",
-    "tag_original": "scale",
-    "count": 53,
-    "tag_id": 4668
+    "tag_normalized": "dead_calla",
+    "tag_english": "Dead calla",
+    "tag_original": "Calle morta",
+    "count": 54,
+    "tag_id": 5903
+  },
+  {
+    "tag_normalized": "tactile",
+    "tag_english": "Tactile",
+    "tag_original": "Tactile",
+    "count": 52,
+    "tag_id": 5056
   },
   {
     "tag_normalized": "cafeteria",
     "tag_english": "cafeteria",
     "tag_original": "cafeteria",
-    "count": 51,
+    "count": 49,
     "tag_id": 4984
   },
   {
-    "tag_normalized": "loges_route",
-    "tag_english": "Loges route",
-    "tag_original": "percorso loges",
-    "count": 51,
-    "tag_id": 4703
+    "tag_normalized": "bar",
+    "tag_english": "bar",
+    "tag_original": "bar",
+    "count": 48,
+    "tag_id": 1710
   },
   {
     "tag_normalized": "wells",
     "tag_english": "wells",
     "tag_original": "pozzi",
-    "count": 49,
-    "tag_id": 5799
-  },
-  {
-    "tag_normalized": "testing",
-    "tag_english": "testing",
-    "tag_original": "testing",
     "count": 47,
-    "tag_id": 4120
+    "tag_id": 5799
   },
   {
     "tag_normalized": "garden",
     "tag_english": "garden",
     "tag_original": "garden",
-    "count": 47,
-    "tag_id": 4896
-  },
-  {
-    "tag_normalized": "temporary",
-    "tag_english": "temporary",
-    "tag_original": "temporaneo",
     "count": 46,
-    "tag_id": 4715
+    "tag_id": 4896
   },
   {
     "tag_normalized": "humboldt_university",
     "tag_english": "Humboldt University",
     "tag_original": "Humboldt Universität",
-    "count": 44,
+    "count": 42,
     "tag_id": 5161
-  },
-  {
-    "tag_normalized": "tree",
-    "tag_english": "tree",
-    "tag_original": "tree",
-    "count": 41,
-    "tag_id": 4790
-  },
-  {
-    "tag_normalized": "yolei",
-    "tag_english": "Yolei",
-    "tag_original": "Yolei",
-    "count": 41,
-    "tag_id": 7988
-  },
-  {
-    "tag_normalized": "maritime_villages",
-    "tag_english": "maritime villages",
-    "tag_original": "poblats marítims",
-    "count": 41,
-    "tag_id": 6796
-  },
-  {
-    "tag_normalized": "machine",
-    "tag_english": "machine",
-    "tag_original": "machine",
-    "count": 39,
-    "tag_id": 4679
-  },
-  {
-    "tag_normalized": "cabanyal",
-    "tag_english": "cabanyal",
-    "tag_original": "cabanyal",
-    "count": 38,
-    "tag_id": 6810
-  },
-  {
-    "tag_normalized": "coagabitat_scigudipartialimitalizatorals_from_the_startac_atipicedizioni",
-    "tag_english": "Coagabitat SCIGUDIPARTIALIMITALIZATORALS from the Startac ATIPICEDIZIONI",
-    "tag_original": "Coaabitat sguardiparzialimonditotali dallafinestra startAC atipicheedizioni",
-    "count": 37,
-    "tag_id": 7885
-  },
-  {
-    "tag_normalized": "33bienal",
-    "tag_english": "33Bienal",
-    "tag_original": "33Bienal",
-    "count": 37,
-    "tag_id": 6765
   },
   {
     "tag_normalized": "bells",
     "tag_english": "bells",
     "tag_original": "campane",
-    "count": 37,
+    "count": 36,
     "tag_id": 4705
+  },
+  {
+    "tag_normalized": "he_lives_together",
+    "tag_english": "He lives together",
+    "tag_original": "Coaabitat",
+    "count": 35,
+    "tag_id": 7885
   },
   {
     "tag_normalized": "shop",
     "tag_english": "shop",
     "tag_original": "shop",
-    "count": 36,
+    "count": 33,
     "tag_id": 4825
   },
   {
-    "tag_normalized": "history",
-    "tag_english": "history",
-    "tag_original": "history",
-    "count": 36,
-    "tag_id": 5152
-  },
-  {
-    "tag_normalized": "trial",
-    "tag_english": "trial",
-    "tag_original": "prova",
-    "count": 34,
-    "tag_id": 1754
-  },
-  {
-    "tag_normalized": "railway_stations",
-    "tag_english": "railway stations",
-    "tag_original": "railway stations",
-    "count": 34,
-    "tag_id": 5120
-  },
-  {
-    "tag_normalized": "barcarizzi",
-    "tag_english": "BarCarizzi",
+    "tag_normalized": "barcarrizzi",
+    "tag_english": "Barcarrizzi",
     "tag_original": "Barcarizzi",
     "count": 33,
     "tag_id": 5922
   },
   {
-    "tag_normalized": "drinking_fountain",
-    "tag_english": "drinking fountain",
-    "tag_original": "drinking fountain",
+    "tag_normalized": "33bienal",
+    "tag_english": "33Bienal",
+    "tag_original": "33Bienal",
+    "count": 33,
+    "tag_id": 6765
+  },
+  {
+    "tag_normalized": "maritime_towns",
+    "tag_english": "maritime towns",
+    "tag_original": "poblats marítims",
     "count": 32,
-    "tag_id": 4820
+    "tag_id": 6796
   },
   {
-    "tag_normalized": "turismo",
-    "tag_english": "Turismo",
-    "tag_original": "Turismo",
-    "count": 32,
-    "tag_id": 5296
-  },
-  {
-    "tag_normalized": "sidewalk",
-    "tag_english": "sidewalk",
-    "tag_original": "marciapiede",
+    "tag_normalized": "bus",
+    "tag_english": "Bus",
+    "tag_original": "Autobus",
     "count": 31,
-    "tag_id": 4704
+    "tag_id": 2889
   },
   {
-    "tag_normalized": "yoley",
-    "tag_english": "Yoley",
-    "tag_original": "Yoley",
+    "tag_normalized": "tree",
+    "tag_english": "tree",
+    "tag_original": "tree",
     "count": 31,
-    "tag_id": 7989
+    "tag_id": 4790
   },
   {
-    "tag_normalized": "yoli",
-    "tag_english": "Yoli",
-    "tag_original": "Yolí",
+    "tag_normalized": "railway_stations",
+    "tag_english": "railway stations",
+    "tag_original": "railway stations",
     "count": 31,
-    "tag_id": 7990
+    "tag_id": 5120
   },
   {
-    "tag_normalized": "sound_traffic_lights",
-    "tag_english": "Sound traffic lights",
+    "tag_normalized": "history",
+    "tag_english": "history",
+    "tag_original": "history",
+    "count": 31,
+    "tag_id": 5152
+  },
+  {
+    "tag_normalized": "loges_route",
+    "tag_english": "loges route",
+    "tag_original": "percorso loges",
+    "count": 29,
+    "tag_id": 4703
+  },
+  {
+    "tag_normalized": "audible_traffic_lights",
+    "tag_english": "Audible traffic lights",
     "tag_original": "Semáforos sonoros",
-    "count": 30,
+    "count": 29,
     "tag_id": 5231
   },
   {
-    "tag_normalized": "park",
-    "tag_english": "park",
-    "tag_original": "park",
-    "count": 30,
-    "tag_id": 4863
-  },
-  {
-    "tag_normalized": "test",
-    "tag_english": "test",
-    "tag_original": "test",
-    "count": 29,
-    "tag_id": 4785
-  },
-  {
-    "tag_normalized": "art",
-    "tag_english": "art",
-    "tag_original": "art",
-    "count": 29,
-    "tag_id": 5085
-  },
-  {
-    "tag_normalized": "girls",
-    "tag_english": "Girls",
-    "tag_original": "niñas",
-    "count": 28,
-    "tag_id": 5619
+    "tag_normalized": "drinking_fountain",
+    "tag_english": "drinking fountain",
+    "tag_original": "drinking fountain",
+    "count": 27,
+    "tag_id": 4820
   },
   {
     "tag_normalized": "food",
@@ -385,144 +280,116 @@
     "tag_id": 4828
   },
   {
-    "tag_normalized": "birds",
-    "tag_english": "Birds",
-    "tag_original": "Vögel",
+    "tag_normalized": "machine",
+    "tag_english": "machine",
+    "tag_original": "machine",
     "count": 26,
-    "tag_id": 5034
+    "tag_id": 4679
   },
   {
-    "tag_normalized": "large_channel",
-    "tag_english": "Large channel",
+    "tag_normalized": "temporary",
+    "tag_english": "temporary",
+    "tag_original": "temporaneo",
+    "count": 26,
+    "tag_id": 4715
+  },
+  {
+    "tag_normalized": "park",
+    "tag_english": "park",
+    "tag_original": "park",
+    "count": 26,
+    "tag_id": 4863
+  },
+  {
+    "tag_normalized": "art",
+    "tag_english": "art",
+    "tag_original": "art",
+    "count": 26,
+    "tag_id": 5085
+  },
+  {
+    "tag_normalized": "big_channel",
+    "tag_english": "big channel",
     "tag_original": "canal grande",
     "count": 26,
     "tag_id": 5771
   },
   {
+    "tag_normalized": "cabin",
+    "tag_english": "cabin",
+    "tag_original": "cabanyal",
+    "count": 25,
+    "tag_id": 6810
+  },
+  {
+    "tag_normalized": "birds",
+    "tag_english": "Birds",
+    "tag_original": "Vögel",
+    "count": 24,
+    "tag_id": 5034
+  },
+  {
+    "tag_normalized": "scale",
+    "tag_english": "scale",
+    "tag_original": "scale",
+    "count": 22,
+    "tag_id": 4668
+  },
+  {
     "tag_normalized": "meeting",
     "tag_english": "meeting",
     "tag_original": "riunione",
-    "count": 26,
+    "count": 22,
     "tag_id": 4675
-  },
-  {
-    "tag_normalized": "tactile_floors",
-    "tag_english": "Tactile floors",
-    "tag_original": "Pisos táteis",
-    "count": 25,
-    "tag_id": 6764
-  },
-  {
-    "tag_normalized": "non_accesible",
-    "tag_english": "Non accesible",
-    "tag_original": "Non accesible",
-    "count": 24,
-    "tag_id": 5339
-  },
-  {
-    "tag_normalized": "tram",
-    "tag_english": "tram",
-    "tag_original": "tram",
-    "count": 24,
-    "tag_id": 4693
-  },
-  {
-    "tag_normalized": "sole",
-    "tag_english": "sole",
-    "tag_original": "sole",
-    "count": 24,
-    "tag_id": 4624
   },
   {
     "tag_normalized": "ghetto",
     "tag_english": "ghetto",
     "tag_original": "ghetto",
-    "count": 23,
+    "count": 22,
     "tag_id": 5936
   },
   {
-    "tag_normalized": "steps",
-    "tag_english": "Steps",
-    "tag_original": "Gradini",
-    "count": 22,
-    "tag_id": 5788
-  },
-  {
-    "tag_normalized": "calli",
-    "tag_english": "Calli",
-    "tag_original": "Calli",
-    "count": 22,
-    "tag_id": 5941
-  },
-  {
-    "tag_normalized": "paschal",
-    "tag_english": "Paschal",
+    "tag_normalized": "easter",
+    "tag_english": "Easter",
     "tag_original": "Pasqual",
     "count": 22,
     "tag_id": 6875
   },
   {
-    "tag_normalized": "unique_platform",
-    "tag_english": "unique platform",
-    "tag_original": "plataforma única",
-    "count": 22,
-    "tag_id": 6051
-  },
-  {
-    "tag_normalized": "pebbles",
-    "tag_english": "pebbles",
-    "tag_original": "ciottoli",
-    "count": 22,
-    "tag_id": 4671
-  },
-  {
-    "tag_normalized": "puerto",
-    "tag_english": "puerto",
-    "tag_original": "puerto",
-    "count": 22,
-    "tag_id": 6802
-  },
-  {
     "tag_normalized": "water_fountain",
     "tag_english": "water fountain",
     "tag_original": "water fountain",
-    "count": 22,
+    "count": 21,
     "tag_id": 5148
   },
   {
-    "tag_normalized": "foundations",
-    "tag_english": "foundations",
-    "tag_original": "fondamente",
-    "count": 22,
-    "tag_id": 6250
+    "tag_normalized": "turismo",
+    "tag_english": "Turismo",
+    "tag_original": "Turismo",
+    "count": 21,
+    "tag_id": 5296
+  },
+  {
+    "tag_normalized": "single_platform",
+    "tag_english": "single platform",
+    "tag_original": "plataforma única",
+    "count": 21,
+    "tag_id": 6051
+  },
+  {
+    "tag_normalized": "sidewalk",
+    "tag_english": "sidewalk",
+    "tag_original": "marciapiede",
+    "count": 20,
+    "tag_id": 4704
   },
   {
     "tag_normalized": "library",
     "tag_english": "library",
     "tag_original": "library",
-    "count": 21,
+    "count": 20,
     "tag_id": 4810
-  },
-  {
-    "tag_normalized": "planner",
-    "tag_english": "planner",
-    "tag_original": "fioriere",
-    "count": 21,
-    "tag_id": 4722
-  },
-  {
-    "tag_normalized": "deport",
-    "tag_english": "Deport",
-    "tag_original": "Deporte",
-    "count": 21,
-    "tag_id": 5236
-  },
-  {
-    "tag_normalized": "benches",
-    "tag_english": "Benches",
-    "tag_original": "Benches",
-    "count": 21,
-    "tag_id": 5178
   },
   {
     "tag_normalized": "open_space",
@@ -532,25 +399,46 @@
     "tag_id": 5014
   },
   {
-    "tag_normalized": "japan_house",
-    "tag_english": "Japan House",
-    "tag_original": "Japan House",
-    "count": 19,
-    "tag_id": 7322
+    "tag_normalized": "benches",
+    "tag_english": "Benches",
+    "tag_original": "Benches",
+    "count": 20,
+    "tag_id": 5178
   },
   {
-    "tag_normalized": "testapipi",
-    "tag_english": "Testapipi",
-    "tag_original": "testApi",
-    "count": 19,
-    "tag_id": 4227
+    "tag_normalized": "girls",
+    "tag_english": "girls",
+    "tag_original": "niñas",
+    "count": 20,
+    "tag_id": 5619
   },
   {
-    "tag_normalized": "apitest",
-    "tag_english": "apiTest",
-    "tag_original": "apiTest",
+    "tag_normalized": "calli",
+    "tag_english": "Calli",
+    "tag_original": "Calli",
+    "count": 20,
+    "tag_id": 5941
+  },
+  {
+    "tag_normalized": "foundations",
+    "tag_english": "foundations",
+    "tag_original": "fondamente",
+    "count": 20,
+    "tag_id": 6250
+  },
+  {
+    "tag_normalized": "puerto",
+    "tag_english": "puerto",
+    "tag_original": "puerto",
+    "count": 20,
+    "tag_id": 6802
+  },
+  {
+    "tag_normalized": "sports",
+    "tag_english": "Sports",
+    "tag_original": "Deporte",
     "count": 19,
-    "tag_id": 4228
+    "tag_id": 5236
   },
   {
     "tag_normalized": "carnevale",
@@ -560,88 +448,60 @@
     "tag_id": 5759
   },
   {
-    "tag_normalized": "transport",
-    "tag_english": "transport",
-    "tag_original": "transport",
-    "count": 19,
-    "tag_id": 4801
-  },
-  {
-    "tag_normalized": "obstacle",
-    "tag_english": "obstacle",
-    "tag_original": "obstáculo",
-    "count": 19,
-    "tag_id": 5011
-  },
-  {
-    "tag_normalized": "bike_lane",
-    "tag_english": "Bike lane",
-    "tag_original": "carril bici",
-    "count": 19,
-    "tag_id": 4975
-  },
-  {
-    "tag_normalized": "laramara",
-    "tag_english": "Laramara",
-    "tag_original": "Laramara",
+    "tag_normalized": "steps",
+    "tag_english": "Steps",
+    "tag_original": "Gradini",
     "count": 18,
-    "tag_id": 7529
+    "tag_id": 5788
   },
   {
-    "tag_normalized": "theater",
-    "tag_english": "Theater",
-    "tag_original": "Teatro",
-    "count": 18,
-    "tag_id": 6948
-  },
-  {
-    "tag_normalized": "sotoporty",
-    "tag_english": "Sotoporty",
+    "tag_normalized": "sotoportego",
+    "tag_english": "Sotoportego",
     "tag_original": "Sotoportego",
     "count": 18,
     "tag_id": 5880
   },
   {
-    "tag_normalized": "project",
-    "tag_english": "Project",
-    "tag_original": "Proyecto",
+    "tag_normalized": "tactile_floors",
+    "tag_english": "Tactile floors",
+    "tag_original": "Pisos táteis",
     "count": 18,
-    "tag_id": 6666
+    "tag_id": 6764
   },
   {
-    "tag_normalized": "words_and_more",
-    "tag_english": "Words and more",
-    "tag_original": "Palabras y más",
-    "count": 18,
-    "tag_id": 6671
-  },
-  {
-    "tag_normalized": "works_of_art",
-    "tag_english": "Works of art",
-    "tag_original": "Kunstwerke",
+    "tag_normalized": "theater",
+    "tag_english": "Theater",
+    "tag_original": "Teatro",
     "count": 17,
-    "tag_id": 5036
+    "tag_id": 6948
   },
   {
-    "tag_normalized": "incivility",
-    "tag_english": "incivility",
-    "tag_original": "inciviltà",
+    "tag_normalized": "laramara",
+    "tag_english": "Laramara",
+    "tag_original": "Laramara",
     "count": 17,
-    "tag_id": 4700
+    "tag_id": 7529
   },
   {
-    "tag_normalized": "macs",
-    "tag_english": "MACS",
-    "tag_original": "MACS",
+    "tag_normalized": "testing",
+    "tag_english": "testing",
+    "tag_original": "testing",
     "count": 16,
-    "tag_id": 7631
+    "tag_id": 4120
   },
   {
-    "tag_normalized": "monument",
-    "tag_english": "Monument",
-    "tag_original": "Monumento",
+    "tag_normalized": "bike_lane",
+    "tag_english": "bike lane",
+    "tag_original": "carril bici",
     "count": 16,
-    "tag_id": 5283
+    "tag_id": 4975
+  },
+  {
+    "tag_normalized": "non_accesible",
+    "tag_english": "Non accesible",
+    "tag_original": "Non accesible",
+    "count": 16,
+    "tag_id": 5339
   },
   {
     "tag_normalized": "boats",
@@ -651,81 +511,60 @@
     "tag_id": 5732
   },
   {
-    "tag_normalized": "sp_cultural_center",
-    "tag_english": "SP Cultural Center",
-    "tag_original": "centro cultural sp",
+    "tag_normalized": "calle_closed",
+    "tag_english": "Calle closed",
+    "tag_original": "Calle chiusa",
     "count": 16,
-    "tag_id": 7239
+    "tag_id": 5919
   },
   {
-    "tag_normalized": "streets_for_everyone",
-    "tag_english": "streets for everyone",
-    "tag_original": "carrers per a tothom",
+    "tag_normalized": "nature",
+    "tag_english": "nature",
+    "tag_original": "natura",
     "count": 16,
-    "tag_id": 6050
+    "tag_id": 6247
   },
   {
-    "tag_normalized": "sensations",
-    "tag_english": "Sensations",
-    "tag_original": "Sensacions",
+    "tag_normalized": "project",
+    "tag_english": "Project",
+    "tag_original": "Proyecto",
     "count": 16,
-    "tag_id": 6814
+    "tag_id": 6666
+  },
+  {
+    "tag_normalized": "words_and_more",
+    "tag_english": "Words and more",
+    "tag_original": "Palabras y más",
+    "count": 16,
+    "tag_id": 6671
+  },
+  {
+    "tag_normalized": "tram",
+    "tag_english": "tram",
+    "tag_original": "tram",
+    "count": 15,
+    "tag_id": 4693
+  },
+  {
+    "tag_normalized": "obstacle",
+    "tag_english": "obstacle",
+    "tag_original": "obstáculo",
+    "count": 15,
+    "tag_id": 5011
   },
   {
     "tag_normalized": "vaporetto",
     "tag_english": "Vaporetto",
     "tag_original": "Vaporetto",
-    "count": 16,
+    "count": 15,
     "tag_id": 5391
   },
   {
     "tag_normalized": "services",
     "tag_english": "Services",
     "tag_original": "Servizi",
-    "count": 16,
+    "count": 15,
     "tag_id": 6114
-  },
-  {
-    "tag_normalized": "calle_chiusa",
-    "tag_english": "Calle Chiusa",
-    "tag_original": "Calle chiusa",
-    "count": 16,
-    "tag_id": 5919
-  },
-  {
-    "tag_normalized": "saidus",
-    "tag_english": "saidus",
-    "tag_original": "dijous",
-    "count": 15,
-    "tag_id": 8001
-  },
-  {
-    "tag_normalized": "sculptures",
-    "tag_english": "sculptures",
-    "tag_original": "sculptures",
-    "count": 15,
-    "tag_id": 5057
-  },
-  {
-    "tag_normalized": "relax",
-    "tag_english": "Relax",
-    "tag_original": "Relax",
-    "count": 15,
-    "tag_id": 6148
-  },
-  {
-    "tag_normalized": "s-bahn",
-    "tag_english": "S-Bahn",
-    "tag_original": "S-Bahn",
-    "count": 15,
-    "tag_id": 5041
-  },
-  {
-    "tag_normalized": "city_game",
-    "tag_english": "City game",
-    "tag_original": "Gra miejska",
-    "count": 15,
-    "tag_id": 5622
   },
   {
     "tag_normalized": "mare",
@@ -735,116 +574,46 @@
     "tag_id": 6369
   },
   {
-    "tag_normalized": "furniture",
-    "tag_english": "furniture",
-    "tag_original": "furniture",
+    "tag_normalized": "japan_house",
+    "tag_english": "Japan House",
+    "tag_original": "Japan House",
     "count": 15,
-    "tag_id": 4795
+    "tag_id": 7322
   },
   {
-    "tag_normalized": "jobs",
-    "tag_english": "jobs",
-    "tag_original": "lavori",
+    "tag_normalized": "sole",
+    "tag_english": "sole",
+    "tag_original": "sole",
     "count": 14,
-    "tag_id": 4699
+    "tag_id": 4624
   },
   {
-    "tag_normalized": "playground",
-    "tag_english": "playground",
-    "tag_original": "Spielplatz",
+    "tag_normalized": "monument",
+    "tag_english": "Monument",
+    "tag_original": "Monumento",
     "count": 14,
-    "tag_id": 5039
+    "tag_id": 5283
   },
   {
-    "tag_normalized": "coffee_table",
-    "tag_english": "Coffee table",
-    "tag_original": "Kaffeetische",
+    "tag_normalized": "macs",
+    "tag_english": "MACS",
+    "tag_original": "MACS",
     "count": 14,
-    "tag_id": 5173
+    "tag_id": 7631
   },
   {
-    "tag_normalized": "bas_-reliefs",
-    "tag_english": "bas -reliefs",
-    "tag_original": "bassorilievi",
-    "count": 14,
-    "tag_id": 6210
-  },
-  {
-    "tag_normalized": "nature",
-    "tag_english": "nature",
-    "tag_original": "natura",
-    "count": 14,
-    "tag_id": 6247
-  },
-  {
-    "tag_normalized": "paulista",
-    "tag_english": "Paulista",
-    "tag_original": "Paulista",
-    "count": 14,
-    "tag_id": 7342
-  },
-  {
-    "tag_normalized": "political_sciences",
-    "tag_english": "Political sciences",
+    "tag_normalized": "political_science",
+    "tag_english": "Political Science",
     "tag_original": "Science Politiche",
-    "count": 14,
+    "count": 13,
     "tag_id": 4707
   },
   {
-    "tag_normalized": "sounds",
-    "tag_english": "sounds",
-    "tag_original": "suoni",
-    "count": 14,
-    "tag_id": 6126
-  },
-  {
-    "tag_normalized": "school",
-    "tag_english": "School",
-    "tag_original": "Szkola",
+    "tag_normalized": "sculptures",
+    "tag_english": "sculptures",
+    "tag_original": "sculptures",
     "count": 13,
-    "tag_id": 5428
-  },
-  {
-    "tag_normalized": "street",
-    "tag_english": "street",
-    "tag_original": "strada",
-    "count": 13,
-    "tag_id": 4284
-  },
-  {
-    "tag_normalized": "a",
-    "tag_english": "A",
-    "tag_original": "Uno",
-    "count": 13,
-    "tag_id": 7997
-  },
-  {
-    "tag_normalized": "of_the",
-    "tag_english": "of the",
-    "tag_original": "dos",
-    "count": 13,
-    "tag_id": 7998
-  },
-  {
-    "tag_normalized": "workshop",
-    "tag_english": "Workshop",
-    "tag_original": "Workshop",
-    "count": 13,
-    "tag_id": 5421
-  },
-  {
-    "tag_normalized": "three",
-    "tag_english": "three",
-    "tag_original": "tres",
-    "count": 13,
-    "tag_id": 7999
-  },
-  {
-    "tag_normalized": "streets",
-    "tag_english": "streets",
-    "tag_original": "calles",
-    "count": 13,
-    "tag_id": 6809
+    "tag_id": 5057
   },
   {
     "tag_normalized": "hotels",
@@ -854,39 +623,109 @@
     "tag_id": 5122
   },
   {
+    "tag_normalized": "streets_for_everyone",
+    "tag_english": "streets for everyone",
+    "tag_original": "carrers per a tothom",
+    "count": 13,
+    "tag_id": 6050
+  },
+  {
+    "tag_normalized": "sounds",
+    "tag_english": "sounds",
+    "tag_original": "suoni",
+    "count": 13,
+    "tag_id": 6126
+  },
+  {
+    "tag_normalized": "paulista",
+    "tag_english": "Paulista",
+    "tag_original": "Paulista",
+    "count": 13,
+    "tag_id": 7342
+  },
+  {
+    "tag_normalized": "transport",
+    "tag_english": "transport",
+    "tag_original": "transport",
+    "count": 12,
+    "tag_id": 4801
+  },
+  {
     "tag_normalized": "vision_australia",
     "tag_english": "Vision Australia",
     "tag_original": "Vision Australia",
-    "count": 13,
+    "count": 12,
     "tag_id": 4851
   },
   {
-    "tag_normalized": "interior",
-    "tag_english": "Interior",
-    "tag_original": "Interiores",
+    "tag_normalized": "artworks",
+    "tag_english": "Artworks",
+    "tag_original": "Kunstwerke",
     "count": 12,
-    "tag_id": 6778
+    "tag_id": 5036
   },
   {
-    "tag_normalized": "bacari",
-    "tag_english": "Bacari",
-    "tag_original": "Bacari",
+    "tag_normalized": "s-bahn",
+    "tag_english": "S-Bahn",
+    "tag_original": "S-Bahn",
     "count": 12,
-    "tag_id": 5698
+    "tag_id": 5041
   },
   {
-    "tag_normalized": "museos",
-    "tag_english": "Museos",
-    "tag_original": "Museos",
-    "count": 11,
-    "tag_id": 5314
+    "tag_normalized": "coffee_tables",
+    "tag_english": "Coffee tables",
+    "tag_original": "Kaffeetische",
+    "count": 12,
+    "tag_id": 5173
   },
   {
-    "tag_normalized": "luci",
-    "tag_english": "luci",
-    "tag_original": "luci",
+    "tag_normalized": "workshop",
+    "tag_english": "Workshop",
+    "tag_original": "Workshop",
+    "count": 12,
+    "tag_id": 5421
+  },
+  {
+    "tag_normalized": "city_game",
+    "tag_english": "City game",
+    "tag_original": "Gra miejska",
+    "count": 12,
+    "tag_id": 5622
+  },
+  {
+    "tag_normalized": "relax",
+    "tag_english": "Relax",
+    "tag_original": "Relax",
+    "count": 12,
+    "tag_id": 6148
+  },
+  {
+    "tag_normalized": "bas-reliefs",
+    "tag_english": "bas-reliefs",
+    "tag_original": "bassorilievi",
+    "count": 12,
+    "tag_id": 6210
+  },
+  {
+    "tag_normalized": "streets",
+    "tag_english": "streets",
+    "tag_original": "calles",
+    "count": 12,
+    "tag_id": 6809
+  },
+  {
+    "tag_normalized": "sp_cultural_center",
+    "tag_english": "sp cultural center",
+    "tag_original": "centro cultural sp",
+    "count": 12,
+    "tag_id": 7239
+  },
+  {
+    "tag_normalized": "planters",
+    "tag_english": "planters",
+    "tag_original": "fioriere",
     "count": 11,
-    "tag_id": 6063
+    "tag_id": 4722
   },
   {
     "tag_normalized": "silence",
@@ -896,67 +735,60 @@
     "tag_id": 5736
   },
   {
-    "tag_normalized": "disabilities_parking",
-    "tag_english": "Disabilities parking",
-    "tag_original": "Aparcamiento minusvalidos",
+    "tag_normalized": "luci",
+    "tag_english": "luci",
+    "tag_original": "luci",
     "count": 11,
-    "tag_id": 5247
+    "tag_id": 6063
   },
   {
-    "tag_normalized": "memorial",
-    "tag_english": "Memorial",
-    "tag_original": "Memorial",
-    "count": 11,
-    "tag_id": 5140
-  },
-  {
-    "tag_normalized": "scalea",
-    "tag_english": "Scalea",
-    "tag_original": "Scalea",
-    "count": 11,
-    "tag_id": 6367
+    "tag_normalized": "jobs",
+    "tag_english": "jobs",
+    "tag_original": "lavori",
+    "count": 10,
+    "tag_id": 4699
   },
   {
     "tag_normalized": "good_cafe",
     "tag_english": "good cafe",
     "tag_original": "good cafe",
-    "count": 11,
+    "count": 10,
     "tag_id": 4812
   },
   {
-    "tag_normalized": "architecture",
-    "tag_english": "architecture",
-    "tag_original": "arquitectura",
-    "count": 11,
-    "tag_id": 5227
+    "tag_normalized": "playground",
+    "tag_english": "playground",
+    "tag_original": "Spielplatz",
+    "count": 10,
+    "tag_id": 5039
+  },
+  {
+    "tag_normalized": "memorial",
+    "tag_english": "Memorial",
+    "tag_original": "Memorial",
+    "count": 10,
+    "tag_id": 5140
+  },
+  {
+    "tag_normalized": "disabled_parking",
+    "tag_english": "Disabled parking",
+    "tag_original": "Aparcamiento minusvalidos",
+    "count": 10,
+    "tag_id": 5247
+  },
+  {
+    "tag_normalized": "school",
+    "tag_english": "School",
+    "tag_original": "Szkola",
+    "count": 10,
+    "tag_id": 5428
   },
   {
     "tag_normalized": "perfumes",
     "tag_english": "perfumes",
     "tag_original": "profumi",
-    "count": 11,
+    "count": 10,
     "tag_id": 5750
-  },
-  {
-    "tag_normalized": "braille",
-    "tag_english": "braille",
-    "tag_original": "braille",
-    "count": 10,
-    "tag_id": 4808
-  },
-  {
-    "tag_normalized": "noise",
-    "tag_english": "Noise",
-    "tag_original": "Rumori",
-    "count": 10,
-    "tag_id": 5864
-  },
-  {
-    "tag_normalized": "barcelona",
-    "tag_english": "barcelona",
-    "tag_original": "barcelona",
-    "count": 10,
-    "tag_id": 7866
   },
   {
     "tag_normalized": "vento",
@@ -966,25 +798,39 @@
     "tag_id": 5855
   },
   {
-    "tag_normalized": "rain",
-    "tag_english": "rain",
-    "tag_original": "pioggia",
+    "tag_normalized": "noises",
+    "tag_english": "Noises",
+    "tag_original": "Rumori",
     "count": 10,
-    "tag_id": 4352
+    "tag_id": 5864
   },
   {
-    "tag_normalized": "parque",
-    "tag_english": "Parque",
-    "tag_original": "Parque",
-    "count": 9,
-    "tag_id": 5303
+    "tag_normalized": "sensations",
+    "tag_english": "Sensations",
+    "tag_original": "Sensacions",
+    "count": 10,
+    "tag_id": 6814
   },
   {
-    "tag_normalized": "market",
-    "tag_english": "market",
-    "tag_original": "mercato",
+    "tag_normalized": "street",
+    "tag_english": "street",
+    "tag_original": "strada",
     "count": 9,
-    "tag_id": 5965
+    "tag_id": 4284
+  },
+  {
+    "tag_normalized": "test",
+    "tag_english": "test",
+    "tag_original": "test",
+    "count": 9,
+    "tag_id": 4785
+  },
+  {
+    "tag_normalized": "baccari",
+    "tag_english": "Baccari",
+    "tag_original": "Bacari",
+    "count": 9,
+    "tag_id": 5698
   },
   {
     "tag_normalized": "people",
@@ -994,39 +840,11 @@
     "tag_id": 5753
   },
   {
-    "tag_normalized": "tactile_maps",
-    "tag_english": "Tactile maps",
-    "tag_original": "mappe tattili",
+    "tag_normalized": "market",
+    "tag_english": "market",
+    "tag_original": "mercato",
     "count": 9,
-    "tag_id": 5804
-  },
-  {
-    "tag_normalized": "sculpture",
-    "tag_english": "Sculpture",
-    "tag_original": "Scultura",
-    "count": 9,
-    "tag_id": 6079
-  },
-  {
-    "tag_normalized": "binary",
-    "tag_english": "binary",
-    "tag_original": "binari",
-    "count": 9,
-    "tag_id": 6390
-  },
-  {
-    "tag_normalized": "pueblos",
-    "tag_english": "pueblos",
-    "tag_original": "pueblos",
-    "count": 9,
-    "tag_id": 5365
-  },
-  {
-    "tag_normalized": "colonna",
-    "tag_english": "colonna",
-    "tag_original": "colonna",
-    "count": 9,
-    "tag_id": 4724
+    "tag_id": 5965
   },
   {
     "tag_normalized": "targa",
@@ -1036,39 +854,18 @@
     "tag_id": 6138
   },
   {
-    "tag_normalized": "pool",
-    "tag_english": "Pool",
-    "tag_original": "Piscinas",
+    "tag_normalized": "binary",
+    "tag_english": "binary",
+    "tag_original": "binari",
     "count": 9,
-    "tag_id": 5229
+    "tag_id": 6390
   },
   {
-    "tag_normalized": "description",
-    "tag_english": "description",
-    "tag_original": "descrizione",
-    "count": 8,
-    "tag_id": 6130
-  },
-  {
-    "tag_normalized": "u-bahn",
-    "tag_english": "u-Bahn",
-    "tag_original": "u-Bahn",
-    "count": 8,
-    "tag_id": 5037
-  },
-  {
-    "tag_normalized": "hello",
-    "tag_english": "Hello",
-    "tag_original": "Hola",
-    "count": 8,
-    "tag_id": 6513
-  },
-  {
-    "tag_normalized": "blindwiki",
-    "tag_english": "Blindwiki",
-    "tag_original": "BlindWiki",
-    "count": 8,
-    "tag_id": 5234
+    "tag_normalized": "hospital",
+    "tag_english": "hospital",
+    "tag_original": "hospital",
+    "count": 9,
+    "tag_id": 7058
   },
   {
     "tag_normalized": "bicycle",
@@ -1078,18 +875,18 @@
     "tag_id": 5072
   },
   {
-    "tag_normalized": "way_of_lovers",
-    "tag_english": "Way of lovers",
-    "tag_original": "Camí dels enamorats",
+    "tag_normalized": "parque",
+    "tag_english": "Parque",
+    "tag_original": "Parque",
     "count": 8,
-    "tag_id": 7965
+    "tag_id": 5303
   },
   {
-    "tag_normalized": "wednesday",
-    "tag_english": "Wednesday",
-    "tag_original": "dimecres",
+    "tag_normalized": "tactile_maps",
+    "tag_english": "tactile maps",
+    "tag_original": "mappe tattili",
     "count": 8,
-    "tag_id": 7996
+    "tag_id": 5804
   },
   {
     "tag_normalized": "porta",
@@ -1099,95 +896,67 @@
     "tag_id": 6039
   },
   {
-    "tag_normalized": "aerial_obstacle",
-    "tag_english": "aerial obstacle",
-    "tag_original": "obstáculo aéreo",
-    "count": 7,
-    "tag_id": 4996
+    "tag_normalized": "sculpture",
+    "tag_english": "Sculpture",
+    "tag_original": "Scultura",
+    "count": 8,
+    "tag_id": 6079
   },
   {
-    "tag_normalized": "tourists",
-    "tag_english": "tourists",
-    "tag_original": "tourists",
-    "count": 7,
-    "tag_id": 5137
+    "tag_normalized": "description",
+    "tag_english": "description",
+    "tag_original": "descrizione",
+    "count": 8,
+    "tag_id": 6130
   },
   {
-    "tag_normalized": "following",
-    "tag_english": "Following",
-    "tag_original": "sampa",
-    "count": 7,
-    "tag_id": 7177
+    "tag_normalized": "interiors",
+    "tag_english": "Interiors",
+    "tag_original": "Interiores",
+    "count": 8,
+    "tag_id": 6778
   },
   {
-    "tag_normalized": "pharmacy",
-    "tag_english": "pharmacy",
-    "tag_original": "farmacia",
-    "count": 7,
-    "tag_id": 6340
+    "tag_normalized": "path_of_lovers",
+    "tag_english": "Path of lovers",
+    "tag_original": "Camí dels enamorats",
+    "count": 8,
+    "tag_id": 7965
   },
   {
-    "tag_normalized": "memorial_da_américa",
-    "tag_english": "Memorial da América",
-    "tag_original": "Memorial da América latina",
+    "tag_normalized": "colonna",
+    "tag_english": "colonna",
+    "tag_original": "colonna",
     "count": 7,
-    "tag_id": 7599
+    "tag_id": 4724
+  },
+  {
+    "tag_normalized": "furniture",
+    "tag_english": "furniture",
+    "tag_original": "furniture",
+    "count": 7,
+    "tag_id": 4795
+  },
+  {
+    "tag_normalized": "braille",
+    "tag_english": "braille",
+    "tag_original": "braille",
+    "count": 7,
+    "tag_id": 4808
   },
   {
     "tag_normalized": "urban_art",
-    "tag_english": "Urban art",
+    "tag_english": "urban art",
     "tag_original": "arte urbano",
     "count": 7,
     "tag_id": 5020
   },
   {
-    "tag_normalized": "street_art",
-    "tag_english": "Street art",
-    "tag_original": "Arte callejero",
+    "tag_normalized": "u-bahn",
+    "tag_english": "u-Bahn",
+    "tag_original": "u-Bahn",
     "count": 7,
-    "tag_id": 7073
-  },
-  {
-    "tag_normalized": "as_fosscari",
-    "tag_english": "as fosscari",
-    "tag_original": "ca foscari",
-    "count": 7,
-    "tag_id": 6331
-  },
-  {
-    "tag_normalized": "legends",
-    "tag_english": "legends",
-    "tag_original": "leggende",
-    "count": 7,
-    "tag_id": 4865
-  },
-  {
-    "tag_normalized": "motor",
-    "tag_english": "motor",
-    "tag_original": "motorini",
-    "count": 7,
-    "tag_id": 4717
-  },
-  {
-    "tag_normalized": "trattoria_pontini",
-    "tag_english": "Trattoria Pontini",
-    "tag_original": "Trattoria Pontini",
-    "count": 7,
-    "tag_id": 5725
-  },
-  {
-    "tag_normalized": "camino_de_santiago",
-    "tag_english": "Camino de Santiago",
-    "tag_original": "camino de santiago",
-    "count": 7,
-    "tag_id": 5403
-  },
-  {
-    "tag_normalized": "archi",
-    "tag_english": "archi",
-    "tag_original": "archi",
-    "count": 7,
-    "tag_id": 6348
+    "tag_id": 5037
   },
   {
     "tag_normalized": "traffic_light",
@@ -1197,6 +966,55 @@
     "tag_id": 5104
   },
   {
+    "tag_normalized": "tourists",
+    "tag_english": "tourists",
+    "tag_original": "tourists",
+    "count": 7,
+    "tag_id": 5137
+  },
+  {
+    "tag_normalized": "blindwiki",
+    "tag_english": "BlindWiki",
+    "tag_original": "BlindWiki",
+    "count": 7,
+    "tag_id": 5234
+  },
+  {
+    "tag_normalized": "pharmacy",
+    "tag_english": "pharmacy",
+    "tag_original": "farmacia",
+    "count": 7,
+    "tag_id": 6340
+  },
+  {
+    "tag_normalized": "archi",
+    "tag_english": "archi",
+    "tag_original": "archi",
+    "count": 7,
+    "tag_id": 6348
+  },
+  {
+    "tag_normalized": "street_art",
+    "tag_english": "street art",
+    "tag_original": "Arte callejero",
+    "count": 7,
+    "tag_id": 7073
+  },
+  {
+    "tag_normalized": "memorial_of_latin_america",
+    "tag_english": "Memorial of Latin America",
+    "tag_original": "Memorial da América latina",
+    "count": 7,
+    "tag_id": 7599
+  },
+  {
+    "tag_normalized": "mam",
+    "tag_english": "MAM",
+    "tag_original": "MAM",
+    "count": 7,
+    "tag_id": 7717
+  },
+  {
     "tag_normalized": "museum_of_tomorrow",
     "tag_english": "Museum of Tomorrow",
     "tag_original": "Museu do Amanhã",
@@ -1204,116 +1022,32 @@
     "tag_id": 7839
   },
   {
-    "tag_normalized": "hospital",
-    "tag_english": "hospital",
-    "tag_original": "hospital",
-    "count": 7,
-    "tag_id": 7058
-  },
-  {
-    "tag_normalized": "plans",
-    "tag_english": "plans",
-    "tag_original": "plans",
-    "count": 7,
-    "tag_id": 4805
-  },
-  {
-    "tag_normalized": "san_rocco",
-    "tag_english": "San Rocco",
-    "tag_original": "San Rocco",
+    "tag_normalized": "testapipi",
+    "tag_english": "Testapipi",
+    "tag_original": "testApi",
     "count": 6,
-    "tag_id": 6025
+    "tag_id": 4227
   },
   {
-    "tag_normalized": "demonstration",
-    "tag_english": "Demonstration",
-    "tag_original": "Demonstration",
+    "tag_normalized": "apitest",
+    "tag_english": "apiTest",
+    "tag_original": "apiTest",
     "count": 6,
-    "tag_id": 5092
+    "tag_id": 4228
   },
   {
-    "tag_normalized": "beach",
-    "tag_english": "beach",
-    "tag_original": "spiaggia",
+    "tag_normalized": "rain",
+    "tag_english": "rain",
+    "tag_original": "pioggia",
     "count": 6,
-    "tag_id": 6552
+    "tag_id": 4352
   },
   {
-    "tag_normalized": "traditional_pastry",
-    "tag_english": "Traditional pastry",
-    "tag_original": "repostería tradicional",
+    "tag_normalized": "legends",
+    "tag_english": "legends",
+    "tag_original": "leggende",
     "count": 6,
-    "tag_id": 4962
-  },
-  {
-    "tag_normalized": "judecca",
-    "tag_english": "Judecca",
-    "tag_original": "giudecca",
-    "count": 6,
-    "tag_id": 6410
-  },
-  {
-    "tag_normalized": "seagull",
-    "tag_english": "seagull",
-    "tag_original": "gabbiani",
-    "count": 6,
-    "tag_id": 5738
-  },
-  {
-    "tag_normalized": "atm",
-    "tag_english": "ATM",
-    "tag_original": "Cajero automatico",
-    "count": 6,
-    "tag_id": 5256
-  },
-  {
-    "tag_normalized": "travel",
-    "tag_english": "Travel",
-    "tag_original": "Travel",
-    "count": 6,
-    "tag_id": 5070
-  },
-  {
-    "tag_normalized": "orientation",
-    "tag_english": "orientation",
-    "tag_original": "Orientierung",
-    "count": 6,
-    "tag_id": 5158
-  },
-  {
-    "tag_normalized": "stop",
-    "tag_english": "Stop",
-    "tag_original": "Przystanek",
-    "count": 6,
-    "tag_id": 5477
-  },
-  {
-    "tag_normalized": "testingr",
-    "tag_english": "Testingr",
-    "tag_original": "Testingr",
-    "count": 6,
-    "tag_id": 7995
-  },
-  {
-    "tag_normalized": "voices",
-    "tag_english": "Voices",
-    "tag_original": "Voci",
-    "count": 6,
-    "tag_id": 5854
-  },
-  {
-    "tag_normalized": "french_chalet",
-    "tag_english": "French chalet",
-    "tag_original": "Chalé francês",
-    "count": 6,
-    "tag_id": 7110
-  },
-  {
-    "tag_normalized": "calm",
-    "tag_english": "calm",
-    "tag_original": "tranquillità",
-    "count": 6,
-    "tag_id": 5974
+    "tag_id": 4865
   },
   {
     "tag_normalized": "door",
@@ -1323,18 +1057,46 @@
     "tag_id": 4869
   },
   {
-    "tag_normalized": "modernist_house",
-    "tag_english": "Modernist house",
-    "tag_original": "Casa Modernista",
+    "tag_normalized": "demonstration",
+    "tag_english": "Demonstration",
+    "tag_original": "Demonstration",
     "count": 6,
-    "tag_id": 7199
+    "tag_id": 5092
   },
   {
-    "tag_normalized": "stones",
-    "tag_english": "Stones",
-    "tag_original": "Pedras",
+    "tag_normalized": "atm",
+    "tag_english": "ATM",
+    "tag_original": "Cajero automatico",
     "count": 6,
-    "tag_id": 5309
+    "tag_id": 5256
+  },
+  {
+    "tag_normalized": "museums",
+    "tag_english": "Museums",
+    "tag_original": "Museos",
+    "count": 6,
+    "tag_id": 5314
+  },
+  {
+    "tag_normalized": "pueblos",
+    "tag_english": "pueblos",
+    "tag_original": "pueblos",
+    "count": 6,
+    "tag_id": 5365
+  },
+  {
+    "tag_normalized": "stop",
+    "tag_english": "Stop",
+    "tag_original": "Przystanek",
+    "count": 6,
+    "tag_id": 5477
+  },
+  {
+    "tag_normalized": "seagulls",
+    "tag_english": "seagulls",
+    "tag_original": "gabbiani",
+    "count": 6,
+    "tag_id": 5738
   },
   {
     "tag_normalized": "aosta",
@@ -1344,11 +1106,25 @@
     "tag_id": 5781
   },
   {
+    "tag_normalized": "calm",
+    "tag_english": "calm",
+    "tag_original": "calma",
+    "count": 6,
+    "tag_id": 5791
+  },
+  {
     "tag_normalized": "plant",
     "tag_english": "plant",
     "tag_original": "pianta",
     "count": 6,
     "tag_id": 5888
+  },
+  {
+    "tag_normalized": "san_rocco",
+    "tag_english": "San Rocco",
+    "tag_original": "San Rocco",
+    "count": 6,
+    "tag_id": 6025
   },
   {
     "tag_normalized": "night",
@@ -1358,13 +1134,6 @@
     "tag_id": 6248
   },
   {
-    "tag_normalized": "redeemer",
-    "tag_english": "Redeemer",
-    "tag_original": "Redentore",
-    "count": 6,
-    "tag_id": 5959
-  },
-  {
     "tag_normalized": "headquarters",
     "tag_english": "headquarters",
     "tag_original": "sede centrale",
@@ -1372,18 +1141,11 @@
     "tag_id": 6266
   },
   {
-    "tag_normalized": "pizza",
-    "tag_english": "pizza",
-    "tag_original": "pizza",
+    "tag_normalized": "beach",
+    "tag_english": "beach",
+    "tag_original": "spiaggia",
     "count": 6,
-    "tag_id": 2902
-  },
-  {
-    "tag_normalized": "joint",
-    "tag_english": "Joint",
-    "tag_original": "Staw",
-    "count": 6,
-    "tag_id": 5502
+    "tag_id": 6552
   },
   {
     "tag_normalized": "wall",
@@ -1393,11 +1155,18 @@
     "tag_id": 7079
   },
   {
-    "tag_normalized": "obj.casa",
-    "tag_english": "obj.casa",
-    "tag_original": "obj.casa",
+    "tag_normalized": "french_cottage",
+    "tag_english": "French Cottage",
+    "tag_original": "Chalé francês",
     "count": 6,
-    "tag_id": 2916
+    "tag_id": 7110
+  },
+  {
+    "tag_normalized": "branch",
+    "tag_english": "branch",
+    "tag_original": "sampa",
+    "count": 6,
+    "tag_id": 7177
   },
   {
     "tag_normalized": "carlos",
@@ -1407,312 +1176,11 @@
     "tag_id": 7506
   },
   {
-    "tag_normalized": "catalan_pavilion",
-    "tag_english": "Catalan pavilion",
-    "tag_original": "padiglione catalano",
-    "count": 6,
-    "tag_id": 5392
-  },
-  {
-    "tag_normalized": "pace",
-    "tag_english": "pace",
-    "tag_original": "pace",
-    "count": 6,
-    "tag_id": 6299
-  },
-  {
-    "tag_normalized": "traffic",
-    "tag_english": "Traffic",
-    "tag_original": "Verkehr",
-    "count": 6,
-    "tag_id": 5167
-  },
-  {
-    "tag_normalized": "missing_tactile_paving",
-    "tag_english": "Missing tactile paving",
-    "tag_original": "fehlende taktile Pflasterung",
+    "tag_normalized": "incivility",
+    "tag_english": "incivility",
+    "tag_original": "inciviltà",
     "count": 5,
-    "tag_id": 5107
-  },
-  {
-    "tag_normalized": "upv",
-    "tag_english": "UPV",
-    "tag_original": "Upv",
-    "count": 5,
-    "tag_id": 6994
-  },
-  {
-    "tag_normalized": "interviews",
-    "tag_english": "Interviews",
-    "tag_original": "Interviews",
-    "count": 5,
-    "tag_id": 5079
-  },
-  {
-    "tag_normalized": "pozzo",
-    "tag_english": "pozzo",
-    "tag_original": "pozzo",
-    "count": 5,
-    "tag_id": 6532
-  },
-  {
-    "tag_normalized": "kerns_juices",
-    "tag_english": "Kerns juices",
-    "tag_original": "jugos kerns",
-    "count": 5,
-    "tag_id": 5357
-  },
-  {
-    "tag_normalized": "shopping",
-    "tag_english": "shopping",
-    "tag_original": "shopping",
-    "count": 5,
-    "tag_id": 6116
-  },
-  {
-    "tag_normalized": "touch",
-    "tag_english": "touch",
-    "tag_original": "toccare",
-    "count": 5,
-    "tag_id": 5909
-  },
-  {
-    "tag_normalized": "relief",
-    "tag_english": "relief",
-    "tag_original": "rilievo",
-    "count": 5,
-    "tag_id": 6027
-  },
-  {
-    "tag_normalized": "mam",
-    "tag_english": "MAM",
-    "tag_original": "MAM",
-    "count": 5,
-    "tag_id": 7717
-  },
-  {
-    "tag_normalized": "football",
-    "tag_english": "Football",
-    "tag_original": "Football",
-    "count": 5,
-    "tag_id": 5182
-  },
-  {
-    "tag_normalized": "center",
-    "tag_english": "center",
-    "tag_original": "center",
-    "count": 5,
-    "tag_id": 5538
-  },
-  {
-    "tag_normalized": "fences",
-    "tag_english": "fences",
-    "tag_original": "fences",
-    "count": 5,
-    "tag_id": 5139
-  },
-  {
-    "tag_normalized": "traffic_light_without_sound",
-    "tag_english": "Traffic light without sound",
-    "tag_original": "Semáforo sin sonido",
-    "count": 5,
-    "tag_id": 5304
-  },
-  {
-    "tag_normalized": "eai",
-    "tag_english": "eai",
-    "tag_original": "eai",
-    "count": 5,
-    "tag_id": 7118
-  },
-  {
-    "tag_normalized": "avenida_paulista",
-    "tag_english": "Avenida Paulista",
-    "tag_original": "Avenida Paulista",
-    "count": 5,
-    "tag_id": 7323
-  },
-  {
-    "tag_normalized": "exhibitions",
-    "tag_english": "Exhibitions",
-    "tag_original": "Exposições",
-    "count": 5,
-    "tag_id": 7294
-  },
-  {
-    "tag_normalized": "gondola",
-    "tag_english": "gondola",
-    "tag_original": "gondola",
-    "count": 5,
-    "tag_id": 5879
-  },
-  {
-    "tag_normalized": "chains",
-    "tag_english": "chains",
-    "tag_original": "catene",
-    "count": 5,
-    "tag_id": 4775
-  },
-  {
-    "tag_normalized": "santa_catarina_hospital",
-    "tag_english": "Santa Catarina Hospital",
-    "tag_original": "Hospital Santa Catarina",
-    "count": 5,
-    "tag_id": 7348
-  },
-  {
-    "tag_normalized": "fish_market",
-    "tag_english": "Fish market",
-    "tag_original": "Mercato del pesce",
-    "count": 5,
-    "tag_id": 5967
-  },
-  {
-    "tag_normalized": "tobacconists",
-    "tag_english": "tobacconists",
-    "tag_original": "tabacchi",
-    "count": 5,
-    "tag_id": 6341
-  },
-  {
-    "tag_normalized": "summer",
-    "tag_english": "Summer",
-    "tag_original": "Verán",
-    "count": 5,
-    "tag_id": 5361
-  },
-  {
-    "tag_normalized": "water_danger",
-    "tag_english": "Water danger",
-    "tag_original": "Pericolo acqua",
-    "count": 5,
-    "tag_id": 6228
-  },
-  {
-    "tag_normalized": "bahia",
-    "tag_english": "Bahia",
-    "tag_original": "Bahia",
-    "count": 5,
-    "tag_id": 7677
-  },
-  {
-    "tag_normalized": "dwarf",
-    "tag_english": "Dwarf",
-    "tag_original": "Krasnale",
-    "count": 5,
-    "tag_id": 5456
-  },
-  {
-    "tag_normalized": "girl",
-    "tag_english": "girl",
-    "tag_original": "bambina",
-    "count": 5,
-    "tag_id": 5026
-  },
-  {
-    "tag_normalized": "santiago_de_compostela",
-    "tag_english": "Santiago de Compostela",
-    "tag_original": "Santiago de Compostela",
-    "count": 5,
-    "tag_id": 5402
-  },
-  {
-    "tag_normalized": "rag",
-    "tag_english": "Rag",
-    "tag_original": "Lumpen",
-    "count": 5,
-    "tag_id": 4955
-  },
-  {
-    "tag_normalized": "books",
-    "tag_english": "books",
-    "tag_original": "libri",
-    "count": 5,
-    "tag_id": 5742
-  },
-  {
-    "tag_normalized": "service",
-    "tag_english": "Service",
-    "tag_original": "Service",
-    "count": 5,
-    "tag_id": 6505
-  },
-  {
-    "tag_normalized": "marble",
-    "tag_english": "marble",
-    "tag_original": "marmo",
-    "count": 5,
-    "tag_id": 6069
-  },
-  {
-    "tag_normalized": "dog",
-    "tag_english": "Dog",
-    "tag_original": "Hund",
-    "count": 5,
-    "tag_id": 5075
-  },
-  {
-    "tag_normalized": "trojan_house",
-    "tag_english": "Trojan house",
-    "tag_original": "Casa da Troia",
-    "count": 5,
-    "tag_id": 5347
-  },
-  {
-    "tag_normalized": "dance",
-    "tag_english": "dance",
-    "tag_original": "dança",
-    "count": 5,
-    "tag_id": 7278
-  },
-  {
-    "tag_normalized": "curiosity",
-    "tag_english": "curiosity",
-    "tag_original": "Neugier",
-    "count": 5,
-    "tag_id": 5133
-  },
-  {
-    "tag_normalized": "station_#_yokoham_#",
-    "tag_english": "Station # Yokoham #",
-    "tag_original": "Estacion # yokoham#",
-    "count": 5,
-    "tag_id": 5727
-  },
-  {
-    "tag_normalized": "wood",
-    "tag_english": "wood",
-    "tag_original": "legno",
-    "count": 5,
-    "tag_id": 6086
-  },
-  {
-    "tag_normalized": "banco",
-    "tag_english": "Banco",
-    "tag_original": "Banco",
-    "count": 5,
-    "tag_id": 5299
-  },
-  {
-    "tag_normalized": "amor",
-    "tag_english": "Amor",
-    "tag_original": "Amor",
-    "count": 5,
-    "tag_id": 6670
-  },
-  {
-    "tag_normalized": "venezia",
-    "tag_english": "Venezia",
-    "tag_original": "Venezia",
-    "count": 5,
-    "tag_id": 5767
-  },
-  {
-    "tag_normalized": "health",
-    "tag_english": "Health",
-    "tag_original": "Salud",
-    "count": 5,
-    "tag_id": 5281
+    "tag_id": 4700
   },
   {
     "tag_normalized": "entrance",
@@ -1722,326 +1190,256 @@
     "tag_id": 4819
   },
   {
-    "tag_normalized": "fiesp",
-    "tag_english": "FIESP",
-    "tag_original": "Fiesp",
+    "tag_normalized": "rags",
+    "tag_english": "Rags",
+    "tag_original": "Lumpen",
     "count": 5,
-    "tag_id": 7412
+    "tag_id": 4955
   },
   {
-    "tag_normalized": "domingo",
-    "tag_english": "Domingo",
-    "tag_original": "Domingo",
-    "count": 4,
-    "tag_id": 4946
+    "tag_normalized": "aerial_obstacle",
+    "tag_english": "aerial obstacle",
+    "tag_original": "obstáculo aéreo",
+    "count": 5,
+    "tag_id": 4996
   },
   {
-    "tag_normalized": "appetizing",
-    "tag_english": "Appetizing",
-    "tag_original": "Appetitoso",
-    "count": 4,
-    "tag_id": 5769
+    "tag_normalized": "dog",
+    "tag_english": "Dog",
+    "tag_original": "Hund",
+    "count": 5,
+    "tag_id": 5075
   },
   {
-    "tag_normalized": "scaffolding",
-    "tag_english": "scaffolding",
-    "tag_original": "ponteggi",
-    "count": 4,
-    "tag_id": 4712
+    "tag_normalized": "interviews",
+    "tag_english": "Interviews",
+    "tag_original": "Interviews",
+    "count": 5,
+    "tag_id": 5079
   },
   {
-    "tag_normalized": "sing",
-    "tag_english": "Sing",
-    "tag_original": "Cantar",
-    "count": 4,
-    "tag_id": 6820
+    "tag_normalized": "curiosity",
+    "tag_english": "curiosity",
+    "tag_original": "Neugier",
+    "count": 5,
+    "tag_id": 5133
   },
   {
-    "tag_normalized": "heat",
-    "tag_english": "Heat",
-    "tag_original": "Calor",
-    "count": 4,
-    "tag_id": 5380
+    "tag_normalized": "orientation",
+    "tag_english": "orientation",
+    "tag_original": "Orientierung",
+    "count": 5,
+    "tag_id": 5158
   },
   {
-    "tag_normalized": "capital",
-    "tag_english": "Capital",
-    "tag_original": "Capitello",
-    "count": 4,
-    "tag_id": 5686
+    "tag_normalized": "traffic",
+    "tag_english": "Traffic",
+    "tag_original": "Verkehr",
+    "count": 5,
+    "tag_id": 5167
   },
   {
-    "tag_normalized": "mobility",
-    "tag_english": "mobility",
-    "tag_original": "mobilidade",
-    "count": 4,
-    "tag_id": 7141
+    "tag_normalized": "architecture",
+    "tag_english": "architecture",
+    "tag_original": "arquitectura",
+    "count": 5,
+    "tag_id": 5227
   },
   {
-    "tag_normalized": "bustle",
-    "tag_english": "Bustle",
-    "tag_original": "Bullicio",
-    "count": 4,
-    "tag_id": 6834
+    "tag_normalized": "health",
+    "tag_english": "Health",
+    "tag_original": "Salud",
+    "count": 5,
+    "tag_id": 5281
   },
   {
-    "tag_normalized": "view",
-    "tag_english": "view",
-    "tag_original": "view",
-    "count": 4,
-    "tag_id": 6421
+    "tag_normalized": "banco",
+    "tag_english": "Banco",
+    "tag_original": "Banco",
+    "count": 5,
+    "tag_id": 5299
   },
   {
-    "tag_normalized": "lock",
-    "tag_english": "Lock",
-    "tag_original": "Zamek",
-    "count": 4,
-    "tag_id": 5483
+    "tag_normalized": "traffic_light_without_sound",
+    "tag_english": "Traffic light without sound",
+    "tag_original": "Semáforo sin sonido",
+    "count": 5,
+    "tag_id": 5304
   },
   {
-    "tag_normalized": "sound_landscape",
-    "tag_english": "Sound landscape",
-    "tag_original": "paisatge sonor",
-    "count": 4,
-    "tag_id": 7992
+    "tag_normalized": "kern_juices",
+    "tag_english": "kern juices",
+    "tag_original": "jugos kerns",
+    "count": 5,
+    "tag_id": 5357
   },
   {
-    "tag_normalized": "berlinische_galerie",
-    "tag_english": "Berlinische Galerie",
-    "tag_original": "Berlinische Galerie",
-    "count": 4,
-    "tag_id": 5068
+    "tag_normalized": "dwarfs",
+    "tag_english": "Dwarfs",
+    "tag_original": "Krasnale",
+    "count": 5,
+    "tag_id": 5456
   },
   {
-    "tag_normalized": "north_station",
-    "tag_english": "North Station",
-    "tag_original": "estación norte",
-    "count": 4,
-    "tag_id": 7900
+    "tag_normalized": "pontini_trattoria",
+    "tag_english": "Pontini Trattoria",
+    "tag_original": "Trattoria Pontini",
+    "count": 5,
+    "tag_id": 5725
   },
   {
-    "tag_normalized": "colors",
-    "tag_english": "Colors",
-    "tag_original": "Colori",
-    "count": 4,
-    "tag_id": 5829
-  },
-  {
-    "tag_normalized": "oranienburgerstrasse",
-    "tag_english": "Oranienburgerstrasse",
-    "tag_original": "Oranienburgerstrasse",
-    "count": 4,
-    "tag_id": 5080
-  },
-  {
-    "tag_normalized": "meco",
-    "tag_english": "Meco",
-    "tag_original": "MECO",
-    "count": 4,
-    "tag_id": 4809
-  },
-  {
-    "tag_normalized": "eco",
-    "tag_english": "Eco",
-    "tag_original": "Eco",
-    "count": 4,
-    "tag_id": 5985
-  },
-  {
-    "tag_normalized": "palm_trees",
-    "tag_english": "palm trees",
-    "tag_original": "palmeras",
-    "count": 4,
-    "tag_id": 7044
-  },
-  {
-    "tag_normalized": "what_berlin",
-    "tag_english": "What Berlin",
-    "tag_original": "CO Berlin",
-    "count": 4,
-    "tag_id": 5081
-  },
-  {
-    "tag_normalized": "ramp",
-    "tag_english": "Ramp",
-    "tag_original": "Rampa",
-    "count": 4,
-    "tag_id": 4981
-  },
-  {
-    "tag_normalized": "free_fair",
-    "tag_english": "free fair",
-    "tag_original": "feira livre",
-    "count": 4,
-    "tag_id": 7161
-  },
-  {
-    "tag_normalized": "courtyards",
-    "tag_english": "Courtyards",
-    "tag_original": "Cortili",
-    "count": 4,
-    "tag_id": 6316
-  },
-  {
-    "tag_normalized": "playing_fields",
-    "tag_english": "playing fields",
-    "tag_original": "playing fields",
-    "count": 4,
-    "tag_id": 5184
-  },
-  {
-    "tag_normalized": "wtf",
-    "tag_english": "WTF",
-    "tag_original": "WTF",
-    "count": 4,
-    "tag_id": 7494
-  },
-  {
-    "tag_normalized": "hiking",
-    "tag_english": "hiking",
-    "tag_original": "senderisme",
-    "count": 4,
-    "tag_id": 7941
-  },
-  {
-    "tag_normalized": "gastronomy",
-    "tag_english": "Gastronomy",
-    "tag_original": "Gastronomia",
-    "count": 4,
-    "tag_id": 7610
-  },
-  {
-    "tag_normalized": "concert",
-    "tag_english": "concert",
-    "tag_original": "concierto",
-    "count": 4,
-    "tag_id": 6813
-  },
-  {
-    "tag_normalized": "pastel",
-    "tag_english": "pastel",
-    "tag_original": "pastel",
-    "count": 4,
-    "tag_id": 7180
-  },
-  {
-    "tag_normalized": "museum_island",
-    "tag_english": "Museum island",
-    "tag_original": "Museumsinsel",
-    "count": 4,
-    "tag_id": 5112
-  },
-  {
-    "tag_normalized": "bus_stop",
-    "tag_english": "Bus stop",
-    "tag_original": "Busstop",
-    "count": 4,
-    "tag_id": 5644
-  },
-  {
-    "tag_normalized": "sugarcane",
-    "tag_english": "sugarcane",
-    "tag_original": "caldo de cana",
-    "count": 4,
-    "tag_id": 7183
-  },
-  {
-    "tag_normalized": "castle",
-    "tag_english": "Castle",
-    "tag_original": "Castelló",
-    "count": 4,
-    "tag_id": 4954
-  },
-  {
-    "tag_normalized": "brazil",
-    "tag_english": "Brazil",
-    "tag_original": "Brasil",
-    "count": 4,
-    "tag_id": 7742
-  },
-  {
-    "tag_normalized": "são_paulo_cultural_center",
-    "tag_english": "São Paulo Cultural Center",
-    "tag_original": "Centro cultural São Paulo",
-    "count": 4,
-    "tag_id": 7243
-  },
-  {
-    "tag_normalized": "crossroads",
-    "tag_english": "Crossroads",
-    "tag_original": "Crocevia",
-    "count": 4,
-    "tag_id": 5927
-  },
-  {
-    "tag_normalized": "games",
-    "tag_english": "games",
-    "tag_original": "giochi",
-    "count": 4,
-    "tag_id": 6195
-  },
-  {
-    "tag_normalized": "campo_santa_margherita",
-    "tag_english": "Campo Santa Margherita",
-    "tag_original": "Campo Santa Margherita",
-    "count": 4,
-    "tag_id": 5681
+    "tag_normalized": "books",
+    "tag_english": "books",
+    "tag_original": "libri",
+    "count": 5,
+    "tag_id": 5742
   },
   {
     "tag_normalized": "toilette",
     "tag_english": "Toilette",
     "tag_original": "Toilette",
-    "count": 4,
+    "count": 5,
     "tag_id": 5762
   },
   {
-    "tag_normalized": "helmet_hair",
-    "tag_english": "Helmet hair",
-    "tag_original": "casco vello",
-    "count": 4,
-    "tag_id": 5320
+    "tag_normalized": "venezia",
+    "tag_english": "Venezia",
+    "tag_original": "Venezia",
+    "count": 5,
+    "tag_id": 5767
   },
   {
-    "tag_normalized": "contemporary_art",
-    "tag_english": "contemporary art",
-    "tag_original": "arte contemporânea",
-    "count": 4,
-    "tag_id": 7639
+    "tag_normalized": "gondola",
+    "tag_english": "gondola",
+    "tag_original": "gondola",
+    "count": 5,
+    "tag_id": 5879
   },
   {
-    "tag_normalized": "office",
-    "tag_english": "Office",
-    "tag_original": "Büro",
-    "count": 4,
-    "tag_id": 5062
+    "tag_normalized": "redeemer",
+    "tag_english": "Redeemer",
+    "tag_original": "Redentore",
+    "count": 5,
+    "tag_id": 5959
   },
   {
-    "tag_normalized": "interview",
-    "tag_english": "interview",
-    "tag_original": "wywiad",
-    "count": 4,
-    "tag_id": 5549
+    "tag_normalized": "fish_market",
+    "tag_english": "Fish market",
+    "tag_original": "Mercato del pesce",
+    "count": 5,
+    "tag_id": 5967
   },
   {
-    "tag_normalized": "scoring",
-    "tag_english": "scoring",
-    "tag_original": "scorrimano",
-    "count": 4,
-    "tag_id": 5913
+    "tag_normalized": "marble",
+    "tag_english": "marble",
+    "tag_original": "marmo",
+    "count": 5,
+    "tag_id": 6069
   },
   {
-    "tag_normalized": "salvador",
-    "tag_english": "Salvador",
-    "tag_original": "Salvador",
-    "count": 4,
-    "tag_id": 7681
+    "tag_normalized": "touch",
+    "tag_english": "touch",
+    "tag_original": "tatto",
+    "count": 5,
+    "tag_id": 6085
   },
   {
-    "tag_normalized": "portico",
-    "tag_english": "portico",
-    "tag_original": "portico",
-    "count": 4,
-    "tag_id": 6041
+    "tag_normalized": "wood",
+    "tag_english": "wood",
+    "tag_original": "legno",
+    "count": 5,
+    "tag_id": 6086
+  },
+  {
+    "tag_normalized": "shopping",
+    "tag_english": "shopping",
+    "tag_original": "shopping",
+    "count": 5,
+    "tag_id": 6116
+  },
+  {
+    "tag_normalized": "water_danger",
+    "tag_english": "Water danger",
+    "tag_original": "Pericolo acqua",
+    "count": 5,
+    "tag_id": 6228
+  },
+  {
+    "tag_normalized": "pace",
+    "tag_english": "pace",
+    "tag_original": "pace",
+    "count": 5,
+    "tag_id": 6299
+  },
+  {
+    "tag_normalized": "like_foscari",
+    "tag_english": "like foscari",
+    "tag_original": "ca foscari",
+    "count": 5,
+    "tag_id": 6331
+  },
+  {
+    "tag_normalized": "tobacco",
+    "tag_english": "tobacco",
+    "tag_original": "tabacchi",
+    "count": 5,
+    "tag_id": 6341
+  },
+  {
+    "tag_normalized": "giudecca",
+    "tag_english": "giudecca",
+    "tag_original": "giudecca",
+    "count": 5,
+    "tag_id": 6410
+  },
+  {
+    "tag_normalized": "upv",
+    "tag_english": "Upv",
+    "tag_original": "Upv",
+    "count": 5,
+    "tag_id": 6994
+  },
+  {
+    "tag_normalized": "modernist_house",
+    "tag_english": "Modernist House",
+    "tag_original": "Casa Modernista",
+    "count": 5,
+    "tag_id": 7199
+  },
+  {
+    "tag_normalized": "dance",
+    "tag_english": "dance",
+    "tag_original": "dança",
+    "count": 5,
+    "tag_id": 7278
+  },
+  {
+    "tag_normalized": "exhibitions",
+    "tag_english": "Exhibitions",
+    "tag_original": "Exposições",
+    "count": 5,
+    "tag_id": 7294
+  },
+  {
+    "tag_normalized": "brazil",
+    "tag_english": "Brazil",
+    "tag_original": "Brasil",
+    "count": 5,
+    "tag_id": 7742
+  },
+  {
+    "tag_normalized": "danger",
+    "tag_english": "danger",
+    "tag_original": "perill",
+    "count": 5,
+    "tag_id": 7947
+  },
+  {
+    "tag_normalized": "soundscape",
+    "tag_english": "soundscape",
+    "tag_original": "paisatge sonor",
+    "count": 5,
+    "tag_id": 7992
   },
   {
     "tag_normalized": "sensorygarden",
@@ -2051,32 +1449,60 @@
     "tag_id": 4832
   },
   {
-    "tag_normalized": "maps",
-    "tag_english": "maps",
-    "tag_original": "mappe",
+    "tag_normalized": "castellón",
+    "tag_english": "Castellón",
+    "tag_original": "Castelló",
     "count": 4,
-    "tag_id": 4677
+    "tag_id": 4954
   },
   {
-    "tag_normalized": "embarks",
-    "tag_english": "Embarks",
-    "tag_original": "Imbarcaderi",
+    "tag_normalized": "traditional_pastry",
+    "tag_english": "traditional pastry",
+    "tag_original": "repostería tradicional",
     "count": 4,
-    "tag_id": 6155
+    "tag_id": 4962
   },
   {
-    "tag_normalized": "upc",
-    "tag_english": "UPC",
-    "tag_original": "UPC",
+    "tag_normalized": "oranienburgerstrasse",
+    "tag_english": "Oranienburgerstrasse",
+    "tag_original": "Oranienburgerstrasse",
     "count": 4,
-    "tag_id": 7872
+    "tag_id": 5080
   },
   {
-    "tag_normalized": "worm",
-    "tag_english": "worm",
-    "tag_original": "minhocão",
+    "tag_normalized": "co_berlin",
+    "tag_english": "CO Berlin",
+    "tag_original": "CO Berlin",
     "count": 4,
-    "tag_id": 7561
+    "tag_id": 5081
+  },
+  {
+    "tag_normalized": "football",
+    "tag_english": "Football",
+    "tag_original": "Football",
+    "count": 4,
+    "tag_id": 5182
+  },
+  {
+    "tag_normalized": "road_to_santiago",
+    "tag_english": "road to santiago",
+    "tag_original": "camino de santiago",
+    "count": 4,
+    "tag_id": 5403
+  },
+  {
+    "tag_normalized": "lock",
+    "tag_english": "Lock",
+    "tag_original": "Zamek",
+    "count": 4,
+    "tag_id": 5483
+  },
+  {
+    "tag_normalized": "joint",
+    "tag_english": "Joint",
+    "tag_original": "Staw",
+    "count": 4,
+    "tag_id": 5502
   },
   {
     "tag_normalized": "town_hall",
@@ -2086,25 +1512,95 @@
     "tag_id": 5532
   },
   {
-    "tag_normalized": "guide_dog",
-    "tag_english": "Guide dog",
-    "tag_original": "Cão guia",
+    "tag_normalized": "center",
+    "tag_english": "center",
+    "tag_original": "center",
     "count": 4,
-    "tag_id": 7247
+    "tag_id": 5538
   },
   {
-    "tag_normalized": "dead_bridges",
-    "tag_english": "Dead bridges",
-    "tag_original": "ponti morti",
+    "tag_normalized": "interview",
+    "tag_english": "interview",
+    "tag_original": "wywiad",
     "count": 4,
-    "tag_id": 6471
+    "tag_id": 5549
   },
   {
-    "tag_normalized": "inclusion",
-    "tag_english": "inclusion",
-    "tag_original": "inclusão",
+    "tag_normalized": "bus_stop",
+    "tag_english": "Bus stop",
+    "tag_original": "Busstop",
     "count": 4,
-    "tag_id": 7175
+    "tag_id": 5644
+  },
+  {
+    "tag_normalized": "campo_santa_margherita",
+    "tag_english": "Campo Santa Margherita",
+    "tag_original": "Campo Santa Margherita",
+    "count": 4,
+    "tag_id": 5681
+  },
+  {
+    "tag_normalized": "capital",
+    "tag_english": "Capital",
+    "tag_original": "Capitello",
+    "count": 4,
+    "tag_id": 5686
+  },
+  {
+    "tag_normalized": "season",
+    "tag_english": "season",
+    "tag_original": "estacion",
+    "count": 4,
+    "tag_id": 5727
+  },
+  {
+    "tag_normalized": "registrations",
+    "tag_english": "registrations",
+    "tag_original": "iscrizioni",
+    "count": 4,
+    "tag_id": 5802
+  },
+  {
+    "tag_normalized": "voices",
+    "tag_english": "Voices",
+    "tag_original": "Voci",
+    "count": 4,
+    "tag_id": 5854
+  },
+  {
+    "tag_normalized": "handrail",
+    "tag_english": "handrail",
+    "tag_original": "scorrimano",
+    "count": 4,
+    "tag_id": 5913
+  },
+  {
+    "tag_normalized": "crossroads",
+    "tag_english": "Crossroads",
+    "tag_original": "Crocevia",
+    "count": 4,
+    "tag_id": 5927
+  },
+  {
+    "tag_normalized": "eco",
+    "tag_english": "Eco",
+    "tag_original": "Eco",
+    "count": 4,
+    "tag_id": 5985
+  },
+  {
+    "tag_normalized": "relief",
+    "tag_english": "relief",
+    "tag_original": "rilievo",
+    "count": 4,
+    "tag_id": 6027
+  },
+  {
+    "tag_normalized": "portico",
+    "tag_english": "portico",
+    "tag_original": "portico",
+    "count": 4,
+    "tag_id": 6041
   },
   {
     "tag_normalized": "cloister",
@@ -2114,508 +1610,207 @@
     "tag_id": 6042
   },
   {
-    "tag_normalized": "tedt",
-    "tag_english": "tedt",
-    "tag_original": "tedt",
+    "tag_normalized": "piers",
+    "tag_english": "Piers",
+    "tag_original": "Imbarcaderi",
     "count": 4,
-    "tag_id": 7114
-  },
-  {
-    "tag_normalized": "registration",
-    "tag_english": "registration",
-    "tag_original": "iscrizioni",
-    "count": 4,
-    "tag_id": 5802
-  },
-  {
-    "tag_normalized": "corb_valley",
-    "tag_english": "Corb Valley",
-    "tag_original": "Vall del corb",
-    "count": 3,
-    "tag_id": 7991
-  },
-  {
-    "tag_normalized": "beta",
-    "tag_english": "beta",
-    "tag_original": "beta",
-    "count": 3,
-    "tag_id": 5653
-  },
-  {
-    "tag_normalized": "new_server",
-    "tag_english": "New server",
-    "tag_original": "Novo servidor",
-    "count": 3,
-    "tag_id": 7851
-  },
-  {
-    "tag_normalized": "the_roqueta",
-    "tag_english": "The Roqueta",
-    "tag_original": "La Roqueta",
-    "count": 3,
-    "tag_id": 7040
+    "tag_id": 6155
   },
   {
     "tag_normalized": "primavera",
     "tag_english": "primavera",
     "tag_original": "primavera",
-    "count": 3,
+    "count": 4,
     "tag_id": 6173
   },
   {
-    "tag_normalized": "fortuny",
-    "tag_english": "Fortuny",
-    "tag_original": "fortuny",
-    "count": 3,
-    "tag_id": 6312
-  },
-  {
-    "tag_normalized": "santa_marta",
-    "tag_english": "Santa Marta",
-    "tag_original": "santa Marta",
-    "count": 3,
-    "tag_id": 5874
-  },
-  {
-    "tag_normalized": "it_goes_well",
-    "tag_english": "It goes well",
-    "tag_original": "va bé",
-    "count": 3,
-    "tag_id": 6774
-  },
-  {
-    "tag_normalized": "photograph",
-    "tag_english": "photograph",
-    "tag_original": "fotografia",
-    "count": 3,
-    "tag_id": 7465
-  },
-  {
-    "tag_normalized": "squero",
-    "tag_english": "Squero",
-    "tag_original": "Squero",
-    "count": 3,
-    "tag_id": 6158
-  },
-  {
-    "tag_normalized": "pablo",
-    "tag_english": "pablo",
-    "tag_original": "pablo",
-    "count": 3,
-    "tag_id": 6821
-  },
-  {
-    "tag_normalized": "strawberry",
-    "tag_english": "strawberry",
-    "tag_original": "morango",
-    "count": 3,
-    "tag_id": 7632
-  },
-  {
-    "tag_normalized": "berry",
-    "tag_english": "Berry",
-    "tag_original": "Vergueiro",
-    "count": 3,
-    "tag_id": 7260
-  },
-  {
-    "tag_normalized": "pont",
-    "tag_english": "Pont",
-    "tag_original": "Pont",
-    "count": 3,
-    "tag_id": 7950
-  },
-  {
-    "tag_normalized": "vineyards",
-    "tag_english": "Vineyards",
-    "tag_original": "Vinyes",
-    "count": 3,
-    "tag_id": 7993
-  },
-  {
-    "tag_normalized": "abandonment",
-    "tag_english": "abandonment",
-    "tag_original": "abbandono",
-    "count": 3,
-    "tag_id": 6221
-  },
-  {
-    "tag_normalized": "asac",
-    "tag_english": "Asac",
-    "tag_original": "Asac",
-    "count": 3,
-    "tag_id": 7491
-  },
-  {
-    "tag_normalized": "children_running",
-    "tag_english": "children running",
-    "tag_original": "niños correteando",
-    "count": 3,
-    "tag_id": 5000
-  },
-  {
-    "tag_normalized": "gcm",
-    "tag_english": "GCM",
-    "tag_original": "GCM",
-    "count": 3,
-    "tag_id": 7598
-  },
-  {
-    "tag_normalized": "party",
-    "tag_english": "Party",
-    "tag_original": "Festa",
-    "count": 3,
-    "tag_id": 6651
-  },
-  {
-    "tag_normalized": "basket",
-    "tag_english": "basket",
-    "tag_original": "basket",
-    "count": 3,
-    "tag_id": 5878
-  },
-  {
-    "tag_normalized": "crossing",
-    "tag_english": "Crossing",
-    "tag_original": "Kreuzung",
-    "count": 3,
-    "tag_id": 5109
-  },
-  {
-    "tag_normalized": "deus",
-    "tag_english": "Deus",
-    "tag_original": "Deus",
-    "count": 3,
-    "tag_id": 7143
-  },
-  {
-    "tag_normalized": "bengal",
-    "tag_english": "Bengal",
-    "tag_original": "bengala",
-    "count": 3,
-    "tag_id": 7261
-  },
-  {
-    "tag_normalized": "exhibition",
-    "tag_english": "exhibition",
-    "tag_original": "exposição",
-    "count": 3,
-    "tag_id": 7664
-  },
-  {
-    "tag_normalized": "performance",
-    "tag_english": "Performance",
-    "tag_original": "Vorstellung",
-    "count": 3,
-    "tag_id": 5208
-  },
-  {
-    "tag_normalized": "sombra",
-    "tag_english": "sombra",
-    "tag_original": "sombra",
-    "count": 3,
-    "tag_id": 6901
-  },
-  {
-    "tag_normalized": "lack_of_accessibility",
-    "tag_english": "lack of accessibility",
-    "tag_original": "falta de acessibilidade",
-    "count": 3,
-    "tag_id": 7587
-  },
-  {
-    "tag_normalized": "folklore_museum",
-    "tag_english": "Folklore Museum",
-    "tag_original": "Museu do folclore",
-    "count": 3,
-    "tag_id": 7762
-  },
-  {
-    "tag_normalized": "right",
-    "tag_english": "Right",
-    "tag_original": "CORREOS",
-    "count": 3,
-    "tag_id": 5315
-  },
-  {
-    "tag_normalized": "bullring",
-    "tag_english": "bullring",
-    "tag_original": "plaza de toros",
-    "count": 3,
-    "tag_id": 7008
-  },
-  {
-    "tag_normalized": "anhangabau_valley",
-    "tag_english": "Anhangabau Valley",
-    "tag_original": "Vale do Anhangabau",
-    "count": 3,
-    "tag_id": 7217
-  },
-  {
-    "tag_normalized": "fun",
-    "tag_english": "fun",
-    "tag_original": "divertimento",
-    "count": 3,
-    "tag_id": 6366
-  },
-  {
-    "tag_normalized": "antoni_abad",
-    "tag_english": "Antoni Abad",
-    "tag_original": "Antoni Abad",
-    "count": 3,
-    "tag_id": 5233
-  },
-  {
-    "tag_normalized": "pavilion",
-    "tag_english": "pavilion",
-    "tag_original": "padiglione",
-    "count": 3,
-    "tag_id": 6631
-  },
-  {
-    "tag_normalized": "fairs",
-    "tag_english": "Fairs",
-    "tag_original": "Ferias",
-    "count": 3,
-    "tag_id": 5342
-  },
-  {
-    "tag_normalized": "post_-fiction_office",
-    "tag_english": "Post -fiction office",
-    "tag_original": "Postfuhramt",
-    "count": 3,
-    "tag_id": 5082
-  },
-  {
-    "tag_normalized": "l'horta",
-    "tag_english": "L'Horta",
-    "tag_original": "l'horta",
-    "count": 3,
-    "tag_id": 6863
-  },
-  {
-    "tag_normalized": "foo",
-    "tag_english": "foo",
-    "tag_original": "foo",
-    "count": 3,
-    "tag_id": 7495
-  },
-  {
-    "tag_normalized": "cathedral",
-    "tag_english": "cathedral",
-    "tag_original": "catedral",
-    "count": 3,
-    "tag_id": 5329
-  },
-  {
-    "tag_normalized": "experience",
-    "tag_english": "experience",
-    "tag_original": "experience",
-    "count": 3,
-    "tag_id": 5141
-  },
-  {
-    "tag_normalized": "barca",
-    "tag_english": "Barca",
-    "tag_original": "Barca",
-    "count": 3,
-    "tag_id": 5942
-  },
-  {
-    "tag_normalized": "bookshelf",
-    "tag_english": "Bookshelf",
-    "tag_original": "Libreria",
-    "count": 3,
-    "tag_id": 5740
+    "tag_normalized": "games",
+    "tag_english": "games",
+    "tag_original": "giochi",
+    "count": 4,
+    "tag_id": 6195
   },
   {
-    "tag_normalized": "rare_things",
-    "tag_english": "Rare things",
-    "tag_original": "cosas raras",
-    "count": 3,
-    "tag_id": 4966
-  },
-  {
-    "tag_normalized": "san_martín_pinario",
-    "tag_english": "San Martín Pinario",
-    "tag_original": "San Martín Pinario",
-    "count": 3,
-    "tag_id": 5343
+    "tag_normalized": "courtyards",
+    "tag_english": "Courtyards",
+    "tag_original": "Cortili",
+    "count": 4,
+    "tag_id": 6316
   },
   {
-    "tag_normalized": "empty",
-    "tag_english": "empty",
-    "tag_original": "vuoto",
-    "count": 3,
-    "tag_id": 6206
+    "tag_normalized": "view",
+    "tag_english": "view",
+    "tag_original": "view",
+    "count": 4,
+    "tag_id": 6421
   },
   {
-    "tag_normalized": "craft",
-    "tag_english": "craft",
-    "tag_original": "artigianato",
-    "count": 3,
-    "tag_id": 6343
+    "tag_normalized": "dead_bridges",
+    "tag_english": "dead bridges",
+    "tag_original": "ponti morti",
+    "count": 4,
+    "tag_id": 6471
   },
   {
-    "tag_normalized": "sesc",
-    "tag_english": "Sesc",
-    "tag_original": "Sesc",
-    "count": 3,
-    "tag_id": 7666
+    "tag_normalized": "service",
+    "tag_english": "Service",
+    "tag_original": "Service",
+    "count": 4,
+    "tag_id": 6505
   },
   {
-    "tag_normalized": "pastry_shop",
-    "tag_english": "pastry shop",
-    "tag_original": "pasticceria",
-    "count": 3,
-    "tag_id": 6019
+    "tag_normalized": "pozzo",
+    "tag_english": "pozzo",
+    "tag_original": "pozzo",
+    "count": 4,
+    "tag_id": 6532
   },
   {
-    "tag_normalized": "museum",
-    "tag_english": "Museum",
-    "tag_original": "Museu",
-    "count": 3,
-    "tag_id": 7636
+    "tag_normalized": "amor",
+    "tag_english": "Amor",
+    "tag_original": "Amor",
+    "count": 4,
+    "tag_id": 6670
   },
   {
-    "tag_normalized": "foundry_bar",
-    "tag_english": "Foundry bar",
-    "tag_original": "Barra Funda",
-    "count": 3,
-    "tag_id": 7612
+    "tag_normalized": "palm_trees",
+    "tag_english": "palm trees",
+    "tag_original": "palmeras",
+    "count": 4,
+    "tag_id": 7044
   },
   {
-    "tag_normalized": "ice-cream",
-    "tag_english": "Ice-cream",
-    "tag_original": "Lody",
-    "count": 3,
-    "tag_id": 5595
+    "tag_normalized": "mobility",
+    "tag_english": "mobility",
+    "tag_original": "mobilidade",
+    "count": 4,
+    "tag_id": 7141
   },
   {
-    "tag_normalized": "blindwikibr",
-    "tag_english": "blindwikibr",
-    "tag_original": "blindwikibr",
-    "count": 3,
-    "tag_id": 7350
+    "tag_normalized": "inclusion",
+    "tag_english": "inclusion",
+    "tag_original": "inclusão",
+    "count": 4,
+    "tag_id": 7175
   },
   {
-    "tag_normalized": "friends",
-    "tag_english": "Friends",
-    "tag_original": "Freunde",
-    "count": 3,
-    "tag_id": 5174
+    "tag_normalized": "pastel",
+    "tag_english": "pastel",
+    "tag_original": "pastel",
+    "count": 4,
+    "tag_id": 7180
   },
   {
-    "tag_normalized": "aaudiolibro",
-    "tag_english": "Aaudiolibro",
-    "tag_original": "Aaudiolibro",
-    "count": 3,
-    "tag_id": 5972
+    "tag_normalized": "sugarcane_juice",
+    "tag_english": "sugarcane juice",
+    "tag_original": "caldo de cana",
+    "count": 4,
+    "tag_id": 7183
   },
   {
-    "tag_normalized": "bank_pkobp_rynek",
-    "tag_english": "Bank PKOBP Rynek",
-    "tag_original": "Bank pkobp rynek",
-    "count": 3,
-    "tag_id": 5526
+    "tag_normalized": "guide_dog",
+    "tag_english": "Guide dog",
+    "tag_original": "Cão guia",
+    "count": 4,
+    "tag_id": 7247
   },
   {
-    "tag_normalized": "multidirectional",
-    "tag_english": "Multidirectional",
-    "tag_original": "Multidirezionale",
-    "count": 3,
-    "tag_id": 5898
+    "tag_normalized": "avenida_paulista",
+    "tag_english": "Avenida Paulista",
+    "tag_original": "Avenida Paulista",
+    "count": 4,
+    "tag_id": 7323
   },
   {
-    "tag_normalized": "barrera",
-    "tag_english": "Barrera",
-    "tag_original": "Barrera",
-    "count": 3,
-    "tag_id": 4989
+    "tag_normalized": "sao",
+    "tag_english": "sao",
+    "tag_original": "sao",
+    "count": 4,
+    "tag_id": 7401
   },
   {
-    "tag_normalized": "sonora",
-    "tag_english": "sonora",
-    "tag_original": "sonora",
-    "count": 3,
-    "tag_id": 6954
+    "tag_normalized": "fiesp",
+    "tag_english": "Fiesp",
+    "tag_original": "Fiesp",
+    "count": 4,
+    "tag_id": 7412
   },
   {
-    "tag_normalized": "são_paulo",
-    "tag_english": "São Paulo",
-    "tag_original": "São Paulo",
-    "count": 3,
-    "tag_id": 7170
+    "tag_normalized": "worm",
+    "tag_english": "worm",
+    "tag_original": "minhocão",
+    "count": 4,
+    "tag_id": 7561
   },
   {
-    "tag_normalized": "cadevi_association",
-    "tag_english": "CADEVI ASSOCIATION",
-    "tag_original": "associação cadevi",
-    "count": 3,
-    "tag_id": 7497
+    "tag_normalized": "gastronomy",
+    "tag_english": "Gastronomy",
+    "tag_original": "Gastronomia",
+    "count": 4,
+    "tag_id": 7610
   },
   {
-    "tag_normalized": "ride",
-    "tag_english": "ride",
-    "tag_original": "passaggio",
-    "count": 3,
-    "tag_id": 5882
+    "tag_normalized": "bahia",
+    "tag_english": "Bahia",
+    "tag_original": "Bahia",
+    "count": 4,
+    "tag_id": 7677
   },
   {
-    "tag_normalized": "tunnels",
-    "tag_english": "Tunnels",
-    "tag_original": "túneles",
-    "count": 3,
-    "tag_id": 6678
+    "tag_normalized": "salvador",
+    "tag_english": "Salvador",
+    "tag_original": "Salvador",
+    "count": 4,
+    "tag_id": 7681
   },
   {
-    "tag_normalized": "people_mover",
-    "tag_english": "People Mover",
-    "tag_original": "People Mover",
-    "count": 3,
-    "tag_id": 6403
+    "tag_normalized": "barcelona",
+    "tag_english": "barcelona",
+    "tag_original": "barcelona",
+    "count": 4,
+    "tag_id": 7866
   },
   {
-    "tag_normalized": "alameda",
-    "tag_english": "Alameda",
-    "tag_original": "Alameda",
-    "count": 3,
-    "tag_id": 5295
+    "tag_normalized": "north_station",
+    "tag_english": "north station",
+    "tag_original": "estación norte",
+    "count": 4,
+    "tag_id": 7900
   },
   {
-    "tag_normalized": "tightening",
-    "tag_english": "tightening",
-    "tag_original": "calle stretta",
-    "count": 3,
-    "tag_id": 5886
+    "tag_normalized": "hiking",
+    "tag_english": "hiking",
+    "tag_original": "senderisme",
+    "count": 4,
+    "tag_id": 7941
   },
   {
-    "tag_normalized": "alex_flemming",
-    "tag_english": "Alex Flemming",
-    "tag_original": "Alex Flemming",
-    "count": 3,
-    "tag_id": 7314
+    "tag_normalized": "time",
+    "tag_english": "time",
+    "tag_original": "garoa",
+    "count": 4,
+    "tag_id": 8210
   },
   {
-    "tag_normalized": "wifi",
-    "tag_english": "Wifi",
-    "tag_original": "Wifi",
-    "count": 3,
-    "tag_id": 5030
+    "tag_normalized": "yokoham",
+    "tag_english": "yokoham",
+    "tag_original": "yokoham",
+    "count": 4,
+    "tag_id": 8243
   },
   {
-    "tag_normalized": "mequi_1000",
-    "tag_english": "Mequi 1000",
-    "tag_original": "Mequi 1000",
+    "tag_normalized": "pizza",
+    "tag_english": "pizza",
+    "tag_original": "pizza",
     "count": 3,
-    "tag_id": 7420
+    "tag_id": 2902
   },
   {
-    "tag_normalized": "police",
-    "tag_english": "police",
-    "tag_original": "Polizei",
+    "tag_normalized": "scaffolding",
+    "tag_english": "scaffolding",
+    "tag_original": "ponteggi",
     "count": 3,
-    "tag_id": 5088
+    "tag_id": 4712
   },
   {
     "tag_normalized": "courtyard",
@@ -2625,62 +1820,6 @@
     "tag_id": 4816
   },
   {
-    "tag_normalized": "crowding",
-    "tag_english": "Crowding",
-    "tag_original": "Affollamento",
-    "count": 3,
-    "tag_id": 5929
-  },
-  {
-    "tag_normalized": "dorinanowill",
-    "tag_english": "dorinanowill",
-    "tag_original": "dorinanowill",
-    "count": 3,
-    "tag_id": 7173
-  },
-  {
-    "tag_normalized": "scale_to_ras",
-    "tag_english": "Scale to Ras",
-    "tag_original": "Acera a ras",
-    "count": 3,
-    "tag_id": 5010
-  },
-  {
-    "tag_normalized": "osteria",
-    "tag_english": "osteria",
-    "tag_original": "osteria",
-    "count": 3,
-    "tag_id": 6280
-  },
-  {
-    "tag_normalized": "first_tra",
-    "tag_english": "First tra",
-    "tag_original": "primer tram",
-    "count": 3,
-    "tag_id": 7978
-  },
-  {
-    "tag_normalized": "avenue",
-    "tag_english": "avenue",
-    "tag_original": "viale",
-    "count": 3,
-    "tag_id": 6198
-  },
-  {
-    "tag_normalized": "club",
-    "tag_english": "club",
-    "tag_original": "klub",
-    "count": 3,
-    "tag_id": 5565
-  },
-  {
-    "tag_normalized": "nazareth",
-    "tag_english": "Nazareth",
-    "tag_original": "Nazaret",
-    "count": 3,
-    "tag_id": 7027
-  },
-  {
     "tag_normalized": "health_facilities",
     "tag_english": "health facilities",
     "tag_original": "presidi sanitari",
@@ -2688,53 +1827,95 @@
     "tag_id": 4871
   },
   {
-    "tag_normalized": "portal",
-    "tag_english": "portal",
-    "tag_original": "portale",
+    "tag_normalized": "strange_things",
+    "tag_english": "strange things",
+    "tag_original": "cosas raras",
     "count": 3,
-    "tag_id": 5978
+    "tag_id": 4966
   },
   {
-    "tag_normalized": "botanical_garden",
-    "tag_english": "Botanical garden",
-    "tag_original": "Jardín botánico",
+    "tag_normalized": "ramp",
+    "tag_english": "Ramp",
+    "tag_original": "Rampa",
     "count": 3,
-    "tag_id": 6782
+    "tag_id": 4981
   },
   {
-    "tag_normalized": "angelito_de_perrita",
-    "tag_english": "Angelito de Perrita",
+    "tag_normalized": "barrera",
+    "tag_english": "Barrera",
+    "tag_original": "Barrera",
+    "count": 3,
+    "tag_id": 4989
+  },
+  {
+    "tag_normalized": "little_dog_angel",
+    "tag_english": "little dog angel",
     "tag_original": "Angelito de perrita",
     "count": 3,
     "tag_id": 4993
   },
   {
-    "tag_normalized": "book",
-    "tag_english": "Book",
-    "tag_original": "Książki",
+    "tag_normalized": "children_running_around",
+    "tag_english": "children running around",
+    "tag_original": "niños correteando",
     "count": 3,
-    "tag_id": 5587
+    "tag_id": 5000
   },
   {
-    "tag_normalized": "schools",
-    "tag_english": "schools",
-    "tag_original": "scuole",
+    "tag_normalized": "sidewalk_level",
+    "tag_english": "sidewalk level",
+    "tag_original": "Acera a ras",
     "count": 3,
-    "tag_id": 6099
+    "tag_id": 5010
   },
   {
-    "tag_normalized": "nou_tag",
-    "tag_english": "Nou tag",
-    "tag_original": "Nou tag",
+    "tag_normalized": "office",
+    "tag_english": "Office",
+    "tag_original": "Büro",
     "count": 3,
-    "tag_id": 7113
+    "tag_id": 5062
   },
   {
-    "tag_normalized": "fruiting_them",
-    "tag_english": "fruiting them",
-    "tag_original": "fruttivendoli",
+    "tag_normalized": "berlin_gallery",
+    "tag_english": "Berlin Gallery",
+    "tag_original": "Berlinische Galerie",
     "count": 3,
-    "tag_id": 6249
+    "tag_id": 5068
+  },
+  {
+    "tag_normalized": "travel",
+    "tag_english": "Travel",
+    "tag_original": "Travel",
+    "count": 3,
+    "tag_id": 5070
+  },
+  {
+    "tag_normalized": "post_office",
+    "tag_english": "Post office",
+    "tag_original": "Postfuhramt",
+    "count": 3,
+    "tag_id": 5082
+  },
+  {
+    "tag_normalized": "museum_island",
+    "tag_english": "Museum Island",
+    "tag_original": "Museumsinsel",
+    "count": 3,
+    "tag_id": 5112
+  },
+  {
+    "tag_normalized": "fences",
+    "tag_english": "fences",
+    "tag_original": "fences",
+    "count": 3,
+    "tag_id": 5139
+  },
+  {
+    "tag_normalized": "experience",
+    "tag_english": "experience",
+    "tag_original": "experience",
+    "count": 3,
+    "tag_id": 5141
   },
   {
     "tag_normalized": "stelenfeld",
@@ -2744,11 +1925,221 @@
     "tag_id": 5165
   },
   {
-    "tag_normalized": "laguna",
-    "tag_english": "laguna",
-    "tag_original": "laguna",
+    "tag_normalized": "friends",
+    "tag_english": "Friends",
+    "tag_original": "Freunde",
     "count": 3,
-    "tag_id": 5859
+    "tag_id": 5174
+  },
+  {
+    "tag_normalized": "playing_fields",
+    "tag_english": "playing fields",
+    "tag_original": "playing fields",
+    "count": 3,
+    "tag_id": 5184
+  },
+  {
+    "tag_normalized": "swimming_pools",
+    "tag_english": "Swimming pools",
+    "tag_original": "Piscinas",
+    "count": 3,
+    "tag_id": 5229
+  },
+  {
+    "tag_normalized": "alameda",
+    "tag_english": "Alameda",
+    "tag_original": "Alameda",
+    "count": 3,
+    "tag_id": 5295
+  },
+  {
+    "tag_normalized": "cathedral",
+    "tag_english": "cathedral",
+    "tag_original": "catedral",
+    "count": 3,
+    "tag_id": 5329
+  },
+  {
+    "tag_normalized": "catalan_pavilion",
+    "tag_english": "Catalan pavilion",
+    "tag_original": "padiglione catalano",
+    "count": 3,
+    "tag_id": 5392
+  },
+  {
+    "tag_normalized": "santiago_de_compostela",
+    "tag_english": "Santiago de Compostela",
+    "tag_original": "Santiago de Compostela",
+    "count": 3,
+    "tag_id": 5402
+  },
+  {
+    "tag_normalized": "bank_pkobp_market",
+    "tag_english": "Bank pkobp market",
+    "tag_original": "Bank pkobp rynek",
+    "count": 3,
+    "tag_id": 5526
+  },
+  {
+    "tag_normalized": "club",
+    "tag_english": "club",
+    "tag_original": "klub",
+    "count": 3,
+    "tag_id": 5565
+  },
+  {
+    "tag_normalized": "bookshelf",
+    "tag_english": "Bookshelf",
+    "tag_original": "Libreria",
+    "count": 3,
+    "tag_id": 5740
+  },
+  {
+    "tag_normalized": "appetizing",
+    "tag_english": "Appetizing",
+    "tag_original": "Appetitoso",
+    "count": 3,
+    "tag_id": 5769
+  },
+  {
+    "tag_normalized": "colors",
+    "tag_english": "Colors",
+    "tag_original": "Colori",
+    "count": 3,
+    "tag_id": 5829
+  },
+  {
+    "tag_normalized": "saint_martha",
+    "tag_english": "Saint Martha",
+    "tag_original": "santa Marta",
+    "count": 3,
+    "tag_id": 5874
+  },
+  {
+    "tag_normalized": "basket",
+    "tag_english": "basket",
+    "tag_original": "basket",
+    "count": 3,
+    "tag_id": 5878
+  },
+  {
+    "tag_normalized": "ride",
+    "tag_english": "ride",
+    "tag_original": "passaggio",
+    "count": 3,
+    "tag_id": 5882
+  },
+  {
+    "tag_normalized": "narrow_street",
+    "tag_english": "narrow street",
+    "tag_original": "calle stretta",
+    "count": 3,
+    "tag_id": 5886
+  },
+  {
+    "tag_normalized": "multidirectional",
+    "tag_english": "Multidirectional",
+    "tag_original": "Multidirezionale",
+    "count": 3,
+    "tag_id": 5898
+  },
+  {
+    "tag_normalized": "barca",
+    "tag_english": "Barca",
+    "tag_original": "Barca",
+    "count": 3,
+    "tag_id": 5942
+  },
+  {
+    "tag_normalized": "portal",
+    "tag_english": "portal",
+    "tag_original": "portale",
+    "count": 3,
+    "tag_id": 5978
+  },
+  {
+    "tag_normalized": "pastry_shop",
+    "tag_english": "pastry shop",
+    "tag_original": "pasticceria",
+    "count": 3,
+    "tag_id": 6019
+  },
+  {
+    "tag_normalized": "schools",
+    "tag_english": "schools",
+    "tag_original": "scuole",
+    "count": 3,
+    "tag_id": 6099
+  },
+  {
+    "tag_normalized": "squero",
+    "tag_english": "Squero",
+    "tag_original": "Squero",
+    "count": 3,
+    "tag_id": 6158
+  },
+  {
+    "tag_normalized": "avenue",
+    "tag_english": "avenue",
+    "tag_original": "viale",
+    "count": 3,
+    "tag_id": 6198
+  },
+  {
+    "tag_normalized": "empty",
+    "tag_english": "empty",
+    "tag_original": "vuoto",
+    "count": 3,
+    "tag_id": 6206
+  },
+  {
+    "tag_normalized": "abandonment",
+    "tag_english": "abandonment",
+    "tag_original": "abbandono",
+    "count": 3,
+    "tag_id": 6221
+  },
+  {
+    "tag_normalized": "greengrocers",
+    "tag_english": "greengrocers",
+    "tag_original": "fruttivendoli",
+    "count": 3,
+    "tag_id": 6249
+  },
+  {
+    "tag_normalized": "osteria",
+    "tag_english": "osteria",
+    "tag_original": "osteria",
+    "count": 3,
+    "tag_id": 6280
+  },
+  {
+    "tag_normalized": "fortune",
+    "tag_english": "fortune",
+    "tag_original": "fortuny",
+    "count": 3,
+    "tag_id": 6312
+  },
+  {
+    "tag_normalized": "ice-cream",
+    "tag_english": "Ice-cream",
+    "tag_original": "Gelato",
+    "count": 3,
+    "tag_id": 6344
+  },
+  {
+    "tag_normalized": "fun",
+    "tag_english": "fun",
+    "tag_original": "divertimento",
+    "count": 3,
+    "tag_id": 6366
+  },
+  {
+    "tag_normalized": "people_mover",
+    "tag_english": "People Mover",
+    "tag_original": "People Mover",
+    "count": 3,
+    "tag_id": 6403
   },
   {
     "tag_normalized": "darsena",
@@ -2758,6 +2149,244 @@
     "tag_id": 6483
   },
   {
+    "tag_normalized": "pavilion",
+    "tag_english": "pavilion",
+    "tag_original": "padiglione",
+    "count": 3,
+    "tag_id": 6631
+  },
+  {
+    "tag_normalized": "tunnels",
+    "tag_english": "tunnels",
+    "tag_original": "túneles",
+    "count": 3,
+    "tag_id": 6678
+  },
+  {
+    "tag_normalized": "concert",
+    "tag_english": "concert",
+    "tag_original": "concierto",
+    "count": 3,
+    "tag_id": 6813
+  },
+  {
+    "tag_normalized": "bustle",
+    "tag_english": "Bustle",
+    "tag_original": "Bullicio",
+    "count": 3,
+    "tag_id": 6834
+  },
+  {
+    "tag_normalized": "l'horta",
+    "tag_english": "l'horta",
+    "tag_original": "l'horta",
+    "count": 3,
+    "tag_id": 6863
+  },
+  {
+    "tag_normalized": "sombra",
+    "tag_english": "sombra",
+    "tag_original": "sombra",
+    "count": 3,
+    "tag_id": 6901
+  },
+  {
+    "tag_normalized": "sonora",
+    "tag_english": "sonora",
+    "tag_original": "sonora",
+    "count": 3,
+    "tag_id": 6954
+  },
+  {
+    "tag_normalized": "bullring",
+    "tag_english": "bullring",
+    "tag_original": "plaza de toros",
+    "count": 3,
+    "tag_id": 7008
+  },
+  {
+    "tag_normalized": "nazareth",
+    "tag_english": "Nazareth",
+    "tag_original": "Nazaret",
+    "count": 3,
+    "tag_id": 7027
+  },
+  {
+    "tag_normalized": "la_roqueta",
+    "tag_english": "La Roqueta",
+    "tag_original": "La Roqueta",
+    "count": 3,
+    "tag_id": 7040
+  },
+  {
+    "tag_normalized": "deus",
+    "tag_english": "Deus",
+    "tag_original": "Deus",
+    "count": 3,
+    "tag_id": 7143
+  },
+  {
+    "tag_normalized": "free_market",
+    "tag_english": "free market",
+    "tag_original": "feira livre",
+    "count": 3,
+    "tag_id": 7161
+  },
+  {
+    "tag_normalized": "dorinanowill",
+    "tag_english": "dorinanowill",
+    "tag_original": "dorinanowill",
+    "count": 3,
+    "tag_id": 7173
+  },
+  {
+    "tag_normalized": "anhangabau_valley",
+    "tag_english": "Anhangabau Valley",
+    "tag_original": "Vale do Anhangabau",
+    "count": 3,
+    "tag_id": 7217
+  },
+  {
+    "tag_normalized": "paulo",
+    "tag_english": "paulo",
+    "tag_original": "paulo",
+    "count": 3,
+    "tag_id": 7243
+  },
+  {
+    "tag_normalized": "access",
+    "tag_english": "access",
+    "tag_original": "acesso",
+    "count": 3,
+    "tag_id": 7250
+  },
+  {
+    "tag_normalized": "vergueiro",
+    "tag_english": "Vergueiro",
+    "tag_original": "Vergueiro",
+    "count": 3,
+    "tag_id": 7260
+  },
+  {
+    "tag_normalized": "bengal",
+    "tag_english": "Bengal",
+    "tag_original": "bengala",
+    "count": 3,
+    "tag_id": 7261
+  },
+  {
+    "tag_normalized": "alex_flemming",
+    "tag_english": "Alex Flemming",
+    "tag_original": "Alex Flemming",
+    "count": 3,
+    "tag_id": 7314
+  },
+  {
+    "tag_normalized": "santa_catarina_hospital",
+    "tag_english": "Santa Catarina Hospital",
+    "tag_original": "Hospital Santa Catarina",
+    "count": 3,
+    "tag_id": 7348
+  },
+  {
+    "tag_normalized": "casa",
+    "tag_english": "casa",
+    "tag_original": "casa",
+    "count": 3,
+    "tag_id": 7430
+  },
+  {
+    "tag_normalized": "photograph",
+    "tag_english": "photograph",
+    "tag_original": "fotografia",
+    "count": 3,
+    "tag_id": 7465
+  },
+  {
+    "tag_normalized": "cadevi_association",
+    "tag_english": "cadevi association",
+    "tag_original": "associação cadevi",
+    "count": 3,
+    "tag_id": 7497
+  },
+  {
+    "tag_normalized": "lack_of_accessibility",
+    "tag_english": "lack of accessibility",
+    "tag_original": "falta de acessibilidade",
+    "count": 3,
+    "tag_id": 7587
+  },
+  {
+    "tag_normalized": "gcm",
+    "tag_english": "GCM",
+    "tag_original": "GCM",
+    "count": 3,
+    "tag_id": 7598
+  },
+  {
+    "tag_normalized": "barra_funda",
+    "tag_english": "Barra Funda",
+    "tag_original": "Barra Funda",
+    "count": 3,
+    "tag_id": 7612
+  },
+  {
+    "tag_normalized": "strawberry",
+    "tag_english": "strawberry",
+    "tag_original": "morango",
+    "count": 3,
+    "tag_id": 7632
+  },
+  {
+    "tag_normalized": "museum",
+    "tag_english": "Museum",
+    "tag_original": "Museu",
+    "count": 3,
+    "tag_id": 7636
+  },
+  {
+    "tag_normalized": "contemporary_art",
+    "tag_english": "contemporary art",
+    "tag_original": "arte contemporânea",
+    "count": 3,
+    "tag_id": 7639
+  },
+  {
+    "tag_normalized": "exhibition",
+    "tag_english": "exhibition",
+    "tag_original": "exposição",
+    "count": 3,
+    "tag_id": 7664
+  },
+  {
+    "tag_normalized": "sesc",
+    "tag_english": "Sesc",
+    "tag_original": "Sesc",
+    "count": 3,
+    "tag_id": 7666
+  },
+  {
+    "tag_normalized": "trail",
+    "tag_english": "trail",
+    "tag_original": "trilha",
+    "count": 3,
+    "tag_id": 7758
+  },
+  {
+    "tag_normalized": "folklore_museum",
+    "tag_english": "Folklore Museum",
+    "tag_original": "Museu do folclore",
+    "count": 3,
+    "tag_id": 7762
+  },
+  {
+    "tag_normalized": "pedestrian_street",
+    "tag_english": "Pedestrian street",
+    "tag_original": "Calle peatonal",
+    "count": 3,
+    "tag_id": 7893
+  },
+  {
     "tag_normalized": "camino",
     "tag_english": "Camino",
     "tag_original": "Camino",
@@ -2765,242 +2394,95 @@
     "tag_id": 7898
   },
   {
-    "tag_normalized": "bw/edu",
-    "tag_english": "bw/EDU",
-    "tag_original": "bw/EDU",
+    "tag_normalized": "sound_traffic_light",
+    "tag_english": "sound traffic light",
+    "tag_original": "Semàfor sonor",
     "count": 3,
-    "tag_id": 7873
+    "tag_id": 7915
   },
   {
-    "tag_normalized": "pies",
-    "tag_english": "Pies",
-    "tag_original": "Placki",
-    "count": 2,
-    "tag_id": 5534
+    "tag_normalized": "ruta",
+    "tag_english": "ruta",
+    "tag_original": "ruta",
+    "count": 3,
+    "tag_id": 7943
   },
   {
-    "tag_normalized": "navigating",
-    "tag_english": "navigating",
-    "tag_original": "navegando",
-    "count": 2,
-    "tag_id": 7005
+    "tag_normalized": "pont",
+    "tag_english": "Pont",
+    "tag_original": "Pont",
+    "count": 3,
+    "tag_id": 7950
   },
   {
-    "tag_normalized": "jump",
-    "tag_english": "jump",
-    "tag_original": "springen",
-    "count": 2,
-    "tag_id": 5091
-  },
-  {
-    "tag_normalized": "trash",
-    "tag_english": "trash",
-    "tag_original": "lixo",
-    "count": 2,
-    "tag_id": 7485
-  },
-  {
-    "tag_normalized": "piano",
-    "tag_english": "Piano",
-    "tag_original": "Piano",
-    "count": 2,
-    "tag_id": 5578
-  },
-  {
-    "tag_normalized": "seven",
-    "tag_english": "Seven",
-    "tag_original": "Sete",
-    "count": 2,
-    "tag_id": 6270
-  },
-  {
-    "tag_normalized": "beaches",
-    "tag_english": "Beaches",
-    "tag_original": "Spiagge",
-    "count": 2,
-    "tag_id": 6551
-  },
-  {
-    "tag_normalized": "pile",
-    "tag_english": "Pile",
+    "tag_normalized": "cerdanya",
+    "tag_english": "Cerdanya",
     "tag_original": "Cerdanya",
-    "count": 2,
+    "count": 3,
     "tag_id": 7959
   },
   {
-    "tag_normalized": "railway",
-    "tag_english": "railway",
-    "tag_original": "inferriata",
-    "count": 2,
-    "tag_id": 6088
+    "tag_normalized": "first_tram",
+    "tag_english": "first tram",
+    "tag_original": "primer tram",
+    "count": 3,
+    "tag_id": 7978
   },
   {
-    "tag_normalized": "deck_chairs",
-    "tag_english": "Deck chairs",
-    "tag_original": "Liegestühle",
-    "count": 2,
-    "tag_id": 5067
+    "tag_normalized": "raven_valley",
+    "tag_english": "Raven Valley",
+    "tag_original": "Vall del corb",
+    "count": 3,
+    "tag_id": 7991
   },
   {
-    "tag_normalized": "water_pump",
-    "tag_english": "Water pump",
-    "tag_original": "Water pump",
-    "count": 2,
-    "tag_id": 5193
+    "tag_normalized": "vines",
+    "tag_english": "vines",
+    "tag_original": "Vinyes",
+    "count": 3,
+    "tag_id": 7993
   },
   {
-    "tag_normalized": "óscar_freire",
-    "tag_english": "Óscar Freire",
-    "tag_original": "Óscar Freire",
-    "count": 2,
-    "tag_id": 7508
+    "tag_normalized": "sound_postcard",
+    "tag_english": "sound postcard",
+    "tag_original": "postal sonora",
+    "count": 3,
+    "tag_id": 8022
   },
   {
-    "tag_normalized": "eodoviaria",
-    "tag_english": "Eodoviaria",
-    "tag_original": "Eodoviaria",
-    "count": 2,
-    "tag_id": 7683
+    "tag_normalized": "years",
+    "tag_english": "years",
+    "tag_original": "anos",
+    "count": 3,
+    "tag_id": 8211
   },
   {
-    "tag_normalized": "compostela",
-    "tag_english": "Compostela",
-    "tag_original": "Compostela",
-    "count": 2,
-    "tag_id": 5230
+    "tag_normalized": "here",
+    "tag_english": "here",
+    "tag_original": "hier",
+    "count": 3,
+    "tag_id": 8221
   },
   {
-    "tag_normalized": "hhome",
-    "tag_english": "hhome",
-    "tag_original": "hhome",
+    "tag_normalized": "pebbles",
+    "tag_english": "pebbles",
+    "tag_original": "ciottoli",
     "count": 2,
-    "tag_id": 4836
+    "tag_id": 4671
   },
   {
-    "tag_normalized": "singing_and_enchanting",
-    "tag_english": "singing and enchanting",
-    "tag_original": "cantando e encantando",
+    "tag_normalized": "signage",
+    "tag_english": "signage",
+    "tag_original": "segnaletica",
     "count": 2,
-    "tag_id": 7449
+    "tag_id": 4716
   },
   {
-    "tag_normalized": "main_station",
-    "tag_english": "Main station",
-    "tag_original": "Dworzec glowny",
+    "tag_normalized": "engine",
+    "tag_english": "engine",
+    "tag_original": "motorini",
     "count": 2,
-    "tag_id": 5640
-  },
-  {
-    "tag_normalized": "ratchet",
-    "tag_english": "Ratchet",
-    "tag_original": "Trinquet",
-    "count": 2,
-    "tag_id": 6885
-  },
-  {
-    "tag_normalized": "family",
-    "tag_english": "family",
-    "tag_original": "família",
-    "count": 2,
-    "tag_id": 6607
-  },
-  {
-    "tag_normalized": "statue",
-    "tag_english": "statue",
-    "tag_original": "statue",
-    "count": 2,
-    "tag_id": 5921
-  },
-  {
-    "tag_normalized": "urban_elements",
-    "tag_english": "urban elements",
-    "tag_original": "elements urbans",
-    "count": 2,
-    "tag_id": 7949
-  },
-  {
-    "tag_normalized": "tennis_court",
-    "tag_english": "tennis court",
-    "tag_original": "campo da tennis",
-    "count": 2,
-    "tag_id": 6459
-  },
-  {
-    "tag_normalized": "prison",
-    "tag_english": "Prison",
-    "tag_original": "Carcere",
-    "count": 2,
-    "tag_id": 5862
-  },
-  {
-    "tag_normalized": "test_tube",
-    "tag_english": "Test tube",
-    "tag_original": "Probeta",
-    "count": 2,
-    "tag_id": 4948
-  },
-  {
-    "tag_normalized": "cheese_bread",
-    "tag_english": "Cheese bread",
-    "tag_original": "Pão de queijo",
-    "count": 2,
-    "tag_id": 7214
-  },
-  {
-    "tag_normalized": "tranquillity",
-    "tag_english": "Tranquillity",
-    "tag_original": "Tranquilidad",
-    "count": 2,
-    "tag_id": 6923
-  },
-  {
-    "tag_normalized": "olafur_eliasson",
-    "tag_english": "Olafur Eliasson",
-    "tag_original": "Olafur Eliasson",
-    "count": 2,
-    "tag_id": 6618
-  },
-  {
-    "tag_normalized": "institute_great",
-    "tag_english": "Institute great",
-    "tag_original": "instituto magnus",
-    "count": 2,
-    "tag_id": 7249
-  },
-  {
-    "tag_normalized": "catwalk",
-    "tag_english": "Catwalk",
-    "tag_original": "Passerella",
-    "count": 2,
-    "tag_id": 6174
-  },
-  {
-    "tag_normalized": "gratefulness",
-    "tag_english": "Gratefulness",
-    "tag_original": "Agradecimento",
-    "count": 2,
-    "tag_id": 7435
-  },
-  {
-    "tag_normalized": "popchoir",
-    "tag_english": "Popchoir",
-    "tag_original": "Popchoir",
-    "count": 2,
-    "tag_id": 7804
-  },
-  {
-    "tag_normalized": "walking_trade",
-    "tag_english": "walking trade",
-    "tag_original": "comércio ambulante",
-    "count": 2,
-    "tag_id": 7450
-  },
-  {
-    "tag_normalized": "islands",
-    "tag_english": "Islands",
-    "tag_original": "Isole",
-    "count": 2,
-    "tag_id": 6409
+    "tag_id": 4717
   },
   {
     "tag_normalized": "medici",
@@ -3010,921 +2492,11 @@
     "tag_id": 4728
   },
   {
-    "tag_normalized": "model_building",
-    "tag_english": "model building",
-    "tag_original": "modellino edificio",
-    "count": 2,
-    "tag_id": 6048
-  },
-  {
-    "tag_normalized": "down_syndrome",
-    "tag_english": "Down Syndrome",
-    "tag_original": "Síndrome de Down",
-    "count": 2,
-    "tag_id": 7863
-  },
-  {
-    "tag_normalized": "santa_lucia",
-    "tag_english": "Santa Lucia",
-    "tag_original": "santa lucia",
-    "count": 2,
-    "tag_id": 5340
-  },
-  {
-    "tag_normalized": "street_crossing",
-    "tag_english": "Street crossing",
-    "tag_original": "Street crossing",
-    "count": 2,
-    "tag_id": 5155
-  },
-  {
-    "tag_normalized": "important_esselunga_service",
-    "tag_english": "important Esselunga service",
-    "tag_original": "servizio esselunga importante",
-    "count": 2,
-    "tag_id": 5951
-  },
-  {
-    "tag_normalized": "resilience",
-    "tag_english": "resilience",
-    "tag_original": "superação",
-    "count": 2,
-    "tag_id": 7553
-  },
-  {
-    "tag_normalized": "moreira_salles",
-    "tag_english": "Moreira Salles",
-    "tag_original": "Moreira Salles",
-    "count": 2,
-    "tag_id": 7466
-  },
-  {
-    "tag_normalized": "bakery",
-    "tag_english": "bakery",
-    "tag_original": "panificio",
-    "count": 2,
-    "tag_id": 6339
-  },
-  {
-    "tag_normalized": "adapted_brush",
-    "tag_english": "adapted brush",
-    "tag_original": "raspall adaptat",
-    "count": 2,
-    "tag_id": 6886
-  },
-  {
-    "tag_normalized": "sesc_sorocaba",
-    "tag_english": "Sesc Sorocaba",
-    "tag_original": "Sesc Sorocaba",
-    "count": 2,
-    "tag_id": 7663
-  },
-  {
-    "tag_normalized": "supermarket",
-    "tag_english": "supermarket",
-    "tag_original": "supermercato",
-    "count": 2,
-    "tag_id": 6533
-  },
-  {
-    "tag_normalized": "cinemas",
-    "tag_english": "cinemas",
-    "tag_original": "cinemas",
-    "count": 2,
-    "tag_id": 5127
-  },
-  {
-    "tag_normalized": "once",
-    "tag_english": "ONCE",
-    "tag_original": "ONCE",
-    "count": 2,
-    "tag_id": 5246
-  },
-  {
-    "tag_normalized": "show",
-    "tag_english": "show",
-    "tag_original": "espectaculo",
-    "count": 2,
-    "tag_id": 6949
-  },
-  {
-    "tag_normalized": "dissuasive_pillar",
-    "tag_english": "dissuasive pillar",
-    "tag_original": "pilastro dissuasore",
-    "count": 2,
-    "tag_id": 4860
-  },
-  {
-    "tag_normalized": "the_first_eleven_of_valencia",
-    "tag_english": "The first eleven of Valencia",
-    "tag_original": "La primera Once de Valencia",
-    "count": 2,
-    "tag_id": 7082
-  },
-  {
-    "tag_normalized": "guggenheim",
-    "tag_english": "Guggenheim",
-    "tag_original": "Guggenheim",
-    "count": 2,
-    "tag_id": 5772
-  },
-  {
-    "tag_normalized": "friday",
-    "tag_english": "Friday",
-    "tag_original": "divendres",
-    "count": 2,
-    "tag_id": 8002
-  },
-  {
-    "tag_normalized": "drum",
-    "tag_english": "Drum",
-    "tag_original": "Drum",
-    "count": 2,
-    "tag_id": 5659
-  },
-  {
-    "tag_normalized": "doves",
-    "tag_english": "Doves",
-    "tag_original": "Palomas",
-    "count": 2,
-    "tag_id": 6924
-  },
-  {
-    "tag_normalized": "decorations",
-    "tag_english": "Decorations",
-    "tag_original": "Decorazioni",
-    "count": 2,
-    "tag_id": 6029
-  },
-  {
-    "tag_normalized": "green_light",
-    "tag_english": "Green Light",
-    "tag_original": "Green Light",
-    "count": 2,
-    "tag_id": 6619
-  },
-  {
-    "tag_normalized": "students",
-    "tag_english": "students",
-    "tag_original": "studenti",
-    "count": 2,
-    "tag_id": 6272
-  },
-  {
-    "tag_normalized": "irene",
-    "tag_english": "irene",
-    "tag_original": "irene",
-    "count": 2,
-    "tag_id": 6822
-  },
-  {
-    "tag_normalized": "random",
-    "tag_english": "Random",
-    "tag_original": "Random",
-    "count": 2,
-    "tag_id": 7961
-  },
-  {
-    "tag_normalized": "culturainglesa",
-    "tag_english": "culturainglesa",
-    "tag_original": "culturainglesa",
-    "count": 2,
-    "tag_id": 7805
-  },
-  {
-    "tag_normalized": "listen",
-    "tag_english": "listen",
-    "tag_original": "tinglados",
-    "count": 2,
-    "tag_id": 6800
-  },
-  {
-    "tag_normalized": "path",
-    "tag_english": "Path",
-    "tag_original": "Camí",
-    "count": 2,
-    "tag_id": 7940
-  },
-  {
-    "tag_normalized": "polish_association_of_the_blind",
-    "tag_english": "Polish Association of the Blind",
-    "tag_original": "Polski Związek Niewidomych",
-    "count": 2,
-    "tag_id": 5426
-  },
-  {
-    "tag_normalized": "lido",
-    "tag_english": "Lido",
-    "tag_original": "Lido",
-    "count": 2,
-    "tag_id": 6447
-  },
-  {
-    "tag_normalized": "camaragibe_street",
-    "tag_english": "CAMARAGIBE STREET",
-    "tag_original": "Rua Camaragibe",
-    "count": 2,
-    "tag_id": 7609
-  },
-  {
-    "tag_normalized": "kiosk",
-    "tag_english": "Kiosk",
-    "tag_original": "Kiosk",
-    "count": 2,
-    "tag_id": 5592
-  },
-  {
-    "tag_normalized": "animals",
-    "tag_english": "animals",
-    "tag_original": "animales",
-    "count": 2,
-    "tag_id": 7061
-  },
-  {
-    "tag_normalized": "pilgrims",
-    "tag_english": "pilgrims",
-    "tag_original": "peregrinos",
-    "count": 2,
-    "tag_id": 5341
-  },
-  {
-    "tag_normalized": "pizzeria",
-    "tag_english": "pizzeria",
-    "tag_original": "pizzeria",
-    "count": 2,
-    "tag_id": 6376
-  },
-  {
-    "tag_normalized": "frari",
-    "tag_english": "Frari",
-    "tag_original": "frari",
-    "count": 2,
-    "tag_id": 6104
-  },
-  {
-    "tag_normalized": "trees",
-    "tag_english": "trees",
-    "tag_original": "árvores",
-    "count": 2,
-    "tag_id": 7476
-  },
-  {
-    "tag_normalized": "the_serra",
-    "tag_english": "The Serra",
-    "tag_original": "La Serra",
-    "count": 2,
-    "tag_id": 5395
-  },
-  {
-    "tag_normalized": "sustainability",
-    "tag_english": "Sustainability",
-    "tag_original": "Sustentabilidade",
-    "count": 2,
-    "tag_id": 7843
-  },
-  {
-    "tag_normalized": "practice",
-    "tag_english": "practice",
-    "tag_original": "üben",
-    "count": 2,
-    "tag_id": 5171
-  },
-  {
-    "tag_normalized": "dream",
-    "tag_english": "dream",
-    "tag_original": "sueño",
-    "count": 2,
-    "tag_id": 5620
-  },
-  {
-    "tag_normalized": "santossp",
-    "tag_english": "santossp",
-    "tag_original": "santossp",
-    "count": 2,
-    "tag_id": 7806
-  },
-  {
-    "tag_normalized": "picanya",
-    "tag_english": "Picanya",
-    "tag_original": "Picanya",
-    "count": 2,
-    "tag_id": 6862
-  },
-  {
-    "tag_normalized": "generic_info",
-    "tag_english": "Generic info",
-    "tag_original": "Info generica",
-    "count": 2,
-    "tag_id": 5372
-  },
-  {
-    "tag_normalized": "textures",
-    "tag_english": "textures",
-    "tag_original": "texturas",
-    "count": 2,
-    "tag_id": 6685
-  },
-  {
-    "tag_normalized": "rynek_fountain",
-    "tag_english": "Rynek fountain",
-    "tag_original": "Fontanna rynek",
-    "count": 2,
-    "tag_id": 5454
-  },
-  {
-    "tag_normalized": "sorocaba_route",
-    "tag_english": "Sorocaba route",
-    "tag_original": "Rota Sorocaba",
-    "count": 2,
-    "tag_id": 7634
-  },
-  {
-    "tag_normalized": "diversity_in_paulista",
-    "tag_english": "Diversity in Paulista",
-    "tag_original": "diversidade na Paulista",
-    "count": 2,
-    "tag_id": 7454
-  },
-  {
-    "tag_normalized": "narrow_street",
-    "tag_english": "Narrow street",
-    "tag_original": "Narrow street",
-    "count": 2,
-    "tag_id": 5383
-  },
-  {
-    "tag_normalized": "natural",
-    "tag_english": "Natural",
-    "tag_original": "Natural",
-    "count": 2,
-    "tag_id": 7751
-  },
-  {
-    "tag_normalized": "tastmodell",
-    "tag_english": "Tastmodell",
-    "tag_original": "Tastmodell",
-    "count": 2,
-    "tag_id": 5111
-  },
-  {
-    "tag_normalized": "tactile_floor_on_the_right_side",
-    "tag_english": "tactile floor on the right side",
-    "tag_original": "piso tátil do lado direito",
-    "count": 2,
-    "tag_id": 7274
-  },
-  {
-    "tag_normalized": "san_polo",
-    "tag_english": "San Polo",
-    "tag_original": "san polo",
-    "count": 2,
-    "tag_id": 6105
-  },
-  {
-    "tag_normalized": "carolina_maria",
-    "tag_english": "Carolina Maria",
-    "tag_original": "Carolina Maria",
-    "count": 2,
-    "tag_id": 7665
-  },
-  {
-    "tag_normalized": "venetians",
-    "tag_english": "venetians",
-    "tag_original": "venetians",
-    "count": 2,
-    "tag_id": 6425
-  },
-  {
-    "tag_normalized": "flavors",
-    "tag_english": "flavors",
-    "tag_original": "sabores",
-    "count": 2,
-    "tag_id": 6902
-  },
-  {
-    "tag_normalized": "to",
-    "tag_english": "To",
-    "tag_original": "Tot",
-    "count": 2,
-    "tag_id": 7119
-  },
-  {
-    "tag_normalized": "toys",
-    "tag_english": "Toys",
-    "tag_original": "Giocattoli",
-    "count": 2,
-    "tag_id": 5808
-  },
-  {
-    "tag_normalized": "vision",
-    "tag_english": "Vision",
-    "tag_original": "Visão",
-    "count": 2,
-    "tag_id": 7324
-  },
-  {
-    "tag_normalized": "arsenal",
-    "tag_english": "Arsenal",
-    "tag_original": "Arsenale",
-    "count": 2,
-    "tag_id": 5924
-  },
-  {
-    "tag_normalized": "vegetables",
-    "tag_english": "vegetables",
-    "tag_original": "verduras",
-    "count": 2,
-    "tag_id": 5705
-  },
-  {
-    "tag_normalized": "wait",
-    "tag_english": "wait",
-    "tag_original": "aspettare",
-    "count": 2,
-    "tag_id": 4864
-  },
-  {
-    "tag_normalized": "rialto",
-    "tag_english": "Rialto",
-    "tag_original": "Rialto",
-    "count": 2,
-    "tag_id": 5866
-  },
-  {
-    "tag_normalized": "signs",
-    "tag_english": "signs",
-    "tag_original": "segnaletica",
-    "count": 2,
-    "tag_id": 4716
-  },
-  {
-    "tag_normalized": "second_part",
-    "tag_english": "second part",
-    "tag_original": "segunda parte",
-    "count": 2,
-    "tag_id": 7009
-  },
-  {
-    "tag_normalized": "poetry",
-    "tag_english": "poetry",
-    "tag_original": "poesia",
-    "count": 2,
-    "tag_id": 6119
-  },
-  {
-    "tag_normalized": "education",
-    "tag_english": "Education",
-    "tag_original": "Educacion",
-    "count": 2,
-    "tag_id": 5290
-  },
-  {
-    "tag_normalized": "yorelei",
-    "tag_english": "Yorelei",
-    "tag_original": "Yorelei",
-    "count": 2,
-    "tag_id": 8004
-  },
-  {
-    "tag_normalized": "gretapower",
-    "tag_english": "gretapower",
-    "tag_original": "gretapower",
-    "count": 2,
-    "tag_id": 5661
-  },
-  {
-    "tag_normalized": "movement",
-    "tag_english": "Movement",
-    "tag_original": "Movimento",
-    "count": 2,
-    "tag_id": 6354
-  },
-  {
-    "tag_normalized": "galway",
-    "tag_english": "Galway",
-    "tag_original": "Galway",
-    "count": 2,
-    "tag_id": 5220
-  },
-  {
-    "tag_normalized": "short_hortlarge",
-    "tag_english": "Short hortlarge",
-    "tag_original": "Holahola",
-    "count": 2,
-    "tag_id": 7130
-  },
-  {
-    "tag_normalized": "chameleon",
-    "tag_english": "Chameleon",
-    "tag_original": "Kameleon",
-    "count": 2,
-    "tag_id": 5455
-  },
-  {
-    "tag_normalized": "faces",
-    "tag_english": "faces",
-    "tag_original": "faces",
-    "count": 2,
-    "tag_id": 5058
-  },
-  {
-    "tag_normalized": "documenta",
-    "tag_english": "documenta",
-    "tag_original": "documenta",
-    "count": 2,
-    "tag_id": 6653
-  },
-  {
-    "tag_normalized": "passage_through_the_streets",
-    "tag_english": "Passage through the streets",
-    "tag_original": "Przejscie przez ulice",
-    "count": 2,
-    "tag_id": 5633
-  },
-  {
-    "tag_normalized": "oven",
-    "tag_english": "Oven",
-    "tag_original": "Horno",
-    "count": 2,
-    "tag_id": 6876
-  },
-  {
-    "tag_normalized": "riva",
-    "tag_english": "riva",
-    "tag_original": "riva",
-    "count": 2,
-    "tag_id": 6133
-  },
-  {
-    "tag_normalized": "platches",
-    "tag_english": "platches",
-    "tag_original": "andanes",
-    "count": 2,
-    "tag_id": 6052
-  },
-  {
-    "tag_normalized": "venezuela",
-    "tag_english": "Venezuela",
-    "tag_original": "Venezuela",
-    "count": 2,
-    "tag_id": 6632
-  },
-  {
-    "tag_normalized": "toast",
-    "tag_english": "Toast",
-    "tag_original": "Tosty",
-    "count": 2,
-    "tag_id": 5594
-  },
-  {
-    "tag_normalized": "court",
-    "tag_english": "court",
-    "tag_original": "corte",
-    "count": 2,
-    "tag_id": 6378
-  },
-  {
-    "tag_normalized": "information",
-    "tag_english": "information",
-    "tag_original": "informazioni",
-    "count": 2,
-    "tag_id": 6193
-  },
-  {
-    "tag_normalized": "pesce",
-    "tag_english": "pesce",
-    "tag_original": "pesce",
-    "count": 2,
-    "tag_id": 5971
-  },
-  {
-    "tag_normalized": "volunteering",
-    "tag_english": "Volunteering",
-    "tag_original": "Voluntariado",
-    "count": 2,
-    "tag_id": 7731
-  },
-  {
-    "tag_normalized": "but_firenuss",
-    "tag_english": "But firenuss",
-    "tag_original": "Mas Fogonussa",
-    "count": 2,
-    "tag_id": 7994
-  },
-  {
-    "tag_normalized": "earrings",
-    "tag_english": "earrings",
-    "tag_original": "pendientes",
-    "count": 2,
-    "tag_id": 6676
-  },
-  {
-    "tag_normalized": "incivic",
-    "tag_english": "incivic",
-    "tag_original": "incivico",
-    "count": 2,
-    "tag_id": 6710
-  },
-  {
-    "tag_normalized": "navi",
-    "tag_english": "navi",
-    "tag_original": "navi",
-    "count": 2,
-    "tag_id": 6259
-  },
-  {
-    "tag_normalized": "environmental_description",
-    "tag_english": "Environmental description",
-    "tag_original": "Descrizione ambientale",
-    "count": 2,
-    "tag_id": 6545
-  },
-  {
-    "tag_normalized": "rustling",
-    "tag_english": "Rustling",
-    "tag_original": "Szumiąca zagadka",
-    "count": 2,
-    "tag_id": 5609
-  },
-  {
-    "tag_normalized": "pedestrian_street",
-    "tag_english": "Pedestrian street",
-    "tag_original": "Calle peatonal",
-    "count": 2,
-    "tag_id": 7893
-  },
-  {
-    "tag_normalized": "classroom",
-    "tag_english": "classroom",
-    "tag_original": "aula",
-    "count": 2,
-    "tag_id": 6791
-  },
-  {
-    "tag_normalized": "absv",
-    "tag_english": "Absv",
-    "tag_original": "ABSV",
-    "count": 2,
-    "tag_id": 5097
-  },
-  {
-    "tag_normalized": "rota_blindwiw",
-    "tag_english": "Rota Blindwiw",
-    "tag_original": "Rota Blindwiki",
-    "count": 2,
-    "tag_id": 7219
-  },
-  {
-    "tag_normalized": "hole_in_the_pavement",
-    "tag_english": "Hole in the pavement",
-    "tag_original": "Dziura w chodniku",
-    "count": 2,
-    "tag_id": 5417
-  },
-  {
-    "tag_normalized": "ncbi",
-    "tag_english": "NCBI",
-    "tag_original": "NCBI",
-    "count": 2,
-    "tag_id": 5221
-  },
-  {
-    "tag_normalized": "nirals",
-    "tag_english": "Nirals",
-    "tag_original": "mirlos",
-    "count": 2,
-    "tag_id": 6928
-  },
-  {
-    "tag_normalized": "bb9",
-    "tag_english": "BB9",
-    "tag_original": "BB9",
-    "count": 2,
-    "tag_id": 5059
-  },
-  {
-    "tag_normalized": "acqualta",
-    "tag_english": "Acqualta",
-    "tag_original": "acqualta",
-    "count": 2,
-    "tag_id": 5741
-  },
-  {
-    "tag_normalized": "cold",
-    "tag_english": "Cold",
-    "tag_original": "Freddo",
-    "count": 2,
-    "tag_id": 4672
-  },
-  {
-    "tag_normalized": "utilities",
-    "tag_english": "Utilities",
-    "tag_original": "Utilities",
-    "count": 2,
-    "tag_id": 6489
-  },
-  {
-    "tag_normalized": "san_rocco_school",
-    "tag_english": "San Rocco School",
-    "tag_original": "scuola san rocco",
-    "count": 2,
-    "tag_id": 6095
-  },
-  {
-    "tag_normalized": "job",
-    "tag_english": "Job",
-    "tag_original": "Giobbe",
-    "count": 2,
-    "tag_id": 6332
-  },
-  {
-    "tag_normalized": "dark",
-    "tag_english": "dark",
-    "tag_original": "buio",
-    "count": 2,
-    "tag_id": 5881
-  },
-  {
-    "tag_normalized": "aroma",
-    "tag_english": "Aroma",
-    "tag_original": "Aroma",
-    "count": 2,
-    "tag_id": 7024
-  },
-  {
-    "tag_normalized": "rehearsal",
-    "tag_english": "rehearsal",
-    "tag_original": "ensaio",
-    "count": 2,
-    "tag_id": 7311
-  },
-  {
-    "tag_normalized": "route_of_the_waterfalls",
-    "tag_english": "Route of the waterfalls",
-    "tag_original": "Ruta de les cascades",
-    "count": 2,
-    "tag_id": 7943
-  },
-  {
-    "tag_normalized": "tradition",
-    "tag_english": "tradition",
-    "tag_original": "tradizione",
-    "count": 2,
-    "tag_id": 5956
-  },
-  {
-    "tag_normalized": "manholes",
-    "tag_english": "manholes",
-    "tag_original": "tombini",
-    "count": 2,
-    "tag_id": 6209
-  },
-  {
-    "tag_normalized": "cloisters",
-    "tag_english": "Cloisters",
-    "tag_original": "Chiostri",
-    "count": 2,
-    "tag_id": 6504
-  },
-  {
-    "tag_normalized": "tutorial",
-    "tag_english": "tutorial",
-    "tag_original": "tutorial",
-    "count": 2,
-    "tag_id": 7480
-  },
-  {
-    "tag_normalized": "sound_traffic_light",
-    "tag_english": "Sound traffic light",
-    "tag_original": "Semàfor sonor",
-    "count": 2,
-    "tag_id": 7915
-  },
-  {
-    "tag_normalized": "holes",
-    "tag_english": "holes",
-    "tag_original": "buracos",
-    "count": 2,
-    "tag_id": 7524
-  },
-  {
-    "tag_normalized": "s.elena",
-    "tag_english": "s.Elena",
-    "tag_original": "s.Elena",
-    "count": 2,
-    "tag_id": 6465
-  },
-  {
-    "tag_normalized": "cul-de-sac",
-    "tag_english": "Cul-de-sac",
-    "tag_original": "Cul-de-sac",
-    "count": 2,
-    "tag_id": 5188
-  },
-  {
-    "tag_normalized": "tables",
-    "tag_english": "tables",
-    "tag_original": "tavoli",
-    "count": 2,
-    "tag_id": 6122
-  },
-  {
-    "tag_normalized": "the_road_is_small",
-    "tag_english": "The road is small",
-    "tag_original": "路很小",
-    "count": 2,
-    "tag_id": 6689
-  },
-  {
-    "tag_normalized": "anhangabaú",
-    "tag_english": "Anhangabaú",
-    "tag_original": "Anhangabaú",
-    "count": 2,
-    "tag_id": 7220
-  },
-  {
-    "tag_normalized": "church",
-    "tag_english": "Church",
-    "tag_original": "Kirche",
-    "count": 2,
-    "tag_id": 5418
-  },
-  {
-    "tag_normalized": "memorial_america_latina",
-    "tag_english": "Memorial America Latina",
-    "tag_original": "Memorial America Latina",
-    "count": 2,
-    "tag_id": 7602
-  },
-  {
-    "tag_normalized": "attention_steps",
-    "tag_english": "Attention steps",
-    "tag_original": "attenzione scalini",
-    "count": 2,
-    "tag_id": 6278
-  },
-  {
-    "tag_normalized": "urban_details",
-    "tag_english": "Urban details",
-    "tag_original": "detalles urbanos",
-    "count": 2,
-    "tag_id": 6826
-  },
-  {
-    "tag_normalized": "application",
-    "tag_english": "Application",
-    "tag_original": "Aplicativo",
-    "count": 2,
-    "tag_id": 7254
-  },
-  {
-    "tag_normalized": "sunday",
-    "tag_english": "Sunday",
-    "tag_original": "domenica",
-    "count": 2,
-    "tag_id": 6769
-  },
-  {
-    "tag_normalized": "crafts_at_paulista",
-    "tag_english": "Crafts at Paulista",
-    "tag_original": "artesanato na Paulista",
-    "count": 2,
-    "tag_id": 7458
-  },
-  {
-    "tag_normalized": "bier",
-    "tag_english": "Bier",
-    "tag_original": "Bier",
-    "count": 2,
-    "tag_id": 5074
-  },
-  {
-    "tag_normalized": "rosa",
-    "tag_english": "rosa",
-    "tag_original": "rosa",
-    "count": 2,
-    "tag_id": 6667
-  },
-  {
-    "tag_normalized": "arc_de_triomph",
-    "tag_english": "Arc de Triomph",
-    "tag_original": "Arc de triomph",
-    "count": 2,
-    "tag_id": 7905
-  },
-  {
-    "tag_normalized": "#precalecion_#terraza_#bar_#cafeteria",
-    "tag_english": "#Precalecion #terraza #Bar #Cafeteria",
-    "tag_original": "#precaucion #terraza #bar #cafeteria",
-    "count": 2,
-    "tag_id": 4969
-  },
-  {
-    "tag_normalized": "basalt",
-    "tag_english": "Basalt",
-    "tag_original": "Basalto",
-    "count": 2,
-    "tag_id": 7754
+    "tag_normalized": "chains",
+    "tag_english": "chains",
+    "tag_original": "catene",
+    "count": 2,
+    "tag_id": 4775
   },
   {
     "tag_normalized": "stalls",
@@ -3934,494 +2506,11 @@
     "tag_id": 4793
   },
   {
-    "tag_normalized": "grass",
-    "tag_english": "grass",
-    "tag_original": "césped",
-    "count": 2,
-    "tag_id": 7025
-  },
-  {
-    "tag_normalized": "poor_juan",
-    "tag_english": "Poor Juan",
-    "tag_original": "Pobre Juan",
-    "count": 2,
-    "tag_id": 7514
-  },
-  {
-    "tag_normalized": "hi_antoni_we_are_here_working_a_lot_i_guess_that_clear",
-    "tag_english": "Hi Antoni we are here working a lot I Guess That Clear",
-    "tag_original": "hola Antoni estamos aqui trabajando mucho I guess that clear",
-    "count": 2,
-    "tag_id": 5029
-  },
-  {
-    "tag_normalized": "claim",
-    "tag_english": "claim",
-    "tag_original": "reivindicar",
-    "count": 2,
-    "tag_id": 7869
-  },
-  {
-    "tag_normalized": "bishop_of_the_rosary",
-    "tag_english": "Bishop of the Rosary",
-    "tag_original": "Bispo do Rosário",
-    "count": 2,
-    "tag_id": 7364
-  },
-  {
-    "tag_normalized": "selfies",
-    "tag_english": "selfies",
-    "tag_original": "selfies",
-    "count": 2,
-    "tag_id": 5175
-  },
-  {
-    "tag_normalized": "rota_i_have",
-    "tag_english": "Rota I have",
-    "tag_original": "Rota Mam",
-    "count": 2,
-    "tag_id": 7733
-  },
-  {
-    "tag_normalized": "san_marco",
-    "tag_english": "San Marco",
-    "tag_original": "San Marco",
-    "count": 2,
-    "tag_id": 5761
-  },
-  {
-    "tag_normalized": "rosewood",
-    "tag_english": "Rosewood",
-    "tag_original": "Rosewood",
-    "count": 2,
-    "tag_id": 7209
-  },
-  {
-    "tag_normalized": "disaster",
-    "tag_english": "disaster",
-    "tag_original": "disaster",
-    "count": 2,
-    "tag_id": 5646
-  },
-  {
-    "tag_normalized": "restoration",
-    "tag_english": "Restoration",
-    "tag_original": "Restauro",
-    "count": 2,
-    "tag_id": 6345
-  },
-  {
-    "tag_normalized": "app",
-    "tag_english": "app",
-    "tag_original": "app",
-    "count": 2,
-    "tag_id": 7481
-  },
-  {
-    "tag_normalized": "sp",
-    "tag_english": "sp",
-    "tag_original": "sp",
-    "count": 2,
-    "tag_id": 7668
-  },
-  {
-    "tag_normalized": "franco",
-    "tag_english": "Franco",
-    "tag_original": "Franco",
-    "count": 2,
-    "tag_id": 5319
-  },
-  {
-    "tag_normalized": "cultural_center",
-    "tag_english": "Cultural center",
-    "tag_original": "Centro cultural",
-    "count": 2,
-    "tag_id": 7244
-  },
-  {
-    "tag_normalized": "moscowneversleeps",
-    "tag_english": "Moscowneversleeps",
-    "tag_original": "Moscowneversleeps",
-    "count": 2,
-    "tag_id": 6747
-  },
-  {
-    "tag_normalized": "food_area",
-    "tag_english": "Food area",
-    "tag_original": "Bereich Lebensmittel",
-    "count": 2,
-    "tag_id": 5376
-  },
-  {
-    "tag_normalized": "oasis",
-    "tag_english": "oasis",
-    "tag_original": "oasis",
-    "count": 2,
-    "tag_id": 5189
-  },
-  {
-    "tag_normalized": "love",
-    "tag_english": "Love",
-    "tag_original": "Amores",
-    "count": 2,
-    "tag_id": 6724
-  },
-  {
-    "tag_normalized": "shopping_cidade_são_paulo",
-    "tag_english": "Shopping Cidade São Paulo",
-    "tag_original": "Shopping cidade São Paulo",
-    "count": 2,
-    "tag_id": 7409
-  },
-  {
-    "tag_normalized": "arena",
-    "tag_english": "arena",
-    "tag_original": "arena",
-    "count": 2,
-    "tag_id": 6931
-  },
-  {
-    "tag_normalized": "scooter",
-    "tag_english": "Scooter",
-    "tag_original": "Monopattino",
-    "count": 2,
-    "tag_id": 5945
-  },
-  {
-    "tag_normalized": "rota",
-    "tag_english": "Rota",
-    "tag_original": "Rota",
-    "count": 2,
-    "tag_id": 7712
-  },
-  {
-    "tag_normalized": "photographs",
-    "tag_english": "Photographs",
-    "tag_original": "Fotografias",
-    "count": 2,
-    "tag_id": 7638
-  },
-  {
-    "tag_normalized": "rest",
-    "tag_english": "Rest",
-    "tag_original": "Riposo",
-    "count": 2,
-    "tag_id": 6197
-  },
-  {
-    "tag_normalized": "street_artist",
-    "tag_english": "street artist",
-    "tag_original": "artista de rua",
-    "count": 2,
-    "tag_id": 7459
-  },
-  {
-    "tag_normalized": "magic",
-    "tag_english": "magic",
-    "tag_original": "magia",
-    "count": 2,
-    "tag_id": 5743
-  },
-  {
-    "tag_normalized": "place_description",
-    "tag_english": "Place description",
-    "tag_original": "Ortsbeschreibung",
-    "count": 2,
-    "tag_id": 6603
-  },
-  {
-    "tag_normalized": "souvenir",
-    "tag_english": "souvenir",
-    "tag_original": "souvenir",
-    "count": 2,
-    "tag_id": 6528
-  },
-  {
-    "tag_normalized": "monastery_of_pedralbes",
-    "tag_english": "Monastery of Pedralbes",
-    "tag_original": "Monestir de Pedralbes",
-    "count": 2,
-    "tag_id": 8018
-  },
-  {
-    "tag_normalized": "calatrava_bridge",
-    "tag_english": "Calatrava bridge",
-    "tag_original": "ponte di Calatrava",
-    "count": 2,
-    "tag_id": 5696
-  },
-  {
-    "tag_normalized": "pond",
-    "tag_english": "Pond",
-    "tag_original": "Lagoa",
-    "count": 2,
-    "tag_id": 5237
-  },
-  {
-    "tag_normalized": "torres_quart",
-    "tag_english": "Torres Quart",
-    "tag_original": "Torres Quart",
-    "count": 2,
-    "tag_id": 7077
-  },
-  {
-    "tag_normalized": "partisan",
-    "tag_english": "Partisan",
-    "tag_original": "Partigiane",
-    "count": 2,
-    "tag_id": 6212
-  },
-  {
-    "tag_normalized": "scrutiny",
-    "tag_english": "Scrutiny",
-    "tag_original": "Olhar diferente",
-    "count": 2,
-    "tag_id": 7734
-  },
-  {
-    "tag_normalized": "matarazzo_city",
-    "tag_english": "Matarazzo City",
-    "tag_original": "Cidade Matarazzo",
-    "count": 2,
-    "tag_id": 7210
-  },
-  {
-    "tag_normalized": "carolina_maria_de_jesus",
-    "tag_english": "CAROLINA MARIA DE JESUS",
-    "tag_original": "Carolina Maria de Jesus",
-    "count": 2,
-    "tag_id": 7669
-  },
-  {
-    "tag_normalized": "deficientevisual",
-    "tag_english": "deficientevisual",
-    "tag_original": "deficientevisual",
-    "count": 2,
-    "tag_id": 7767
-  },
-  {
-    "tag_normalized": "riu",
-    "tag_english": "riu",
-    "tag_original": "riu",
-    "count": 2,
-    "tag_id": 7956
-  },
-  {
-    "tag_normalized": "center_of_the_travelers",
-    "tag_english": "Center of the travelers",
-    "tag_original": "Center of the travelers",
-    "count": 2,
-    "tag_id": 6749
-  },
-  {
-    "tag_normalized": "buildings",
-    "tag_english": "buildings",
-    "tag_original": "palazzi",
-    "count": 2,
-    "tag_id": 6322
-  },
-  {
-    "tag_normalized": "taste_festival",
-    "tag_english": "Taste festival",
-    "tag_original": "Taste festival",
-    "count": 2,
-    "tag_id": 7745
-  },
-  {
-    "tag_normalized": "disabled_access",
-    "tag_english": "Disabled access",
-    "tag_original": "accesso disabili",
-    "count": 2,
-    "tag_id": 6124
-  },
-  {
-    "tag_normalized": "street_music",
-    "tag_english": "street music",
-    "tag_original": "música callejera",
-    "count": 2,
-    "tag_id": 6932
-  },
-  {
-    "tag_normalized": "wig",
-    "tag_english": "Wig",
-    "tag_original": "Parrucca",
-    "count": 2,
-    "tag_id": 5825
-  },
-  {
-    "tag_normalized": "violin",
-    "tag_english": "violin",
-    "tag_original": "violin",
-    "count": 2,
-    "tag_id": 5149
-  },
-  {
-    "tag_normalized": "informative_panel",
-    "tag_english": "Informative panel",
-    "tag_original": "panell informatiu",
-    "count": 2,
-    "tag_id": 7967
-  },
-  {
-    "tag_normalized": "ladybird",
-    "tag_english": "Ladybird",
-    "tag_original": "Biedronka",
-    "count": 2,
-    "tag_id": 5501
-  },
-  {
-    "tag_normalized": "accademia",
-    "tag_english": "accademia",
-    "tag_original": "accademia",
-    "count": 2,
-    "tag_id": 4619
-  },
-  {
-    "tag_normalized": "testimony",
-    "tag_english": "Testimony",
-    "tag_original": "Depoimento",
-    "count": 2,
-    "tag_id": 7724
-  },
-  {
-    "tag_normalized": "error",
-    "tag_english": "Error",
-    "tag_original": "Error",
-    "count": 2,
-    "tag_id": 6771
-  },
-  {
-    "tag_normalized": "localization",
-    "tag_english": "localization",
-    "tag_original": "localizazzione",
-    "count": 2,
-    "tag_id": 4676
-  },
-  {
-    "tag_normalized": "supermarkets",
-    "tag_english": "supermarkets",
-    "tag_original": "supermarkety",
-    "count": 2,
-    "tag_id": 5637
-  },
-  {
-    "tag_normalized": "guitar",
-    "tag_english": "Guitar",
-    "tag_original": "Guitarra",
-    "count": 2,
-    "tag_id": 6881
-  },
-  {
-    "tag_normalized": "hostel",
-    "tag_english": "Hostel",
-    "tag_original": "Ostello",
-    "count": 2,
-    "tag_id": 6418
-  },
-  {
-    "tag_normalized": "hottie",
-    "tag_english": "Hottie",
-    "tag_original": "Gostosuras",
-    "count": 2,
-    "tag_id": 7838
-  },
-  {
-    "tag_normalized": "cabina_telefo",
-    "tag_english": "Cabina telefo",
-    "tag_original": "Cabina telefo",
-    "count": 2,
-    "tag_id": 5310
-  },
-  {
-    "tag_normalized": "attention",
-    "tag_english": "attention",
-    "tag_original": "atenció",
-    "count": 2,
-    "tag_id": 7946
-  },
-  {
-    "tag_normalized": "plates",
-    "tag_english": "plates",
-    "tag_original": "targhe",
-    "count": 2,
-    "tag_id": 6153
-  },
-  {
-    "tag_normalized": "piazzale_roma",
-    "tag_english": "Piazzale Roma",
-    "tag_original": "Piazzale Roma",
-    "count": 2,
-    "tag_id": 5697
-  },
-  {
-    "tag_normalized": "premises",
-    "tag_english": "Premises",
-    "tag_original": "Locali",
-    "count": 2,
-    "tag_id": 6057
-  },
-  {
-    "tag_normalized": "nordic_countries",
-    "tag_english": "Nordic countries",
-    "tag_original": "paesi nordici",
-    "count": 2,
-    "tag_id": 6636
-  },
-  {
-    "tag_normalized": "roselene",
-    "tag_english": "Roselene",
-    "tag_original": "Roselene",
-    "count": 2,
-    "tag_id": 7354
-  },
-  {
-    "tag_normalized": "brandenburg_gate",
-    "tag_english": "Brandenburg Gate",
-    "tag_original": "Brandenburger Tor",
-    "count": 2,
-    "tag_id": 5164
-  },
-  {
-    "tag_normalized": "oswaldo_cruz_college",
-    "tag_english": "Oswaldo Cruz College",
-    "tag_original": "faculdade Oswaldo Cruz",
-    "count": 2,
-    "tag_id": 7549
-  },
-  {
-    "tag_normalized": "model",
-    "tag_english": "model",
-    "tag_original": "makieta",
-    "count": 2,
-    "tag_id": 5531
-  },
-  {
-    "tag_normalized": "forest",
-    "tag_english": "forest",
-    "tag_original": "foresta",
-    "count": 2,
-    "tag_id": 5905
-  },
-  {
-    "tag_normalized": "sounds_environments",
-    "tag_english": "Sounds environments",
-    "tag_original": "sonidos ambientes",
-    "count": 2,
-    "tag_id": 6714
-  },
-  {
-    "tag_normalized": "lack_of",
-    "tag_english": "Lack of",
-    "tag_original": "Brakprzejscia",
-    "count": 2,
-    "tag_id": 5407
-  },
-  {
-    "tag_normalized": "move",
-    "tag_english": "move",
-    "tag_original": "spostarsi",
-    "count": 2,
-    "tag_id": 5813
+    "tag_normalized": "meco",
+    "tag_english": "MECO",
+    "tag_original": "MECO",
+    "count": 2,
+    "tag_id": 4809
   },
   {
     "tag_normalized": "italian_forum",
@@ -4431,137 +2520,53 @@
     "tag_id": 4817
   },
   {
-    "tag_normalized": "casino",
-    "tag_english": "Casino",
-    "tag_original": "Casinò",
+    "tag_normalized": "hhome",
+    "tag_english": "hhome",
+    "tag_original": "hhome",
     "count": 2,
-    "tag_id": 6540
+    "tag_id": 4836
   },
   {
-    "tag_normalized": "mountain",
-    "tag_english": "mountain",
-    "tag_original": "muntanya",
+    "tag_normalized": "deterrent_pillar",
+    "tag_english": "deterrent pillar",
+    "tag_original": "pilastro dissuasore",
     "count": 2,
-    "tag_id": 7957
+    "tag_id": 4860
   },
   {
-    "tag_normalized": "recreation",
-    "tag_english": "Recreation",
-    "tag_original": "Rekreacja",
+    "tag_normalized": "wait",
+    "tag_english": "wait",
+    "tag_original": "aspettare",
     "count": 2,
-    "tag_id": 5491
+    "tag_id": 4864
   },
   {
-    "tag_normalized": "paint",
-    "tag_english": "paint",
-    "tag_original": "pintura",
+    "tag_normalized": "domingo",
+    "tag_english": "Domingo",
+    "tag_original": "Domingo",
     "count": 2,
-    "tag_id": 6959
+    "tag_id": 4946
   },
   {
-    "tag_normalized": "machinery",
-    "tag_english": "machinery",
-    "tag_original": "maquinaria",
-    "count": 2,
-    "tag_id": 6869
-  },
-  {
-    "tag_normalized": "coca",
-    "tag_english": "Coca",
+    "tag_normalized": "cokes",
+    "tag_english": "cokes",
     "tag_original": "Cocas",
     "count": 2,
     "tag_id": 4959
   },
   {
-    "tag_normalized": "prosecco",
-    "tag_english": "prosecco",
-    "tag_original": "prosecco",
+    "tag_normalized": "job",
+    "tag_english": "Job",
+    "tag_original": "Trabajo",
     "count": 2,
-    "tag_id": 5667
+    "tag_id": 4974
   },
   {
-    "tag_normalized": "spritz",
-    "tag_english": "spritz",
-    "tag_original": "spritz",
+    "tag_normalized": "fruit_boxes",
+    "tag_english": "fruit boxes",
+    "tag_original": "Cajas de fruta",
     "count": 2,
-    "tag_id": 6281
-  },
-  {
-    "tag_normalized": "microphone",
-    "tag_english": "microphone",
-    "tag_original": "microfono",
-    "count": 2,
-    "tag_id": 5826
-  },
-  {
-    "tag_normalized": "rides",
-    "tag_english": "rides",
-    "tag_original": "giostre",
-    "count": 2,
-    "tag_id": 6199
-  },
-  {
-    "tag_normalized": "trail",
-    "tag_english": "trail",
-    "tag_original": "trilha",
-    "count": 2,
-    "tag_id": 7758
-  },
-  {
-    "tag_normalized": "fondaco_tedeschi",
-    "tag_english": "Fondaco Tedeschi",
-    "tag_original": "fondaco tedeschi",
-    "count": 2,
-    "tag_id": 5801
-  },
-  {
-    "tag_normalized": "field",
-    "tag_english": "Field",
-    "tag_original": "Boisko",
-    "count": 2,
-    "tag_id": 5434
-  },
-  {
-    "tag_normalized": "news_kiosk",
-    "tag_english": "News kiosk",
-    "tag_original": "Edicola",
-    "count": 2,
-    "tag_id": 6059
-  },
-  {
-    "tag_normalized": "parking_lots",
-    "tag_english": "Parking lots",
-    "tag_original": "Parcheggi",
-    "count": 2,
-    "tag_id": 6394
-  },
-  {
-    "tag_normalized": "parking",
-    "tag_english": "parking",
-    "tag_original": "parcheggio",
-    "count": 2,
-    "tag_id": 6214
-  },
-  {
-    "tag_normalized": "water_tower",
-    "tag_english": "Water tower",
-    "tag_original": "Wasserturm",
-    "count": 2,
-    "tag_id": 5090
-  },
-  {
-    "tag_normalized": "nightinvenice",
-    "tag_english": "nightinvenice",
-    "tag_original": "nightinvenice",
-    "count": 2,
-    "tag_id": 5906
-  },
-  {
-    "tag_normalized": "museum_of_contemporary_art_of_sorocaba",
-    "tag_english": "Museum of Contemporary Art of Sorocaba",
-    "tag_original": "Museu de arte contemporânea de Sorocaba",
-    "count": 2,
-    "tag_id": 7630
+    "tag_id": 4976
   },
   {
     "tag_normalized": "ping-pong",
@@ -4571,32 +2576,39 @@
     "tag_id": 5051
   },
   {
-    "tag_normalized": "dorina_nowill",
-    "tag_english": "Dorina Nowill",
-    "tag_original": "Dorina Nowill",
+    "tag_normalized": "bb9",
+    "tag_english": "BB9",
+    "tag_original": "BB9",
     "count": 2,
-    "tag_id": 7188
+    "tag_id": 5059
   },
   {
-    "tag_normalized": "#truth_#coverup_#q_#elites",
-    "tag_english": "#truth #coverup #Q #elites",
-    "tag_original": "#truth #coverup #Q #elites",
+    "tag_normalized": "deck_chairs",
+    "tag_english": "Deck chairs",
+    "tag_original": "Liegestühle",
     "count": 2,
-    "tag_id": 7090
+    "tag_id": 5067
   },
   {
-    "tag_normalized": "location",
-    "tag_english": "Location",
-    "tag_original": "Ubicació",
+    "tag_normalized": "bier",
+    "tag_english": "Bier",
+    "tag_original": "Bier",
     "count": 2,
-    "tag_id": 5379
+    "tag_id": 5074
   },
   {
-    "tag_normalized": "swallow_park",
-    "tag_english": "Swallow Park",
-    "tag_original": "Parc de l’oreneta",
+    "tag_normalized": "police",
+    "tag_english": "police",
+    "tag_original": "Polizei",
     "count": 2,
-    "tag_id": 8010
+    "tag_id": 5088
+  },
+  {
+    "tag_normalized": "absv",
+    "tag_english": "ABSV",
+    "tag_original": "ABSV",
+    "count": 2,
+    "tag_id": 5097
   },
   {
     "tag_normalized": "defect",
@@ -4606,11 +2618,179 @@
     "tag_id": 5105
   },
   {
-    "tag_normalized": "salablu",
-    "tag_english": "salablu",
-    "tag_original": "salablu",
+    "tag_normalized": "lack_of_tactile_paving",
+    "tag_english": "lack of tactile paving",
+    "tag_original": "fehlende taktile Pflasterung",
     "count": 2,
-    "tag_id": 5668
+    "tag_id": 5107
+  },
+  {
+    "tag_normalized": "crossing",
+    "tag_english": "Crossing",
+    "tag_original": "Kreuzung",
+    "count": 2,
+    "tag_id": 5109
+  },
+  {
+    "tag_normalized": "cinemas",
+    "tag_english": "cinemas",
+    "tag_original": "cinemas",
+    "count": 2,
+    "tag_id": 5127
+  },
+  {
+    "tag_normalized": "violin",
+    "tag_english": "violin",
+    "tag_original": "violin",
+    "count": 2,
+    "tag_id": 5149
+  },
+  {
+    "tag_normalized": "brandenburg_gate",
+    "tag_english": "Brandenburg Gate",
+    "tag_original": "Brandenburger Tor",
+    "count": 2,
+    "tag_id": 5164
+  },
+  {
+    "tag_normalized": "practice",
+    "tag_english": "practice",
+    "tag_original": "üben",
+    "count": 2,
+    "tag_id": 5171
+  },
+  {
+    "tag_normalized": "selfies",
+    "tag_english": "selfies",
+    "tag_original": "selfies",
+    "count": 2,
+    "tag_id": 5175
+  },
+  {
+    "tag_normalized": "water_pump",
+    "tag_english": "Water pump",
+    "tag_original": "Water pump",
+    "count": 2,
+    "tag_id": 5193
+  },
+  {
+    "tag_normalized": "performance",
+    "tag_english": "Performance",
+    "tag_original": "Vorstellung",
+    "count": 2,
+    "tag_id": 5208
+  },
+  {
+    "tag_normalized": "galway",
+    "tag_english": "Galway",
+    "tag_original": "Galway",
+    "count": 2,
+    "tag_id": 5220
+  },
+  {
+    "tag_normalized": "ncbi",
+    "tag_english": "NCBI",
+    "tag_original": "NCBI",
+    "count": 2,
+    "tag_id": 5221
+  },
+  {
+    "tag_normalized": "antoni_abad",
+    "tag_english": "Antoni Abad",
+    "tag_original": "Antoni Abad",
+    "count": 2,
+    "tag_id": 5233
+  },
+  {
+    "tag_normalized": "pond",
+    "tag_english": "Pond",
+    "tag_original": "Lagoa",
+    "count": 2,
+    "tag_id": 5237
+  },
+  {
+    "tag_normalized": "education",
+    "tag_english": "Education",
+    "tag_original": "Educacion",
+    "count": 2,
+    "tag_id": 5290
+  },
+  {
+    "tag_normalized": "stones",
+    "tag_english": "Stones",
+    "tag_original": "Pedras",
+    "count": 2,
+    "tag_id": 5309
+  },
+  {
+    "tag_normalized": "cabin_phone",
+    "tag_english": "Cabin phone",
+    "tag_original": "Cabina telefo",
+    "count": 2,
+    "tag_id": 5310
+  },
+  {
+    "tag_normalized": "correos",
+    "tag_english": "CORREOS",
+    "tag_original": "CORREOS",
+    "count": 2,
+    "tag_id": 5315
+  },
+  {
+    "tag_normalized": "hair_helmet",
+    "tag_english": "hair helmet",
+    "tag_original": "casco vello",
+    "count": 2,
+    "tag_id": 5320
+  },
+  {
+    "tag_normalized": "taxi_stop",
+    "tag_english": "taxi stop",
+    "tag_original": "Parada taxi",
+    "count": 2,
+    "tag_id": 5338
+  },
+  {
+    "tag_normalized": "drinking_water",
+    "tag_english": "drinking water",
+    "tag_original": "agua potable",
+    "count": 2,
+    "tag_id": 5353
+  },
+  {
+    "tag_normalized": "generic_info",
+    "tag_english": "Generic info",
+    "tag_original": "Info generica",
+    "count": 2,
+    "tag_id": 5372
+  },
+  {
+    "tag_normalized": "food_area",
+    "tag_english": "Food area",
+    "tag_original": "Bereich Lebensmittel",
+    "count": 2,
+    "tag_id": 5376
+  },
+  {
+    "tag_normalized": "heat",
+    "tag_english": "Heat",
+    "tag_original": "Calor",
+    "count": 2,
+    "tag_id": 5380
+  },
+  {
+    "tag_normalized": "no_transition",
+    "tag_english": "No transition",
+    "tag_original": "Brakprzejscia",
+    "count": 2,
+    "tag_id": 5407
+  },
+  {
+    "tag_normalized": "hole_in_the_sidewalk",
+    "tag_english": "Hole in the sidewalk",
+    "tag_original": "Dziura w chodniku",
+    "count": 2,
+    "tag_id": 5417
   },
   {
     "tag_normalized": "welcome",
@@ -4620,39 +2800,438 @@
     "tag_id": 5422
   },
   {
-    "tag_normalized": "hairy",
-    "tag_english": "hairy",
-    "tag_original": "peloso",
+    "tag_normalized": "polish_association_of_the_blind",
+    "tag_english": "Polish Association of the Blind",
+    "tag_original": "Polski Związek Niewidomych",
     "count": 2,
-    "tag_id": 5827
+    "tag_id": 5426
   },
   {
-    "tag_normalized": "taxi_stop",
-    "tag_english": "Taxi stop",
-    "tag_original": "Parada taxi",
+    "tag_normalized": "chameleon",
+    "tag_english": "Chameleon",
+    "tag_original": "Kameleon",
     "count": 2,
-    "tag_id": 5338
+    "tag_id": 5455
   },
   {
-    "tag_normalized": "church_of_rigolisa",
-    "tag_english": "Church of Rigolisa",
-    "tag_original": "Església de Rigolisa",
+    "tag_normalized": "recreation",
+    "tag_english": "Recreation",
+    "tag_original": "Rekreacja",
     "count": 2,
-    "tag_id": 7969
+    "tag_id": 5491
   },
   {
-    "tag_normalized": "duck",
-    "tag_english": "duck",
-    "tag_original": "kaczki",
+    "tag_normalized": "ladybird",
+    "tag_english": "Ladybird",
+    "tag_original": "Biedronka",
     "count": 2,
-    "tag_id": 5503
+    "tag_id": 5501
   },
   {
-    "tag_normalized": "moreira_salles_institute",
-    "tag_english": "MOREIRA SALLES INSTITUTE",
-    "tag_original": "Instituto Moreira Salles",
+    "tag_normalized": "model",
+    "tag_english": "model",
+    "tag_original": "makieta",
     "count": 2,
-    "tag_id": 7445
+    "tag_id": 5531
+  },
+  {
+    "tag_normalized": "pies",
+    "tag_english": "Pies",
+    "tag_original": "Placki",
+    "count": 2,
+    "tag_id": 5534
+  },
+  {
+    "tag_normalized": "piano",
+    "tag_english": "Piano",
+    "tag_original": "Piano",
+    "count": 2,
+    "tag_id": 5578
+  },
+  {
+    "tag_normalized": "kiosk",
+    "tag_english": "Kiosk",
+    "tag_original": "Kiosk",
+    "count": 2,
+    "tag_id": 5592
+  },
+  {
+    "tag_normalized": "a_humming_puzzle",
+    "tag_english": "A humming puzzle",
+    "tag_original": "Szumiąca zagadka",
+    "count": 2,
+    "tag_id": 5609
+  },
+  {
+    "tag_normalized": "supermarkets",
+    "tag_english": "supermarkets",
+    "tag_original": "supermarkety",
+    "count": 2,
+    "tag_id": 5637
+  },
+  {
+    "tag_normalized": "main_station",
+    "tag_english": "Main station",
+    "tag_original": "Dworzec glowny",
+    "count": 2,
+    "tag_id": 5640
+  },
+  {
+    "tag_normalized": "drum",
+    "tag_english": "Drum",
+    "tag_original": "Drum",
+    "count": 2,
+    "tag_id": 5659
+  },
+  {
+    "tag_normalized": "gretapower",
+    "tag_english": "gretapower",
+    "tag_original": "gretapower",
+    "count": 2,
+    "tag_id": 5661
+  },
+  {
+    "tag_normalized": "prosecco",
+    "tag_english": "prosecco",
+    "tag_original": "prosecco",
+    "count": 2,
+    "tag_id": 5667
+  },
+  {
+    "tag_normalized": "calatrava_bridge",
+    "tag_english": "Calatrava bridge",
+    "tag_original": "ponte di Calatrava",
+    "count": 2,
+    "tag_id": 5696
+  },
+  {
+    "tag_normalized": "piazzale_roma",
+    "tag_english": "Piazzale Roma",
+    "tag_original": "Piazzale Roma",
+    "count": 2,
+    "tag_id": 5697
+  },
+  {
+    "tag_normalized": "acqualt",
+    "tag_english": "acqualt",
+    "tag_original": "acqualta",
+    "count": 2,
+    "tag_id": 5741
+  },
+  {
+    "tag_normalized": "magic",
+    "tag_english": "magic",
+    "tag_original": "magia",
+    "count": 2,
+    "tag_id": 5743
+  },
+  {
+    "tag_normalized": "san_marco",
+    "tag_english": "San Marco",
+    "tag_original": "San Marco",
+    "count": 2,
+    "tag_id": 5761
+  },
+  {
+    "tag_normalized": "guggenheim",
+    "tag_english": "Guggenheim",
+    "tag_original": "Guggenheim",
+    "count": 2,
+    "tag_id": 5772
+  },
+  {
+    "tag_normalized": "german_warehouse",
+    "tag_english": "German warehouse",
+    "tag_original": "fondaco tedeschi",
+    "count": 2,
+    "tag_id": 5801
+  },
+  {
+    "tag_normalized": "toys",
+    "tag_english": "Toys",
+    "tag_original": "Giocattoli",
+    "count": 2,
+    "tag_id": 5808
+  },
+  {
+    "tag_normalized": "laguna",
+    "tag_english": "laguna",
+    "tag_original": "laguna",
+    "count": 2,
+    "tag_id": 5859
+  },
+  {
+    "tag_normalized": "prison",
+    "tag_english": "Prison",
+    "tag_original": "Carcere",
+    "count": 2,
+    "tag_id": 5862
+  },
+  {
+    "tag_normalized": "rialto",
+    "tag_english": "Rialto",
+    "tag_original": "Rialto",
+    "count": 2,
+    "tag_id": 5866
+  },
+  {
+    "tag_normalized": "dark",
+    "tag_english": "dark",
+    "tag_original": "buio",
+    "count": 2,
+    "tag_id": 5881
+  },
+  {
+    "tag_normalized": "forest",
+    "tag_english": "forest",
+    "tag_original": "foresta",
+    "count": 2,
+    "tag_id": 5905
+  },
+  {
+    "tag_normalized": "nightinvenice",
+    "tag_english": "nightinvenice",
+    "tag_original": "nightinvenice",
+    "count": 2,
+    "tag_id": 5906
+  },
+  {
+    "tag_normalized": "statue",
+    "tag_english": "statue",
+    "tag_original": "statue",
+    "count": 2,
+    "tag_id": 5921
+  },
+  {
+    "tag_normalized": "arsenal",
+    "tag_english": "Arsenal",
+    "tag_original": "Arsenale",
+    "count": 2,
+    "tag_id": 5924
+  },
+  {
+    "tag_normalized": "crowding",
+    "tag_english": "Crowding",
+    "tag_original": "Affollamento",
+    "count": 2,
+    "tag_id": 5929
+  },
+  {
+    "tag_normalized": "worksite",
+    "tag_english": "Worksite",
+    "tag_original": "Cantiere",
+    "count": 2,
+    "tag_id": 5955
+  },
+  {
+    "tag_normalized": "tradition",
+    "tag_english": "tradition",
+    "tag_original": "tradizione",
+    "count": 2,
+    "tag_id": 5956
+  },
+  {
+    "tag_normalized": "pesce",
+    "tag_english": "pesce",
+    "tag_original": "pesce",
+    "count": 2,
+    "tag_id": 5971
+  },
+  {
+    "tag_normalized": "aaudiolibro",
+    "tag_english": "Aaudiolibro",
+    "tag_original": "Aaudiolibro",
+    "count": 2,
+    "tag_id": 5972
+  },
+  {
+    "tag_normalized": "building_model",
+    "tag_english": "building model",
+    "tag_original": "modellino edificio",
+    "count": 2,
+    "tag_id": 6048
+  },
+  {
+    "tag_normalized": "platforms",
+    "tag_english": "platforms",
+    "tag_original": "andanes",
+    "count": 2,
+    "tag_id": 6052
+  },
+  {
+    "tag_normalized": "local",
+    "tag_english": "Local",
+    "tag_original": "Locali",
+    "count": 2,
+    "tag_id": 6057
+  },
+  {
+    "tag_normalized": "news_kiosk",
+    "tag_english": "News kiosk",
+    "tag_original": "Edicola",
+    "count": 2,
+    "tag_id": 6059
+  },
+  {
+    "tag_normalized": "railing",
+    "tag_english": "railing",
+    "tag_original": "inferriata",
+    "count": 2,
+    "tag_id": 6088
+  },
+  {
+    "tag_normalized": "san_rocco_school",
+    "tag_english": "San Rocco school",
+    "tag_original": "scuola san rocco",
+    "count": 2,
+    "tag_id": 6095
+  },
+  {
+    "tag_normalized": "frari",
+    "tag_english": "frari",
+    "tag_original": "frari",
+    "count": 2,
+    "tag_id": 6104
+  },
+  {
+    "tag_normalized": "san_polo",
+    "tag_english": "san polo",
+    "tag_original": "san polo",
+    "count": 2,
+    "tag_id": 6105
+  },
+  {
+    "tag_normalized": "poetry",
+    "tag_english": "poetry",
+    "tag_original": "poesia",
+    "count": 2,
+    "tag_id": 6119
+  },
+  {
+    "tag_normalized": "tables",
+    "tag_english": "tables",
+    "tag_original": "tavoli",
+    "count": 2,
+    "tag_id": 6122
+  },
+  {
+    "tag_normalized": "disabled_access",
+    "tag_english": "disabled access",
+    "tag_original": "accesso disabili",
+    "count": 2,
+    "tag_id": 6124
+  },
+  {
+    "tag_normalized": "riva",
+    "tag_english": "riva",
+    "tag_original": "riva",
+    "count": 2,
+    "tag_id": 6133
+  },
+  {
+    "tag_normalized": "license_plates",
+    "tag_english": "license plates",
+    "tag_original": "targhe",
+    "count": 2,
+    "tag_id": 6153
+  },
+  {
+    "tag_normalized": "rocco",
+    "tag_english": "rocco",
+    "tag_original": "rocco",
+    "count": 2,
+    "tag_id": 6166
+  },
+  {
+    "tag_normalized": "catwalk",
+    "tag_english": "Catwalk",
+    "tag_original": "Passerella",
+    "count": 2,
+    "tag_id": 6174
+  },
+  {
+    "tag_normalized": "information",
+    "tag_english": "information",
+    "tag_original": "informazioni",
+    "count": 2,
+    "tag_id": 6193
+  },
+  {
+    "tag_normalized": "rest",
+    "tag_english": "Rest",
+    "tag_original": "Riposo",
+    "count": 2,
+    "tag_id": 6197
+  },
+  {
+    "tag_normalized": "rides",
+    "tag_english": "rides",
+    "tag_original": "giostre",
+    "count": 2,
+    "tag_id": 6199
+  },
+  {
+    "tag_normalized": "manholes",
+    "tag_english": "manholes",
+    "tag_original": "tombini",
+    "count": 2,
+    "tag_id": 6209
+  },
+  {
+    "tag_normalized": "partisans",
+    "tag_english": "Partisans",
+    "tag_original": "Partigiane",
+    "count": 2,
+    "tag_id": 6212
+  },
+  {
+    "tag_normalized": "parking",
+    "tag_english": "parking",
+    "tag_original": "parcheggio",
+    "count": 2,
+    "tag_id": 6214
+  },
+  {
+    "tag_normalized": "navi",
+    "tag_english": "navi",
+    "tag_original": "navi",
+    "count": 2,
+    "tag_id": 6259
+  },
+  {
+    "tag_normalized": "seven",
+    "tag_english": "Seven",
+    "tag_original": "Sete",
+    "count": 2,
+    "tag_id": 6270
+  },
+  {
+    "tag_normalized": "students",
+    "tag_english": "students",
+    "tag_original": "studenti",
+    "count": 2,
+    "tag_id": 6272
+  },
+  {
+    "tag_normalized": "spritz",
+    "tag_english": "spritz",
+    "tag_original": "spritz",
+    "count": 2,
+    "tag_id": 6281
+  },
+  {
+    "tag_normalized": "donne",
+    "tag_english": "donne",
+    "tag_original": "donne",
+    "count": 2,
+    "tag_id": 6309
+  },
+  {
+    "tag_normalized": "buildings",
+    "tag_english": "buildings",
+    "tag_original": "palazzi",
+    "count": 2,
+    "tag_id": 6322
   },
   {
     "tag_normalized": "synagogue",
@@ -4662,25 +3241,340 @@
     "tag_id": 6337
   },
   {
-    "tag_normalized": "valencian_pilot",
-    "tag_english": "Valencian pilot",
-    "tag_original": "Pilota valenciana",
+    "tag_normalized": "bakery",
+    "tag_english": "bakery",
+    "tag_original": "panificio",
     "count": 2,
-    "tag_id": 6883
+    "tag_id": 6339
   },
   {
-    "tag_normalized": "fruit_boxes",
-    "tag_english": "Fruit boxes",
-    "tag_original": "Cajas de fruta",
+    "tag_normalized": "craftsmanship",
+    "tag_english": "craftsmanship",
+    "tag_original": "artigianato",
     "count": 2,
-    "tag_id": 4976
+    "tag_id": 6343
   },
   {
-    "tag_normalized": "artificial_surface",
-    "tag_english": "artificial surface",
-    "tag_original": "sztuczna nawierzchnia",
+    "tag_normalized": "movement",
+    "tag_english": "Movement",
+    "tag_original": "Movimento",
     "count": 2,
-    "tag_id": 5435
+    "tag_id": 6354
+  },
+  {
+    "tag_normalized": "noise",
+    "tag_english": "noise",
+    "tag_original": "soroll",
+    "count": 2,
+    "tag_id": 6373
+  },
+  {
+    "tag_normalized": "pizzeria",
+    "tag_english": "pizzeria",
+    "tag_original": "pizzeria",
+    "count": 2,
+    "tag_id": 6376
+  },
+  {
+    "tag_normalized": "court",
+    "tag_english": "court",
+    "tag_original": "corte",
+    "count": 2,
+    "tag_id": 6378
+  },
+  {
+    "tag_normalized": "hostel",
+    "tag_english": "Hostel",
+    "tag_original": "Ostello",
+    "count": 2,
+    "tag_id": 6418
+  },
+  {
+    "tag_normalized": "venetians",
+    "tag_english": "venetians",
+    "tag_original": "venetians",
+    "count": 2,
+    "tag_id": 6425
+  },
+  {
+    "tag_normalized": "lido",
+    "tag_english": "Lido",
+    "tag_original": "Lido",
+    "count": 2,
+    "tag_id": 6447
+  },
+  {
+    "tag_normalized": "pool",
+    "tag_english": "pool",
+    "tag_original": "piscina",
+    "count": 2,
+    "tag_id": 6449
+  },
+  {
+    "tag_normalized": "tennis_court",
+    "tag_english": "tennis court",
+    "tag_original": "campo da tennis",
+    "count": 2,
+    "tag_id": 6459
+  },
+  {
+    "tag_normalized": "s.elena",
+    "tag_english": "s.Elena",
+    "tag_original": "s.Elena",
+    "count": 2,
+    "tag_id": 6465
+  },
+  {
+    "tag_normalized": "utilities",
+    "tag_english": "Utilities",
+    "tag_original": "Utilities",
+    "count": 2,
+    "tag_id": 6489
+  },
+  {
+    "tag_normalized": "souvenir",
+    "tag_english": "souvenir",
+    "tag_original": "souvenir",
+    "count": 2,
+    "tag_id": 6528
+  },
+  {
+    "tag_normalized": "supermarket",
+    "tag_english": "supermarket",
+    "tag_original": "supermercato",
+    "count": 2,
+    "tag_id": 6533
+  },
+  {
+    "tag_normalized": "casino",
+    "tag_english": "Casino",
+    "tag_original": "Casinò",
+    "count": 2,
+    "tag_id": 6540
+  },
+  {
+    "tag_normalized": "environmental_description",
+    "tag_english": "Environmental description",
+    "tag_original": "Descrizione ambientale",
+    "count": 2,
+    "tag_id": 6545
+  },
+  {
+    "tag_normalized": "beaches",
+    "tag_english": "Beaches",
+    "tag_original": "Spiagge",
+    "count": 2,
+    "tag_id": 6551
+  },
+  {
+    "tag_normalized": "location_description",
+    "tag_english": "Location description",
+    "tag_original": "Ortsbeschreibung",
+    "count": 2,
+    "tag_id": 6603
+  },
+  {
+    "tag_normalized": "family",
+    "tag_english": "family",
+    "tag_original": "família",
+    "count": 2,
+    "tag_id": 6607
+  },
+  {
+    "tag_normalized": "olafur_eliasson",
+    "tag_english": "Olafur Eliasson",
+    "tag_original": "Olafur Eliasson",
+    "count": 2,
+    "tag_id": 6618
+  },
+  {
+    "tag_normalized": "green_light",
+    "tag_english": "Green Light",
+    "tag_original": "Green Light",
+    "count": 2,
+    "tag_id": 6619
+  },
+  {
+    "tag_normalized": "venezuela",
+    "tag_english": "Venezuela",
+    "tag_original": "Venezuela",
+    "count": 2,
+    "tag_id": 6632
+  },
+  {
+    "tag_normalized": "nordic_countries",
+    "tag_english": "Nordic countries",
+    "tag_original": "paesi nordici",
+    "count": 2,
+    "tag_id": 6636
+  },
+  {
+    "tag_normalized": "storm",
+    "tag_english": "storm",
+    "tag_original": "tempesta",
+    "count": 2,
+    "tag_id": 6648
+  },
+  {
+    "tag_normalized": "party",
+    "tag_english": "Party",
+    "tag_original": "Festa",
+    "count": 2,
+    "tag_id": 6651
+  },
+  {
+    "tag_normalized": "documenta",
+    "tag_english": "documenta",
+    "tag_original": "documenta",
+    "count": 2,
+    "tag_id": 6653
+  },
+  {
+    "tag_normalized": "concerto",
+    "tag_english": "Concerto",
+    "tag_original": "Concerto",
+    "count": 2,
+    "tag_id": 6655
+  },
+  {
+    "tag_normalized": "rosa",
+    "tag_english": "rosa",
+    "tag_original": "rosa",
+    "count": 2,
+    "tag_id": 6667
+  },
+  {
+    "tag_normalized": "earrings",
+    "tag_english": "earrings",
+    "tag_original": "pendientes",
+    "count": 2,
+    "tag_id": 6676
+  },
+  {
+    "tag_normalized": "textures",
+    "tag_english": "textures",
+    "tag_original": "texturas",
+    "count": 2,
+    "tag_id": 6685
+  },
+  {
+    "tag_normalized": "uncivic",
+    "tag_english": "uncivic",
+    "tag_original": "incivico",
+    "count": 2,
+    "tag_id": 6710
+  },
+  {
+    "tag_normalized": "plants",
+    "tag_english": "Plants",
+    "tag_original": "Plantas",
+    "count": 2,
+    "tag_id": 6721
+  },
+  {
+    "tag_normalized": "loves",
+    "tag_english": "Loves",
+    "tag_original": "Amores",
+    "count": 2,
+    "tag_id": 6724
+  },
+  {
+    "tag_normalized": "moscowneversleeps",
+    "tag_english": "Moscowneversleeps",
+    "tag_original": "Moscowneversleeps",
+    "count": 2,
+    "tag_id": 6747
+  },
+  {
+    "tag_normalized": "center_of_the_travelers",
+    "tag_english": "Center of the travelers",
+    "tag_original": "Center of the travelers",
+    "count": 2,
+    "tag_id": 6749
+  },
+  {
+    "tag_normalized": "fauna",
+    "tag_english": "fauna",
+    "tag_original": "fauna",
+    "count": 2,
+    "tag_id": 6783
+  },
+  {
+    "tag_normalized": "sing",
+    "tag_english": "Sing",
+    "tag_original": "Cantar",
+    "count": 2,
+    "tag_id": 6820
+  },
+  {
+    "tag_normalized": "urban_details",
+    "tag_english": "urban details",
+    "tag_original": "detalles urbanos",
+    "count": 2,
+    "tag_id": 6826
+  },
+  {
+    "tag_normalized": "channel",
+    "tag_english": "channel",
+    "tag_original": "cauce",
+    "count": 2,
+    "tag_id": 6829
+  },
+  {
+    "tag_normalized": "picanya",
+    "tag_english": "Picanya",
+    "tag_original": "Picanya",
+    "count": 2,
+    "tag_id": 6862
+  },
+  {
+    "tag_normalized": "oven",
+    "tag_english": "Oven",
+    "tag_original": "Horno",
+    "count": 2,
+    "tag_id": 6876
+  },
+  {
+    "tag_normalized": "flavors",
+    "tag_english": "flavors",
+    "tag_original": "sabores",
+    "count": 2,
+    "tag_id": 6902
+  },
+  {
+    "tag_normalized": "tranquillity",
+    "tag_english": "Tranquillity",
+    "tag_original": "Tranquilidad",
+    "count": 2,
+    "tag_id": 6923
+  },
+  {
+    "tag_normalized": "pigeons",
+    "tag_english": "Pigeons",
+    "tag_original": "Palomas",
+    "count": 2,
+    "tag_id": 6924
+  },
+  {
+    "tag_normalized": "blackbirds",
+    "tag_english": "blackbirds",
+    "tag_original": "mirlos",
+    "count": 2,
+    "tag_id": 6928
+  },
+  {
+    "tag_normalized": "arena",
+    "tag_english": "arena",
+    "tag_original": "arena",
+    "count": 2,
+    "tag_id": 6931
+  },
+  {
+    "tag_normalized": "street_music",
+    "tag_english": "street music",
+    "tag_original": "música callejera",
+    "count": 2,
+    "tag_id": 6932
   },
   {
     "tag_normalized": "voice",
@@ -4690,10 +3584,591 @@
     "tag_id": 6947
   },
   {
-    "tag_normalized": "drinking_water",
-    "tag_english": "drinking water",
-    "tag_original": "agua potable",
+    "tag_normalized": "show",
+    "tag_english": "show",
+    "tag_original": "espectaculo",
     "count": 2,
-    "tag_id": 5353
+    "tag_id": 6949
+  },
+  {
+    "tag_normalized": "paint",
+    "tag_english": "paint",
+    "tag_original": "pintura",
+    "count": 2,
+    "tag_id": 6959
+  },
+  {
+    "tag_normalized": "browsing",
+    "tag_english": "browsing",
+    "tag_original": "navegando",
+    "count": 2,
+    "tag_id": 7005
+  },
+  {
+    "tag_normalized": "second_part",
+    "tag_english": "second part",
+    "tag_original": "segunda parte",
+    "count": 2,
+    "tag_id": 7009
+  },
+  {
+    "tag_normalized": "aroma",
+    "tag_english": "Aroma",
+    "tag_original": "Aroma",
+    "count": 2,
+    "tag_id": 7024
+  },
+  {
+    "tag_normalized": "grass",
+    "tag_english": "grass",
+    "tag_original": "césped",
+    "count": 2,
+    "tag_id": 7025
+  },
+  {
+    "tag_normalized": "torres_quart",
+    "tag_english": "Torres Quart",
+    "tag_original": "Torres Quart",
+    "count": 2,
+    "tag_id": 7077
+  },
+  {
+    "tag_normalized": "the_first_valencia_xi",
+    "tag_english": "The first Valencia XI",
+    "tag_original": "La primera Once de Valencia",
+    "count": 2,
+    "tag_id": 7082
+  },
+  {
+    "tag_normalized": "churros",
+    "tag_english": "Churros",
+    "tag_original": "Churros",
+    "count": 2,
+    "tag_id": 7083
+  },
+  {
+    "tag_normalized": "são_paulo",
+    "tag_english": "São Paulo",
+    "tag_original": "São Paulo",
+    "count": 2,
+    "tag_id": 7170
+  },
+  {
+    "tag_normalized": "dorina_nowill",
+    "tag_english": "Dorina Nowill",
+    "tag_original": "Dorina Nowill",
+    "count": 2,
+    "tag_id": 7188
+  },
+  {
+    "tag_normalized": "rosewood",
+    "tag_english": "Rosewood",
+    "tag_original": "Rosewood",
+    "count": 2,
+    "tag_id": 7209
+  },
+  {
+    "tag_normalized": "city_matarazzo",
+    "tag_english": "City Matarazzo",
+    "tag_original": "Cidade Matarazzo",
+    "count": 2,
+    "tag_id": 7210
+  },
+  {
+    "tag_normalized": "cheese_bread",
+    "tag_english": "Cheese bread",
+    "tag_original": "Pão de queijo",
+    "count": 2,
+    "tag_id": 7214
+  },
+  {
+    "tag_normalized": "cultural_center",
+    "tag_english": "Cultural center",
+    "tag_original": "Centro cultural",
+    "count": 2,
+    "tag_id": 7244
+  },
+  {
+    "tag_normalized": "a_great_institution",
+    "tag_english": "a great institution",
+    "tag_original": "instituto magnus",
+    "count": 2,
+    "tag_id": 7249
+  },
+  {
+    "tag_normalized": "tactile_floor_on_the_right",
+    "tag_english": "tactile floor on the right",
+    "tag_original": "piso tátil do lado direito",
+    "count": 2,
+    "tag_id": 7274
+  },
+  {
+    "tag_normalized": "piso",
+    "tag_english": "piso",
+    "tag_original": "piso",
+    "count": 2,
+    "tag_id": 7275
+  },
+  {
+    "tag_normalized": "rehearsal",
+    "tag_english": "rehearsal",
+    "tag_original": "ensaio",
+    "count": 2,
+    "tag_id": 7311
+  },
+  {
+    "tag_normalized": "blindwikibr",
+    "tag_english": "blindwikibr",
+    "tag_original": "blindwikibr",
+    "count": 2,
+    "tag_id": 7350
+  },
+  {
+    "tag_normalized": "roselene",
+    "tag_english": "Roselene",
+    "tag_original": "Roselene",
+    "count": 2,
+    "tag_id": 7354
+  },
+  {
+    "tag_normalized": "bishop_of_rosario",
+    "tag_english": "Bishop of Rosario",
+    "tag_original": "Bispo do Rosário",
+    "count": 2,
+    "tag_id": 7364
+  },
+  {
+    "tag_normalized": "shopping_city_são_paulo",
+    "tag_english": "Shopping city São Paulo",
+    "tag_original": "Shopping cidade São Paulo",
+    "count": 2,
+    "tag_id": 7409
+  },
+  {
+    "tag_normalized": "mequi_1000",
+    "tag_english": "Mequi 1000",
+    "tag_original": "Mequi 1000",
+    "count": 2,
+    "tag_id": 7420
+  },
+  {
+    "tag_normalized": "thanks",
+    "tag_english": "Thanks",
+    "tag_original": "Agradecimento",
+    "count": 2,
+    "tag_id": 7435
+  },
+  {
+    "tag_normalized": "moreira_salles_institute",
+    "tag_english": "Moreira Salles Institute",
+    "tag_original": "Instituto Moreira Salles",
+    "count": 2,
+    "tag_id": 7445
+  },
+  {
+    "tag_normalized": "singing_and_enchanting",
+    "tag_english": "singing and enchanting",
+    "tag_original": "cantando e encantando",
+    "count": 2,
+    "tag_id": 7449
+  },
+  {
+    "tag_normalized": "street_trading",
+    "tag_english": "street trading",
+    "tag_original": "comércio ambulante",
+    "count": 2,
+    "tag_id": 7450
+  },
+  {
+    "tag_normalized": "diversity_in_paulista",
+    "tag_english": "diversity in Paulista",
+    "tag_original": "diversidade na Paulista",
+    "count": 2,
+    "tag_id": 7454
+  },
+  {
+    "tag_normalized": "crafts_in_paulista",
+    "tag_english": "crafts in Paulista",
+    "tag_original": "artesanato na Paulista",
+    "count": 2,
+    "tag_id": 7458
+  },
+  {
+    "tag_normalized": "street_artist",
+    "tag_english": "street artist",
+    "tag_original": "artista de rua",
+    "count": 2,
+    "tag_id": 7459
+  },
+  {
+    "tag_normalized": "moreira_salles",
+    "tag_english": "Moreira Salles",
+    "tag_original": "Moreira Salles",
+    "count": 2,
+    "tag_id": 7466
+  },
+  {
+    "tag_normalized": "trees",
+    "tag_english": "trees",
+    "tag_original": "árvores",
+    "count": 2,
+    "tag_id": 7476
+  },
+  {
+    "tag_normalized": "trash",
+    "tag_english": "trash",
+    "tag_original": "lixo",
+    "count": 2,
+    "tag_id": 7485
+  },
+  {
+    "tag_normalized": "assoc",
+    "tag_english": "Assoc",
+    "tag_original": "Asac",
+    "count": 2,
+    "tag_id": 7491
+  },
+  {
+    "tag_normalized": "holes",
+    "tag_english": "holes",
+    "tag_original": "buracos",
+    "count": 2,
+    "tag_id": 7524
+  },
+  {
+    "tag_normalized": "oswaldo_cruz_college",
+    "tag_english": "Oswaldo Cruz College",
+    "tag_original": "faculdade Oswaldo Cruz",
+    "count": 2,
+    "tag_id": 7549
+  },
+  {
+    "tag_normalized": "resilience",
+    "tag_english": "resilience",
+    "tag_original": "superação",
+    "count": 2,
+    "tag_id": 7553
+  },
+  {
+    "tag_normalized": "memorial_america_latina",
+    "tag_english": "Memorial America Latina",
+    "tag_original": "Memorial America Latina",
+    "count": 2,
+    "tag_id": 7602
+  },
+  {
+    "tag_normalized": "camaragibe_street",
+    "tag_english": "Camaragibe Street",
+    "tag_original": "Rua Camaragibe",
+    "count": 2,
+    "tag_id": 7609
+  },
+  {
+    "tag_normalized": "sorocaba_route",
+    "tag_english": "Sorocaba Route",
+    "tag_original": "Rota Sorocaba",
+    "count": 2,
+    "tag_id": 7634
+  },
+  {
+    "tag_normalized": "sesc_sorocaba",
+    "tag_english": "Sesc Sorocaba",
+    "tag_original": "Sesc Sorocaba",
+    "count": 2,
+    "tag_id": 7663
+  },
+  {
+    "tag_normalized": "carolina_maria",
+    "tag_english": "Carolina Maria",
+    "tag_original": "Carolina Maria",
+    "count": 2,
+    "tag_id": 7665
+  },
+  {
+    "tag_normalized": "sp",
+    "tag_english": "sp",
+    "tag_original": "sp",
+    "count": 2,
+    "tag_id": 7668
+  },
+  {
+    "tag_normalized": "eodoviaria",
+    "tag_english": "Eodoviaria",
+    "tag_original": "Eodoviaria",
+    "count": 2,
+    "tag_id": 7683
+  },
+  {
+    "tag_normalized": "rota",
+    "tag_english": "Rota",
+    "tag_original": "Rota",
+    "count": 2,
+    "tag_id": 7712
+  },
+  {
+    "tag_normalized": "testimonial",
+    "tag_english": "Testimonial",
+    "tag_original": "Depoimento",
+    "count": 2,
+    "tag_id": 7724
+  },
+  {
+    "tag_normalized": "different_look",
+    "tag_english": "Different look",
+    "tag_original": "Olhar diferente",
+    "count": 2,
+    "tag_id": 7734
+  },
+  {
+    "tag_normalized": "taste_festival",
+    "tag_english": "Taste festival",
+    "tag_original": "Taste festival",
+    "count": 2,
+    "tag_id": 7745
+  },
+  {
+    "tag_normalized": "basalt",
+    "tag_english": "Basalt",
+    "tag_original": "Basalto",
+    "count": 2,
+    "tag_id": 7754
+  },
+  {
+    "tag_normalized": "spring",
+    "tag_english": "spring",
+    "tag_original": "nascente",
+    "count": 2,
+    "tag_id": 7787
+  },
+  {
+    "tag_normalized": "treats",
+    "tag_english": "Treats",
+    "tag_original": "Gostosuras",
+    "count": 2,
+    "tag_id": 7838
+  },
+  {
+    "tag_normalized": "sustainability",
+    "tag_english": "Sustainability",
+    "tag_original": "Sustentabilidade",
+    "count": 2,
+    "tag_id": 7843
+  },
+  {
+    "tag_normalized": "new_server",
+    "tag_english": "New server",
+    "tag_original": "Novo servidor",
+    "count": 2,
+    "tag_id": 7851
+  },
+  {
+    "tag_normalized": "claim",
+    "tag_english": "claim",
+    "tag_original": "reivindicar",
+    "count": 2,
+    "tag_id": 7869
+  },
+  {
+    "tag_normalized": "arc_de_triomph",
+    "tag_english": "Arc de triomph",
+    "tag_original": "Arc de triomph",
+    "count": 2,
+    "tag_id": 7905
+  },
+  {
+    "tag_normalized": "sound_landscape",
+    "tag_english": "sound landscape",
+    "tag_original": "paissatge sonor",
+    "count": 2,
+    "tag_id": 7920
+  },
+  {
+    "tag_normalized": "parks",
+    "tag_english": "parks",
+    "tag_original": "parcs",
+    "count": 2,
+    "tag_id": 7937
+  },
+  {
+    "tag_normalized": "road",
+    "tag_english": "road",
+    "tag_original": "Camí",
+    "count": 2,
+    "tag_id": 7940
+  },
+  {
+    "tag_normalized": "attention",
+    "tag_english": "attention",
+    "tag_original": "atenció",
+    "count": 2,
+    "tag_id": 7946
+  },
+  {
+    "tag_normalized": "urban_elements",
+    "tag_english": "urban elements",
+    "tag_original": "elements urbans",
+    "count": 2,
+    "tag_id": 7949
+  },
+  {
+    "tag_normalized": "touch_element",
+    "tag_english": "touch element",
+    "tag_original": "element tàctil",
+    "count": 2,
+    "tag_id": 7954
+  },
+  {
+    "tag_normalized": "riu",
+    "tag_english": "riu",
+    "tag_original": "riu",
+    "count": 2,
+    "tag_id": 7956
+  },
+  {
+    "tag_normalized": "mountain",
+    "tag_english": "mountain",
+    "tag_original": "muntanya",
+    "count": 2,
+    "tag_id": 7957
+  },
+  {
+    "tag_normalized": "random",
+    "tag_english": "random",
+    "tag_original": "Random",
+    "count": 2,
+    "tag_id": 7961
+  },
+  {
+    "tag_normalized": "information_panel",
+    "tag_english": "information panel",
+    "tag_original": "panell informatiu",
+    "count": 2,
+    "tag_id": 7967
+  },
+  {
+    "tag_normalized": "church_of_rigolisa",
+    "tag_english": "Church of Rigolisa",
+    "tag_original": "Església de Rigolisa",
+    "count": 2,
+    "tag_id": 7969
+  },
+  {
+    "tag_normalized": "horses",
+    "tag_english": "horses",
+    "tag_original": "cavalls",
+    "count": 2,
+    "tag_id": 7981
+  },
+  {
+    "tag_normalized": "sons",
+    "tag_english": "sons",
+    "tag_original": "sons",
+    "count": 2,
+    "tag_id": 7983
+  },
+  {
+    "tag_normalized": "but_fogonussa",
+    "tag_english": "But Fogonussa",
+    "tag_original": "Mas Fogonussa",
+    "count": 2,
+    "tag_id": 7994
+  },
+  {
+    "tag_normalized": "oreneta_park",
+    "tag_english": "Oreneta park",
+    "tag_original": "Parc de l’oreneta",
+    "count": 2,
+    "tag_id": 8010
+  },
+  {
+    "tag_normalized": "load",
+    "tag_english": "load",
+    "tag_original": "Tàrrega",
+    "count": 2,
+    "tag_id": 8016
+  },
+  {
+    "tag_normalized": "monastery_of_pedralbes",
+    "tag_english": "Monastery of Pedralbes",
+    "tag_original": "Monestir de Pedralbes",
+    "count": 2,
+    "tag_id": 8018
+  },
+  {
+    "tag_normalized": "hello",
+    "tag_english": "hello",
+    "tag_original": "hello",
+    "count": 2,
+    "tag_id": 8039
+  },
+  {
+    "tag_normalized": "well",
+    "tag_english": "well",
+    "tag_original": "well",
+    "count": 2,
+    "tag_id": 8045
+  },
+  {
+    "tag_normalized": "ambient",
+    "tag_english": "ambient",
+    "tag_original": "ambient",
+    "count": 2,
+    "tag_id": 8050
+  },
+  {
+    "tag_normalized": "walk",
+    "tag_english": "Walk",
+    "tag_original": "Walk",
+    "count": 2,
+    "tag_id": 8094
+  },
+  {
+    "tag_normalized": "i_run",
+    "tag_english": "I run",
+    "tag_original": "corrego",
+    "count": 2,
+    "tag_id": 8136
+  },
+  {
+    "tag_normalized": "part",
+    "tag_english": "part",
+    "tag_original": "parte",
+    "count": 2,
+    "tag_id": 8160
+  },
+  {
+    "tag_normalized": "campiello",
+    "tag_english": "campiello",
+    "tag_original": "campiello",
+    "count": 2,
+    "tag_id": 8163
+  },
+  {
+    "tag_normalized": "fontana",
+    "tag_english": "fontana",
+    "tag_original": "fontana",
+    "count": 2,
+    "tag_id": 8164
+  },
+  {
+    "tag_normalized": "cascades",
+    "tag_english": "cascades",
+    "tag_original": "cascades",
+    "count": 2,
+    "tag_id": 8205
+  },
+  {
+    "tag_normalized": "to_suffer_inwardly",
+    "tag_english": "to suffer inwardly",
+    "tag_original": "pati interior",
+    "count": 2,
+    "tag_id": 8241
+  },
+  {
+    "tag_normalized": "terrace",
+    "tag_english": "terrace",
+    "tag_original": "terraza",
+    "count": 2,
+    "tag_id": 8242
   }
 ]
