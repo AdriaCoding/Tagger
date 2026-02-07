@@ -1,0 +1,341 @@
+{
+  "structure": {
+    "total_nodes": 596,
+    "root_nodes": 0,
+    "leaf_nodes": 0,
+    "intermediate_nodes": 596,
+    "max_depth": 0,
+    "depth_distribution": {},
+    "roots_list": [],
+    "sample_leaves": []
+  },
+  "comparison_with_manual": {
+    "manual_supertags": [
+      "accessible",
+      "ambient_sounds",
+      "bar",
+      "bridges",
+      "caution",
+      "churches",
+      "culture",
+      "danger",
+      "mobility",
+      "music",
+      "park",
+      "restaurant",
+      "smells",
+      "square",
+      "streets_for_everyone",
+      "water"
+    ],
+    "discovered_roots": [],
+    "overlap_count": 0,
+    "overlap_tags": [],
+    "only_manual": [
+      "accessible",
+      "ambient_sounds",
+      "bar",
+      "bridges",
+      "caution",
+      "churches",
+      "culture",
+      "danger",
+      "mobility",
+      "music",
+      "park",
+      "restaurant",
+      "smells",
+      "square",
+      "streets_for_everyone",
+      "water"
+    ],
+    "only_discovered": [],
+    "agreement_count": 2,
+    "tags_with_discovered_parents": 23,
+    "agreement_rate": 0.08695652173913043,
+    "disagreement_examples": [
+      {
+        "tag": "bar",
+        "manual_parent": "bar",
+        "discovered_parents": [
+          "club",
+          "barca",
+          "barcarrizzi",
+          "barcelona",
+          "park",
+          "channel"
+        ]
+      },
+      {
+        "tag": "good_cafe",
+        "manual_parent": "bar",
+        "discovered_parents": [
+          "coffee_tables",
+          "cafeteria",
+          "french_cottage",
+          "san_marco",
+          "pizzeria"
+        ]
+      },
+      {
+        "tag": "cafeteria",
+        "manual_parent": "bar",
+        "discovered_parents": [
+          "bakery",
+          "hospital",
+          "school",
+          "supermarket",
+          "pizzeria",
+          "good_cafe",
+          "kiosk",
+          "synagogue"
+        ]
+      },
+      {
+        "tag": "pont",
+        "manual_parent": "bridges",
+        "discovered_parents": [
+          "pontini_trattoria",
+          "porta",
+          "navi",
+          "baccari",
+          "targa"
+        ]
+      },
+      {
+        "tag": "iglesia",
+        "manual_parent": "churches",
+        "discovered_parents": [
+          "sombra",
+          "eodoviaria",
+          "venezia",
+          "osteria",
+          "cerdanya"
+        ]
+      },
+      {
+        "tag": "culture",
+        "manual_parent": "culture",
+        "discovered_parents": [
+          "cultural_center",
+          "sp_cultural_center",
+          "tradition",
+          "education",
+          "art",
+          "local",
+          "political_science"
+        ]
+      },
+      {
+        "tag": "tram",
+        "manual_parent": "mobility",
+        "discovered_parents": [
+          "first_tram",
+          "playground",
+          "terrace",
+          "touch",
+          "street",
+          "ping-pong"
+        ]
+      },
+      {
+        "tag": "s-bahn",
+        "manual_parent": "mobility",
+        "discovered_parents": [
+          "u-bahn",
+          "railway_stations",
+          "brandenburg_gate",
+          "co_berlin",
+          "bus"
+        ]
+      },
+      {
+        "tag": "railway_stations",
+        "manual_parent": "mobility",
+        "discovered_parents": [
+          "main_station",
+          "north_station",
+          "u-bahn",
+          "s-bahn",
+          "maritime_towns"
+        ]
+      },
+      {
+        "tag": "vaporetto",
+        "manual_parent": "mobility",
+        "discovered_parents": [
+          "aroma",
+          "pozzo",
+          "paseo",
+          "ristorante",
+          "sole",
+          "partisans",
+          "worksite"
+        ]
+      },
+      {
+        "tag": "music",
+        "manual_parent": "music",
+        "discovered_parents": [
+          "piano",
+          "street_music",
+          "dance",
+          "concert",
+          "sing",
+          "bells",
+          "concerto",
+          "drum",
+          "noise",
+          "noises",
+          "party",
+          "poetry",
+          "singing_and_enchanting",
+          "soundscape",
+          "theater",
+          "violin",
+          "voice",
+          "voices"
+        ]
+      },
+      {
+        "tag": "tree",
+        "manual_parent": "park",
+        "discovered_parents": [
+          "trees",
+          "forest",
+          "palm_trees",
+          "wood",
+          "plant",
+          "branch",
+          "cascades",
+          "chains",
+          "dwarfs",
+          "vines"
+        ]
+      },
+      {
+        "tag": "park",
+        "manual_parent": "park",
+        "discovered_parents": [
+          "parks",
+          "parking",
+          "oreneta_park",
+          "playground",
+          "recreation",
+          "bar",
+          "club",
+          "disabled_parking"
+        ]
+      },
+      {
+        "tag": "garden",
+        "manual_parent": "park",
+        "discovered_parents": [
+          "plants",
+          "grass",
+          "plant",
+          "courtyard",
+          "courtyards",
+          "forest",
+          "nature",
+          "planters",
+          "pond",
+          "spring"
+        ]
+      },
+      {
+        "tag": "ristorante",
+        "manual_parent": "restaurant",
+        "discovered_parents": [
+          "rialto",
+          "riva",
+          "riu",
+          "sotoportego",
+          "ruta",
+          "cloister",
+          "oranienburgerstrasse",
+          "stelenfeld",
+          "vaporetto",
+          "vergueiro"
+        ]
+      },
+      {
+        "tag": "food",
+        "manual_parent": "restaurant",
+        "discovered_parents": [
+          "pizza",
+          "appetizing",
+          "water",
+          "food_area",
+          "treats",
+          "basket",
+          "cheese_bread",
+          "dog",
+          "empty",
+          "flavors",
+          "gastronomy",
+          "health",
+          "heat",
+          "ice-cream",
+          "oven",
+          "pies",
+          "supermarkets",
+          "toys"
+        ]
+      },
+      {
+        "tag": "piazza",
+        "manual_parent": "square",
+        "discovered_parents": [
+          "piazzale_roma",
+          "fontana",
+          "venice_at_night",
+          "domingo",
+          "city_matarazzo",
+          "carnevale",
+          "pozzo"
+        ]
+      },
+      {
+        "tag": "narrow_street",
+        "manual_parent": "streets_for_everyone",
+        "discovered_parents": [
+          "street",
+          "streets",
+          "pedestrian_street",
+          "road",
+          "street_music",
+          "different_look",
+          "hole_in_the_sidewalk"
+        ]
+      },
+      {
+        "tag": "paseo",
+        "manual_parent": "streets_for_everyone",
+        "discovered_parents": [
+          "pesce",
+          "piso",
+          "piazzale_roma",
+          "primavera",
+          "ruta",
+          "deus",
+          "fiesp",
+          "vaporetto"
+        ]
+      },
+      {
+        "tag": "camino",
+        "manual_parent": "streets_for_everyone",
+        "discovered_parents": [
+          "camaragibe_street",
+          "picanya",
+          "campiello",
+          "barrera",
+          "vento",
+          "baccari",
+          "carlos"
+        ]
+      }
+    ]
+  }
+}
