@@ -34,9 +34,9 @@ INPUT_FILE = INPUT_DIR / "tags_simple.json"
 
 # LLM parameters
 MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"  # Small, fast instruct model
-BATCH_SIZE = 8       # Adjust based on available RAM (lower = less memory)
+BATCH_SIZE = 256       # Adjust based on available RAM (lower = less memory)
 MAX_NEW_TOKENS = 5   # Only needs "yes" or "no"
-DEVICE = "cpu"       # Use 'cuda' if GPU available
+DEVICE = "cuda"       # Use 'cuda' if GPU available
 
 
 # %% [REGION 2] Load preprocessed data

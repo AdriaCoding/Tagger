@@ -1,0 +1,99 @@
+{
+  "total_relationships": 135263,
+  "unique_parents": 595,
+  "unique_children": 595,
+  "unique_tags_involved": 596,
+  "tags_as_both_parent_and_child": 594,
+  "tags_only_as_parent": 1,
+  "tags_only_as_child": 1,
+  "root_nodes": [
+    "._reference"
+  ],
+  "leaf_nodes_count": 1,
+  "avg_children_per_parent": 227.3327731092437,
+  "avg_parents_per_child": 227.3327731092437,
+  "top_10_parents": [
+    {
+      "tag": "accessible",
+      "child_count": 528
+    },
+    {
+      "tag": "access",
+      "child_count": 501
+    },
+    {
+      "tag": "ambient_noise",
+      "child_count": 499
+    },
+    {
+      "tag": "assoc",
+      "child_count": 494
+    },
+    {
+      "tag": "ambient",
+      "child_count": 489
+    },
+    {
+      "tag": "a_humming_puzzle",
+      "child_count": 484
+    },
+    {
+      "tag": "accessibility",
+      "child_count": 476
+    },
+    {
+      "tag": "arc_de_triomph",
+      "child_count": 473
+    },
+    {
+      "tag": "arena",
+      "child_count": 466
+    },
+    {
+      "tag": "atm",
+      "child_count": 465
+    }
+  ],
+  "top_10_children": [
+    {
+      "tag": "utilities",
+      "parent_count": 508
+    },
+    {
+      "tag": "wall",
+      "parent_count": 482
+    },
+    {
+      "tag": "voices",
+      "parent_count": 480
+    },
+    {
+      "tag": "vision_australia",
+      "parent_count": 478
+    },
+    {
+      "tag": "view",
+      "parent_count": 477
+    },
+    {
+      "tag": "voice",
+      "parent_count": 475
+    },
+    {
+      "tag": "vergueiro",
+      "parent_count": 471
+    },
+    {
+      "tag": "years",
+      "parent_count": 471
+    },
+    {
+      "tag": "welcome",
+      "parent_count": 463
+    },
+    {
+      "tag": "treats",
+      "parent_count": 462
+    }
+  ]
+}
